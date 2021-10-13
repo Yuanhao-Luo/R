@@ -4,15 +4,23 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    mainFramePane m = mainFramePane.getInstance();
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 1280, 720));
+        Pane p1 = new Pane();
+        primaryStage.setScene(new Scene(p1, 1124, 868));
+        p1.getChildren().add(m);
+        p1.setOnMouseClicked(e ->{
+            System.out.println(e.getX());
+            System.out.println(e.getY());
+        });
         primaryStage.show();
     }
 
@@ -20,4 +28,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 }
