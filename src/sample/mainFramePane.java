@@ -23,7 +23,7 @@ public class mainFramePane extends Pane {
         imageView.setImage(imageBack);
         this.getChildren().add(imageView);
         this.getChildren().add(p1);
-        initPane(p1,300,400,"E:\\programming\\java\\Test\\R\\images\\hotelButton_avaliable.png");
+        initPane(p1,300,400,"E:\\programming\\java\\Test\\R\\images\\hotelButton_pressable.png");
 
         this.getChildren().add(clockPane);
         initPane(clockPane,930,-100,"E:\\programming\\java\\Test\\R\\images\\clock.png");
@@ -64,42 +64,14 @@ public class mainFramePane extends Pane {
 
     public void initDot(Pane d){
         int time = 5;
-        switch (time){
-            case 0:
-                d.setLayoutX(1109);
-                d.setLayoutY(128);
-                break;
-            case 1:
-                d.setLayoutX(1080);
-                d.setLayoutY(139);
-                break;
-            case 2:
-                d.setLayoutX(1054);
-                d.setLayoutY(139);
-            case 3:
-                d.setLayoutX(1029);
-                d.setLayoutY(137);
-                break;
-            case 4:
-                d.setLayoutX(1004);
-                d.setLayoutY(117);
-                break;
-            case 5:
-                d.setLayoutX(985);
-                d.setLayoutY(98);
-                break;
-            case 6:
-                d.setLayoutX(972);
-                d.setLayoutY(77);
-                break;
-            case 7:
-                d.setLayoutX(964);
-                d.setLayoutY(50);
-                break;
-            case 8:
-                d.setLayoutX(964);
-                d.setLayoutY(23);
-                break;
+        double[] dx = {1109, 1080, 1054, 1029, 1004, 985, 972, 964, 964};
+        double[] dy = {128, 139, 139, 137, 117, 98, 77, 50, 23};
+        LocationOfColockDot[] locd = new LocationOfColockDot[9];
+        for (int i = 0; i < locd.length; i++) {
+            locd[i] = new LocationOfColockDot(dx[i], dy[i], i);
+        }
+
+        locd[time].setLocation(d);
 
 
         }
@@ -132,4 +104,4 @@ public class mainFramePane extends Pane {
 //          964.0
 //        23.0
 
-}
+
