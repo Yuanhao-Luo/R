@@ -105,7 +105,7 @@ public class mainFramePane extends Pane {
     public void changeButtonStatues(Pane p,String url){
         dealImage(p, url);
     }
-    //改时钟状态一个是图另一个是重设小球位置
+
     public void changeClockStatues(Pane dot,Pane clockPane){
         initDot(dot);
         initPane(clockPane,980,-70,selectClockIndicator());
@@ -115,25 +115,22 @@ public class mainFramePane extends Pane {
         int time = t.getTime();
 
         //！！！！似乎放在事件外面这一层if不起作用，不知道为什么，暂时只知道往里面放有用
-            b.setOnMouseEntered(e->{
-                if(b.ifVisiable(time))
-                    changeButtonStatues(b,b.getUrl_hover());
-                //有个问题，我看了这个changeStatues似乎是新建了一个图像而不是修改我传进去的bButton,
-                //如果真是这样，那就算再加坐标，也会覆盖了导致他不能触发，我希望他是修改这个东西的图片而不是新建
-                //有这样一种方法，直接singleton，把几个按钮全都singleton就可以
-            });
+        b.setOnMouseEntered(e->{
+            if(b.ifVisiable(time))
+                changeButtonStatues(b,b.getUrl_hover());
+        });
 
-            b.setOnMouseExited(e->{
-                if(b.ifVisiable(time))
-                    changeButtonStatues(b, b.getUrl_pressable());
-            });
+        b.setOnMouseExited(e->{
+            if(b.ifVisiable(time))
+                changeButtonStatues(b, b.getUrl_pressable());
+        });
 
-            b.setOnMouseClicked(e->{
-                if(b.ifVisiable(time)){
-                    changeButtonStatues(b, b.getUrl_pressed());
-                    //空着转页面的内容
-                }
-            });
+        b.setOnMouseClicked(e->{
+            if(b.ifVisiable(time)){
+                changeButtonStatues(b, b.getUrl_pressed());
+                //空着转页面的内容
+            }
+        });
 
     }
 
