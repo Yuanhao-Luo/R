@@ -2,7 +2,7 @@ package sample;
 
 public class timeSingleton {
     private static timeSingleton t = new timeSingleton();
-    private int time = 1;
+    private int time = 0;
 
 
     private timeSingleton(){}

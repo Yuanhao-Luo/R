@@ -6,16 +6,25 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class mainFramePane extends Pane {
-    bButton bBistro = new bButton(".\\images\\bistroButton_hover.png",".\\images\\bistroButton_preparing.png",".\\images\\bistroButton_pressable.png",".\\images\\bistroButton_pressed.png");
-    bButton bSea = new bButton(".\\images\\homeofseaButton_hover.png",".\\images\\homeofseaButton_preparing.png",".\\images\\homeofseaButton_pressable.png",".\\images\\homeofseaButton_pressed.png");
-    bButton bHotel = new bButton(".\\images\\hotelButton_hover.png",".\\images\\hotelButton_preparing.png",".\\images\\hotelButton_pressable.png",".\\images\\hotelButton_pressed.png");
-    bButton bLevel = new bButton(".\\images\\levelhouseButton_hover.png",".\\images\\levelhouseButton_preparing.png",".\\images\\levelhouseButton_pressable.png",".\\images\\levelhouseButton_pressed.png");
-    bButton bMaze = new bButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png");
-    bButton bWS = new bButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png");//WeapomStore
-    bButton bKillTime = new bButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png");
+    boolean[] bistroAvailable = {false,false,false,true,true,true,true,true,false};
+    boolean[] seaAvailable = {true,true,true,true,true,true,false,false,false};
+    boolean[] hotelAvailable = {false,true,true,true,true,true,true,true,true};
+    boolean[] levelAvailable = {true,true,true,true,true,true,false,false,false};
+    boolean[] mazeAvailable = {true,true,true,true,true,true,true,true,false};
+    boolean[] WSAvailable = {false,false,false,true,true,true,true,true,false};
+    boolean[] killTimeAvailable = {true,true,true,true,true,true,true,true,false};
+
+    bButton bBistro = new bButton(".\\images\\bistroButton_hover.png",".\\images\\bistroButton_preparing.png",".\\images\\bistroButton_pressable.png",".\\images\\bistroButton_pressed.png",bistroAvailable);
+    bButton bSea = new bButton(".\\images\\homeofseaButton_hover.png",".\\images\\homeofseaButton_preparing.png",".\\images\\homeofseaButton_pressable.png",".\\images\\homeofseaButton_pressed.png",seaAvailable);
+    bButton bHotel = new bButton(".\\images\\hotelButton_hover.png",".\\images\\hotelButton_preparing.png",".\\images\\hotelButton_pressable.png",".\\images\\hotelButton_pressed.png",hotelAvailable);
+    bButton bLevel = new bButton(".\\images\\levelhouseButton_hover.png",".\\images\\levelhouseButton_preparing.png",".\\images\\levelhouseButton_pressable.png",".\\images\\levelhouseButton_pressed.png",levelAvailable);
+    bButton bMaze = new bButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable);
+    bButton bWS = new bButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable);
+    bButton bKillTime = new bButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable);
+
     Pane clockPane = new Pane();
     Pane dot = new Pane();
-    Pane CI = new Pane();//ClockIndicator
+    Pane CI = new Pane();
     cLockStatus[] ClS = new cLockStatus[9];
 
     private static mainFramePane m = new mainFramePane();
@@ -25,16 +34,7 @@ public class mainFramePane extends Pane {
     }
 
     private mainFramePane(){
-        Image imageBack = null;
-        try {
-            imageBack = new Image(new FileInputStream(".\\images\\backgroundMain.png"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        ImageView imageView = new ImageView();//imageView帮忙切割好了一个方框
-        imageView.setImage(imageBack);
-        this.getChildren().add(imageView);
-
+        dealImage(this,".\\images\\backgroundMain.png");
 
         this.getChildren().add(bBistro);
         initPane(bBistro,447,645,bBistro.whichUrl(t.getTime()));
@@ -62,12 +62,15 @@ public class mainFramePane extends Pane {
 
         this.getChildren().add(bKillTime);
         initPane(bKillTime,649,115,bKillTime.whichUrl(t.getTime()));
-        //这里可以给他再做一个别的函数这里先这么用着
+        buttonAction(bKillTime);
         bKillTime.setOnMouseClicked(e->{
-            t.addOne();
-            changeButtonStatues(bLevel,bLevel.whichUrl(t.getTime()));
-
+            if(bKillTime.ifVisiable(t.getTime())){
+                t.addOne();
+                changeButtonStatues(bLevel,bLevel.whichUrl(t.getTime()));
+                changeClockStatues(dot,CI);
+            }
         });
+
 
         this.getChildren().add(clockPane);
         initPane(clockPane,930,-100,".\\images\\clock.png");
@@ -77,15 +80,10 @@ public class mainFramePane extends Pane {
         initDot(dot);
 
         this.getChildren().add(CI);
-        initPane(CI,1014,18,selectClockIndicator());
-        //这个地方是先测试用才CI做的还需要做一个刷新器
-
-
-
+        initPane(CI,980,-70,selectClockIndicator());
     }
 
-
-    public void initPane(Pane p,int x, int y,String url){
+    private void dealImage(Pane p, String url) {
         Image imageBack = null;
         try {
             imageBack = new Image(new FileInputStream(url));
@@ -95,74 +93,59 @@ public class mainFramePane extends Pane {
         ImageView imageView = new ImageView();
         imageView.setImage(imageBack);
         p.getChildren().add(imageView);
+    }
+
+    public void initPane(Pane p,int x, int y,String url){
+        dealImage(p, url);
         p.setLayoutX(x);
         p.setLayoutY(y);
     }
 
-    //得要主界面然后往上加
+
     public void changeButtonStatues(Pane p,String url){
-        Image imageBack = null;
-        try {
-            imageBack = new Image(new FileInputStream(url));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        ImageView imageView = new ImageView();
-        imageView.setImage(imageBack);
-        p.getChildren().add(imageView);
+        dealImage(p, url);
     }
     //改时钟状态一个是图另一个是重设小球位置
-//    public void changeClockStatues(Pane dot,Pane clockPane){
-//        Image imageBack = null;
-//        try {
-//            imageBack = new Image(new FileInputStream(url));
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        ImageView imageView = new ImageView();
-//        imageView.setImage(imageBack);
-//        p.getChildren().add(imageView);//图的状态
-//    }
+    public void changeClockStatues(Pane dot,Pane clockPane){
+        initDot(dot);
+        initPane(clockPane,980,-70,selectClockIndicator());
+    }
 
-    //这个地方涉及到一些判断，所以，最好将button做成一个类，往里面传true，false值来确定
-    //
     public void buttonAction(bButton b){
         int time = t.getTime();
-        if(b.ifVisiable(time)){
+
+        //！！！！似乎放在事件外面这一层if不起作用，不知道为什么，暂时只知道往里面放有用
             b.setOnMouseEntered(e->{
-                System.out.println("-------------进入-------------");
-                changeButtonStatues(b,b.getUrl_hover());
+                if(b.ifVisiable(time))
+                    changeButtonStatues(b,b.getUrl_hover());
                 //有个问题，我看了这个changeStatues似乎是新建了一个图像而不是修改我传进去的bButton,
                 //如果真是这样，那就算再加坐标，也会覆盖了导致他不能触发，我希望他是修改这个东西的图片而不是新建
                 //有这样一种方法，直接singleton，把几个按钮全都singleton就可以
             });
 
             b.setOnMouseExited(e->{
-                System.out.println("-------------离开-------------");
-                changeButtonStatues(b, b.getUrl_pressable());
+                if(b.ifVisiable(time))
+                    changeButtonStatues(b, b.getUrl_pressable());
             });
 
             b.setOnMouseClicked(e->{
-                changeButtonStatues(b, b.getUrl_pressed());
-                //空着转页面的内容
+                if(b.ifVisiable(time)){
+                    changeButtonStatues(b, b.getUrl_pressed());
+                    //空着转页面的内容
+                }
             });
-        }
 
     }
 
-    //测试函数，看怎么让他
 
     public String selectClockIndicator(){
         int time = t.getTime();
-        String urlIndi1 = ".\\images\\bistroButton_preparing.png";//仅测验用
-        String urlIndi2 = ".\\images\\bistroButton_pressable.png";
-        String urlIndi3 = ".\\images\\bistroButton_pressed.png";
         if(time > 5){
-            return urlIndi3;
+            return ".\\images\\night.png";
         }else if (time <3){
-            return urlIndi1;
+            return ".\\images\\morning.png";
         }else
-            return urlIndi2;
+            return ".\\images\\afternoon.png";
     }
 
     public void initDot(Pane d){
@@ -172,11 +155,8 @@ public class mainFramePane extends Pane {
         for (int i = 0; i < ClS.length; i++) {
             ClS[i] = new cLockStatus(dx[i], dy[i], i);
         }
-
         ClS[time].setLocation(d);
     }
-
-
 }
 
 
