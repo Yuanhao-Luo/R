@@ -9,6 +9,7 @@ public class mainFramePane extends Pane {
     Pane clockPane = new Pane();
     Pane p1 = new Pane();//这是进入具体场景按钮
     Pane dot = new Pane();
+    LocationOfColockDot[] locd = new LocationOfColockDot[9];
 
     private static mainFramePane m = new mainFramePane();
 
@@ -58,6 +59,27 @@ public class mainFramePane extends Pane {
                 });
     }
 
+    //did not finish
+//    public void initClock(Pane clockPane, Pane dot, ){
+//        Image img1 = null;
+//        Image img1 = null;
+//        try {
+//            imageBack = new Image(new FileInputStream(url));
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//        ImageView imageView = new ImageView();
+//        imageView.setImage(imageBack);
+//        p.getChildren().add(imageView);
+//        p.setPrefSize(119,52);
+//        p.setLayoutX(x);
+//        p.setLayoutY(y);
+//
+//        p.setOnMouseClicked(e ->{
+//            System.out.println("ohhhh");
+//        });
+//    }
+
     public void initAll(){
 
     }
@@ -66,42 +88,13 @@ public class mainFramePane extends Pane {
         int time = 5;
         double[] dx = {1109, 1080, 1054, 1029, 1004, 985, 972, 964, 964};
         double[] dy = {128, 139, 139, 137, 117, 98, 77, 50, 23};
-        LocationOfColockDot[] locd = new LocationOfColockDot[9];
         for (int i = 0; i < locd.length; i++) {
             locd[i] = new LocationOfColockDot(dx[i], dy[i], i);
         }
 
         locd[time].setLocation(d);
-
-
         }
     }
-    //   00
-//          1109.0
-//        128.0
-//    1
-//          1080.0
-//        139.0
-//    2
-//          1054.0
-//        137.0
-//    3
-//          1029.0
-//        130.0
-//    4
-//          1004.0
-//        117.0
-//    5
-//          985.0
-//        98.0
-//    6
-//          972.0
-//        77.0
-//    7
-//          964.0
-//        50.0
-//    8
-//          964.0
-//        23.0
+
 
 
