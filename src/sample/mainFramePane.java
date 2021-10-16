@@ -16,7 +16,7 @@ public class mainFramePane extends Pane {
     private mainFramePane(){
         Image imageBack = null;
         try {
-            imageBack = new Image(new FileInputStream("E:\\programming\\java\\Test\\R\\images\\backgroundMain.png"));
+            imageBack = new Image(new FileInputStream(".\\images\\backgroundMain.png"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -24,13 +24,13 @@ public class mainFramePane extends Pane {
         imageView.setImage(imageBack);
         this.getChildren().add(imageView);
         this.getChildren().add(p1);
-        initPane(p1,300,400,"E:\\programming\\java\\Test\\R\\images\\hotelButton_pressable.png");
+        initPane(p1,300,400,".\\images\\hotelButton_pressable.png");
 
         this.getChildren().add(clockPane);
-        initPane(clockPane,930,-100,"E:\\programming\\java\\Test\\R\\images\\clock.png");
+        initPane(clockPane,930,-100,".\\images\\clock.png");
 
         this.getChildren().add(dot);
-        initPane(dot,100,100,"E:\\programming\\java\\Test\\R\\images\\dot.png");
+        initPane(dot,100,100,".\\images\\dot.png");
         initDot(dot);
     }
 
