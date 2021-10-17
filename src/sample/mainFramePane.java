@@ -62,14 +62,11 @@ public class mainFramePane extends Pane {
 
         this.getChildren().add(bKillTime);
         initPane(bKillTime,649,115,bKillTime.whichUrl(t.getTime()));
-        buttonAction(bKillTime);
-        bKillTime.setOnMouseClicked(e->{
-            if(bKillTime.ifVisiable(t.getTime())){
-                t.addOne();
-                changeAllButtonStatues();
-                changeClockStatues(dot,CI);
-            }
-        });
+        killTimebuttonAction(bKillTime);
+//        killTimebuttonAction
+//        bKillTime.setOnMouseClicked(e->{
+//
+//        });
 
 
         this.getChildren().add(clockPane);
@@ -109,14 +106,19 @@ public class mainFramePane extends Pane {
 
     public void changeAllButtonStatues(){
         changeButtonStatues(bBistro,bBistro.whichUrl(t.getTime()));
+        buttonAction(bBistro);
         changeButtonStatues(bSea,bSea.whichUrl(t.getTime()));
+        buttonAction(bSea);
         changeButtonStatues(bHotel,bHotel.whichUrl(t.getTime()));
+        buttonAction(bHotel);
         changeButtonStatues(bLevel,bLevel.whichUrl(t.getTime()));
+        buttonAction(bLevel);
         changeButtonStatues(bMaze,bMaze.whichUrl(t.getTime()));
+        buttonAction(bMaze);
         changeButtonStatues(bWS,bWS.whichUrl(t.getTime()));
+        buttonAction(bWS);
         changeButtonStatues(bKillTime,bKillTime.whichUrl(t.getTime()));
-
-
+        killTimebuttonAction(bKillTime);
     }
 
 
@@ -127,7 +129,6 @@ public class mainFramePane extends Pane {
 
     public void buttonAction(bButton b){
         int time = t.getTime();
-        //！！！！似乎放在事件外面这一层if不起作用，不知道为什么，暂时只知道往里面放有用
         b.setOnMouseEntered(e->{
             if(b.ifVisiable(time))
                 changeButtonStatues(b,b.getUrl_hover());
@@ -141,7 +142,27 @@ public class mainFramePane extends Pane {
         b.setOnMouseClicked(e->{
             if(b.ifVisiable(time)){
                 changeButtonStatues(b, b.getUrl_pressed());
-                //空着转页面的内容
+            }
+        });
+    }
+
+    //按钮功能的具体实现类似本图
+    public void killTimebuttonAction(bButton b){
+        int time = t.getTime();
+        buttonAction(b);
+        b.setOnMouseClicked(e->{
+            if(b.ifVisiable(time)){
+                if(time>=6){
+                    t.setTime(8);
+                }else if(time%3 == 0){
+                    t.modifyTime(3);
+                }else if (time%3 == 1){
+                    t.modifyTime(2);
+                }else
+                    t.modifyTime(1);
+                //t.addOne();
+                changeAllButtonStatues();
+                changeClockStatues(dot,CI);
             }
         });
     }
@@ -156,6 +177,7 @@ public class mainFramePane extends Pane {
         }else
             return ".\\images\\afternoon.png";
     }
+
 
     public void initDot(Pane d){
         int time = t.getTime();

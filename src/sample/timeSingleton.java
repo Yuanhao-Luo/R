@@ -4,7 +4,6 @@ public class timeSingleton {
     private static timeSingleton t = new timeSingleton();
     private int time = 0;
 
-
     private timeSingleton(){}
 
     public static timeSingleton getInstance(){
@@ -21,5 +20,9 @@ public class timeSingleton {
 
     public void addOne(){
         time = (time+1)%9;
+    }
+
+    public void modifyTime(int x){
+        time = (time+x)%9;
     }
 }
