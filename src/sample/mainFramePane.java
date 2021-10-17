@@ -63,10 +63,6 @@ public class mainFramePane extends Pane {
         this.getChildren().add(bKillTime);
         initPane(bKillTime,649,115,bKillTime.whichUrl(t.getTime()));
         killTimebuttonAction(bKillTime);
-//        killTimebuttonAction
-//        bKillTime.setOnMouseClicked(e->{
-//
-//        });
 
 
         this.getChildren().add(clockPane);
@@ -160,7 +156,6 @@ public class mainFramePane extends Pane {
                     t.modifyTime(2);
                 }else
                     t.modifyTime(1);
-                //t.addOne();
                 changeAllButtonStatues();
                 changeClockStatues(dot,CI);
             }
