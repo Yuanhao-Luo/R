@@ -66,7 +66,7 @@ public class mainFramePane extends Pane {
         bKillTime.setOnMouseClicked(e->{
             if(bKillTime.ifVisiable(t.getTime())){
                 t.addOne();
-                changeButtonStatues(bLevel,bLevel.whichUrl(t.getTime()));
+                changeAllButtonStatues();
                 changeClockStatues(dot,CI);
             }
         });
@@ -106,6 +106,20 @@ public class mainFramePane extends Pane {
         dealImage(p, url);
     }
 
+
+    public void changeAllButtonStatues(){
+        changeButtonStatues(bBistro,bBistro.whichUrl(t.getTime()));
+        changeButtonStatues(bSea,bSea.whichUrl(t.getTime()));
+        changeButtonStatues(bHotel,bHotel.whichUrl(t.getTime()));
+        changeButtonStatues(bLevel,bLevel.whichUrl(t.getTime()));
+        changeButtonStatues(bMaze,bMaze.whichUrl(t.getTime()));
+        changeButtonStatues(bWS,bWS.whichUrl(t.getTime()));
+        changeButtonStatues(bKillTime,bKillTime.whichUrl(t.getTime()));
+
+
+    }
+
+
     public void changeClockStatues(Pane dot,Pane clockPane){
         initDot(dot);
         initPane(clockPane,980,-70,selectClockIndicator());
@@ -113,7 +127,6 @@ public class mainFramePane extends Pane {
 
     public void buttonAction(bButton b){
         int time = t.getTime();
-
         //！！！！似乎放在事件外面这一层if不起作用，不知道为什么，暂时只知道往里面放有用
         b.setOnMouseEntered(e->{
             if(b.ifVisiable(time))
@@ -131,7 +144,6 @@ public class mainFramePane extends Pane {
                 //空着转页面的内容
             }
         });
-
     }
 
 
