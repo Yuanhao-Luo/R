@@ -5,7 +5,7 @@ import javafx.scene.layout.Pane;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class mainFramePane extends Pane {
+public class MainFramePane extends Pane {
     boolean[] bistroAvailable = {false,false,false,true,true,true,true,true,false};
     boolean[] seaAvailable = {true,true,true,true,true,true,false,false,false};
     boolean[] hotelAvailable = {false,true,true,true,true,true,true,true,true};
@@ -14,26 +14,26 @@ public class mainFramePane extends Pane {
     boolean[] WSAvailable = {false,false,false,true,true,true,true,true,false};
     boolean[] killTimeAvailable = {true,true,true,true,true,true,true,true,false};
 
-    bButton bBistro = new bButton(".\\images\\bistroButton_hover.png",".\\images\\bistroButton_preparing.png",".\\images\\bistroButton_pressable.png",".\\images\\bistroButton_pressed.png",bistroAvailable);
-    bButton bSea = new bButton(".\\images\\homeofseaButton_hover.png",".\\images\\homeofseaButton_preparing.png",".\\images\\homeofseaButton_pressable.png",".\\images\\homeofseaButton_pressed.png",seaAvailable);
-    bButton bHotel = new bButton(".\\images\\hotelButton_hover.png",".\\images\\hotelButton_preparing.png",".\\images\\hotelButton_pressable.png",".\\images\\hotelButton_pressed.png",hotelAvailable);
-    bButton bLevel = new bButton(".\\images\\levelhouseButton_hover.png",".\\images\\levelhouseButton_preparing.png",".\\images\\levelhouseButton_pressable.png",".\\images\\levelhouseButton_pressed.png",levelAvailable);
-    bButton bMaze = new bButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable);
-    bButton bWS = new bButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable);
-    bButton bKillTime = new bButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable);
+    MapButton bBistro = new MapButton(".\\images\\bistroButton_hover.png",".\\images\\bistroButton_preparing.png",".\\images\\bistroButton_pressable.png",".\\images\\bistroButton_pressed.png",bistroAvailable);
+    MapButton bSea = new MapButton(".\\images\\homeofseaButton_hover.png",".\\images\\homeofseaButton_preparing.png",".\\images\\homeofseaButton_pressable.png",".\\images\\homeofseaButton_pressed.png",seaAvailable);
+    MapButton bHotel = new MapButton(".\\images\\hotelButton_hover.png",".\\images\\hotelButton_preparing.png",".\\images\\hotelButton_pressable.png",".\\images\\hotelButton_pressed.png",hotelAvailable);
+    MapButton bLevel = new MapButton(".\\images\\levelhouseButton_hover.png",".\\images\\levelhouseButton_preparing.png",".\\images\\levelhouseButton_pressable.png",".\\images\\levelhouseButton_pressed.png",levelAvailable);
+    MapButton bMaze = new MapButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable);
+    MapButton bWS = new MapButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable);
+    MapButton bKillTime = new MapButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable);
 
     Pane clockPane = new Pane();
     Pane dot = new Pane();
     Pane CI = new Pane();
-    cLockStatus[] ClS = new cLockStatus[9];
+    CLockStatus[] ClS = new CLockStatus[9];
 
-    private static mainFramePane m = new mainFramePane();
-    timeSingleton t = timeSingleton.getInstance();
-    public static mainFramePane getInstance(){
+    private static MainFramePane m = new MainFramePane();
+    TimeSingleton t = TimeSingleton.getInstance();
+    public static MainFramePane getInstance(){
         return m;
     }
 
-    private mainFramePane(){
+    private MainFramePane(){
         dealImage(this,".\\images\\backgroundMain.png");
 
         this.getChildren().add(bBistro);
@@ -123,7 +123,7 @@ public class mainFramePane extends Pane {
         initPane(clockPane,980,-70,selectClockIndicator());
     }
 
-    public void buttonAction(bButton b){
+    public void buttonAction(MapButton b){
         int time = t.getTime();
         b.setOnMouseEntered(e->{
             if(b.ifVisiable(time))
@@ -143,7 +143,7 @@ public class mainFramePane extends Pane {
     }
 
     //按钮功能的具体实现类似本图
-    public void killTimebuttonAction(bButton b){
+    public void killTimebuttonAction(MapButton b){
         int time = t.getTime();
         buttonAction(b);
         b.setOnMouseClicked(e->{
@@ -179,7 +179,7 @@ public class mainFramePane extends Pane {
         double[] dx = {1109, 1080, 1054, 1029, 1004, 985, 972, 964, 964};
         double[] dy = {128, 139, 139, 137, 117, 98, 77, 50, 23};
         for (int i = 0; i < ClS.length; i++) {
-            ClS[i] = new cLockStatus(dx[i], dy[i], i);
+            ClS[i] = new CLockStatus(dx[i], dy[i], i);
         }
         ClS[time].setLocation(d);
     }

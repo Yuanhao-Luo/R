@@ -2,7 +2,7 @@ package sample;
 
 import javafx.scene.layout.Pane;
 
-public class bButton extends Pane {
+public class MapButton extends Pane {
     private String url_hover;
     private String url_preparing;
     private String url_pressable;
@@ -10,7 +10,7 @@ public class bButton extends Pane {
 
     public boolean[] available = {true,true,true,true,false,false,false,false,false};//表示何时处于可用状态的
 
-    public bButton(String s0,String s1,String s2, String s3,boolean[] available){
+    public MapButton(String s0, String s1, String s2, String s3, boolean[] available){
         this.url_hover = s0;
         this.url_preparing = s1;
         this.url_pressable = s2;

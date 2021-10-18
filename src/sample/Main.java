@@ -6,8 +6,8 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    mainFramePane m = mainFramePane.getInstance();
-    timeSingleton t = timeSingleton.getInstance();
+    MainFramePane m = MainFramePane.getInstance();
+    TimeSingleton t = TimeSingleton.getInstance();
     @Override
     public void start(Stage primaryStage) throws Exception{
         primaryStage.setTitle("Hello World");

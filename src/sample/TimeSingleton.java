@@ -1,12 +1,12 @@
 package sample;
 
-public class timeSingleton {
-    private static timeSingleton t = new timeSingleton();
+public class TimeSingleton {
+    private static TimeSingleton t = new TimeSingleton();
     private int time = 0;
 
-    private timeSingleton(){}
+    private TimeSingleton(){}
 
-    public static timeSingleton getInstance(){
+    public static TimeSingleton getInstance(){
         return t;
     }
 
