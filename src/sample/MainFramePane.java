@@ -41,8 +41,6 @@ public class MainFramePane extends Pane {
     Pane HPBlackImg = new Pane();
     Label HPCurrentLabel = new Label("" + HPCurrent);
 
-    Pane openTent = new Pane();
-
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
 
@@ -236,6 +234,13 @@ public class MainFramePane extends Pane {
         b.setOnMouseClicked(e->{
             tentPane tentPane = new tentPane();
             m.getChildren().add(tentPane);
+        });
+    }
+
+    public void closeTentbuttonAction(MapButton b){
+        b.setOnMouseClicked(e->{
+            tentPane tentPane = new tentPane();
+            m.getChildren().remove(tentPane);
         });
     }
 
