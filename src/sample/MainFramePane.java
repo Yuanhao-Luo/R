@@ -1,4 +1,5 @@
 package sample;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -17,6 +18,8 @@ public class MainFramePane extends Pane {
     boolean[] mazeAvailable = {true,true,true,true,true,true,true,true,false};
     boolean[] WSAvailable = {false,false,false,true,true,true,true,true,false};
     boolean[] killTimeAvailable = {true,true,true,true,true,true,true,true,false};
+    //tem
+    boolean[] OpenTentAvailable = {true,true,true,true,true,true,true,true,true};
     int HPTotal = 120;
     int HPCurrent = 8;
 
@@ -28,6 +31,8 @@ public class MainFramePane extends Pane {
     MapButton bWS = new MapButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable);
     MapButton bKillTime = new MapButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable);
 
+    MapButton bOpenTent = new MapButton("C:\\Users\\a\\Desktop\\大三上\\rance\\button.png","C:\\Users\\a\\Desktop\\大三上\\rance\\button.png","C:\\Users\\a\\Desktop\\大三上\\rance\\button.png","C:\\Users\\a\\Desktop\\大三上\\rance\\button.png",OpenTentAvailable);
+
     Pane clockPane = new Pane();
     Pane HPBackgroundPane = new Pane();
     Pane HPCurrentImg = new Pane();
@@ -36,6 +41,7 @@ public class MainFramePane extends Pane {
     Pane HPBlackImg = new Pane();
     Label HPCurrentLabel = new Label("" + HPCurrent);
 
+    Pane openTent = new Pane();
 
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
@@ -77,6 +83,10 @@ public class MainFramePane extends Pane {
         initPane(bKillTime,649,115,bKillTime.whichUrl(t.getTime()));
         killTimebuttonAction(bKillTime);
 
+//
+        this.getChildren().add(bOpenTent);
+        initPane(bOpenTent,900,700,bOpenTent.whichUrl(t.getTime()));
+        openTentbuttonAction(bOpenTent);
 
         this.getChildren().add(clockPane);
         initPane(clockPane,930,-100,".\\images\\clock.png");
@@ -198,7 +208,6 @@ public class MainFramePane extends Pane {
         killTimebuttonAction(bKillTime);
     }
 
-
     public void changeClockStatues(Pane dot,Pane clockPane){
         initDot(dot);
         initPane(clockPane,980,-70,selectClockIndicator());
@@ -220,6 +229,13 @@ public class MainFramePane extends Pane {
             if(b.ifVisiable(time)){
                 changeButtonStatues(b, b.getUrl_pressed());
             }
+        });
+    }
+
+    public void openTentbuttonAction(MapButton b){
+        b.setOnMouseClicked(e->{
+            tentPane tentPane = new tentPane();
+            m.getChildren().add(tentPane);
         });
     }
 
