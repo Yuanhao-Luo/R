@@ -31,7 +31,7 @@ public class MainFramePane extends Pane {
     MapButton bWS = new MapButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable);
     MapButton bKillTime = new MapButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable);
 
-    MapButton bOpenTent = new MapButton("C:\\Users\\a\\Desktop\\大三上\\rance\\button.png","C:\\Users\\a\\Desktop\\大三上\\rance\\button.png","C:\\Users\\a\\Desktop\\大三上\\rance\\button.png","C:\\Users\\a\\Desktop\\大三上\\rance\\button.png",OpenTentAvailable);
+    MapButton bOpenTent = new MapButton(".\\images\\tentButton_hover.png",".\\images\\tentButton_pressable.png",".\\images\\tentButton_pressable.png",".\\images\\tentButton_pressedf.png",OpenTentAvailable);
 
     Pane clockPane = new Pane();
     Pane HPBackgroundPane = new Pane();
@@ -40,6 +40,7 @@ public class MainFramePane extends Pane {
     Pane CI = new Pane();
     Pane HPBlackImg = new Pane();
     Label HPCurrentLabel = new Label("" + HPCurrent);
+    tentPane tentPane = new tentPane();
 
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
@@ -54,31 +55,31 @@ public class MainFramePane extends Pane {
         dealImage(this,".\\images\\backgroundMain.png");
 
         this.getChildren().add(bBistro);
-        initPane(bBistro,447,645,bBistro.whichUrl(t.getTime()));
+        initPane(bBistro,360,560,bBistro.whichUrl(t.getTime()));
         buttonAction(bBistro);
 
         this.getChildren().add(bSea);
-        initPane(bSea,780,643,bSea.whichUrl(t.getTime()));
+        initPane(bSea,730,589,bSea.whichUrl(t.getTime()));
         buttonAction(bSea);
 
         this.getChildren().add(bHotel);
-        initPane(bHotel,262,560,bHotel.whichUrl(t.getTime()));
+        initPane(bHotel,217,505,bHotel.whichUrl(t.getTime()));
         buttonAction(bHotel);
 
         this.getChildren().add(bLevel);
-        initPane(bLevel,607,674,bLevel.whichUrl(t.getTime()));
+        initPane(bLevel,550,620,bLevel.whichUrl(t.getTime()));
         buttonAction(bLevel);
 
         this.getChildren().add(bMaze);
-        initPane(bMaze,498,771,bMaze.whichUrl(t.getTime()));
+        initPane(bMaze,460,705,bMaze.whichUrl(t.getTime()));
         buttonAction(bMaze);
 
         this.getChildren().add(bWS);
-        initPane(bWS,660,546,bWS.whichUrl(t.getTime()));
+        initPane(bWS,600,494,bWS.whichUrl(t.getTime()));
         buttonAction(bWS);
 
         this.getChildren().add(bKillTime);
-        initPane(bKillTime,649,115,bKillTime.whichUrl(t.getTime()));
+        initPane(bKillTime,580,60,bKillTime.whichUrl(t.getTime()));
         killTimebuttonAction(bKillTime);
 
 //
@@ -87,41 +88,41 @@ public class MainFramePane extends Pane {
         openTentbuttonAction(bOpenTent);
 
         this.getChildren().add(clockPane);
-        initPane(clockPane,930,-100,".\\images\\clock.png");
+        initPane(clockPane,840,-100,".\\images\\clock.png");
 
         this.getChildren().add(dot);
         initPane(dot,100,100,".\\images\\dot.png");
         initDot(dot);
 
         this.getChildren().add(CI);
-        initPane(CI,980,-70,selectClockIndicator());
+        initPane(CI,890,-65,selectClockIndicator());
 
         this.getChildren().add(HPBackgroundPane);
-        initPane(HPBackgroundPane,30,30,".\\images\\HPBackground.png");
+        initPane(HPBackgroundPane,-15,15,".\\images\\HPBackground.png");
 
-        int HPCurrentImgLeft = 107;
-        int HPCurrentImgRight = 233;
+        int HPCurrentImgLeft = 61;
+        int HPCurrentImgRight = 190;
         this.getChildren().add(HPCurrentImg);
-        initPane(HPCurrentImg,HPCurrentImgLeft,101,".\\images\\HPCurrent.png");
+        initPane(HPCurrentImg,HPCurrentImgLeft,86,".\\images\\HPCurrent.png");
         //记录一下血条和血条背景还有几个数字的相对位置差值，方便以后调整
 
         double ratioOfHP = (double) (HPTotal - HPCurrent) / (double)HPTotal;
         int HPBlackImgLeft = (int) (HPCurrentImgLeft + (HPCurrentImgRight - HPCurrentImgLeft) * (1 - ratioOfHP));//这个left是左边的意思不是剩余的意思
         int HPBlackImgWidth = (int)((HPCurrentImgRight - HPCurrentImgLeft) * ratioOfHP) + 1;
         this.getChildren().add(HPBlackImg);
-        initPaneWidthHeight(HPBlackImg,HPBlackImgLeft,101,".\\images\\black.png",HPBlackImgWidth,2);
+        initPaneWidthHeight(HPBlackImg,HPBlackImgLeft,86,".\\images\\black.png",HPBlackImgWidth,2);
         //调整位置的时候要特别注意上面的几个值
 
         this.getChildren().add(HPCurrentLabel);
         HPCurrentLabel.setFont(Font.font("Arial",40));
         if(HPCurrent >= 100){
-            initLabel(HPCurrentLabel,133,55);
+            initLabel(HPCurrentLabel,90,40);
         }
         else if(HPCurrent <= 9){
-            initLabel(HPCurrentLabel,155,55);
+            initLabel(HPCurrentLabel,110,40);
         }
         else{
-            initLabel(HPCurrentLabel,144,55);
+            initLabel(HPCurrentLabel,100,40);
         }
 
 
@@ -136,9 +137,12 @@ public class MainFramePane extends Pane {
         }
 
         this.getChildren().add(HPTotalLabel);
-        initLabel(HPTotalLabel,142,108);
+        initLabel(HPTotalLabel,95,93);
         HPTotalLabel.setFont(Font.font("Arial",28));
         HPTotalLabel.setTextFill(Color.web("#000000"));
+
+        tentPane.setVisible(false);
+        this.getChildren().add(tentPane);
     }
 
     private void dealImage(Pane p, String url) {
@@ -232,8 +236,8 @@ public class MainFramePane extends Pane {
 
     public void openTentbuttonAction(MapButton b){
         b.setOnMouseClicked(e->{
-            tentPane tentPane = new tentPane();
-            m.getChildren().add(tentPane);
+            tentPane.setVisible(true);
+
         });
     }
 
