@@ -4,7 +4,7 @@ import sample.TimeSingleton;
 
 public class MapButton extends GeneralButton {
     public boolean[] available = {true,true,true,true,false,false,false,false,false};//表示何时处于可用状态的
-    static TimeSingleton t = TimeSingleton.getInstance();
+    TimeSingleton t = TimeSingleton.getInstance();
 
 
 
@@ -24,7 +24,7 @@ public class MapButton extends GeneralButton {
             return url_preparing;
     }
 
-    public static void buttonAction(MapButton b){
+    public void buttonAction(MapButton b){
         int time = t.getTime();
         b.setOnMouseEntered(e->{
             if(b.ifVisiable(time))

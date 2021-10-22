@@ -54,27 +54,27 @@ public class MainFramePane extends Pane {
 
         this.getChildren().add(bBistro);
         initPane(bBistro,360,560,bBistro.whichUrl(t.getTime()));
-        MapButton.buttonAction(bBistro);
+        bBistro.buttonAction(bBistro);
 
         this.getChildren().add(bSea);
         initPane(bSea,730,589,bSea.whichUrl(t.getTime()));
-        MapButton.buttonAction(bSea);
+        bSea.buttonAction(bSea);
 
         this.getChildren().add(bHotel);
         initPane(bHotel,217,505,bHotel.whichUrl(t.getTime()));
-        MapButton.buttonAction(bHotel);
+        bHotel.buttonAction(bHotel);
 
         this.getChildren().add(bLevel);
         initPane(bLevel,550,620,bLevel.whichUrl(t.getTime()));
-        MapButton.buttonAction(bLevel);
+        bLevel.buttonAction(bLevel);
 
         this.getChildren().add(bMaze);
         initPane(bMaze,460,705,bMaze.whichUrl(t.getTime()));
-        MapButton.buttonAction(bMaze);
+        bMaze.buttonAction(bMaze);
 
         this.getChildren().add(bWS);
         initPane(bWS,600,494,bWS.whichUrl(t.getTime()));
-        MapButton.buttonAction(bWS);
+        bWS.buttonAction(bWS);
 
         this.getChildren().add(bKillTime);
         initPane(bKillTime,580,60,bKillTime.whichUrl(t.getTime()));
@@ -169,17 +169,17 @@ public class MainFramePane extends Pane {
 
     public void changeAllButtonStatues(){
         changeButtonStatues(bBistro,bBistro.whichUrl(t.getTime()));
-        MapButton.buttonAction(bBistro);
+        bBistro.buttonAction(bBistro);
         changeButtonStatues(bSea,bSea.whichUrl(t.getTime()));
-        MapButton.buttonAction(bSea);
+        bSea.buttonAction(bSea);
         changeButtonStatues(bHotel,bHotel.whichUrl(t.getTime()));
-        MapButton.buttonAction(bHotel);
+        bHotel.buttonAction(bHotel);
         changeButtonStatues(bLevel,bLevel.whichUrl(t.getTime()));
-        MapButton.buttonAction(bLevel);
+        bLevel.buttonAction(bLevel);
         changeButtonStatues(bMaze,bMaze.whichUrl(t.getTime()));
-        MapButton.buttonAction(bMaze);
+        bMaze.buttonAction(bMaze);
         changeButtonStatues(bWS,bWS.whichUrl(t.getTime()));
-        MapButton.buttonAction(bWS);
+        bWS.buttonAction(bWS);
         changeButtonStatues(bKillTime,bKillTime.whichUrl(t.getTime()));
         killTimebuttonAction(bKillTime);
     }
@@ -200,7 +200,7 @@ public class MainFramePane extends Pane {
     //按钮功能的具体实现类似本图
     public void killTimebuttonAction(MapButton b){
         int time = t.getTime();
-        MapButton.buttonAction(b);
+        b.buttonAction(b);
         b.setOnMouseClicked(e->{
             if(b.ifVisiable(time)){
                 if(time>=6){
