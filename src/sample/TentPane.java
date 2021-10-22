@@ -1,21 +1,17 @@
 package sample;
 
-import javafx.event.EventHandler;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
+import sample.buttons.CloseTentButton;
 
 
-public class tentPane extends Pane {
+public class TentPane extends Pane {
 
-    public tentPane(){
+    public TentPane(){
         Image imageTent1 = new Image("file:.\\images\\tent1.png");
         Image imageTent2 = new Image("file:.\\images\\tent2.png");
         Image returnButton = new Image("file:.\\images\\tentButton_pressable.png");
@@ -94,15 +90,15 @@ public class tentPane extends Pane {
 //        this.getChildren().add(condition);
 //        this.getChildren().add(note);
 
-        boolean[] alltrue = {true,true,true,true,true,true,true,true,true};
-        MapButton returnButtonPane = new MapButton(".\\images\\tentButton_hover.png", ".\\images\\tentButton_pressable.png", ".\\images\\tentButton_pressable.png", ".\\images\\tentButton_pressed.png", alltrue);
-        returnButtonPane.getChildren().add(returnButtonimv);
-        returnButtonPane.setOnMouseClicked(e -> {
+        CloseTentButton closeTentButton = new CloseTentButton(".\\images\\normalButton200_hover.png",".\\images\\normalButton200_unpressable.png",".\\images\\normalButton200_pressable.png",".\\images\\normalButton200_pressed.png");
+        closeTentButton.getChildren().add(returnButtonimv);
+        closeTentButton.buttonAction(closeTentButton);
+        closeTentButton.setOnMouseClicked(e -> {
             MainFramePane.getInstance().tentPane.setVisible(false);
         });
-        returnButtonPane.setLayoutX(900);
-        returnButtonPane.setLayoutY(700);
-        this.getChildren().add(returnButtonPane);
+        closeTentButton.setLayoutX(900);
+        closeTentButton.setLayoutY(700);
+        this.getChildren().add(closeTentButton);
 
     }
 
