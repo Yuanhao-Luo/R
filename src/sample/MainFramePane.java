@@ -87,8 +87,8 @@ public class MainFramePane extends Pane {
         bKillTime.setOnMouseClicked(new KillTime());
 //
         this.getChildren().add(bOpenTent);
-        setXY(bOpenTent, 900, 700);
-        initLabel(bOpenTent.openTentLabel,0,0);
+        setXY(bOpenTent, 820, 720);
+        initLabel(bOpenTent.openTentLabel,47,6);
 
         this.getChildren().add(clockImv);
         setXY(clockImv, 840, -100);
@@ -235,8 +235,8 @@ public class MainFramePane extends Pane {
 
     public void initDot(Pane d){
         int time = t.getCurrentTime();
-        double[] dx = {1109, 1080, 1054, 1029, 1004, 985, 972, 964, 964};
-        double[] dy = {128, 139, 139, 137, 117, 98, 77, 50, 23};
+        double[] dx = {1011, 985, 958, 934, 908, 890, 877, 870, 869};
+        double[] dy = {123, 129, 131, 125, 112, 90, 68, 43, 17};
         for (int i = 0; i < ClS.length; i++) {
             ClS[i] = new ClockStatus(dx[i], dy[i], i);
         }
