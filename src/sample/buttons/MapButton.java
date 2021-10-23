@@ -38,23 +38,23 @@ public class MapButton extends GeneralButton {
             return url_preparing;
     }
 
-//    public void addButtonEvent(){
-//        setOnMouseEntered(e->{
-//            if(ifVisiable(t.getCurrentTime()))
-//                changeImage(getUrl_hover());
-//        });
-//
-//        setOnMouseExited(e->{
-//            if(ifVisiable(t.getCurrentTime()))
-//                changeImage(getUrl_pressable());
-//        });
-//
-//        setOnMousePressed(e->{
-//            if(ifVisiable(t.getCurrentTime())){
-//                changeImage(getUrl_pressed());
-//            }
-//        });
-//    }
+    public void addButtonEvent(){
+        setOnMouseEntered(e->{
+            if(ifVisiable(t.getCurrentTime()))
+                changeImage(getUrl_hover());
+        });
+
+        setOnMouseExited(e->{
+            if(ifVisiable(t.getCurrentTime()))
+                changeImage(getUrl_pressable());
+        });
+
+        setOnMousePressed(e->{
+            if(ifVisiable(t.getCurrentTime())){
+                changeImage(getUrl_pressed());
+            }
+        });
+    }
 
     public boolean ifVisiable(int i){
         return this.available[i];

@@ -85,12 +85,12 @@ public class TentPane extends Pane {
 //        this.getChildren().add(note);
 
         CloseTentButton closeTentButton = new CloseTentButton(".\\images\\normalButton200_hover.png",".\\images\\normalButton200_unpressable.png",".\\images\\normalButton200_pressable.png",".\\images\\normalButton200_pressed.png");
-        closeTentButton.addButtonEvent();
-        closeTentButton.setOnMouseClicked(e -> {
-            MainFramePane.getInstance().tentPane.setVisible(false);
-        });
-        closeTentButton.setLayoutX(900);
-        closeTentButton.setLayoutY(700);
+//        closeTentButton.addButtonEvent();
+//        closeTentButton.setOnMouseClicked(e -> {
+//            MainFramePane.getInstance().tentPane.setVisible(false);
+//        });
+//        closeTentButton.setLayoutX(900);
+//        closeTentButton.setLayoutY(700);
         this.getChildren().add(closeTentButton);
 
     }
