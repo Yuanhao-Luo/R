@@ -14,7 +14,6 @@ public class TentPane extends Pane {
     public TentPane(){
         Image imageTent1 = new Image("file:.\\images\\tent1.png");
         Image imageTent2 = new Image("file:.\\images\\tent2.png");
-        Image returnButton = new Image("file:.\\images\\tentButton_pressable.png");
 
         ImageView tent1 = new ImageView();
         tent1.setImage(imageTent1);
@@ -33,14 +32,6 @@ public class TentPane extends Pane {
 //        tent2.setFitWidth(1150);
         tent2.setX(tent2Left);
         tent2.setY(tent2Top);
-
-        ImageView returnButtonimv = new ImageView();
-        returnButtonimv.setImage(returnButton);
-        returnButtonimv.setFitHeight(returnButton.getHeight());
-        returnButtonimv.setFitWidth(returnButton.getWidth());
-
-
-
 
         Label level = new Label("?");
         level.setLayoutX(460 -100 + tent1Left);
@@ -76,7 +67,6 @@ public class TentPane extends Pane {
         Label condition = new Label("9");
         Label note = new Label("10");
 
-
         this.getChildren().add(tent1);
         this.getChildren().add(tent2);
 
@@ -86,18 +76,8 @@ public class TentPane extends Pane {
         this.getChildren().add(exp);
         this.getChildren().add(gold);
         this.getChildren().add(chip);
-//        this.getChildren().add(skill);
-//        this.getChildren().add(condition);
-//        this.getChildren().add(note);
 
         CloseTentButton closeTentButton = new CloseTentButton(".\\images\\normalButton200_hover.png",".\\images\\normalButton200_unpressable.png",".\\images\\normalButton200_pressable.png",".\\images\\normalButton200_pressed.png");
-        closeTentButton.getChildren().add(returnButtonimv);
-        closeTentButton.buttonAction(closeTentButton);
-        closeTentButton.setOnMouseClicked(e -> {
-            MainFramePane.getInstance().tentPane.setVisible(false);
-        });
-        closeTentButton.setLayoutX(900);
-        closeTentButton.setLayoutY(700);
         this.getChildren().add(closeTentButton);
 
     }

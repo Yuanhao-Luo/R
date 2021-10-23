@@ -13,61 +13,51 @@ public class GeneralButton extends Pane {
     public String url_pressable;
     public String url_pressed;
     public boolean available = true;
+    public ImageView imageView = new ImageView();
 
     public GeneralButton(String s0, String s1, String s2, String s3){
         this.url_hover = s0;
         this.url_preparing = s1;
         this.url_pressable = s2;
         this.url_pressed = s3;
+        try {
+            imageView.setImage(new Image(new FileInputStream(whichUrl())));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        getChildren().add(imageView);
+        addButtonEvent();
     }
 
-    public void buttonAction(GeneralButton b){
-        b.setOnMouseEntered(e->{
-            if(b.available)
-                changeButtonStatues(b,b.getUrl_hover());
+    public GeneralButton(){ }
+
+    public void addButtonEvent(){
+        setOnMouseEntered(e->{
+            if(available)
+                changeImage(getUrl_hover());
         });
 
-        b.setOnMouseExited(e->{
-            if(b.available)
-                changeButtonStatues(b, b.getUrl_pressable());
+        setOnMouseExited(e->{
+            if(available)
+                changeImage(getUrl_pressable());
         });
 
-        b.setOnMousePressed(e->{
-            if(b.available){
-                changeButtonStatues(b, b.getUrl_pressed());
+        setOnMousePressed(e->{
+            if(available){
+                changeImage(getUrl_pressed());
             }
         });
     }
 
-    public static void changeButtonStatues(Pane p, String url){
-        dealImage(p, url);
-    }
 
-    public static void dealImage(Pane p, String url) {
+    public void changeImage(String url) {
         Image imageBack = null;
         try {
             imageBack = new Image(new FileInputStream(url));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        ImageView imageView = new ImageView();
         imageView.setImage(imageBack);
-
-        p.getChildren().add(imageView);
-    }
-
-    public static void dealImage(Pane p, String url, int width, int height) {
-        Image imageBack = null;
-        try {
-            imageBack = new Image(new FileInputStream(url));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        ImageView imageView = new ImageView();
-        imageView.setImage(imageBack);
-        imageView.setFitWidth(width);
-        imageView.setFitHeight(height);
-        p.getChildren().add(imageView);
     }
 
     public String whichUrl() {
@@ -76,7 +66,6 @@ public class GeneralButton extends Pane {
         }else
             return url_preparing;
     }
-
 
     public boolean isAvailable() {
         return available;
