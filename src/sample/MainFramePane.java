@@ -53,32 +53,32 @@ public class MainFramePane extends Pane {
         GeneralButton.dealImage(this,".\\images\\backgroundMain.png");
 
         this.getChildren().add(bBistro);
-        initPane(bBistro,360,560,bBistro.whichUrl(t.getTime()));
-        bBistro.buttonAction(bBistro);
+        initPane(bBistro,360,560,bBistro.whichUrl(t.getCurrentTime()));
+        bBistro.buttonAction(bBistro,1);
 
         this.getChildren().add(bSea);
-        initPane(bSea,730,589,bSea.whichUrl(t.getTime()));
-        bSea.buttonAction(bSea);
+        initPane(bSea,730,589,bSea.whichUrl(t.getCurrentTime()));
+        bSea.buttonAction(bSea,1);
 
         this.getChildren().add(bHotel);
-        initPane(bHotel,217,505,bHotel.whichUrl(t.getTime()));
-        bHotel.buttonAction(bHotel);
+        initPane(bHotel,217,505,bHotel.whichUrl(t.getCurrentTime()));
+        bHotel.buttonAction(bHotel,1);
 
         this.getChildren().add(bLevel);
-        initPane(bLevel,550,620,bLevel.whichUrl(t.getTime()));
-        bLevel.buttonAction(bLevel);
+        initPane(bLevel,550,620,bLevel.whichUrl(t.getCurrentTime()));
+        bLevel.buttonAction(bLevel,1);
 
         this.getChildren().add(bMaze);
-        initPane(bMaze,460,705,bMaze.whichUrl(t.getTime()));
-        bMaze.buttonAction(bMaze);
+        initPane(bMaze,460,705,bMaze.whichUrl(t.getCurrentTime()));
+        bMaze.buttonAction(bMaze,1);
 
         this.getChildren().add(bWS);
-        initPane(bWS,600,494,bWS.whichUrl(t.getTime()));
-        bWS.buttonAction(bWS);
+        initPane(bWS,600,494,bWS.whichUrl(t.getCurrentTime()));
+        bWS.buttonAction(bWS,1);
 
         this.getChildren().add(bKillTime);
-        initPane(bKillTime,580,60,bKillTime.whichUrl(t.getTime()));
-        killTimebuttonAction(bKillTime);
+        initPane(bKillTime,580,60,bKillTime.whichUrl(t.getCurrentTime()));
+        bKillTime.buttonAction(bKillTime,2);
 //
         this.getChildren().add(bOpenTent);
         initPane(bOpenTent,900,700,bOpenTent.whichUrl());
@@ -168,20 +168,20 @@ public class MainFramePane extends Pane {
 
 
     public void changeAllButtonStatues(){
-        changeButtonStatues(bBistro,bBistro.whichUrl(t.getTime()));
-        bBistro.buttonAction(bBistro);
-        changeButtonStatues(bSea,bSea.whichUrl(t.getTime()));
-        bSea.buttonAction(bSea);
-        changeButtonStatues(bHotel,bHotel.whichUrl(t.getTime()));
-        bHotel.buttonAction(bHotel);
-        changeButtonStatues(bLevel,bLevel.whichUrl(t.getTime()));
-        bLevel.buttonAction(bLevel);
-        changeButtonStatues(bMaze,bMaze.whichUrl(t.getTime()));
-        bMaze.buttonAction(bMaze);
-        changeButtonStatues(bWS,bWS.whichUrl(t.getTime()));
-        bWS.buttonAction(bWS);
-        changeButtonStatues(bKillTime,bKillTime.whichUrl(t.getTime()));
-        killTimebuttonAction(bKillTime);
+        changeButtonStatues(bBistro,bBistro.whichUrl(t.getCurrentTime()));
+        bBistro.buttonAction(bBistro,1);
+        changeButtonStatues(bSea,bSea.whichUrl(t.getCurrentTime()));
+        bSea.buttonAction(bSea,1);
+        changeButtonStatues(bHotel,bHotel.whichUrl(t.getCurrentTime()));
+        bHotel.buttonAction(bHotel,1);
+        changeButtonStatues(bLevel,bLevel.whichUrl(t.getCurrentTime()));
+        bLevel.buttonAction(bLevel,1);
+        changeButtonStatues(bMaze,bMaze.whichUrl(t.getCurrentTime()));
+        bMaze.buttonAction(bMaze,1);
+        changeButtonStatues(bWS,bWS.whichUrl(t.getCurrentTime()));
+        bWS.buttonAction(bWS,1);
+        changeButtonStatues(bKillTime,bKillTime.whichUrl(t.getCurrentTime()));
+        bKillTime.buttonAction(bKillTime,2);
     }
 
     public void changeClockStatues(Pane dot,Pane clockPane){
@@ -196,30 +196,57 @@ public class MainFramePane extends Pane {
         });
     }
 
+    public void bKillTimeChangeTime(MapButton b){
+        int time = t.getCurrentTime();
+        if (b.ifVisiable(time)){
+            if(time>=6){
+                t.setCurrentTime(8);
+            }else if(time%3 == 0){
+                t.addXTime(3);
+            }else if (time%3 == 1){
+                t.addXTime(2);
+            }else
+                t.addXTime(1);
+            changeAllButtonStatues();
+            changeClockStatues(dot,clockPane);
+        }
 
-    //按钮功能的具体实现类似本图
-    public void killTimebuttonAction(MapButton b){
-        int time = t.getTime();
-        b.buttonAction(b);
-        b.setOnMouseClicked(e->{
-            if(b.ifVisiable(time)){
-                if(time>=6){
-                    t.setTime(8);
-                }else if(time%3 == 0){
-                    t.modifyTime(3);
-                }else if (time%3 == 1){
-                    t.modifyTime(2);
-                }else
-                    t.modifyTime(1);
-                changeAllButtonStatues();
-                changeClockStatues(dot,CI);
-            }
-        });
+    }
+
+    public void timeChange(MapButton b){
+        int time = t.getCurrentTime();
+        if (b.ifVisiable(time)){
+            t.addOne();
+            changeAllButtonStatues();
+            changeClockStatues(dot,clockPane);
+        }
+
     }
 
 
+    //give it up
+//    public void killTimebuttonAction(MapButton b){
+//        int time = t.getTime();
+//        b.buttonAction(b);
+//        b.setOnMouseClicked(e->{
+//            if(b.ifVisiable(time)){
+//                if(time>=6){
+//                    t.setTime(8);
+//                }else if(time%3 == 0){
+//                    t.modifyTime(3);
+//                }else if (time%3 == 1){
+//                    t.modifyTime(2);
+//                }else
+//                    t.modifyTime(1);
+//                changeAllButtonStatues();
+//                changeClockStatues(dot,CI);
+//            }
+//        });
+//    }
+
+
     public String selectClockIndicator(){
-        int time = t.getTime();
+        int time = t.getCurrentTime();
         if(time > 5){
             return ".\\images\\night.png";
         }else if (time <3){
@@ -230,7 +257,7 @@ public class MainFramePane extends Pane {
 
 
     public void initDot(Pane d){
-        int time = t.getTime();
+        int time = t.getCurrentTime();
         double[] dx = {1109, 1080, 1054, 1029, 1004, 985, 972, 964, 964};
         double[] dy = {128, 139, 139, 137, 117, 98, 77, 50, 23};
         for (int i = 0; i < ClS.length; i++) {

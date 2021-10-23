@@ -1,5 +1,6 @@
 package sample.buttons;
 
+import sample.MainFramePane;
 import sample.TimeSingleton;
 
 public class MapButton extends GeneralButton {
@@ -24,8 +25,8 @@ public class MapButton extends GeneralButton {
             return url_preparing;
     }
 
-    public void buttonAction(MapButton b){
-        int time = t.getTime();
+    public void buttonAction(MapButton b, int a){
+        int time = t.getCurrentTime();
         b.setOnMouseEntered(e->{
             if(b.ifVisiable(time))
                 changeButtonStatues(b,b.getUrl_hover());
@@ -40,6 +41,12 @@ public class MapButton extends GeneralButton {
             if(b.ifVisiable(time)){
                 changeButtonStatues(b, b.getUrl_pressed());
             }
+        });
+        b.setOnMouseClicked(e->{
+            if(b.ifVisiable(time)&&a==1){
+                MainFramePane.getInstance().timeChange(b);
+            }else
+                MainFramePane.getInstance().bKillTimeChangeTime(b);
         });
     }
 

@@ -2,7 +2,8 @@ package sample;
 
 public class TimeSingleton {
     private static TimeSingleton t = new TimeSingleton();
-    private int time = 0;
+    private int currentTime = 0;
+    private int totalTime = 0;
 
     private TimeSingleton(){}
 
@@ -10,19 +11,21 @@ public class TimeSingleton {
         return t;
     }
 
-    public int getTime() {
-        return time;
+    public int getCurrentTime() {
+        return currentTime;
     }
 
-    public void setTime(int time) {
-        this.time = time;
+    public void setCurrentTime(int currentTime) {
+        this.currentTime = currentTime;
     }
 
     public void addOne(){
-        time = (time+1)%9;
+        currentTime = (currentTime + 1) % 9;
+        totalTime += 1;
     }
 
-    public void modifyTime(int x){
-        time = (time+x)%9;
+    public void addXTime(int x){
+        currentTime = (currentTime + x) % 9;
+        totalTime += x;
     }
 }
