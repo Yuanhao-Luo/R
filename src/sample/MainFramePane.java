@@ -3,7 +3,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import sample.buttons.GeneralButton;
+import sample.Event.KillTime;
+import sample.Event.PassOneTime;
 import sample.buttons.MapButton;
 import sample.buttons.OpenTentButton;
 
@@ -50,42 +51,48 @@ public class MainFramePane extends Pane {
     }
 
     private MainFramePane(){
-        GeneralButton.dealImage(this,".\\images\\backgroundMain.png");
+        ImageProcess.addImage(this,".\\images\\backgroundMain.png");
 
         this.getChildren().add(bBistro);
-        initPane(bBistro,360,560,bBistro.whichUrl(t.getCurrentTime()));
-        bBistro.buttonAction(bBistro,1);
+        setPaneXY(bBistro, 360,560);
+        bBistro.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bSea);
-        initPane(bSea,730,589,bSea.whichUrl(t.getCurrentTime()));
-        bSea.buttonAction(bSea,1);
+        setPaneXY(bSea, 730, 589);
+//        initPane(bSea,730,589,bSea.whichUrl(t.getCurrentTime()));
+        bSea.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bHotel);
-        initPane(bHotel,217,505,bHotel.whichUrl(t.getCurrentTime()));
-        bHotel.buttonAction(bHotel,1);
+        setPaneXY(bHotel, 217, 505);
+//        initPane(bHotel,217,505,bHotel.whichUrl(t.getCurrentTime()));
+        bHotel.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bLevel);
-        initPane(bLevel,550,620,bLevel.whichUrl(t.getCurrentTime()));
-        bLevel.buttonAction(bLevel,1);
+        setPaneXY(bLevel, 550, 620);
+//        initPane(bLevel,550,620,bLevel.whichUrl(t.getCurrentTime()));
+        bLevel.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bMaze);
-        initPane(bMaze,460,705,bMaze.whichUrl(t.getCurrentTime()));
-        bMaze.buttonAction(bMaze,1);
+        setPaneXY(bMaze, 460, 705);
+//        initPane(bMaze,460,705,bMaze.whichUrl(t.getCurrentTime()));
+        bMaze.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bWS);
-        initPane(bWS,600,494,bWS.whichUrl(t.getCurrentTime()));
-        bWS.buttonAction(bWS,1);
+        setPaneXY(bWS, 660, 494);
+//        initPane(bWS,600,494,bWS.whichUrl(t.getCurrentTime()));
+        bWS.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bKillTime);
-        initPane(bKillTime,580,60,bKillTime.whichUrl(t.getCurrentTime()));
-        bKillTime.buttonAction(bKillTime,2);
+        setPaneXY(bKillTime, 580, 60);
+//        initPane(bKillTime,580,60,bKillTime.whichUrl(t.getCurrentTime()));
+        bKillTime.setOnMouseClicked(new KillTime());
 //
         this.getChildren().add(bOpenTent);
         initPane(bOpenTent,900,700,bOpenTent.whichUrl());
         bOpenTent.getChildren().add(openTentLabel);
         openTentLabel.setFont(Font.font("Kaiti",25));
         initLabel(openTentLabel,0,0);
-        openTentbuttonAction(bOpenTent);
+
 
         this.getChildren().add(clockPane);
         initPane(clockPane,840,-100,".\\images\\clock.png");
@@ -146,13 +153,16 @@ public class MainFramePane extends Pane {
     }
 
     public void initPane(Pane p,int x, int y,String url){
-        GeneralButton.dealImage(p, url);
-        p.setLayoutX(x);
-        p.setLayoutY(y);
+        ImageProcess.addImage(p, url);
+        setPaneXY(p, x, y);
     }
 
     public void initPaneWidthHeight(Pane p,int x, int y, String url, int width, int height){
-        GeneralButton.dealImage(p, url, width, height);
+        ImageProcess.dealImage(p, url, width, height);
+        setPaneXY(p, x, y);
+    }
+
+    public void setPaneXY(Pane p, int x, int y){
         p.setLayoutX(x);
         p.setLayoutY(y);
     }
@@ -162,26 +172,26 @@ public class MainFramePane extends Pane {
         l.setLayoutY(y);
     }
 
-    public void changeButtonStatues(Pane p,String url){
-        GeneralButton.dealImage(p, url);
-    }
+//    public void changeButtonStatues(Pane p,String url){
+//        GeneralButton generalButton = new GeneralButton();
+//        generalButton.dealImage(p, url);
+//    }
 
 
     public void changeAllButtonStatues(){
-        changeButtonStatues(bBistro,bBistro.whichUrl(t.getCurrentTime()));
-        bBistro.buttonAction(bBistro,1);
-        changeButtonStatues(bSea,bSea.whichUrl(t.getCurrentTime()));
-        bSea.buttonAction(bSea,1);
-        changeButtonStatues(bHotel,bHotel.whichUrl(t.getCurrentTime()));
-        bHotel.buttonAction(bHotel,1);
-        changeButtonStatues(bLevel,bLevel.whichUrl(t.getCurrentTime()));
-        bLevel.buttonAction(bLevel,1);
-        changeButtonStatues(bMaze,bMaze.whichUrl(t.getCurrentTime()));
-        bMaze.buttonAction(bMaze,1);
-        changeButtonStatues(bWS,bWS.whichUrl(t.getCurrentTime()));
-        bWS.buttonAction(bWS,1);
-        changeButtonStatues(bKillTime,bKillTime.whichUrl(t.getCurrentTime()));
-        bKillTime.buttonAction(bKillTime,2);
+        bBistro.changeImage(bBistro.whichUrl(t.getCurrentTime()));
+//        bBistro.addButtonEvent(bBistro,1);
+        bSea.changeImage(bSea.whichUrl(t.getCurrentTime()));
+//        bSea.addButtonEvent(bSea,1);
+        bHotel.changeImage(bHotel.whichUrl(t.getCurrentTime()));
+//        bHotel.addButtonEvent(bHotel,1);
+        bLevel.changeImage(bLevel.whichUrl(t.getCurrentTime()));
+//        bLevel.addButtonEvent(bLevel,1);
+        bMaze.changeImage(bMaze.whichUrl(t.getCurrentTime()));
+//        bMaze.addButtonEvent(bMaze,1);
+        bWS.changeImage(bWS.whichUrl(t.getCurrentTime()));
+//        bWS.addButtonEvent(bWS,1);
+        bKillTime.changeImage(bKillTime.whichUrl(t.getCurrentTime()));
     }
 
     public void changeClockStatues(Pane dot,Pane clockPane){
@@ -189,12 +199,12 @@ public class MainFramePane extends Pane {
         initPane(clockPane,980,-70,selectClockIndicator());
     }
 
-    public void openTentbuttonAction(OpenTentButton b){
-        b.buttonAction(b);
-        b.setOnMouseClicked(e->{
-            tentPane.setVisible(true);
-        });
-    }
+//    public void openTentbuttonAction(OpenTentButton b){
+//        b.buttonAction(b);
+//        b.setOnMouseClicked(e->{
+//            tentPane.setVisible(true);
+//        });
+//    }
 
     public void bKillTimeChangeTime(MapButton b){
         int time = t.getCurrentTime();

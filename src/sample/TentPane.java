@@ -92,7 +92,7 @@ public class TentPane extends Pane {
 
         CloseTentButton closeTentButton = new CloseTentButton(".\\images\\normalButton200_hover.png",".\\images\\normalButton200_unpressable.png",".\\images\\normalButton200_pressable.png",".\\images\\normalButton200_pressed.png");
         closeTentButton.getChildren().add(returnButtonimv);
-        closeTentButton.buttonAction(closeTentButton);
+        closeTentButton.addButtonEvent();
         closeTentButton.setOnMouseClicked(e -> {
             MainFramePane.getInstance().tentPane.setVisible(false);
         });
