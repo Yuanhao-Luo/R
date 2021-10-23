@@ -33,9 +33,6 @@ public class TentPane extends Pane {
         tent2.setX(tent2Left);
         tent2.setY(tent2Top);
 
-
-
-
         Label level = new Label("?");
         level.setLayoutX(460 -100 + tent1Left);
         level.setLayoutY(90 - (-300) + tent1Top);
@@ -70,7 +67,6 @@ public class TentPane extends Pane {
         Label condition = new Label("9");
         Label note = new Label("10");
 
-
         this.getChildren().add(tent1);
         this.getChildren().add(tent2);
 
@@ -80,17 +76,8 @@ public class TentPane extends Pane {
         this.getChildren().add(exp);
         this.getChildren().add(gold);
         this.getChildren().add(chip);
-//        this.getChildren().add(skill);
-//        this.getChildren().add(condition);
-//        this.getChildren().add(note);
 
         CloseTentButton closeTentButton = new CloseTentButton(".\\images\\normalButton200_hover.png",".\\images\\normalButton200_unpressable.png",".\\images\\normalButton200_pressable.png",".\\images\\normalButton200_pressed.png");
-//        closeTentButton.addButtonEvent();
-//        closeTentButton.setOnMouseClicked(e -> {
-//            MainFramePane.getInstance().tentPane.setVisible(false);
-//        });
-//        closeTentButton.setLayoutX(900);
-//        closeTentButton.setLayoutY(700);
         this.getChildren().add(closeTentButton);
 
     }

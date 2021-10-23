@@ -64,39 +64,31 @@ public class MainFramePane extends Pane {
 
         this.getChildren().add(bSea);
         setXY(bSea, 730, 589);
-//        initPane(bSea,730,589,bSea.whichUrl(t.getCurrentTime()));
         bSea.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bHotel);
         setXY(bHotel, 217, 505);
-//        initPane(bHotel,217,505,bHotel.whichUrl(t.getCurrentTime()));
         bHotel.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bLevel);
         setXY(bLevel, 550, 620);
-//        initPane(bLevel,550,620,bLevel.whichUrl(t.getCurrentTime()));
         bLevel.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bMaze);
         setXY(bMaze, 460, 705);
-//        initPane(bMaze,460,705,bMaze.whichUrl(t.getCurrentTime()));
         bMaze.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bWS);
         setXY(bWS, 660, 494);
-//        initPane(bWS,600,494,bWS.whichUrl(t.getCurrentTime()));
         bWS.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bKillTime);
         setXY(bKillTime, 580, 60);
-//        initPane(bKillTime,580,60,bKillTime.whichUrl(t.getCurrentTime()));
         bKillTime.setOnMouseClicked(new KillTime());
 //
         this.getChildren().add(bOpenTent);
         setXY(bOpenTent, 900, 700);
-//        initPane(bOpenTent,900,700,bOpenTent.whichUrl());
         initLabel(bOpenTent.openTentLabel,0,0);
-
 
         this.getChildren().add(clockImv);
         setXY(clockImv, 840, -100);
@@ -105,8 +97,6 @@ public class MainFramePane extends Pane {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-//        ImageProcess.addImage(this, ".\\images\\clock.png");
-//        initPane(clockPane,840,-100,".\\images\\clock.png");
 
         this.getChildren().add(dot);
         initPane(dot,100,100,".\\images\\dot.png");
@@ -119,7 +109,6 @@ public class MainFramePane extends Pane {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-//        initPane(CI,890,-65,selectClockIndicator());
 
         this.getChildren().add(HPBackgroundPane);
         initPane(HPBackgroundPane,-15,15,".\\images\\HPBackground.png");
@@ -189,41 +178,23 @@ public class MainFramePane extends Pane {
         l.setLayoutY(y);
     }
 
-//    public void changeButtonStatues(Pane p,String url){
-//        GeneralButton generalButton = new GeneralButton();
-//        generalButton.dealImage(p, url);
-//    }
-
 
     public void changeAllButtonStatues(){
         bBistro.changeImage(bBistro.whichUrl(t.getCurrentTime()));
-//        bBistro.addButtonEvent(bBistro,1);
         bSea.changeImage(bSea.whichUrl(t.getCurrentTime()));
-//        bSea.addButtonEvent(bSea,1);
         bHotel.changeImage(bHotel.whichUrl(t.getCurrentTime()));
-//        bHotel.addButtonEvent(bHotel,1);
         bLevel.changeImage(bLevel.whichUrl(t.getCurrentTime()));
-//        bLevel.addButtonEvent(bLevel,1);
         bMaze.changeImage(bMaze.whichUrl(t.getCurrentTime()));
-//        bMaze.addButtonEvent(bMaze,1);
         bWS.changeImage(bWS.whichUrl(t.getCurrentTime()));
-//        bWS.addButtonEvent(bWS,1);
         bKillTime.changeImage(bKillTime.whichUrl(t.getCurrentTime()));
     }
 
     public void changeClockStatues(){
         initDot(dot);
-//        initPane(clockPane,980,-70,selectClockIndicator());
         setXY(CI, 890, -65);
         ImageProcess.changeImage(CI, selectClockIndicator());
     }
 
-//    public void openTentbuttonAction(OpenTentButton b){
-//        b.buttonAction(b);
-//        b.setOnMouseClicked(e->{
-//            tentPane.setVisible(true);
-//        });
-//    }
 
     public void bKillTimeChangeTime(MapButton b){
         int time = t.getCurrentTime();
@@ -239,7 +210,6 @@ public class MainFramePane extends Pane {
             changeAllButtonStatues();
             changeClockStatues();
         }
-
     }
 
     public void timeChange(MapButton b){
@@ -249,29 +219,7 @@ public class MainFramePane extends Pane {
             changeAllButtonStatues();
             changeClockStatues();
         }
-
     }
-
-
-    //give it up
-//    public void killTimebuttonAction(MapButton b){
-//        int time = t.getTime();
-//        b.buttonAction(b);
-//        b.setOnMouseClicked(e->{
-//            if(b.ifVisiable(time)){
-//                if(time>=6){
-//                    t.setTime(8);
-//                }else if(time%3 == 0){
-//                    t.modifyTime(3);
-//                }else if (time%3 == 1){
-//                    t.modifyTime(2);
-//                }else
-//                    t.modifyTime(1);
-//                changeAllButtonStatues();
-//                changeClockStatues(dot,CI);
-//            }
-//        });
-//    }
 
 
     public String selectClockIndicator(){

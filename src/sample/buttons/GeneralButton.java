@@ -29,9 +29,7 @@ public class GeneralButton extends Pane {
         addButtonEvent();
     }
 
-    public GeneralButton(){
-
-    }
+    public GeneralButton(){ }
 
     public void addButtonEvent(){
         setOnMouseEntered(e->{
@@ -51,19 +49,6 @@ public class GeneralButton extends Pane {
         });
     }
 
-//    public void changeImage(Pane p, String url){
-//        changeImage(p, url);
-//    }
-
-//    public void changeImage(MapButton b, String url) {
-//        Image imageBack = null;
-//        try {
-//            imageBack = new Image(new FileInputStream(url));
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        b.imageView.setImage(imageBack);
-//    }
 
     public void changeImage(String url) {
         Image imageBack = null;
@@ -73,22 +58,7 @@ public class GeneralButton extends Pane {
             e.printStackTrace();
         }
         imageView.setImage(imageBack);
-//        ImageView imageView = new ImageView(imageBack);
-//        getChildren().add(imageView);
     }
-
-//    public void dealImage(Pane p, String url, int width, int height) {
-//        Image imageBack = null;
-//        try {
-//            imageBack = new Image(new FileInputStream(url));
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//
-//        imageView.setImage(imageBack);
-//        imageView.setFitWidth(width);
-//        imageView.setFitHeight(height);
-//    }
 
     public String whichUrl() {
         if (available){
@@ -96,7 +66,6 @@ public class GeneralButton extends Pane {
         }else
             return url_preparing;
     }
-
 
     public boolean isAvailable() {
         return available;
