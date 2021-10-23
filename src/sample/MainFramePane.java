@@ -1,5 +1,8 @@
 package sample;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -7,6 +10,9 @@ import sample.Event.KillTime;
 import sample.Event.PassOneTime;
 import sample.buttons.MapButton;
 import sample.buttons.OpenTentButton;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 public class MainFramePane extends Pane {
     boolean[] bistroAvailable = {false,false,false,true,true,true,true,true,false};
@@ -30,16 +36,15 @@ public class MainFramePane extends Pane {
     MapButton bKillTime = new MapButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable);
     OpenTentButton bOpenTent = new OpenTentButton(".\\images\\normalButton200_hover.png",".\\images\\normalButton200_unpressable.png",".\\images\\normalButton200_pressable.png",".\\images\\normalButton200_pressed.png");
 
-    Pane clockPane = new Pane();
+    ImageView clockImv = new ImageView();
     Pane HPBackgroundPane = new Pane();
     Pane HPCurrentImg = new Pane();
     Pane dot = new Pane();
-    Pane CI = new Pane();
+    ImageView CI = new ImageView();
     Pane HPBlackImg = new Pane();
     Label HPCurrentLabel = new Label("" + HPCurrent);
-    Label openTentLabel = new Label("张开帐篷");
 
-    TentPane tentPane = new TentPane();
+    public TentPane tentPane = new TentPane();
 
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
@@ -54,55 +59,67 @@ public class MainFramePane extends Pane {
         ImageProcess.addImage(this,".\\images\\backgroundMain.png");
 
         this.getChildren().add(bBistro);
-        setPaneXY(bBistro, 360,560);
+        setXY(bBistro, 360,560);
         bBistro.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bSea);
-        setPaneXY(bSea, 730, 589);
+        setXY(bSea, 730, 589);
 //        initPane(bSea,730,589,bSea.whichUrl(t.getCurrentTime()));
         bSea.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bHotel);
-        setPaneXY(bHotel, 217, 505);
+        setXY(bHotel, 217, 505);
 //        initPane(bHotel,217,505,bHotel.whichUrl(t.getCurrentTime()));
         bHotel.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bLevel);
-        setPaneXY(bLevel, 550, 620);
+        setXY(bLevel, 550, 620);
 //        initPane(bLevel,550,620,bLevel.whichUrl(t.getCurrentTime()));
         bLevel.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bMaze);
-        setPaneXY(bMaze, 460, 705);
+        setXY(bMaze, 460, 705);
 //        initPane(bMaze,460,705,bMaze.whichUrl(t.getCurrentTime()));
         bMaze.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bWS);
-        setPaneXY(bWS, 660, 494);
+        setXY(bWS, 660, 494);
 //        initPane(bWS,600,494,bWS.whichUrl(t.getCurrentTime()));
         bWS.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bKillTime);
-        setPaneXY(bKillTime, 580, 60);
+        setXY(bKillTime, 580, 60);
 //        initPane(bKillTime,580,60,bKillTime.whichUrl(t.getCurrentTime()));
         bKillTime.setOnMouseClicked(new KillTime());
 //
         this.getChildren().add(bOpenTent);
-        initPane(bOpenTent,900,700,bOpenTent.whichUrl());
-        bOpenTent.getChildren().add(openTentLabel);
-        openTentLabel.setFont(Font.font("Kaiti",25));
-        initLabel(openTentLabel,0,0);
+        setXY(bOpenTent, 900, 700);
+//        initPane(bOpenTent,900,700,bOpenTent.whichUrl());
+        initLabel(bOpenTent.openTentLabel,0,0);
 
 
-        this.getChildren().add(clockPane);
-        initPane(clockPane,840,-100,".\\images\\clock.png");
+        this.getChildren().add(clockImv);
+        setXY(clockImv, 840, -100);
+        try {
+            clockImv.setImage(new Image(new FileInputStream(".\\images\\clock.png")));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+//        ImageProcess.addImage(this, ".\\images\\clock.png");
+//        initPane(clockPane,840,-100,".\\images\\clock.png");
 
         this.getChildren().add(dot);
         initPane(dot,100,100,".\\images\\dot.png");
         initDot(dot);
 
         this.getChildren().add(CI);
-        initPane(CI,890,-65,selectClockIndicator());
+        setXY(CI, 890, -65);
+        try {
+            CI.setImage(new Image(new FileInputStream(selectClockIndicator())));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+//        initPane(CI,890,-65,selectClockIndicator());
 
         this.getChildren().add(HPBackgroundPane);
         initPane(HPBackgroundPane,-15,15,".\\images\\HPBackground.png");
@@ -154,15 +171,15 @@ public class MainFramePane extends Pane {
 
     public void initPane(Pane p,int x, int y,String url){
         ImageProcess.addImage(p, url);
-        setPaneXY(p, x, y);
+        setXY(p, x, y);
     }
 
     public void initPaneWidthHeight(Pane p,int x, int y, String url, int width, int height){
         ImageProcess.dealImage(p, url, width, height);
-        setPaneXY(p, x, y);
+        setXY(p, x, y);
     }
 
-    public void setPaneXY(Pane p, int x, int y){
+    public void setXY(Node p, int x, int y){
         p.setLayoutX(x);
         p.setLayoutY(y);
     }
@@ -194,9 +211,11 @@ public class MainFramePane extends Pane {
         bKillTime.changeImage(bKillTime.whichUrl(t.getCurrentTime()));
     }
 
-    public void changeClockStatues(Pane dot,Pane clockPane){
+    public void changeClockStatues(){
         initDot(dot);
-        initPane(clockPane,980,-70,selectClockIndicator());
+//        initPane(clockPane,980,-70,selectClockIndicator());
+        setXY(CI, 890, -65);
+        ImageProcess.changeImage(CI, selectClockIndicator());
     }
 
 //    public void openTentbuttonAction(OpenTentButton b){
@@ -218,7 +237,7 @@ public class MainFramePane extends Pane {
             }else
                 t.addXTime(1);
             changeAllButtonStatues();
-            changeClockStatues(dot,clockPane);
+            changeClockStatues();
         }
 
     }
@@ -228,7 +247,7 @@ public class MainFramePane extends Pane {
         if (b.ifVisiable(time)){
             t.addOne();
             changeAllButtonStatues();
-            changeClockStatues(dot,clockPane);
+            changeClockStatues();
         }
 
     }

@@ -35,4 +35,14 @@ public class ImageProcess {
         imageView.setImage(imageBack);
         p.getChildren().add(imageView);
     }
+
+    public static void changeImage(ImageView imageView, String url) {
+        Image imageBack = null;
+        try {
+            imageBack = new Image(new FileInputStream(url));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        imageView.setImage(imageBack);
+    }
 }
