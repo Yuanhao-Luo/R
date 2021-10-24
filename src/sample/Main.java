@@ -18,6 +18,12 @@ public class Main extends Application {
             System.out.println(e.getX());
             System.out.println(e.getY());
         });
+        primaryStage.setWidth(1040);
+        primaryStage.setMaxWidth(1040);
+        primaryStage.setMinWidth(1040);
+        primaryStage.setHeight(808);
+        primaryStage.setMaxHeight(808);
+        primaryStage.setMinHeight(808);
         primaryStage.show();
     }
 
