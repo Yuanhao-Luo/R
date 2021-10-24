@@ -14,9 +14,11 @@ public class CloseTentButton extends GeneralButton {
         setOnMouseClicked(e -> {
             MainFramePane.getInstance().tentPane.setVisible(false);
         });
-        setLayoutX(900);
-        setLayoutY(700);
+        setLayoutX(820);
+        setLayoutY(720);
         closeTentLabel.setFont(Font.font("Kaiti",25));
         getChildren().add(closeTentLabel);
+        this.closeTentLabel.setLayoutX(47);
+        this.closeTentLabel.setLayoutY(6);
     }
 }
