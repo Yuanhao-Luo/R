@@ -10,7 +10,7 @@ public class Main extends Application {
     TimeSingleton t = TimeSingleton.getInstance();
     @Override
     public void start(Stage primaryStage) throws Exception{
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Rance 1 remastered");
         Pane p1 = new Pane();
         primaryStage.setScene(new Scene(p1, 1025, 770));
         p1.getChildren().add(m);
