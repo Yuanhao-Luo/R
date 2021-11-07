@@ -9,6 +9,7 @@ public class item {
         this.price = price;
     }
 
+
     public String getUrl() {
         return url;
     }

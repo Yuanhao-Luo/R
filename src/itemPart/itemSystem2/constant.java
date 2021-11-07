@@ -101,4 +101,13 @@ public class constant {
 
 
 
+
+    //Abnormal State
+    static final public int TRAP_ID = 1;
+    static final public int LOST_ID = 2;
+    static final public int TOELN_ID = 3;
+    static final public int EXCITEMENT_ID = 4;
+    static final public int LITHIASIS_ID = 5;
+    static final public int STATUPLATE_ID = 6;
+
 }

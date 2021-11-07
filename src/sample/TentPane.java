@@ -1,5 +1,7 @@
 package sample;
 
+import itemPart.characterSystem.Person;
+import itemPart.itemSystem2.*;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -12,8 +14,20 @@ import sample.buttons.CloseTentButton;
 public class TentPane extends Pane {
 
     public TentPane(){
+        Person p = Person.getInstance();
         Image imageTent1 = new Image("file:.\\images\\tent1.png");
         Image imageTent2 = new Image("file:.\\images\\tent2.png");
+        //在这里面放backpack
+
+        simpleFactory s1 = new simpleFactory();
+
+        p.getBackpack().add(s1.buildMedicineCureRandomMove());
+        p.getMedicineBackpack().add(s1.buildMedicineCureRandomMove());
+        System.out.println(p.getBackpack().get(0).getUrl());
+        System.out.println(p.getBackpack().get(0).getPrice());
+        System.out.println(((medicine)p.getBackpack().get(0)).getHeal());
+
+
 
         ImageView tent1 = new ImageView();
         tent1.setImage(imageTent1);
