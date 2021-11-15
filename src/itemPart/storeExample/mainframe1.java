@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class mainframe1 {
     public static void main(String[] args) {
         simpleFactory s1 = new simpleFactory();
-        ArrayList<item> backpack =new ArrayList<>();
+        ArrayList<item> backpack = new ArrayList<>();
         ArrayList<arms> armsBackpack = new ArrayList<>();
         ArrayList<ordinaryItem> ordinaryItemsBackpack = new ArrayList<>();
         ArrayList<medicine> medicineBackpack = new ArrayList<>();
