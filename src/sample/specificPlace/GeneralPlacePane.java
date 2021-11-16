@@ -11,7 +11,7 @@ public class GeneralPlacePane extends Pane {
     String placeName;
     int actionButtonX = 10;
     static final int firstActionButtonY = 150;
-    static final int actionbuttonInterval = 75;
+    static final int actionbuttonInterval = 82;
     ActionButton beyeButton;
     ActionButton bmouthButton;
     ActionButton bhandButton;
@@ -29,6 +29,7 @@ public class GeneralPlacePane extends Pane {
 
         ImageProcess.addImage(this,".\\images\\" + placeName + "Background.png");
         this.getChildren().add(dialogMe);
+//        ImageProcess.setXY(dialogMe,220,320);
 
         this.getChildren().add(beyeButton);
         ImageProcess.setXY(beyeButton,actionButtonX,firstActionButtonY);

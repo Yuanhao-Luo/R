@@ -1,6 +1,7 @@
 package sample.specificPlace;
 
 import javafx.scene.layout.Pane;
+import sample.ImageProcess;
 import sample.buttons.ActionDialogButton;
 import sample.buttons.LeaveHereButton;
 
@@ -27,10 +28,10 @@ public class ActionDialogPane extends Pane {
     }
 
 
-    int secondActionDialogButtonY = GeneralPlacePane.firstActionButtonY + 50;
+    int secondActionDialogButtonY = GeneralPlacePane.firstActionButtonY + 30;
     int actionDialogButtonX = -100;
     int differentActionInterval = GeneralPlacePane.actionbuttonInterval;
-    int differentDialogInterval = 70;
+    int differentDialogInterval = 56;
     ActionDialogButton adb1;
     ActionDialogButton adb2;
     ActionDialogButton adb3;

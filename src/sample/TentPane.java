@@ -75,9 +75,9 @@ public class TentPane extends Pane {
         gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
         Label chip = new Label("7 10");
-        chip.setLayoutX(807 -100 + tent1Left);
+        chip.setLayoutX(822 -100 + tent1Left);
         chip.setLayoutY(185 - (-300) + tent1Top);
-        chip.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+        chip.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  40));
 
         Label skill = new Label("8");
         Label condition = new Label("9");
