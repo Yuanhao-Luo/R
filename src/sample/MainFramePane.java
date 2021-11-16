@@ -212,7 +212,7 @@ public class MainFramePane extends Pane {
 
     public void changeClockStatues(Pane dot,Pane clockPane){
         initDot(dot);
-        initPane(clockPane,980,-70,selectClockIndicator());
+        initPane(clockPane,880,-60,selectClockIndicator());
     }
 
     public void buttonAction(MapButton b){
@@ -282,8 +282,8 @@ public class MainFramePane extends Pane {
 
     public void initDot(Pane d){
         int time = t.getTime();
-        double[] dx = {1109, 1080, 1054, 1029, 1004, 985, 972, 964, 964};
-        double[] dy = {128, 139, 139, 137, 117, 98, 77, 50, 23};
+        double[] dx = {878, 876, 886, 1029, 1004, 985, 972, 964, 964};
+        double[] dy = {21, 52, 70, 137, 117, 98, 77, 50, 23};
         for (int i = 0; i < ClS.length; i++) {
             ClS[i] = new ClockStatus(dx[i], dy[i], i);
         }
