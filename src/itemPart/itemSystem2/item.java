@@ -1,5 +1,7 @@
 package itemPart.itemSystem2;
 
+import itemPart.characterSystem.Person;
+
 public class item {
     private String url;
     private int price;
@@ -16,5 +18,9 @@ public class item {
 
     public int getPrice() {
         return price;
+    }
+
+    public void drop(){
+        Person.getInstance().getItemList().dropItem(this);
     }
 }

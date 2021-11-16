@@ -7,7 +7,7 @@ public class ordinaryItem extends oneTimeItem implements combat{
 
 
     public ordinaryItem(String url, int price, int heal, int damage, int defence) {
-        super(url, price, heal);
+        super(url, price);
         this.damage = damage;
         this.defence = defence;
     }
@@ -19,10 +19,6 @@ public class ordinaryItem extends oneTimeItem implements combat{
     @Override
     public int getPrice() {
         return super.getPrice();
-    }
-    @Override
-    public int getHeal() {
-        return super.getHeal();
     }
 
     public int getDamage() {
