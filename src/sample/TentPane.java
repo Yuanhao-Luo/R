@@ -12,6 +12,9 @@ import sample.buttons.CloseTentButton;
 
 
 public class TentPane extends Pane {
+    ItemPane[] itemList = new ItemPane[7];
+    int itemPage = 0;
+
 
     public TentPane(){
         Person p = Person.getInstance();
@@ -94,6 +97,26 @@ public class TentPane extends Pane {
         CloseTentButton closeTentButton = new CloseTentButton(".\\images\\normalButton200_hover.png",".\\images\\normalButton200_unpressable.png",".\\images\\normalButton200_pressable.png",".\\images\\normalButton200_pressed.png");
         this.getChildren().add(closeTentButton);
 
+
+        for (int i = 0; i < itemList.length; i++) {
+            itemList[i] = new ItemPane(i);
+            getChildren().add(itemList[i]);
+        }
+        refreshItems();
+    }
+
+    public Pane[] getItemList() {
+        return itemList;
+    }
+
+    public void refreshItems(){
+        Person person = Person.getInstance();
+        for (int i = 0; i < 7; i++) {
+            int j = itemPage*7 +i;
+            if (j >= person.getItemList().size())
+                break;
+            itemList[i].setImage(person.getItemList().get(j).getUrl());
+        }
     }
 
 

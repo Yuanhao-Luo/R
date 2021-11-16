@@ -17,7 +17,20 @@ public class Person {
 
     private static Person p = new Person();
 
-    private Person(){}
+    private Person(){
+
+
+
+        //test
+        simpleFactory s = new simpleFactory();
+        itemList.add(s.buildFirefly());
+        itemList.add(s.buildFirefly());
+        itemList.add(s.buildFirefly());
+        itemList.add(s.buildFirefly());
+        itemList.add(s.buildFirefly());
+        itemList.add(s.buildFirefly());
+        itemList.add(s.buildFirefly());
+    }
 
     public static Person getInstance(){
         return p;
