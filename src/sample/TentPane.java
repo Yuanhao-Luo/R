@@ -77,7 +77,7 @@ public class TentPane extends Pane {
         this.getChildren().add(gold);
         this.getChildren().add(chip);
 
-        CloseTentButton closeTentButton = new CloseTentButton(".\\images\\normalButton200_hover.png",".\\images\\normalButton200_unpressable.png",".\\images\\normalButton200_pressable.png",".\\images\\normalButton200_pressed.png");
+        CloseTentButton closeTentButton = new CloseTentButton("    关闭帐篷","200",820,720);
         this.getChildren().add(closeTentButton);
 
     }

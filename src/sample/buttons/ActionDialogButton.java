@@ -1,9 +1,16 @@
 package sample.buttons;
 
-public class ActionDialogButton extends GeneralButton {
-    public ActionDialogButton(String s0, String s1, String s2, String s3, String actionName){
-        super(s0, s1, s2, s3);
+import sample.specificPlace.GeneralPlacePane;
+
+public class ActionDialogButton extends TextButton {
+
+    public ActionDialogButton(String text, String type, int X, int Y, String placeName, String actionName){
+        super(text, type, X, Y);
         this.actionName = actionName;
+        this.placeName = placeName;
     }
+
     String actionName;
+    String placeName;
+
 }

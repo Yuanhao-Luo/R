@@ -11,7 +11,7 @@ import sample.Event.KillTime;
 import sample.Event.PassOneTime;
 import sample.buttons.MapButton;
 import sample.buttons.OpenTentButton;
-import sample.specificPlace.GeneralPlacePane;
+import sample.specificPlace.HomeofseaPane;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -36,7 +36,7 @@ public class MainFramePane extends Pane {
     MapButton bMaze = new MapButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable,"walkthemaze");
     MapButton bWS = new MapButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable,"weaponstore");
     MapButton bKillTime = new MapButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable,"killtime");
-    OpenTentButton bOpenTent = new OpenTentButton(".\\images\\normalButton200_hover.png",".\\images\\normalButton200_unpressable.png",".\\images\\normalButton200_pressable.png",".\\images\\normalButton200_pressed.png");
+    OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
 
     ImageView clockImv = new ImageView();
     Pane HPBackgroundPane = new Pane();
@@ -47,7 +47,7 @@ public class MainFramePane extends Pane {
     Label HPCurrentLabel = new Label("" + HPCurrent);
 
     public TentPane tentPane = new TentPane();
-    public GeneralPlacePane generalPlacePane = new GeneralPlacePane();
+    public HomeofseaPane homeofseaPane = new HomeofseaPane();
 
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
@@ -90,8 +90,6 @@ public class MainFramePane extends Pane {
         bKillTime.setOnMouseClicked(new KillTime());
 //
         this.getChildren().add(bOpenTent);
-        setXY(bOpenTent, 820, 720);
-        initLabel(bOpenTent.openTentLabel,47,6);
 
         this.getChildren().add(clockImv);
         setXY(clockImv, 840, -100);
@@ -160,8 +158,8 @@ public class MainFramePane extends Pane {
         tentPane.setVisible(false);
         this.getChildren().add(tentPane);
 
-        generalPlacePane.setVisible(false);
-        this.getChildren().add(generalPlacePane);
+        homeofseaPane.setVisible(false);
+        this.getChildren().add(homeofseaPane);
     }
 
     public void initPane(Pane p,int x, int y,String url){
@@ -204,7 +202,7 @@ public class MainFramePane extends Pane {
 
     public void bKillTimeChangeTime(MapButton b){
         int time = t.getCurrentTime();
-        if (b.ifVisiable(time)){
+        if (b.getVisiable(time)){
             if(time>=6){
                 t.setCurrentTime(8);
             }else if(time%3 == 0){
@@ -220,7 +218,7 @@ public class MainFramePane extends Pane {
 
     public void timeChange(MapButton b){
         int time = t.getCurrentTime();
-        if (b.ifVisiable(time)){
+        if (b.getVisiable(time)){
             t.addOne();
             changeAllButtonStatues();
             changeClockStatues();

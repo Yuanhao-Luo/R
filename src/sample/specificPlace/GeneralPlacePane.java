@@ -3,28 +3,32 @@ package sample.specificPlace;
 import javafx.scene.layout.Pane;
 import sample.ImageProcess;
 import sample.MainFramePane;
+import sample.TimeSingleton;
 import sample.buttons.ActionButton;
-import sample.buttons.OpenTentButton;
 
 public class GeneralPlacePane extends Pane {
-    Pane homeofseaYou = new Pane();
-    Pane DialogMe = new Pane();
-    String actionName;
+    Pane dialogMe = new Pane();
+    String placeName;
     int actionButtonX = 10;
-    int firstActionButtonY = 150;
-    int actionbuttonInterval = 75;
-    ActionButton beyeButton = new ActionButton(".\\images\\eyeButton_pressable.png",".\\images\\eyeButton_unpressable.png",".\\images\\eyeButton_pressable.png",".\\images\\eyeButton_pressed.png",actionName);
-    ActionButton bmouthButton = new ActionButton(".\\images\\mouthButton_pressable.png",".\\images\\mouthButton_unpressable.png",".\\images\\mouthButton_pressable.png",".\\images\\mouthButton_pressed.png",actionName);
-    ActionButton bhandButton = new ActionButton(".\\images\\handButton_pressable.png",".\\images\\handButton_unpressable.png",".\\images\\handButton_pressable.png",".\\images\\handButton_pressed.png",actionName);
-    ActionButton battackButton = new ActionButton(".\\images\\attackButton_pressable.png",".\\images\\attackButton_unpressable.png",".\\images\\attackButton_pressable.png",".\\images\\attackButton_pressed.png",actionName);
-    ActionButton bfootButton = new ActionButton(".\\images\\footButton_pressable.png",".\\images\\footButton_unpressable.png",".\\images\\footButton_pressable.png",".\\images\\footButton_pressed.png",actionName);
+    static final int firstActionButtonY = 150;
+    static final int actionbuttonInterval = 75;
+    ActionButton beyeButton;
+    ActionButton bmouthButton;
+    ActionButton bhandButton;
+    ActionButton battackButton;
+    ActionButton bfootButton;
 
 
-    public GeneralPlacePane(){
-        ImageProcess.addImage(this,".\\images\\homeofseaBackground.png");
+    public GeneralPlacePane(String placeName){
+        this.placeName = placeName;
+        beyeButton = new ActionButton(this,".\\images\\eyeButton_hover.png",".\\images\\eyeButton_unpressable.png",".\\images\\eyeButton_pressable.png",".\\images\\eyeButton_pressed.png",placeName,"eye");
+        bmouthButton = new ActionButton(this,".\\images\\mouthButton_hover.png",".\\images\\mouthButton_unpressable.png",".\\images\\mouthButton_pressable.png",".\\images\\mouthButton_pressed.png",placeName,"mouth");
+        bhandButton = new ActionButton(this,".\\images\\handButton_hover.png",".\\images\\handButton_unpressable.png",".\\images\\handButton_pressable.png",".\\images\\handButton_pressed.png",placeName,"hand");
+        battackButton = new ActionButton(this,".\\images\\attackButton_hover.png",".\\images\\attackButton_unpressable.png",".\\images\\attackButton_pressable.png",".\\images\\attackButton_pressed.png",placeName,"attack");
+        bfootButton = new ActionButton(this,".\\images\\footButton_hover.png",".\\images\\footButton_unpressable.png",".\\images\\footButton_pressable.png",".\\images\\footButton_pressed.png",placeName,"foot");
 
-        this.getChildren().add(homeofseaYou);
-        this.getChildren().add(DialogMe);
+        ImageProcess.addImage(this,".\\images\\" + placeName + "Background.png");
+        this.getChildren().add(dialogMe);
 
         this.getChildren().add(beyeButton);
         ImageProcess.setXY(beyeButton,actionButtonX,firstActionButtonY);
@@ -41,7 +45,8 @@ public class GeneralPlacePane extends Pane {
         this.getChildren().add(bfootButton);
         ImageProcess.setXY(bfootButton,actionButtonX,firstActionButtonY + actionbuttonInterval*4);
 
-        ImageProcess.initDialogYouImage(homeofseaYou,".\\images\\homeofseaYou.png");
-        ImageProcess.initDialogMeImage(DialogMe,".\\images\\DialogMe.png");
+
+        ImageProcess.initDialogMeImage(dialogMe,".\\images\\dialogMe.png");
     }
+
 }

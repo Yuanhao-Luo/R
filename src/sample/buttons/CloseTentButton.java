@@ -5,20 +5,13 @@ import javafx.scene.text.Font;
 import sample.MainFramePane;
 import sample.buttons.GeneralButton;
 
-public class CloseTentButton extends GeneralButton {
-    Label closeTentLabel = new Label("关闭帐篷");
+public class CloseTentButton extends TextButton {
 
-    public CloseTentButton(String s0, String s1, String s2, String s3) {
-        super(s0, s1, s2, s3);
+    public CloseTentButton(String text, String type, int X, int Y) {
+        super(text, type, X, Y);
         addButtonEvent();
         setOnMouseClicked(e -> {
             MainFramePane.getInstance().tentPane.setVisible(false);
         });
-        setLayoutX(820);
-        setLayoutY(720);
-        closeTentLabel.setFont(Font.font("Kaiti",25));
-        getChildren().add(closeTentLabel);
-        this.closeTentLabel.setLayoutX(47);
-        this.closeTentLabel.setLayoutY(6);
     }
 }

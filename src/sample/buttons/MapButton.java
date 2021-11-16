@@ -37,17 +37,17 @@ public class MapButton extends GeneralButton {
 
     public void addButtonEvent(){
         setOnMouseEntered(e->{
-            if(ifVisiable(t.getCurrentTime()))
+            if(getVisiable(t.getCurrentTime()))
                 changeImage(getUrl_hover());
         });
 
         setOnMouseExited(e->{
-            if(ifVisiable(t.getCurrentTime()))
+            if(getVisiable(t.getCurrentTime()))
                 changeImage(getUrl_pressable());
         });
 
         setOnMousePressed(e->{
-            if(ifVisiable(t.getCurrentTime())){
+            if(getVisiable(t.getCurrentTime())){
                 changeImage(getUrl_pressed());
             }
         });
@@ -57,7 +57,7 @@ public class MapButton extends GeneralButton {
         return name;
     }
 
-    public boolean ifVisiable(int i){
+    public boolean getVisiable(int i){
         return this.available[i];
     }
 
