@@ -13,7 +13,7 @@ public class KillTime implements EventHandler {
     public void handle(Event event) {
         MapButton mapButton = Toolkit.peaceKeeperImageView(event.getTarget());
         TimeSingleton t = TimeSingleton.getInstance();
-        if (mapButton.ifVisiable(t.getCurrentTime())) {
+        if (mapButton.getVisiable(t.getCurrentTime())) {
             MainFramePane.getInstance().bKillTimeChangeTime(mapButton);
         }
     }

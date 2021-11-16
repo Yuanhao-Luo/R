@@ -9,7 +9,7 @@ public class Main extends Application {
     MainFramePane m = MainFramePane.getInstance();
     @Override
     public void start(Stage primaryStage) throws Exception{
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Rance 1 remastered");
         Pane p1 = new Pane();
         primaryStage.setScene(new Scene(p1, 1025, 770));
 

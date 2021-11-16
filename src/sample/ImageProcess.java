@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.scene.Node;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -44,5 +45,23 @@ public class ImageProcess {
             e.printStackTrace();
         }
         imageView.setImage(imageBack);
+    }
+
+    public static void initDialogYouImage(Pane p, String url){
+        initPane(p,600,250,url);
+    }
+
+    public static void initDialogMeImage(Pane p, String url){
+        initPane(p,0,0,url);
+    }
+
+    private static void initPane(Pane p, int x, int y, String url) {
+        ImageProcess.addImage(p, url);
+        setXY(p, x, y);
+    }
+
+    public static void setXY(Node p, int x, int y){
+        p.setLayoutX(x);
+        p.setLayoutY(y);
     }
 }
