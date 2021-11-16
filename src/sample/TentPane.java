@@ -19,13 +19,13 @@ public class TentPane extends Pane {
         Image imageTent2 = new Image("file:.\\images\\tent2.png");
         //在这里面放backpack
 
-        simpleFactory s1 = new simpleFactory();
-
-        p.getBackpack().add(s1.buildXIHUXIHU());
-        p.getMedicineBackpack().add(s1.buildXIHUXIHU());
-        System.out.println(p.getBackpack().get(0).getUrl());
-        System.out.println(p.getBackpack().get(0).getPrice());
-        System.out.println(((medicine)p.getBackpack().get(0)).getHeal());
+//        simpleFactory s1 = new simpleFactory();
+//
+//        p.getBackpack().add(s1.buildXIHUXIHU());
+//        p.getMedicineBackpack().add(s1.buildXIHUXIHU());
+//        System.out.println(p.getBackpack().get(0).getUrl());
+//        System.out.println(p.getBackpack().get(0).getPrice());
+//        System.out.println(((medicine)p.getBackpack().get(0)).getHeal());
 
 
 

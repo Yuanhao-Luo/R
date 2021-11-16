@@ -10,14 +10,20 @@ import itemPart.characterSystem.Person;
 //修改后：此类仅仅只是用于回血的道具。例如：世色癌
 //
 public class medicine extends oneTimeItem implements Useable{
+    private int heal;
 
     public medicine(String url, int price,int heal) {
-        super(url,price,heal);
+        super(url,price);
+        this.heal = heal;
     }
 
     @Override
     public void use() {
         Person p = Person.getInstance();
         p.setHealth(p.getHealth() + getHeal());
+    }
+
+    public int getHeal() {
+        return heal;
     }
 }

@@ -166,5 +166,5 @@ public class constant {
     static final public int EXCITEMENT_ID = 4;
     static final public int LITHIASIS_ID = 5;
     static final public int STATUPLATE_ID = 6;
-
+    static final public int BADLEG = 7;
 }

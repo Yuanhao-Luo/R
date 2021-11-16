@@ -1,24 +1,24 @@
 package itemPart.itemSystem2;
 
 public class simpleFactory {
-    public medicine buildXIHUXIHU(){
-        return new medicine(constant.XIHUXIHU_URL,constant.XIHUXIHU_PRICE,constant.XIHUXIHU_HEAL);
+    public HuXiHuHu buildXIHUXIHU(){
+        return new HuXiHuHu(constant.XIHUXIHU_URL,constant.XIHUXIHU_PRICE,constant.XIHUXIHU_HEAL);
     }
 
-    public medicine buildFirefly(){
-        return new medicine(constant.FIRE_FLY_URL,constant.FIRE_FLY_PRICE,constant.FIRE_FLY_HEAL);
+    public FireFly buildFirefly(){
+        return new FireFly(constant.FIRE_FLY_URL,constant.FIRE_FLY_PRICE);
     }
 
-    public medicine buildGreenTea(){
-        return new medicine(constant.GREEN_TEA_URL,constant.GREEN_TEA_PRICE,constant.GREEN_TEA_HEAL);
+    public PassiveEffect buildGreenTea(){
+        return new PassiveEffect(constant.GREEN_TEA_URL,constant.GREEN_TEA_PRICE,constant.GREEN_TEA_HEAL,constant.BADLEG);
     }
 
-    public medicine buildTravelingMethod(){
-        return new medicine(constant.TRAVELING_METHOD_URL,constant.TRAVELING_METHOD_PRICE,constant.TRAVELING_METHOD_HEAL);
+    public PassiveEffect buildTravelingMethod(){
+        return new PassiveEffect(constant.TRAVELING_METHOD_URL,constant.TRAVELING_METHOD_PRICE,constant.TRAVELING_METHOD_HEAL,constant.LOST_ID);
     }
 
-    public medicine buildFlashJump(){
-        return new medicine(constant.FLASH_JUMP_URL,constant.FLASH_JUMP_PRICE,constant.FLASH_JUMP_HEAL);
+    public PassiveEffect buildFlashJump(){
+        return new PassiveEffect(constant.FLASH_JUMP_URL,constant.FLASH_JUMP_PRICE,constant.FLASH_JUMP_HEAL,constant.TRAP_ID);
     }
 
     public medicine buildCureCancer50(){

@@ -7,7 +7,7 @@ public class ItemList extends ArrayList<item> {
         super();
     }
 
-    public void drop(item i){
+    public void dropItem(item i){
         this.remove(i);
     }
 }

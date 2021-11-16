@@ -2,19 +2,14 @@ package itemPart.itemSystem2;
 
 import itemPart.characterSystem.Person;
 
-public class HuXiHuHu extends oneTimeItem implements Useable {
-    public HuXiHuHu(String url, int price, int heal) {
+public class FireFly extends oneTimeItem implements Useable {
+    public FireFly(String url, int price) {
         super(url, price);
     }
 
     @Override
     public void use() {
         Person p = Person.getInstance();
-        p.setBlind(false);
-        //将所有异常属性设为false
-
-
-
-
+        p.setSquidMan(false);
     }
 }
