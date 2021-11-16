@@ -1,15 +1,21 @@
 package sample;
-import javafx.scene.control.Button;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import sample.Event.EnterPlace;
+import sample.Event.KillTime;
+import sample.Event.PassOneTime;
+import sample.buttons.MapButton;
+import sample.buttons.OpenTentButton;
+import sample.specificPlace.HomeofseaPane;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-
+//new commit 在mainframe里面新增一个背包数组，背包数组里面本来是装满了空item的
 public class MainFramePane extends Pane {
     boolean[] bistroAvailable = {false,false,false,true,true,true,true,true,false};
     boolean[] seaAvailable = {true,true,true,true,true,true,false,false,false};
@@ -19,28 +25,29 @@ public class MainFramePane extends Pane {
     boolean[] WSAvailable = {false,false,false,true,true,true,true,true,false};
     boolean[] killTimeAvailable = {true,true,true,true,true,true,true,true,false};
     //tem
-    boolean[] OpenTentAvailable = {true,true,true,true,true,true,true,true,true};
+    boolean OpenTentAvailable = true;
     int HPTotal = 120;
     int HPCurrent = 8;
 
-    MapButton bBistro = new MapButton(".\\images\\bistroButton_hover.png",".\\images\\bistroButton_preparing.png",".\\images\\bistroButton_pressable.png",".\\images\\bistroButton_pressed.png",bistroAvailable);
-    MapButton bSea = new MapButton(".\\images\\homeofseaButton_hover.png",".\\images\\homeofseaButton_preparing.png",".\\images\\homeofseaButton_pressable.png",".\\images\\homeofseaButton_pressed.png",seaAvailable);
-    MapButton bHotel = new MapButton(".\\images\\hotelButton_hover.png",".\\images\\hotelButton_preparing.png",".\\images\\hotelButton_pressable.png",".\\images\\hotelButton_pressed.png",hotelAvailable);
-    MapButton bLevel = new MapButton(".\\images\\levelhouseButton_hover.png",".\\images\\levelhouseButton_preparing.png",".\\images\\levelhouseButton_pressable.png",".\\images\\levelhouseButton_pressed.png",levelAvailable);
-    MapButton bMaze = new MapButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable);
-    MapButton bWS = new MapButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable);
-    MapButton bKillTime = new MapButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable);
+    MapButton bBistro = new MapButton(".\\images\\bistroButton_hover.png",".\\images\\bistroButton_preparing.png",".\\images\\bistroButton_pressable.png",".\\images\\bistroButton_pressed.png",bistroAvailable,"bistro");
+    MapButton bSea = new MapButton(".\\images\\homeofseaButton_hover.png",".\\images\\homeofseaButton_preparing.png",".\\images\\homeofseaButton_pressable.png",".\\images\\homeofseaButton_pressed.png",seaAvailable,"homeofsea");
+    MapButton bHotel = new MapButton(".\\images\\hotelButton_hover.png",".\\images\\hotelButton_preparing.png",".\\images\\hotelButton_pressable.png",".\\images\\hotelButton_pressed.png",hotelAvailable,"hotel");
+    MapButton bLevel = new MapButton(".\\images\\levelhouseButton_hover.png",".\\images\\levelhouseButton_preparing.png",".\\images\\levelhouseButton_pressable.png",".\\images\\levelhouseButton_pressed.png",levelAvailable,"levelhouse");
+    MapButton bMaze = new MapButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable,"walkthemaze");
+    MapButton bWS = new MapButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable,"weaponstore");
+    MapButton bKillTime = new MapButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable,"killtime");
+    OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
 
-    MapButton bOpenTent = new MapButton(".\\images\\tentButton_hover.png",".\\images\\tentButton_pressable.png",".\\images\\tentButton_pressable.png",".\\images\\tentButton_pressedf.png",OpenTentAvailable);
-
-    Pane clockPane = new Pane();
+    ImageView clockImv = new ImageView();
     Pane HPBackgroundPane = new Pane();
     Pane HPCurrentImg = new Pane();
     Pane dot = new Pane();
-    Pane CI = new Pane();
+    ImageView CI = new ImageView();
     Pane HPBlackImg = new Pane();
     Label HPCurrentLabel = new Label("" + HPCurrent);
-    tentPane tentPane = new tentPane();
+
+    public TentPane tentPane = new TentPane();
+    public HomeofseaPane homeofseaPane = new HomeofseaPane();
 
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
@@ -52,50 +59,57 @@ public class MainFramePane extends Pane {
     }
 
     private MainFramePane(){
-        dealImage(this,".\\images\\backgroundMain.png");
+        ImageProcess.addImage(this,".\\images\\backgroundMain.png");
 
         this.getChildren().add(bBistro);
-        initPane(bBistro,360,560,bBistro.whichUrl(t.getTime()));
-        buttonAction(bBistro);
+        setXY(bBistro, 360,560);
+        bBistro.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bSea);
-        initPane(bSea,730,589,bSea.whichUrl(t.getTime()));
-        buttonAction(bSea);
+        setXY(bSea, 730, 589);
+        bSea.setOnMouseClicked(new EnterPlace());
 
         this.getChildren().add(bHotel);
-        initPane(bHotel,217,505,bHotel.whichUrl(t.getTime()));
-        buttonAction(bHotel);
+        setXY(bHotel, 217, 505);
+        bHotel.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bLevel);
-        initPane(bLevel,550,620,bLevel.whichUrl(t.getTime()));
-        buttonAction(bLevel);
+        setXY(bLevel, 550, 620);
+        bLevel.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bMaze);
-        initPane(bMaze,460,705,bMaze.whichUrl(t.getTime()));
-        buttonAction(bMaze);
+        setXY(bMaze, 460, 705);
+        bMaze.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bWS);
-        initPane(bWS,600,494,bWS.whichUrl(t.getTime()));
-        buttonAction(bWS);
+        setXY(bWS, 660, 494);
+        bWS.setOnMouseClicked(new PassOneTime());
 
         this.getChildren().add(bKillTime);
-        initPane(bKillTime,580,60,bKillTime.whichUrl(t.getTime()));
-        killTimebuttonAction(bKillTime);
-
+        setXY(bKillTime, 580, 60);
+        bKillTime.setOnMouseClicked(new KillTime());
 //
         this.getChildren().add(bOpenTent);
-        initPane(bOpenTent,900,700,bOpenTent.whichUrl(t.getTime()));
-        openTentbuttonAction(bOpenTent);
 
-        this.getChildren().add(clockPane);
-        initPane(clockPane,840,-100,".\\images\\clock.png");
+        this.getChildren().add(clockImv);
+        setXY(clockImv, 840, -100);
+        try {
+            clockImv.setImage(new Image(new FileInputStream(".\\images\\clock.png")));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         this.getChildren().add(dot);
         initPane(dot,100,100,".\\images\\dot.png");
         initDot(dot);
 
         this.getChildren().add(CI);
-        initPane(CI,890,-65,selectClockIndicator());
+        setXY(CI, 890, -65);
+        try {
+            CI.setImage(new Image(new FileInputStream(selectClockIndicator())));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         this.getChildren().add(HPBackgroundPane);
         initPane(HPBackgroundPane,-15,15,".\\images\\HPBackground.png");
@@ -143,42 +157,22 @@ public class MainFramePane extends Pane {
 
         tentPane.setVisible(false);
         this.getChildren().add(tentPane);
-    }
 
-    private void dealImage(Pane p, String url) {
-        Image imageBack = null;
-        try {
-            imageBack = new Image(new FileInputStream(url));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        ImageView imageView = new ImageView();
-        imageView.setImage(imageBack);
-        p.getChildren().add(imageView);
-    }
-
-    private void dealImage(Pane p, String url, int width, int height) {
-        Image imageBack = null;
-        try {
-            imageBack = new Image(new FileInputStream(url));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        ImageView imageView = new ImageView();
-        imageView.setImage(imageBack);
-        imageView.setFitWidth(width);
-        imageView.setFitHeight(height);
-        p.getChildren().add(imageView);
+        homeofseaPane.setVisible(false);
+        this.getChildren().add(homeofseaPane);
     }
 
     public void initPane(Pane p,int x, int y,String url){
-        dealImage(p, url);
-        p.setLayoutX(x);
-        p.setLayoutY(y);
+        ImageProcess.addImage(p, url);
+        setXY(p, x, y);
     }
 
     public void initPaneWidthHeight(Pane p,int x, int y, String url, int width, int height){
-        dealImage(p, url, width, height);
+        ImageProcess.dealImage(p, url, width, height);
+        setXY(p, x, y);
+    }
+
+    public void setXY(Node p, int x, int y){
         p.setLayoutX(x);
         p.setLayoutY(y);
     }
@@ -188,89 +182,52 @@ public class MainFramePane extends Pane {
         l.setLayoutY(y);
     }
 
-    public void changeButtonStatues(Pane p,String url){
-        dealImage(p, url);
-    }
-
 
     public void changeAllButtonStatues(){
-        changeButtonStatues(bBistro,bBistro.whichUrl(t.getTime()));
-        buttonAction(bBistro);
-        changeButtonStatues(bSea,bSea.whichUrl(t.getTime()));
-        buttonAction(bSea);
-        changeButtonStatues(bHotel,bHotel.whichUrl(t.getTime()));
-        buttonAction(bHotel);
-        changeButtonStatues(bLevel,bLevel.whichUrl(t.getTime()));
-        buttonAction(bLevel);
-        changeButtonStatues(bMaze,bMaze.whichUrl(t.getTime()));
-        buttonAction(bMaze);
-        changeButtonStatues(bWS,bWS.whichUrl(t.getTime()));
-        buttonAction(bWS);
-        changeButtonStatues(bKillTime,bKillTime.whichUrl(t.getTime()));
-        killTimebuttonAction(bKillTime);
+        bBistro.changeImage(bBistro.whichUrl(t.getCurrentTime()));
+        bSea.changeImage(bSea.whichUrl(t.getCurrentTime()));
+        bHotel.changeImage(bHotel.whichUrl(t.getCurrentTime()));
+        bLevel.changeImage(bLevel.whichUrl(t.getCurrentTime()));
+        bMaze.changeImage(bMaze.whichUrl(t.getCurrentTime()));
+        bWS.changeImage(bWS.whichUrl(t.getCurrentTime()));
+        bKillTime.changeImage(bKillTime.whichUrl(t.getCurrentTime()));
     }
 
-    public void changeClockStatues(Pane dot,Pane clockPane){
+    public void changeClockStatues(){
         initDot(dot);
-        initPane(clockPane,880,-60,selectClockIndicator());
+        setXY(CI, 890, -65);
+        ImageProcess.changeImage(CI, selectClockIndicator());
     }
 
-    public void buttonAction(MapButton b){
-        int time = t.getTime();
-        b.setOnMouseEntered(e->{
-            if(b.ifVisiable(time))
-                changeButtonStatues(b,b.getUrl_hover());
-        });
 
-        b.setOnMouseExited(e->{
-            if(b.ifVisiable(time))
-                changeButtonStatues(b, b.getUrl_pressable());
-        });
-
-        b.setOnMouseClicked(e->{
-            if(b.ifVisiable(time)){
-                changeButtonStatues(b, b.getUrl_pressed());
-            }
-        });
+    public void bKillTimeChangeTime(MapButton b){
+        int time = t.getCurrentTime();
+        if (b.getVisiable(time)){
+            if(time>=6){
+                t.setCurrentTime(8);
+            }else if(time%3 == 0){
+                t.addXTime(3);
+            }else if (time%3 == 1){
+                t.addXTime(2);
+            }else
+                t.addXTime(1);
+            changeAllButtonStatues();
+            changeClockStatues();
+        }
     }
 
-    public void openTentbuttonAction(MapButton b){
-        b.setOnMouseClicked(e->{
-            tentPane.setVisible(true);
-
-        });
-    }
-
-    public void closeTentbuttonAction(MapButton b){
-        b.setOnMouseClicked(e->{
-            tentPane tentPane = new tentPane();
-            m.getChildren().remove(tentPane);
-        });
-    }
-
-    //按钮功能的具体实现类似本图
-    public void killTimebuttonAction(MapButton b){
-        int time = t.getTime();
-        buttonAction(b);
-        b.setOnMouseClicked(e->{
-            if(b.ifVisiable(time)){
-                if(time>=6){
-                    t.setTime(8);
-                }else if(time%3 == 0){
-                    t.modifyTime(3);
-                }else if (time%3 == 1){
-                    t.modifyTime(2);
-                }else
-                    t.modifyTime(1);
-                changeAllButtonStatues();
-                changeClockStatues(dot,CI);
-            }
-        });
+    public void timeChange(MapButton b){
+        int time = t.getCurrentTime();
+        if (b.getVisiable(time)){
+            t.addOne();
+            changeAllButtonStatues();
+            changeClockStatues();
+        }
     }
 
 
     public String selectClockIndicator(){
-        int time = t.getTime();
+        int time = t.getCurrentTime();
         if(time > 5){
             return ".\\images\\night.png";
         }else if (time <3){
@@ -281,9 +238,9 @@ public class MainFramePane extends Pane {
 
 
     public void initDot(Pane d){
-        int time = t.getTime();
-        double[] dx = {878, 876, 886, 1029, 1004, 985, 972, 964, 964};
-        double[] dy = {21, 52, 70, 137, 117, 98, 77, 50, 23};
+        int time = t.getCurrentTime();
+        double[] dx = {1011, 985, 958, 934, 908, 890, 877, 870, 869};
+        double[] dy = {123, 129, 131, 125, 112, 90, 68, 43, 17};
         for (int i = 0; i < ClS.length; i++) {
             ClS[i] = new ClockStatus(dx[i], dy[i], i);
         }
