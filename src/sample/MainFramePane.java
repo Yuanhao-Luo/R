@@ -15,7 +15,7 @@ import sample.specificPlace.HomeofseaPane;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-
+//new commit 在mainframe里面新增一个背包数组，背包数组里面本来是装满了空item的
 public class MainFramePane extends Pane {
     boolean[] bistroAvailable = {false,false,false,true,true,true,true,true,false};
     boolean[] seaAvailable = {true,true,true,true,true,true,false,false,false};

@@ -1,5 +1,6 @@
 package sample;
 
+import sample.itemPart.characterSystem.Person;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -10,10 +11,25 @@ import sample.buttons.CloseTentButton;
 
 
 public class TentPane extends Pane {
+    ItemPane[] itemList = new ItemPane[7];
+    int itemPage = 0;
+
 
     public TentPane(){
+        Person p = Person.getInstance();
         Image imageTent1 = new Image("file:.\\images\\tent1.png");
         Image imageTent2 = new Image("file:.\\images\\tent2.png");
+        //在这里面放backpack
+
+//        simpleFactory s1 = new simpleFactory();
+//
+//        p.getBackpack().add(s1.buildXIHUXIHU());
+//        p.getMedicineBackpack().add(s1.buildXIHUXIHU());
+//        System.out.println(p.getBackpack().get(0).getUrl());
+//        System.out.println(p.getBackpack().get(0).getPrice());
+//        System.out.println(((medicine)p.getBackpack().get(0)).getHeal());
+
+
 
         ImageView tent1 = new ImageView();
         tent1.setImage(imageTent1);
@@ -80,6 +96,26 @@ public class TentPane extends Pane {
         CloseTentButton closeTentButton = new CloseTentButton("    关闭帐篷","200",820,720);
         this.getChildren().add(closeTentButton);
 
+
+        for (int i = 0; i < itemList.length; i++) {
+            itemList[i] = new ItemPane(i);
+            getChildren().add(itemList[i]);
+        }
+        refreshItems();
+    }
+
+    public Pane[] getItemList() {
+        return itemList;
+    }
+
+    public void refreshItems(){
+        Person person = Person.getInstance();
+        for (int i = 0; i < 7; i++) {
+            int j = itemPage*7 +i;
+            if (j >= person.getItemList().size())
+                break;
+            itemList[i].setImage(person.getItemList().get(j).getUrl());
+        }
     }
 
 
