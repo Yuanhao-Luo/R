@@ -25,6 +25,9 @@ public class manyTimesItem extends item{
         return currentCoolDown;
     }
 
+    //这个getter主要测试用
+    public int getTotalCoolDown(){return totalCoolDown;}
+
     public void used(){
         currentCoolDown = totalCoolDown;
     }

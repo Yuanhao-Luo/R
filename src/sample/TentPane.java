@@ -21,8 +21,8 @@ public class TentPane extends Pane {
 
         simpleFactory s1 = new simpleFactory();
 
-        p.getBackpack().add(s1.buildMedicineCureRandomMove());
-        p.getMedicineBackpack().add(s1.buildMedicineCureRandomMove());
+        p.getBackpack().add(s1.buildXIHUXIHU());
+        p.getMedicineBackpack().add(s1.buildXIHUXIHU());
         System.out.println(p.getBackpack().get(0).getUrl());
         System.out.println(p.getBackpack().get(0).getPrice());
         System.out.println(((medicine)p.getBackpack().get(0)).getHeal());

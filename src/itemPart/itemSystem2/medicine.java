@@ -11,12 +11,9 @@ import itemPart.characterSystem.Person;
 //
 public class medicine extends oneTimeItem implements Useable{
 
-
-
-    public medicine(String url,   int price,int heal) {
-        super(url,price ,heal);
+    public medicine(String url, int price,int heal) {
+        super(url,price,heal);
     }
-
 
     @Override
     public void use() {

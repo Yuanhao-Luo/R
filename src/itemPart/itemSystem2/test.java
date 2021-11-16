@@ -6,7 +6,7 @@ public class test {
 
     public static void main(String[] args) {
         simpleFactory s1 = new simpleFactory();
-        medicine m1 = s1.buildMedicineCureAll();
+        medicine m1 = s1.buildXIHUXIHU();
         System.out.println(m1.getHeal());
         System.out.println(m1.getPrice());
         System.out.println(m1.getUrl());

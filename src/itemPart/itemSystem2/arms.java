@@ -8,7 +8,7 @@ public class arms extends manyTimesItem implements combat{
     private int defence;
 
 
-    public arms(String url, int totalCoolDown, int price, int damage, int defence) {
+    public arms(String url, int price, int totalCoolDown, int damage, int defence) {
         super(url,price,totalCoolDown);
         this.damage = damage;
         this.defence = defence;
@@ -22,9 +22,4 @@ public class arms extends manyTimesItem implements combat{
     public int getDefence() {
         return defence;
     }
-
-    public String getUrl() {
-        return url;
-    }
-
 }
