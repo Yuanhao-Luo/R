@@ -10,14 +10,14 @@ public class ItemPane extends Pane {
 
     public ItemPane(int num){
         super();
-        int[] itemx = {190,287,383,477,572,674,765};
+        int[] itemx = {177,275,373,470,564,659,755};
         int itemy = 595;
         setLayoutX(itemx[num]);
         setLayoutY(itemy);
 
         imageView = new ImageView();
-        imageView.setFitWidth(100);
-        imageView.setFitHeight(100);
+        imageView.setFitWidth(88);
+        imageView.setFitHeight(88);
         getChildren().add(imageView);
     }
 
