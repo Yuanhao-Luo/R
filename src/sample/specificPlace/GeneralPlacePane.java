@@ -29,7 +29,6 @@ public class GeneralPlacePane extends Pane {
 
         ImageProcess.addImage(this,".\\images\\" + placeName + "Background.png");
         this.getChildren().add(dialogMe);
-//        ImageProcess.setXY(dialogMe,220,320);
 
         this.getChildren().add(beyeButton);
         ImageProcess.setXY(beyeButton,actionButtonX,firstActionButtonY);

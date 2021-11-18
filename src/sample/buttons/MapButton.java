@@ -6,7 +6,7 @@ import sample.TimeSingleton;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class MapButton extends GeneralButton {
+public class  MapButton extends GeneralButton {
     public boolean[] available = {true,true,true,true,false,false,false,false,false};//表示何时处于可用状态的
     TimeSingleton t = TimeSingleton.getInstance();
     private String name;
