@@ -48,10 +48,10 @@ public class MainFramePane extends Pane {
 
     public TentPane tentPane = new TentPane();
     public HomeofseaPane homeofseaPane = new HomeofseaPane();
-    public WeaponsPane weaponsPane = new WeaponsPane();
-    public HotelPane hotelPane = new HotelPane();
-    public LevelPane levelPane = new LevelPane();
-    public BistroPane bistroPane = new BistroPane();
+//    public WeaponsPane weaponsPane = new WeaponsPane();
+//    public HotelPane hotelPane = new HotelPane();
+//    public LevelPane levelPane = new LevelPane();
+//    public BistroPane bistroPane = new BistroPane();
 
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
@@ -165,17 +165,17 @@ public class MainFramePane extends Pane {
         homeofseaPane.setVisible(false);
         this.getChildren().add(homeofseaPane);
 
-        weaponsPane.setVisible(false);
-        this.getChildren().add(weaponsPane);
-
-        hotelPane.setVisible(false);
-        this.getChildren().add(hotelPane);
-
-        levelPane.setVisible(false);
-        this.getChildren().add(levelPane);
-
-        bistroPane.setVisible(false);
-        this.getChildren().add(bistroPane);
+//        weaponsPane.setVisible(false);
+//        this.getChildren().add(weaponsPane);
+//
+//        hotelPane.setVisible(false);
+//        this.getChildren().add(hotelPane);
+//
+//        levelPane.setVisible(false);
+//        this.getChildren().add(levelPane);
+//
+//        bistroPane.setVisible(false);
+//        this.getChildren().add(bistroPane);
     }
 
     public void initPane(Pane p,int x, int y,String url){
