@@ -11,7 +11,7 @@ import sample.buttons.CloseTentButton;
 
 
 public class TentPane extends Pane {
-    ItemPane[] itemList = new ItemPane[7];
+    ItemPane[] itemList = new ItemPane[21];
     int itemPage = 0;
 
 
@@ -110,11 +110,8 @@ public class TentPane extends Pane {
 
     public void refreshItems(){
         Person person = Person.getInstance();
-        for (int i = 0; i < 7; i++) {
-            int j = itemPage*7 +i;
-            if (j >= person.getItemList().size())
-                break;
-            itemList[i].setImage(person.getItemList().get(j).getUrl());
+        for (int i = 0; i < person.getItemList().size(); i++) {
+            itemList[i].setImage(person.getItemList().get(i).getUrl());
         }
     }
 
