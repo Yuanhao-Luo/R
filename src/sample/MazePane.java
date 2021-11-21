@@ -6,8 +6,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import sample.MazeLogicalPart.CardPane;
-import sample.MazeLogicalPart.MazeStore;
+import sample.MazePart.CardPane;
+import sample.MazePart.GUIMazeStore;
+import sample.MazePart.LogicalMazeStore;
 import sample.buttons.OpenTentButton;
 
 
@@ -19,10 +20,9 @@ public class MazePane extends Pane {
     boolean OpenTentAvailable = true;
     int HPTotal = 120;
     int HPCurrent = 8;
-
     CardPane [][] currentMaze = new CardPane[3][5];//这就是当前显示的部分
-    int currentCard = 0;
-    MazeStore mazeStore = new MazeStore();
+    int currentCard = 1;
+    GUIMazeStore guiMazeStore = GUIMazeStore.getInstance();
     OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
 
     //这个地方需要的是另一个帐篷，就是下面的桌面部分，点了打开帐篷会再打开一个新的tentPane
@@ -116,10 +116,8 @@ public class MazePane extends Pane {
         HPTotalLabel.setTextFill(Color.web("#000000"));
 
 
-        currentCard = 1;
         initTheMaze();
         walkTheMaze();
-
     }
 
     public void initTheMaze(){
@@ -138,7 +136,7 @@ public class MazePane extends Pane {
         for (int i = currentCard; i < currentCard+3; i++){
             for(int j = 0; j < 5; j++){
                 //这个地方的3会被二维数组的上下长度代替
-                currentMaze[i%3][j] = mazeStore.theMaze[i%3][j];//相当于把牌换了
+                currentMaze[i%3][j] = guiMazeStore.GuiMaze[i%3][j];//相当于把牌换了
                 this.getChildren().add(currentMaze[i%3][j]);
                 currentMaze[i%3][j].setLayoutY(100*(i-currentCard) + 100);
                 currentMaze[i%3][j].setLayoutX(160*j + 100);
