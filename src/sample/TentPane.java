@@ -1,5 +1,6 @@
 package sample;
 
+import sample.buttons.GeneralButton;
 import sample.itemPart.characterSystem.Person;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -11,9 +12,12 @@ import sample.buttons.CloseTentButton;
 
 
 public class TentPane extends Pane {
-    ItemPane[] itemList = new ItemPane[7];
+
     private boolean visiable = false;
     int itemPage = 0;
+    ItemPane[] itemList = new ItemPane[21];
+    GeneralButton nextPage;
+    GeneralButton prePage;
 
     private static TentPane tentPane = new TentPane();
 
@@ -96,13 +100,39 @@ public class TentPane extends Pane {
         CloseTentButton closeTentButton = new CloseTentButton("    关闭帐篷","200",820,720);
         this.getChildren().add(closeTentButton);
 
+        //以下是物品系统加的东西
+        //bet的位置大小还要调一下
+        nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_pressed.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
+        //图片还没有放进去
+        nextPage.setOnMouseReleased(e->{
+            if (getItemPage() != 3){
+                setItemPage(getItemPage()+1);
+            }
+        });
+        getChildren().add(nextPage);
+        nextPage.setLayoutX(843);//需要调整位置
+        nextPage.setLayoutY(578);
+
+        prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_pressed.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
+        //图片还没有放进去
+        prePage.setOnMouseReleased(e->{
+            if (getItemPage() != 0){
+                setItemPage(getItemPage()-1);
+            }
+        });
+        getChildren().add(prePage);
+        prePage.setLayoutX(131);//需要调整位置
+        prePage.setLayoutY(578);
 
         for (int i = 0; i < itemList.length; i++) {
             itemList[i] = new ItemPane(i);
             getChildren().add(itemList[i]);
         }
         refreshItems();
+        changeToItemPage(0);
     }
+
+
 
     public Pane[] getItemList() {
         return itemList;
@@ -110,14 +140,29 @@ public class TentPane extends Pane {
 
     public void refreshItems(){
         Person person = Person.getInstance();
-        for (int i = 0; i < 7; i++) {
-            int j = itemPage*7 +i;
-            if (j >= person.getItemList().size())
-                break;
-            itemList[i].setImage(person.getItemList().get(j).getUrl());
+        for (int i = 0; i < person.getItemList().size(); i++) {
+            itemList[i].setImage(person.getItemList().get(i).getUrl());
         }
     }
 
+    //page start from 0
+    public void changeToItemPage(int page){
+        for (ItemPane item : itemList) {
+            item.setVisible(false);
+        }
+        for (int i = 7*page; i < 7*page + 7; i++) {
+            itemList[i].setVisible(true);
+        }
+    }
+
+    public void setItemPage(int itemPage) {
+        this.itemPage = itemPage;
+        changeToItemPage(itemPage);
+    }
+
+    public int getItemPage() {
+        return itemPage;
+    }
 
 
 }
