@@ -3,6 +3,7 @@ package sample.buttons;
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
 import sample.MainFramePane;
+import sample.TentPane;
 import sample.buttons.GeneralButton;
 
 public class CloseTentButton extends TextButton {
@@ -11,7 +12,7 @@ public class CloseTentButton extends TextButton {
         super(text, type, X, Y);
         addButtonEvent();
         setOnMouseClicked(e -> {
-            MainFramePane.getInstance().tentPane.setVisible(false);
+            TentPane.getInstance().setVisible(false);
         });
     }
 }

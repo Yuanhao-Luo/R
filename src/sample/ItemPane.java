@@ -31,6 +31,8 @@ public class ItemPane extends Pane {
 
         bet = new ImageView(new Image("file:.\\images\\bet.png"));
         bet.setVisible(false);
+        bet.setX(3.6);
+        bet.setY(3);
         getChildren().add(bet);
 
         setOnMouseEntered(e -> {

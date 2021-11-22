@@ -7,6 +7,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     MainFramePane m = MainFramePane.getInstance();
+    MazePane m1 = MazePane.getInstance();
+    TentPane t1 = TentPane.getInstance();
     @Override
     public void start(Stage primaryStage) throws Exception{
         primaryStage.setTitle("Rance 1 remastered");
@@ -14,10 +16,14 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(p1, 1025, 770));
 
         p1.getChildren().add(m);
+        //p1.getChildren().add(m1);
         p1.setOnMouseClicked(e ->{
             System.out.println(e.getX());
             System.out.println(e.getY());
         });
+
+        t1.setVisible(false);
+        p1.getChildren().add(t1);
         primaryStage.setWidth(1040);
         primaryStage.setMaxWidth(1040);
         primaryStage.setMinWidth(1040);
