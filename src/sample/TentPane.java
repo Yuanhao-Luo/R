@@ -13,7 +13,7 @@ import sample.buttons.CloseTentButton;
 
 public class TentPane extends Pane {
 
-    private boolean visiable = false;
+//    private boolean visiable = false;
     int itemPage = 0;
     ItemPane[] itemList = new ItemPane[21];
     GeneralButton nextPage;
@@ -23,13 +23,13 @@ public class TentPane extends Pane {
 
     public static TentPane getInstance(){return tentPane;}
 
-    public void setVisiable(boolean visiable) {
-        this.visiable = visiable;
-    }
-
-    public boolean isVisiable() {
-        return visiable;
-    }
+//    public void setVisiable(boolean visiable) {
+//        this.visiable = visiable;
+//    }
+//
+//    public boolean isVisiable() {
+//        return visiable;
+//    }
 
     private TentPane(){
         Person p = Person.getInstance();
@@ -133,10 +133,9 @@ public class TentPane extends Pane {
     }
 
 
-
-    public Pane[] getItemList() {
-        return itemList;
-    }
+//    public Pane[] getItemList() {
+//        return itemList;
+//    }
 
     public void refreshItems(){
         Person person = Person.getInstance();
