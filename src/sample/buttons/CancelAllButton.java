@@ -4,7 +4,6 @@ package sample.buttons;
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
 import sample.MainFramePane;
-import sample.TentPane;
 
 public class CancelAllButton extends TextButton {
     public CancelAllButton(String text, String type, int X, int Y) {
