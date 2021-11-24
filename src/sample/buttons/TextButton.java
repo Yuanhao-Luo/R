@@ -3,6 +3,7 @@ package sample.buttons;
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
 import sample.MainFramePane;
+import sample.TentPane;
 
 public class TextButton extends GeneralButton {
     String text = "";
@@ -13,7 +14,7 @@ public class TextButton extends GeneralButton {
         this.text = text;
         addButtonEvent();
         setOnMouseClicked(e -> {
-            MainFramePane.getInstance().tentPane.setVisible(false);
+            TentPane.getInstance().setVisible(false);
         });
         setLayoutX(X);
         setLayoutY(Y);

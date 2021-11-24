@@ -22,12 +22,12 @@ public class Person {
         //test
         simpleFactory s = new simpleFactory();
         itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
+        itemList.add(s.buildGrapeWine());
+        itemList.add(s.buildRiceWine());
+        itemList.add(s.buildGuerrillaSword());
+        itemList.add(s.buildCureCancer75());
+        itemList.add(s.buildFlashJump());
+        itemList.add(s.buildTravelingMethod());
     }
 
     public static Person getInstance(){

@@ -16,8 +16,9 @@ public class ItemPane extends Pane {
         super();
         int[] itemx = {177,275,373,470,564,659,755};
         int itemy = 595;
-        setLayoutX(itemx[num]);
+        setLayoutX(itemx[num%7]);
         setLayoutY(itemy);
+        setVisible(false);
 
         imageView = new ImageView();
         imageView.setFitWidth(88);
@@ -30,6 +31,8 @@ public class ItemPane extends Pane {
 
         bet = new ImageView(new Image("file:.\\images\\bet.png"));
         bet.setVisible(false);
+        bet.setX(3.6);
+        bet.setY(3);
         getChildren().add(bet);
 
         setOnMouseEntered(e -> {
@@ -40,6 +43,7 @@ public class ItemPane extends Pane {
         });
         setOnMouseReleased(e -> {
             setSelect(!isSelect());
+            System.out.println("adsfouhiaoeiuhfa");
         });
     }
 
@@ -55,11 +59,7 @@ public class ItemPane extends Pane {
 
     public void setSelect(boolean select) {
         this.select = select;
-        if (select){
-            bet.setVisible(false);
-        }else {
-            bet.setVisible(true);
-        }
+        bet.setVisible(select);
     }
 
 
