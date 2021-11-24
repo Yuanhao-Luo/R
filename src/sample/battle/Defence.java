@@ -14,7 +14,7 @@ public class Defence extends Behaviour {
         this.attribute = attribute;
     }
 
-    public int getDefence() {
+    public int getDefenceNum() {
         return defence;
     }
 

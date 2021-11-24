@@ -14,7 +14,7 @@ public class Attack extends Behaviour {
         this.attribute = attribute;
     }
 
-    public int getAttack() {
+    public int getAttackNum() {
         return attack;
     }
 

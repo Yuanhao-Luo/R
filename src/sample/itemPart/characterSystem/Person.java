@@ -2,6 +2,8 @@ package sample.itemPart.characterSystem;
 
 import sample.itemPart.itemSystem2.*;
 
+import java.util.ArrayList;
+
 public class Person {
 //    private boolean[]StateFlags = new boolean[5];
     private boolean blind = false;
@@ -12,7 +14,7 @@ public class Person {
     //backpack part
 
     private ItemList itemList = new ItemList();
-    private ItemList selectList = new ItemList();
+    private ArrayList selectArms = new ArrayList<arms>();
 
     private static Person p = new Person();
 
@@ -61,5 +63,9 @@ public class Person {
 
     public void setSquidMan(boolean squidMan) {
         this.squidMan = squidMan;
+    }
+
+    public ArrayList getSelectArms() {
+        return selectArms;
     }
 }
