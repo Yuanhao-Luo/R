@@ -12,6 +12,7 @@ public class Person {
     //backpack part
 
     private ItemList itemList = new ItemList();
+    private ItemList selectList = new ItemList();
 
     private static Person p = new Person();
 
