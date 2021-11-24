@@ -22,6 +22,7 @@ public class Battle {
     }
 
     public void startBattle(){
-
+        BehaviourLogic bl = monster.getBehaviourLogics()[turn];
+        int monAtt = bl.getAttack().getAttack();
     }
 }
