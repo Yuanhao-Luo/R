@@ -11,7 +11,7 @@ public class GeneralPlacePane extends Pane {
     String placeName;
     int actionButtonX = 10;
     static final int firstActionButtonY = 150;
-    static final int actionbuttonInterval = 75;
+    static final int actionbuttonInterval = 82;
     ActionButton beyeButton;
     ActionButton bmouthButton;
     ActionButton bhandButton;
