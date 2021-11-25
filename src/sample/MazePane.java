@@ -6,9 +6,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import sample.MazePart.CardPane;
-import sample.MazePart.GUIMazeStore;
-import sample.MazePart.LogicalMazeStore;
+import sample.MazePart.*;
 import sample.buttons.OpenTentButton;
 
 
@@ -20,11 +18,20 @@ public class MazePane extends Pane {
     boolean OpenTentAvailable = true;
     int HPTotal = 120;
     int HPCurrent = 8;
-    CardPane [][] currentMaze = new CardPane[3][5];//这就是当前显示的部分
-    int currentCard = 1;
-    GUIMazeStore guiMazeStore = GUIMazeStore.getInstance();
-    OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
 
+    LogicalMazeOuterCityStore logicalMazeOuterCityStore = LogicalMazeOuterCityStore.getInstance();
+    LogicalMazeCaveFloor1Store logicalMazeCaveFloor1Store = LogicalMazeCaveFloor1Store.getInstance();
+    LogicalMazeCaveUndergroundStore logicalMazeCaveUndergroundStore = LogicalMazeCaveUndergroundStore.getInstance();
+
+    Card[][] logicalMaze;
+    Card [][] MazeCanBeSeen;
+
+    CardPane [][] currentMaze = new CardPane[3][5];//这就是当前显示的部分
+    int currentRow = 10;//现在应该在迷宫的第几行 0~15
+    int currentCard = 3;//现在是第几列，也就是第几张牌 0~4
+
+
+    OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
     //这个地方需要的是另一个帐篷，就是下面的桌面部分，点了打开帐篷会再打开一个新的tentPane
 
 
@@ -116,31 +123,54 @@ public class MazePane extends Pane {
         HPTotalLabel.setTextFill(Color.web("#000000"));
 
 
+
+        //这主要是选定好一个迷宫，因为传送走之后会换迷宫的,换迷宫直接换这两个就好了
+        logicalMaze = logicalMazeOuterCityStore.logicalMaze;
+        MazeCanBeSeen = logicalMazeOuterCityStore.MazeCanBeSeen;
         initTheMaze();
-        walkTheMaze();
+        initStep();
     }
 
     public void initTheMaze(){
-        //只管初始化空牌，内容下面加
-        for (int i = 0; i < 3; i++){
-            for(int j = 0; j < 5; j++){
-                currentMaze[i][j] = new CardPane();
-                currentMaze[i][j].setLayoutY(100*i + 100);
-                currentMaze[i][j].setLayoutX(160*j + 100);
-            }
+        for(int j = 0; j < 5; j++) {
+            currentMaze[0][j] = new CardPane(logicalMaze[(currentRow+ 2)%logicalMaze.length][j]);
+            this.getChildren().add(currentMaze[0][j]);
+            setXY(currentMaze[0][j],160*j + 100, 100);
+            currentMaze[1][j] = new CardPane(logicalMaze[(currentRow + 1)%logicalMaze.length][j]);
+            this.getChildren().add(currentMaze[1][j]);
+            setXY(currentMaze[1][j],160*j + 100, 200);
+            currentMaze[2][j] = new CardPane(logicalMaze[(currentRow)%logicalMaze.length][j]);
+            this.getChildren().add(currentMaze[2][j]);
+            setXY(currentMaze[2][j],160*j + 100, 300);
         }
     }
 
-    public void walkTheMaze(){
-        //记得在这之前把currentCard+1
-        for (int i = currentCard; i < currentCard+3; i++){
-            for(int j = 0; j < 5; j++){
-                //这个地方的3会被二维数组的上下长度代替
-                currentMaze[i%3][j] = guiMazeStore.GuiMaze[i%3][j];//相当于把牌换了
-                this.getChildren().add(currentMaze[i%3][j]);
-                currentMaze[i%3][j].setLayoutY(100*(i-currentCard) + 100);
-                currentMaze[i%3][j].setLayoutX(160*j + 100);
-            }
+    public void initStep(){
+        currentMaze[2][currentCard].setOnMouseClicked(e ->{
+
+            //修改下一步的位置，包括行列
+            currentRow = (currentRow+1)%logicalMaze.length;
+            System.out.println(currentCard);
+        } );
+
+        if (currentCard>0) {//把上一个Pane传进来
+            currentMaze[2][currentCard-1].setOnMouseClicked(e->{
+
+                //修改下一步的位置，包括行列
+                currentCard-=1;
+                currentRow = (currentRow+1)%logicalMaze.length;
+                System.out.println(currentCard);
+            });
+        }
+
+        if (currentCard<4){//把下一个Pane传进来
+            currentMaze[2][currentCard+1].setOnMouseClicked(e->{
+
+                //修改下一步的位置，包括行列
+                currentCard+=1;//
+                currentRow = (currentRow+1)%logicalMaze.length;
+                System.out.println(currentCard);
+            });
         }
     }
 

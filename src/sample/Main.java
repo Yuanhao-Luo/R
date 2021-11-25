@@ -16,11 +16,11 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(p1, 1025, 770));
 
         p1.getChildren().add(m);
-        //p1.getChildren().add(m1);
-        p1.setOnMouseClicked(e ->{
-            System.out.println(e.getX());
-            System.out.println(e.getY());
-        });
+        p1.getChildren().add(m1);
+//        p1.setOnMouseClicked(e ->{
+//            System.out.println(e.getX());
+//            System.out.println(e.getY());
+//        });
 
         t1.setVisible(false);
         p1.getChildren().add(t1);
