@@ -12,7 +12,7 @@ import sample.buttons.OpenTentButton;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-//new commit 在mainframe里面新增一个背包数组，背包数组里面本来是装满了空item的
+
 public class MazePane extends Pane {
     //tem
     boolean OpenTentAvailable = true;
@@ -23,12 +23,11 @@ public class MazePane extends Pane {
     LogicalMazeCaveFloor1Store logicalMazeCaveFloor1Store = LogicalMazeCaveFloor1Store.getInstance();
     LogicalMazeCaveUndergroundStore logicalMazeCaveUndergroundStore = LogicalMazeCaveUndergroundStore.getInstance();
 
-    Card[][] logicalMaze;
+    Card [][] logicalMaze;
     Card [][] MazeCanBeSeen;
-
     CardPane [][] currentMaze = new CardPane[3][5];//这就是当前显示的部分
     int currentRow = 10;//现在应该在迷宫的第几行 0~15
-    int currentCard = 3;//现在是第几列，也就是第几张牌 0~4
+    int currentCard = 2;//现在是第几列，也就是第几张牌 0~4
 
 
     OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
@@ -36,6 +35,10 @@ public class MazePane extends Pane {
 
 
     //改
+    Pane Character = new Pane();
+    Pane leftMazeBar = new Pane();
+    Pane rightMazeBar = new Pane();
+
     ImageView clockImv = new ImageView();
     Pane HPBackgroundPane = new Pane();
     Pane HPCurrentImg = new Pane();
@@ -43,12 +46,12 @@ public class MazePane extends Pane {
     ImageView CI = new ImageView();
     Pane HPBlackImg = new Pane();
     Label HPCurrentLabel = new Label("" + HPCurrent);
-
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
-
     private static MazePane m = new MazePane();
     TimeSingleton t = TimeSingleton.getInstance();
+
+
     public static MazePane getInstance(){
         return m;
     }
@@ -124,53 +127,137 @@ public class MazePane extends Pane {
 
 
 
+
         //这主要是选定好一个迷宫，因为传送走之后会换迷宫的,换迷宫直接换这两个就好了
         logicalMaze = logicalMazeOuterCityStore.logicalMaze;
         MazeCanBeSeen = logicalMazeOuterCityStore.MazeCanBeSeen;
         initTheMaze();
-        initStep();
+        initAllStep();
+        this.getChildren().add(Character);
+        this.getChildren().add(leftMazeBar);
+        this.getChildren().add(rightMazeBar);
+        initPane(Character,390,570,".\\images\\rancewalkingmaze.png");
+        initPane(leftMazeBar,260,340,".\\images\\leftMazeBar.png");
+        initPane(rightMazeBar,680,340,".\\images\\rightMazeBar.png");
+
     }
+
 
     public void initTheMaze(){
         for(int j = 0; j < 5; j++) {
-            currentMaze[0][j] = new CardPane(logicalMaze[(currentRow+ 2)%logicalMaze.length][j]);
+            currentMaze[0][j] = new CardPane(logicalMaze[(currentRow+2)%logicalMaze.length][j]);
+//            System.out.println(currentMaze[0][j].getCard().getUrl());
             this.getChildren().add(currentMaze[0][j]);
-            setXY(currentMaze[0][j],160*j + 100, 100);
-            currentMaze[1][j] = new CardPane(logicalMaze[(currentRow + 1)%logicalMaze.length][j]);
+            setXY(currentMaze[0][j],160*j + 120, 150);
+            currentMaze[1][j] = new CardPane(logicalMaze[(currentRow+1)%logicalMaze.length][j]);
             this.getChildren().add(currentMaze[1][j]);
-            setXY(currentMaze[1][j],160*j + 100, 200);
+            setXY(currentMaze[1][j],160*j + 120, 250);
             currentMaze[2][j] = new CardPane(logicalMaze[(currentRow)%logicalMaze.length][j]);
             this.getChildren().add(currentMaze[2][j]);
-            setXY(currentMaze[2][j],160*j + 100, 300);
+            setXY(currentMaze[2][j],160*j + 120, 350);
         }
     }
 
-    public void initStep(){
-        currentMaze[2][currentCard].setOnMouseClicked(e ->{
 
-            //修改下一步的位置，包括行列
-            currentRow = (currentRow+1)%logicalMaze.length;
-            System.out.println(currentCard);
-        } );
+    // 有两种情况是不会给牌加上这个功能的，对应的type分别是2障碍卡片，他不应该被加事件
+    // 3仅显示背面的图片，这个比较特殊，
+    public  void initAllStep(){
+        whichAction(currentMaze[2][currentCard]);
+        initCenterStep();
+        if (currentCard>0){
+            whichAction(currentMaze[2][currentCard-1]);
+            initLeftStep();}
+        if (currentCard<4){
+            whichAction(currentMaze[2][currentCard+1]);
+            initRightStep();
+        }
+    }
 
-        if (currentCard>0) {//把上一个Pane传进来
+    public void initLeftStep(){
+        //if (currentCard>0) {
             currentMaze[2][currentCard-1].setOnMouseClicked(e->{
-
-                //修改下一步的位置，包括行列
                 currentCard-=1;
                 currentRow = (currentRow+1)%logicalMaze.length;
-                System.out.println(currentCard);
+                initTheMaze();
+                initAllStep();
+                initLeftBar();
             });
-        }
+        //}
+    }
 
-        if (currentCard<4){//把下一个Pane传进来
+    public void initCenterStep(){
+        currentMaze[2][currentCard].setOnMouseClicked(e ->{
+            currentRow = (currentRow+1)%logicalMaze.length;
+            initTheMaze();
+            initAllStep();
+        } );
+    }
+
+    public void initRightStep(){
+        //if (currentCard<4){
             currentMaze[2][currentCard+1].setOnMouseClicked(e->{
-
-                //修改下一步的位置，包括行列
                 currentCard+=1;//
                 currentRow = (currentRow+1)%logicalMaze.length;
-                System.out.println(currentCard);
+                initTheMaze();
+                initAllStep();
+                initRightBar();
             });
+        //}
+    }
+
+    public void initLeftBar(){
+        setXY(Character,(int)Character.getLayoutX()-160,570);
+        if((currentCard==1)||(currentCard==0))  setXY(leftMazeBar,100,340);
+        else  setXY(leftMazeBar,(int)(Character.getLayoutX()-130),340);
+        setXY(rightMazeBar,(int)(Character.getLayoutX()+290),340);
+    }
+
+    public void initRightBar(){
+        setXY(Character,(int)Character.getLayoutX()+160,570);
+        if((currentCard==3)||(currentCard==4))  setXY(rightMazeBar,840,340);
+        else  setXY(rightMazeBar,(int)(Character.getLayoutX()+290),340);
+        setXY(leftMazeBar, (int)(Character.getLayoutX()-130),340);
+    }
+
+    //让他根据type返回true和false，暂存在initAllStep里面，然后左中右三个step都要传Boolean进去，true才能用
+    public void whichAction(CardPane cardPane){
+        switch (cardPane.getCard().getType()){
+            case "1"://
+                System.out.println(1);
+                System.out.println(cardPane.getCard().getContent());
+                break;
+            case "2":
+                System.out.println(2);
+                System.out.println(cardPane.getCard().getContent());
+                break;
+            case "3":
+                System.out.println(3);
+                System.out.println(cardPane.getCard().getContent());
+                break;
+            case "4":
+                System.out.println(4);
+                System.out.println(cardPane.getCard().getContent());
+                break;
+            case "5":
+                System.out.println(5);
+                System.out.println(cardPane.getCard().getContent());
+                break;
+            case "6":
+                System.out.println(6);
+                System.out.println(cardPane.getCard().getContent());
+                break;
+            case "7":
+                System.out.println(7);
+                System.out.println(cardPane.getCard().getContent());
+                break;
+            case "8":
+                System.out.println(8);
+                System.out.println(cardPane.getCard().getContent());
+                break;
+            case "9":
+                System.out.println(9);
+                System.out.println(cardPane.getCard().getContent());
+                break;
         }
     }
 

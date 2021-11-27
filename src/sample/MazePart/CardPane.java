@@ -10,10 +10,15 @@ public class CardPane extends Pane {
     public CardPane(){}
 
     public CardPane(Card card){
+        this.card = card;
         ImageProcess.addImage(this,card.getUrl());
     }
 
     public Card getCard() {
         return card;
+    }
+
+    public void setCard(Card card) {
+        this.card = card;
     }
 }
