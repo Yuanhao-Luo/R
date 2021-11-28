@@ -46,7 +46,7 @@ public class MainFramePane extends Pane {
     Pane HPBlackImg = new Pane();
     Label HPCurrentLabel = new Label("" + HPCurrent);
 
-    public TentPane tentPane = new TentPane();
+    public TentPane tentPane = TentPane.getInstance();
     public HomeofseaPane homeofseaPane = new HomeofseaPane();
     public WeaponsPane weaponsPane = new WeaponsPane();
     public HotelPane hotelPane = new HotelPane();

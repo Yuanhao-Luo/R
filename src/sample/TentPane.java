@@ -12,27 +12,29 @@ import sample.buttons.CloseTentButton;
 
 
 public class TentPane extends Pane {
-    ItemPane[] itemList = new ItemPane[21];
+
+    private boolean visiable = false;
     int itemPage = 0;
+    ItemPane[] itemList = new ItemPane[21];
     GeneralButton nextPage;
     GeneralButton prePage;
 
+    private static TentPane tentPane = new TentPane();
 
-    public TentPane(){
+    public static TentPane getInstance(){return tentPane;}
+
+    public void setVisiable(boolean visiable) {
+        this.visiable = visiable;
+    }
+
+    public boolean isVisiable() {
+        return visiable;
+    }
+
+    private TentPane(){
         Person p = Person.getInstance();
         Image imageTent1 = new Image("file:.\\images\\tent1.png");
         Image imageTent2 = new Image("file:.\\images\\tent2.png");
-        //在这里面放backpack
-
-//        simpleFactory s1 = new simpleFactory();
-//
-//        p.getBackpack().add(s1.buildXIHUXIHU());
-//        p.getMedicineBackpack().add(s1.buildXIHUXIHU());
-//        System.out.println(p.getBackpack().get(0).getUrl());
-//        System.out.println(p.getBackpack().get(0).getPrice());
-//        System.out.println(((medicine)p.getBackpack().get(0)).getHeal());
-
-
 
         ImageView tent1 = new ImageView();
         tent1.setImage(imageTent1);
@@ -48,7 +50,6 @@ public class TentPane extends Pane {
         tent2.setFitHeight(imageTent2.getHeight());
         int tent2Left = -50;
         int tent2Top = 510;
-//        tent2.setFitWidth(1150);
         tent2.setX(tent2Left);
         tent2.setY(tent2Top);
 
@@ -78,9 +79,9 @@ public class TentPane extends Pane {
         gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
         Label chip = new Label("7 10");
-        chip.setLayoutX(822 -100 + tent1Left);
+        chip.setLayoutX(807 -100 + tent1Left);
         chip.setLayoutY(185 - (-300) + tent1Top);
-        chip.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  40));
+        chip.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
         Label skill = new Label("8");
         Label condition = new Label("9");
@@ -101,7 +102,7 @@ public class TentPane extends Pane {
 
         //以下是物品系统加的东西
         //bet的位置大小还要调一下
-        nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
+        nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_pressed.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
         //图片还没有放进去
         nextPage.setOnMouseReleased(e->{
             if (getItemPage() != 3){
@@ -109,10 +110,10 @@ public class TentPane extends Pane {
             }
         });
         getChildren().add(nextPage);
-        nextPage.setLayoutX(0);//需要调整位置
-        nextPage.setLayoutY(0);
+        nextPage.setLayoutX(843);//需要调整位置
+        nextPage.setLayoutY(578);
 
-        prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
+        prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_pressed.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
         //图片还没有放进去
         prePage.setOnMouseReleased(e->{
             if (getItemPage() != 0){
@@ -120,8 +121,8 @@ public class TentPane extends Pane {
             }
         });
         getChildren().add(prePage);
-        prePage.setLayoutX(0);//需要调整位置
-        prePage.setLayoutY(0);
+        prePage.setLayoutX(131);//需要调整位置
+        prePage.setLayoutY(578);
 
         for (int i = 0; i < itemList.length; i++) {
             itemList[i] = new ItemPane(i);
@@ -130,6 +131,8 @@ public class TentPane extends Pane {
         refreshItems();
         changeToItemPage(0);
     }
+
+
 
     public Pane[] getItemList() {
         return itemList;
@@ -144,8 +147,7 @@ public class TentPane extends Pane {
 
     //page start from 0
     public void changeToItemPage(int page){
-        for (ItemPane item :
-                itemList) {
+        for (ItemPane item : itemList) {
             item.setVisible(false);
         }
         for (int i = 7*page; i < 7*page + 7; i++) {
@@ -161,6 +163,8 @@ public class TentPane extends Pane {
     public int getItemPage() {
         return itemPage;
     }
+
+
 }
 
 //package sample;
