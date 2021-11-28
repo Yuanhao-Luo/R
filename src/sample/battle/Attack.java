@@ -18,7 +18,7 @@ public class Attack extends Behaviour {
         return attack;
     }
 
-    public int getAttribute() {
+    public int getAttributeType() {
         return attribute;
     }
 }

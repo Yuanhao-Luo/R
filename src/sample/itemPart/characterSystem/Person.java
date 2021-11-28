@@ -10,7 +10,10 @@ public class Person {
     private boolean getLost = false;
     private boolean squidMan = false;
     private int health = 900;
+    private int maxHealth;
     private int money = 1000;
+    private int attack = 100;
+    private int critical = 10;
     //backpack part
 
     private ItemList itemList = new ItemList();
@@ -19,7 +22,7 @@ public class Person {
     private static Person p = new Person();
 
     private Person(){
-
+        maxHealth = health;
 
 
         //test
@@ -67,5 +70,35 @@ public class Person {
 
     public ArrayList getSelectArms() {
         return selectArms;
+    }
+
+    public int getMaxHealth() {
+        return maxHealth;
+    }
+
+    public int getAttackNum() {
+        return attack;
+    }
+
+    public int getCritical() {
+        return critical;
+    }
+
+    public boolean isDie(){
+        return health <= 0;
+    }
+
+    public void loseHp(int damage){
+        if (damage >= health){
+            die();
+        }else {
+            setHealth(getHealth()-damage);
+        }
+    }
+
+
+    //还没有实现，需要对接
+    public void die(){
+
     }
 }

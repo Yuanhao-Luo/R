@@ -7,7 +7,7 @@ public class Weekness extends Behaviour {
         this.weekness = weekness;
     }
 
-    public int getWeekness() {
+    public int getWeeknessType() {
         return weekness;
     }
 }

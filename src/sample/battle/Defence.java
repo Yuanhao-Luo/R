@@ -18,7 +18,7 @@ public class Defence extends Behaviour {
         return defence;
     }
 
-    public int getAttribute() {
+    public int getAttributeType() {
         return attribute;
     }
 }
