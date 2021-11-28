@@ -26,6 +26,8 @@ public class BattlePane extends Pane {
 
     public BattlePane(){
         Person p = Person.getInstance();
+        //要求
+        //变量名指示不清，改变量名
         Image imageTent1 = new Image("file:.\\images\\battleBackground.png");
         Image imageTent2 = new Image("file:.\\images\\ranceinbattle.png");
         Image imageTent3 = new Image("file:.\\images\\tent2.png");
@@ -44,7 +46,9 @@ public class BattlePane extends Pane {
 //        System.out.println(((medicine)p.getBackpack().get(0)).getHeal());
 
 
-
+        //要求
+        //以下几个组件，如果需要之后修改的话，把它作为BattlePane类的属性，或者直接全部变成BattlePane类的属性，可以参考mainframePane
+        //把非必要的注释删了
         ImageView tent1 = new ImageView();
         tent1.setImage(imageTent1);
         tent1.setFitHeight(imageTent1.getHeight());
