@@ -14,13 +14,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class MazePane extends Pane {
-    //boolean OpenTentAvailable = true;
     int HPTotal = 120;
     int HPCurrent = 8;
     LogicalMazeOuterCityStore logicalMazeOuterCityStore = LogicalMazeOuterCityStore.getInstance();
     LogicalMazeCaveFloor1Store logicalMazeCaveFloor1Store = LogicalMazeCaveFloor1Store.getInstance();
     LogicalMazeCaveUndergroundStore logicalMazeCaveUndergroundStore = LogicalMazeCaveUndergroundStore.getInstance();
-
     Card[][] logicalMaze;
     Card[][] MazeCanBeSeen;
     CardPane[][] currentMaze = new CardPane[3][5];//这就是当前显示的部分
@@ -150,8 +148,6 @@ public class MazePane extends Pane {
     }
 
 
-
-
     public void initAllStep(){
         initCenterStep(whichAction(currentMaze[2][currentCard]));
         if (currentCard>0){
@@ -200,36 +196,23 @@ public class MazePane extends Pane {
         }
     }
 
+
     public void initCharacter(int currentCard){
         setXY(Character,390 + (currentCard-2)*160,570);
     }
-    //刚开始的时候中心人，左右边框位置分别是390，260，680
+
 
     public void initLeftBar(int currentCard){
-        System.out.println("初始化左边框被执行了");
-        System.out.println("currentCard is "+currentCard);
-        System.out.println(Character.getLayoutX()+"对应身位值"+(Character.getLayoutX()-230)/160);
-        //setXY(Character,390+(currentCard-2)*160,570);
         if((currentCard==1)||(currentCard==0))  setXY(leftMazeBar,100,340);
         else  setXY(leftMazeBar,390+(currentCard-2)*160-130,340);
         setXY(rightMazeBar,390+(currentCard-2)*160+290,340);
-//        setXY(Character,(int)Character.getLayoutX()-160,570);
-//        System.out.println("初始化左边框被执行了");
-//        if((currentCard==1)||(currentCard==0))  setXY(leftMazeBar,100,340);
-//        else  setXY(leftMazeBar,(int)(Character.getLayoutX()-130),340);
-//        setXY(rightMazeBar,(int)(Character.getLayoutX()+290),340);
     }
 
+
     public void initRightBar(int currentCard){
-        System.out.println("初始化右边框被执行了");
-        System.out.println("currentCard is "+currentCard);
-        System.out.println(Character.getLayoutX()+"对应身位值"+(Character.getLayoutX()-230)/160);
-        //setXY(Character,390+(currentCard-2)*160,570);
         if((currentCard==3)||(currentCard==4))  setXY(rightMazeBar,840,340);
         else  setXY(rightMazeBar,390+(currentCard-2)*160+290,340);
         setXY(leftMazeBar, 390+(currentCard-2)*160-130,340);
-//                else  setXY(rightMazeBar,680+160*(currentCard-2),340);
-//        setXY(leftMazeBar, 260-160*(currentCard-2),340);
     }
 
 
@@ -251,8 +234,6 @@ public class MazePane extends Pane {
             panewhichCardSelected1.setOnMouseClicked(e->{
                 whichCardSelected-=1;
                 currentMaze[2][currentCard-1].getChildren().remove(panewhichCardSelected1);
-                System.out.println("2.1 whichCardSelected: whichCardSelected is " + whichCardSelected);
-                System.out.println("2.1 whichCardSelected: currentCard is" + currentCard);
             });
         }
         if (currentCard < 4){
@@ -260,17 +241,13 @@ public class MazePane extends Pane {
             panewhichCardSelected2.setOnMouseReleased(e->{
                 whichCardSelected+=1;
                 currentMaze[2][currentCard+1].getChildren().remove(panewhichCardSelected1);
-                System.out.println("2.1 whichCardSelected: whichCardSelected is " + whichCardSelected);
-                System.out.println("2.1 whichCardSelected: currentCard is" + currentCard);
             });
         }
-        System.out.println("2.1如果两边的都没点，那就是中间那张没变"+currentCard+"="+whichCardSelected);
     }
 
 
     //4,这里就是承接上文所说，用了whichCardSelected来初始化新一行的Maze
     public void initForCardType3(){
-
         currentMaze[2][whichCardSelected].setOnMouseClicked(e->{
             if(whichCardSelected<currentCard){
                 initCharacter(whichCardSelected);
@@ -331,12 +308,8 @@ public class MazePane extends Pane {
         }
     }
 
-    //先梳理一下逻辑，然后一个一个的print位点，
+
     //1，他执行whichAction（），然后发现了这三张牌中有一张是背面卡；给这张背面卡上处理
-    //2，他执行forCardType3，根据currentCard状况选择执行哪一种，然后，获取你在这三张卡中选了哪一张
-    //3,
-
-
     public boolean whichAction(CardPane cardPane){
         switch (cardPane.getCard().getType()){
             case "1":
@@ -345,7 +318,6 @@ public class MazePane extends Pane {
                 return false;
             case "3":
                 forCardType3(cardPane);
-                System.out.println("1，此时发现了一张背面卡，并执行了forCardType3给这张背面卡上处理");
                 return false;
             case "4":
                 //System.out.println(4);
@@ -377,35 +349,25 @@ public class MazePane extends Pane {
         return true;
     }
 
+
     //2，他执行forCardType3，根据currentCard状况选择执行哪一种，然后，获取你在这三张卡中选了哪一张
     public void forCardType3(CardPane cardPane){
         whichCardSelected();
-        System.out.println("2.2，他给几张卡加上事件了，会记录下点了哪一张卡，然后会");
-        //首先将其他的两张牌重新加载，剥夺他们处理事件的权力
         if(currentCard == 0){
             cardPane.setOnMouseClicked(e->{
-                //currentCard = 0;反正这里有缺陷，总该有个什么地方让currentCard = whichCardSelected
                 reloadCenterCard();
                 reloadRightCard();
-                System.out.println("forCardType3第一种赋值后的whichCardSelected="+whichCardSelected);
-                System.out.println("forCardType3第一种赋值后的currentCard="+currentCard);
             });
         }else if(currentCard == 4){
             cardPane.setOnMouseClicked(e-> {
-                //currentCard = 4;
                 reloadLeftCard();
                 reloadCenterCard();
-                System.out.println("forCardType3第二种赋值后的whichCardSelected="+whichCardSelected);
-                System.out.println("forCardType3第二种赋值后的currentCard="+currentCard);
             });
         }else{
             cardPane.setOnMouseClicked(e->{
-                //currentCard = whichCardSelected;
                 reloadLeftCard();
                 reloadCenterCard();
                 reloadRightCard();
-                System.out.println("forCardType3第三种赋值后的whichCardSelected="+whichCardSelected);
-                System.out.println("forCardType3第三种赋值后的currentCard="+currentCard);
             });
         }
     }
@@ -432,10 +394,7 @@ public class MazePane extends Pane {
         pane7.setMaxHeight(240);
         pane7.setMaxWidth(160);
         pane7.setMinWidth(160);
-
-        //System.out.println("forCardType7Floor1执行了");
         pane7.setOnMouseClicked(e->{
-            System.out.println("forCardType7Floor1动作执行了");
             logicalMaze = logicalMazeCaveFloor1Store.logicalMaze;
             MazeCanBeSeen = logicalMazeCaveFloor1Store.MazeCanBeSeen;
             //currentCard = 2;
@@ -444,12 +403,11 @@ public class MazePane extends Pane {
             initLeftBar(currentCard);
             initRightBar(currentCard);
             initTheMaze();
-            System.out.println("After initTheMaze, the currentCard = "+currentCard);
             initAllStep();
-            System.out.println("After initAllStep, the currentCard = "+currentCard);
             cardPane.getChildren().remove(pane7);
         });
     }
+
 
     public void forCardType7Underground(CardPane cardPane){
         cardPane.setOnMouseClicked(e->{
@@ -464,30 +422,29 @@ public class MazePane extends Pane {
     }
 
 
-    //让他根据type返回true和false，暂存在initAllStep里面，然后左中右三个step都要传Boolean进去，true才能用
-
-
-
-
     public void initPane(Pane p,int x, int y,String url){
         ImageProcess.addImage(p, url);
         setXY(p, x, y);
     }
+
 
     public void initPaneWidthHeight(Pane p,int x, int y, String url, int width, int height){
         ImageProcess.dealImage(p, url, width, height);
         setXY(p, x, y);
     }
 
+
     public void setXY(Node p, int x, int y){
         p.setLayoutX(x);
         p.setLayoutY(y);
     }
 
+
     public void initLabel(Label l,int x, int y){
         l.setLayoutX(x);
         l.setLayoutY(y);
     }
+
 
     public String selectClockIndicator(){
         int time = t.getCurrentTime();
@@ -499,6 +456,7 @@ public class MazePane extends Pane {
             return ".\\images\\afternoon.png";
     }
 
+
     public void initDot(Pane d){
         int time = t.getCurrentTime();
         double[] dx = {1011, 985, 958, 934, 908, 890, 877, 870, 869};
@@ -508,7 +466,6 @@ public class MazePane extends Pane {
         }
         ClS[time].setLocation(d);
     }
-
 }
 
 
