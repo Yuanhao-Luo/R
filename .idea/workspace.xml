@@ -1,53 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="1111">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MazeBackground1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BasicCard1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BasicCard2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BasicCard3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_pressable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_pressable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/Card.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/CardPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/GUIMazeStore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeStore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/CardPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/GUIMazeStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/LogicalMazeStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R.iml" beforeDir="false" afterPath="$PROJECT_DIR$/R.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CloseTentButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/CloseTentButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/OpenTentButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/OpenTentButton.class" afterDir="false" />
+    <list default="true" id="1eaa0e63-bc3a-4f29-842d-3f91a5549222" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/images/bistroYouDialog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dialogPlace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/homeofseaYouDialog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/hotelYouDialog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/levelYouDialog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/meDialog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/weaponsYouDialog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/DialogMe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Event/EnterPlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Event/EnterPlace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ImageProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ImageProcess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionDialogButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionDialogButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/LeaveHereButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/LeaveHereButton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/TextButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/TextButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/production/R/production/R/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/tentPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/tentPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ClockStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ClockStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ItemPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MainFramePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MainFramePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/CloseTentButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/CloseTentButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/OpenTentButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/OpenTentButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HomeofseaPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HomeofseaPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ImageProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ImageProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/ActionButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/ActionButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/ActionDialogButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/ActionDialogButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/LeaveHereButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/LeaveHereButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/buttons/TextButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/TextButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/production/R/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="BattleSystemLJ" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,6 +79,7 @@
   </component>
   <component name="ProjectId" id="1zGCFG1goG3u1wl8eWHYJlIbzB0" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="更新" />
     <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectViewState">
@@ -103,11 +88,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work2021.9/Rance" />
+    <property name="last_opened_file_path" value="$USER_HOME$/work2021.9/Rance" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -118,7 +104,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="R" />
-      <option name="VM_PARAMETERS" value="--module-path E:\programming\plugin\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\ji\JDK13\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -142,6 +128,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.mainframe1" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -168,7 +158,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="" />
+      <changelist id="1eaa0e63-bc3a-4f29-842d-3f91a5549222" name="默认更改列表" comment="" />
       <created>1633764931337</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -211,6 +201,14 @@
       <workItem from="1637394432795" duration="2621000" />
       <workItem from="1637468979675" duration="2441000" />
       <workItem from="1637591811643" duration="1457000" />
+      <workItem from="1637911507325" duration="396000" />
+      <workItem from="1637912178104" duration="5123000" />
+      <workItem from="1637941570643" duration="528000" />
+      <workItem from="1637976899548" duration="7154000" />
+      <workItem from="1637984771421" duration="39000" />
+      <workItem from="1637989137817" duration="45000" />
+      <workItem from="1638003721870" duration="1928000" />
+      <workItem from="1638074224659" duration="2758000" />
     </task>
     <task id="LOCAL-00001" summary="t">
       <created>1633765111863</created>
@@ -564,6 +562,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add javafx" />
     <MESSAGE value="t" />
     <MESSAGE value="add button images and vocabulary" />
@@ -591,23 +590,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="1111" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637063592186">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="442" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637743017883">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637063592186" />
+    <state x="442" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1637743017883" />
     <state x="656" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1634029140411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="329" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634029140411" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1637046970480">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="816" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1637743317344">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637046970480" />
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1635845160556" />
+    <state x="816" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1637743317344" />
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1633936118810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633936118810" />
+    <state x="1244" y="496" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1637929290848">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="1244" y="496" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1637929290848" />
     <state x="799" y="410" width="331" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1637047075365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -616,6 +621,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634114417789" />
+    <state x="755" y="305" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1637981627193">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="755" y="305" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1637981627193" />
     <state x="552" y="182" key="#项目结构" timestamp="1633855511587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -633,46 +642,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="265" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593266817" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1637594188514">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2049" height="319" key="GridCell.Tab.0.bottom" timestamp="1638077068464">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594188514" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1637594188514">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2049" height="319" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1638077068464" />
+    <state width="2049" height="319" key="GridCell.Tab.0.center" timestamp="1638077068464">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594188514" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1637594188514">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2049" height="319" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1638077068464" />
+    <state width="2049" height="319" key="GridCell.Tab.0.left" timestamp="1638077068464">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594188514" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1637594188514">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2049" height="319" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1638077068464" />
+    <state width="2049" height="319" key="GridCell.Tab.0.right" timestamp="1638077068464">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594188514" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1637593845351">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2049" height="319" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1638077068464" />
+    <state width="2049" height="313" key="GridCell.Tab.1.bottom" timestamp="1638076001422">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="938" height="348" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593845351" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1637593845351">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2049" height="313" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1638076001422" />
+    <state width="2049" height="313" key="GridCell.Tab.1.center" timestamp="1638076001422">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="938" height="348" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593845351" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1637593845351">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2049" height="313" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1638076001422" />
+    <state width="2049" height="313" key="GridCell.Tab.1.left" timestamp="1638076001422">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="938" height="348" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593845351" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1637593845351">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2049" height="313" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1638076001422" />
+    <state width="2049" height="313" key="GridCell.Tab.1.right" timestamp="1638076001422">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="938" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593845351" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
+    <state width="2049" height="313" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1638076001422" />
     <state x="223" y="92" key="MergeDialog" timestamp="1637594022022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -729,6 +746,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="224" key="new project wizard/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633879172048" />
+    <state x="217" y="191" key="refactoring.ChangeSignatureDialog" timestamp="1637981489360">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="217" y="191" key="refactoring.ChangeSignatureDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1637981489360" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1634688251783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

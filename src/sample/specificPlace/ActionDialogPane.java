@@ -8,9 +8,8 @@ import sample.buttons.LeaveHereButton;
 import java.util.Objects;
 
 public class ActionDialogPane extends Pane {
-    String actionName;
-    String placeName;
-    public ActionDialogPane(String placeName, String actionName){
+
+    public ActionDialogPane(GeneralPlacePane gpp,String placeName, String actionName){
         this.setLayoutX(200);
         this.placeName = placeName;
         this.actionName = actionName;
@@ -19,15 +18,20 @@ public class ActionDialogPane extends Pane {
         }
         else{
             adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+            adb1.setOnMouseClicked(e->{
+                gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
+            });
         }
         adb2 = new ActionDialogButton("      这是二段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
         adb3 = new ActionDialogButton("      这是三段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
         this.getChildren().add(adb1);
         this.getChildren().add(adb2);
         this.getChildren().add(adb3);
+
     }
 
-
+    String actionName;
+    String placeName;
     int secondActionDialogButtonY = GeneralPlacePane.firstActionButtonY + 30;
     int actionDialogButtonX = -100;
     int differentActionInterval = GeneralPlacePane.actionbuttonInterval;

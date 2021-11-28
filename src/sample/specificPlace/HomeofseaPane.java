@@ -11,6 +11,5 @@ public class HomeofseaPane extends GeneralPlacePane {
         this.getChildren().add(homeofseaYou);
         ImageProcess.initDialogYouImage(homeofseaYou,".\\images\\homeofseaYou.png");
         ImageProcess.setXY(homeofseaYou,500,160);
-
     }
 }
