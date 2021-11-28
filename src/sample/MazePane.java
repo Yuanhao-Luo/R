@@ -14,11 +14,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class MazePane extends Pane {
-    //tem
-    boolean OpenTentAvailable = true;
+    //boolean OpenTentAvailable = true;
     int HPTotal = 120;
     int HPCurrent = 8;
-
     LogicalMazeOuterCityStore logicalMazeOuterCityStore = LogicalMazeOuterCityStore.getInstance();
     LogicalMazeCaveFloor1Store logicalMazeCaveFloor1Store = LogicalMazeCaveFloor1Store.getInstance();
     LogicalMazeCaveUndergroundStore logicalMazeCaveUndergroundStore = LogicalMazeCaveUndergroundStore.getInstance();
@@ -26,20 +24,15 @@ public class MazePane extends Pane {
     Card[][] logicalMaze;
     Card[][] MazeCanBeSeen;
     CardPane[][] currentMaze = new CardPane[3][5];//这就是当前显示的部分
-    int currentRow = 0;//现在应该在迷宫的第几行 0~15
+    int currentRow = 4;//现在应该在迷宫的第几行 0~15
     int currentCard = 2;//现在是第几列，也就是第几张牌 0~4
-    boolean currentSelected[] = {false,true,false};//记录一下现在是左中右那一张牌被选到了
+    int whichCardSelected = currentCard;
 
 
     OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
-    //这个地方需要的是另一个帐篷，就是下面的桌面部分，点了打开帐篷会再打开一个新的tentPane
-
-
-    //改
     Pane Character = new Pane();
     Pane leftMazeBar = new Pane();
     Pane rightMazeBar = new Pane();
-
     ImageView clockImv = new ImageView();
     Pane HPBackgroundPane = new Pane();
     Pane HPCurrentImg = new Pane();
@@ -152,48 +145,23 @@ public class MazePane extends Pane {
             currentMaze[2][j] = new CardPane(MazeCanBeSeen[(currentRow)%MazeCanBeSeen.length][j]);
             this.getChildren().add(currentMaze[2][j]);
             setXY(currentMaze[2][j],160*j + 120, 350);
-        }
-        whichCardSelected();
-//        System.out.println(currentSelected[0]);
-//        System.out.println(currentSelected[1]);
-//        System.out.println(currentSelected[2]);
-    }
-
-    //这里用release其实是有bug的，主要是因为似乎一种触发只能对应一种事件，比如clicked只能下辖一个事件，所以我这里不得已用了release，希望后面能完善这里
-    public void whichCardSelected(){
-        currentMaze[2][currentCard].setOnMouseReleased(e->{
-            currentSelected[0] = false;
-            currentSelected[1] = true;
-            currentSelected[2] = false;
-        });
-        if (currentCard > 0) {
-            currentMaze[2][currentCard - 1].setOnMouseReleased(e->{
-                currentSelected[0] = true;
-                currentSelected[1] = false;
-                currentSelected[2] = false;
-            });
-        }
-        if (currentCard < 4){
-            currentMaze[2][currentCard + 1].setOnMouseReleased(e->{
-                currentSelected[0] = false;
-                currentSelected[1] = false;
-                currentSelected[2] = true;
-            });
+            whichCardSelected = currentCard;
         }
     }
 
 
-    // 有两种情况是不会给牌加上这个功能的，对应的type分别是2障碍卡片，他不应该被加事件
-    // 3仅显示背面的图片，这个比较特殊，
+
+
     public void initAllStep(){
-//        whichCardSelected();
         initCenterStep(whichAction(currentMaze[2][currentCard]));
         if (currentCard>0){
-            initLeftStep(whichAction(currentMaze[2][currentCard-1]));}
-        if (currentCard<4){
+            initLeftStep(whichAction(currentMaze[2][currentCard-1]));
+        }
+        if (currentCard<4){//他会给牌加一些函数，然后根据牌的类型决定牌能不能走
             initRightStep(whichAction(currentMaze[2][currentCard+1]));
         }
     }
+
 
     public void initLeftStep(boolean cardCanPass){
         if (cardCanPass) {
@@ -207,6 +175,7 @@ public class MazePane extends Pane {
         }
     }
 
+
     public void initCenterStep(boolean cardCanPass){
         if (cardCanPass) {
         currentMaze[2][currentCard].setOnMouseClicked(e ->{
@@ -215,6 +184,7 @@ public class MazePane extends Pane {
             initAllStep();
         } );}
     }
+
 
     public void initRightStep(boolean cardCanPass){
         if (cardCanPass) {
@@ -227,6 +197,7 @@ public class MazePane extends Pane {
             });
         }
     }
+
 
     public void initLeftBar(){
         setXY(Character,(int)Character.getLayoutX()-160,570);
@@ -243,96 +214,189 @@ public class MazePane extends Pane {
     }
 
 
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//    public void initLeftStepWithoutinitMaze(boolean cardCanPass){
-//        if (cardCanPass) {
-//            currentMaze[2][currentCard-1].setOnMouseClicked(e->{
-//                currentCard-=1;
-//                currentRow = (currentRow+1)%logicalMaze.length;
-//                initAllStep();
-//                initLeftBar();
-//            });
-//        }
-//    }
-//
-//    public void initCenterStepWithoutinitMaze(boolean cardCanPass){
-//        if (cardCanPass) {
-//            currentMaze[2][currentCard].setOnMouseClicked(e ->{
-//                currentRow = (currentRow+1)%logicalMaze.length;
-//                initTheMaze();
-//                initAllStep();
-//            } );}
-//    }
-//
-//    public void initRightStepWithoutinitMaze(boolean cardCanPass){
-//        if (cardCanPass) {
-//            currentMaze[2][currentCard+1].setOnMouseClicked(e->{
-//                currentCard+=1;//
-//                currentRow = (currentRow+1)%logicalMaze.length;
-//                initTheMaze();
-//                initAllStep();
-//                initRightBar();
-//            });
-//        }
-//    }
+    //这里用release其实是有bug的，主要是因为似乎一种触发只能对应一种事件，比如clicked只能下辖一个事件，所以我这里不得已用了release，希望后面能完善这里
+    public void whichCardSelected(){
+        //System.out.println("whichCardSelected被执行");
+        if (currentCard > 0) {
+            currentMaze[2][currentCard - 1].setOnMouseReleased(e->{
+                whichCardSelected-=1;
+                //System.out.println("whichCardSelected: whichCardSelected is " + whichCardSelected);
+            });
+        }
+        if (currentCard < 4){
+            currentMaze[2][currentCard + 1].setOnMouseReleased(e->{
+                whichCardSelected+=1;
+            });
+        }
+    }
+
+
+    public void initForCardType3(){
+        currentMaze[2][whichCardSelected].setOnMouseClicked(e->{
+            if(whichCardSelected<currentCard){
+                initLeftBar();
+            }else if(whichCardSelected>currentCard){
+                initRightBar();
+            }
+            currentCard -= (currentCard-whichCardSelected);
+            currentRow = (currentRow+1)%logicalMaze.length;
+            initTheMaze();
+            initAllStep();
+        });
+    }
+
+
+    public void reloadLeftCard(){
+        if (whichCardSelected<currentCard){
+            currentMaze[2][currentCard-1] = new CardPane(logicalMaze[currentRow][currentCard-1]);
+            this.getChildren().add(currentMaze[2][currentCard-1]);
+            setXY(currentMaze[2][currentCard-1],160*currentCard - 40, 350);
+            initForCardType3();
+        }else {
+            currentMaze[2][currentCard-1] = new CardPane(MazeCanBeSeen[currentRow][currentCard-1]);
+            this.getChildren().add(currentMaze[2][currentCard-1]);
+            setXY(currentMaze[2][currentCard-1],160*currentCard - 40, 350);
+        }
+    }
+
+
+    //现在的问题是他进行下一步了，我们要的效果应该是他没进行下一步，
+    public void reloadCenterCard(){
+        if (whichCardSelected==currentCard) {
+            currentMaze[2][currentCard] = new CardPane(logicalMaze[currentRow][currentCard]);
+            this.getChildren().add(currentMaze[2][currentCard]);
+            setXY(currentMaze[2][currentCard],160*currentCard + 120, 350);
+            initForCardType3();
+        }else {
+            currentMaze[2][currentCard] = new CardPane(MazeCanBeSeen[currentRow][currentCard]);
+            this.getChildren().add(currentMaze[2][currentCard]);
+            setXY(currentMaze[2][currentCard],160*currentCard + 120, 350);
+        }
+    }
+
+    public void reloadRightCard(){
+        if (whichCardSelected>currentCard) {//如果这张牌被幸运的选中了，那他就从logicalMaze里拿真相卡，不然就还是拿MazeCanBeSeen
+            currentMaze[2][currentCard+1] = new CardPane(logicalMaze[currentRow][currentCard+1]);
+            this.getChildren().add(currentMaze[2][currentCard+1]);
+            setXY(currentMaze[2][currentCard+1],160*currentCard + 280, 350);
+            initForCardType3();
+        }else {
+            currentMaze[2][currentCard+1] = new CardPane(MazeCanBeSeen[currentRow][currentCard+1]);
+            this.getChildren().add(currentMaze[2][currentCard+1]);
+            setXY(currentMaze[2][currentCard+1],160*currentCard + 280, 350);
+        }
+    }
+
+
+    public void forCardType3(CardPane cardPane){
+        //首先将其他的两张牌重新加载，剥夺他们处理事件的权力
+        if(currentCard == 0){
+            cardPane.setOnMouseClicked(e->{
+                reloadCenterCard();
+                reloadRightCard();
+            });
+        }else if(currentCard == 4){
+            cardPane.setOnMouseClicked(e-> {
+                reloadLeftCard();
+                reloadCenterCard();
+            });
+        }else{
+            cardPane.setOnMouseClicked(e->{
+                reloadLeftCard();
+                reloadCenterCard();
+                reloadRightCard();
+            });
+        }
+        //然后看那张被选了，根据被选的牌来直接重新初始化迷宫
+        whichCardSelected();
+    }
+
+
+    public void forCardType7OuterCity(CardPane cardPane){
+        cardPane.setOnMouseClicked(e->{
+            logicalMaze = logicalMazeOuterCityStore.logicalMaze;
+            MazeCanBeSeen = logicalMazeOuterCityStore.MazeCanBeSeen;
+            currentCard = 2;
+            currentRow = 0;
+            initTheMaze();
+            initAllStep();
+        });
+    }
+
+    public void forCardType7Floor1(CardPane cardPane){
+        Pane pane7 = new Pane();
+        cardPane.getChildren().add(pane7);
+        pane7.setMinHeight(240);
+        pane7.setMaxHeight(240);
+        pane7.setMaxWidth(160);
+        pane7.setMinWidth(160);
+        System.out.println(pane7.getLayoutX());
+        System.out.println(pane7.getLayoutY());
+
+        System.out.println("forCardType7Floor1执行了");
+        pane7.setOnMouseClicked(e->{
+            System.out.println("forCardType7Floor1动作执行了");
+            logicalMaze = logicalMazeCaveFloor1Store.logicalMaze;
+            MazeCanBeSeen = logicalMazeCaveFloor1Store.MazeCanBeSeen;
+            currentCard = 2;
+            currentRow = 0;
+            initTheMaze();
+            initAllStep();
+        });
+    }
+
+    public void forCardType7Underground(CardPane cardPane){
+        cardPane.setOnMouseClicked(e->{
+            logicalMaze = logicalMazeCaveUndergroundStore.logicalMaze;
+            MazeCanBeSeen = logicalMazeCaveUndergroundStore.MazeCanBeSeen;
+            currentCard = 2;
+            currentRow = 0;
+            initTheMaze();
+            initAllStep();
+        });
+    }
 
 
     //让他根据type返回true和false，暂存在initAllStep里面，然后左中右三个step都要传Boolean进去，true才能用
     public boolean whichAction(CardPane cardPane){
         switch (cardPane.getCard().getType()){
-            case "1"://
-//                System.out.println(1);
-//                System.out.println(cardPane.getCard().getContent());
+            case "1":
                 return true;
             case "2":
-//                initTheMaze();
-//                //因为没加40锁，可能有bug,
-//                if (currentSelected[0]){
-//                    CardPane c0 = new CardPane(logicalMaze[currentRow][currentCard-1]);
-//                    currentMaze[2][currentCard-1] = c0;
-//                    initRightStepWithoutinitMaze(whichAction(c0));//因为他自动更新了迷宫，所以这里被覆盖掉了
-//                }else if (currentSelected[1]) {
-//                    CardPane c1 = new CardPane(logicalMaze[currentRow][currentCard]);
-//                    currentMaze[2][currentCard] = c1;
-//                    initCenterStepWithoutinitMaze(whichAction(c1));
-//                }else{
-//                    CardPane c2 = new CardPane(logicalMaze[currentRow][currentCard+1]);
-//                    currentMaze[2][currentCard+1] = c2;
-//                    initLeftStepWithoutinitMaze(whichAction(c2));
-//                }
-
-                //这个的逻辑暂定为点一下，就初始化这张牌，然后也初始化所有整列的牌，这样他们身上就不会有事件了，这样就只能摁着点这张牌了
-                //但是我怎么知道这是左中右的哪一张牌
-//                System.out.println(2);
-//                System.out.println(cardPane.getCard().getContent());
                 return false;
             case "3":
-//                System.out.println(3);
-//                System.out.println(cardPane.getCard().getContent());
+                forCardType3(cardPane);
                 return false;
             case "4":
-//                System.out.println(4);
-//                System.out.println(cardPane.getCard().getContent());
+                System.out.println(4);
+                System.out.println(cardPane.getCard().getContent());
                 return true;
             case "5":
-//                System.out.println(5);
-//                System.out.println(cardPane.getCard().getContent());
+                System.out.println(5);
+                System.out.println(cardPane.getCard().getContent());
                 return true;
             case "6":
-//                System.out.println(6);
-//                System.out.println(cardPane.getCard().getContent());
+                System.out.println(6);
+                System.out.println(cardPane.getCard().getContent());
                 return true;
             case "7":
-//                System.out.println(7);
-//                System.out.println(cardPane.getCard().getContent());
+                System.out.println(7);
+                if (cardPane.getCard().getContent().equals("0"))  {
+                    System.out.println("0");
+                    forCardType7Floor1(cardPane);
+                }
+                else if (cardPane.getCard().getContent().equals("1"))  forCardType7Floor1(cardPane);
+                else if (cardPane.getCard().getContent().equals("2"))  forCardType7Floor1(cardPane);
+                else if (cardPane.getCard().getContent().equals("3"))  forCardType7Floor1(cardPane);
+                else if (cardPane.getCard().getContent().equals("4"))  forCardType7Floor1(cardPane);
                 return true;
             case "8":
-//                System.out.println(8);
-//                System.out.println(cardPane.getCard().getContent());
+                System.out.println(8);
+                System.out.println(cardPane.getCard().getContent());
                 return true;
             case "9":
-//                System.out.println(9);
-//                System.out.println(cardPane.getCard().getContent());
+                System.out.println(9);
+                System.out.println(cardPane.getCard().getContent());
                 return true;
         }
         return true;
@@ -356,13 +420,6 @@ public class MazePane extends Pane {
     public void initLabel(Label l,int x, int y){
         l.setLayoutX(x);
         l.setLayoutY(y);
-    }
-
-
-    public void changeClockStatues(){
-        initDot(dot);
-        setXY(CI, 890, -65);
-        ImageProcess.changeImage(CI, selectClockIndicator());
     }
 
 

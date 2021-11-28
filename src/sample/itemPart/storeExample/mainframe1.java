@@ -7,6 +7,7 @@ import sample.itemPart.itemSystem2.*;
 
 public class mainframe1 {
     public static void main(String[] args) {
+
 //        simpleFactory s1 = new simpleFactory();
 //        Person person = Person.getInstance();
 //
@@ -40,3 +41,4 @@ public class mainframe1 {
 
     }
 }
+
