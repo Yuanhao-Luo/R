@@ -2,6 +2,7 @@ package sample.Event;
 
 import javafx.event.Event;
 import sample.MainFramePane;
+import sample.MazePane;
 import sample.TimeSingleton;
 import sample.Toolkit;
 import sample.buttons.MapButton;
@@ -59,6 +60,14 @@ public class EnterPlace extends PassOneTime {
                 bistroPane.dialogBegin(bistroPane.getPlaceName(), new String[]{"我来到了酒馆","欢迎光临"},1);
 
                 break;
+
+            case "maze":
+                MazePane mazePane = MainFramePane.getInstance().mazePane;
+                if (!mazePane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
+                    mazePane.setVisible(true);
+                    System.out.println("q");
+                };
+                System.out.println("qw");
         }
     }
 
