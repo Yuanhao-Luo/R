@@ -1,6 +1,7 @@
 package sample.battle;
 
 import sample.itemPart.characterSystem.Person;
+import sample.itemPart.itemSystem2.ItemList;
 import sample.itemPart.itemSystem2.arms;
 
 import java.util.ArrayList;
@@ -30,7 +31,7 @@ public class Battle {
 
     //都没死返回0，怪死返回1，人死返回2
     public int startBattle(){
-        BehaviourLogic bl = monster.getBehaviourLogics()[turn];
+        BehaviourLogic bl = monster.getBehaviourLogics()[turn%monster.getBehaviourLogics().length];
         int monAtt = bl.getAttack().getAttackNum();
         int monAttAb = bl.getAttack().getAttributeType();
         int monDef = bl.getDefence().getDefenceNum();
@@ -38,10 +39,20 @@ public class Battle {
 
         Person person = Person.getInstance();
         ArrayList<arms> arms = person.getSelectArms();
+        ItemList itemList = person.getItemList();
+
+        for (int i = 0; i < itemList.size(); i++) {
+            Object item = itemList.get(i);
+            if (item instanceof arms){
+                ((arms) item).refreshCoolDown();
+            }
+        }
+
         int perAtt = 0;
         int perDef = 0;
         for (int i = 0; i < arms.size(); i++) {
             arms a = arms.get(i);
+            a.used();
             int temA = a.getDamage();
             int temD = a.getDefence();
             if (a.getAttribute() == bl.getWeekness().getWeeknessType()){
@@ -64,6 +75,12 @@ public class Battle {
 
         person.loseHp(pdamage);
         monster.loseHp(pdamage);
+
+        //加经验，加钱
+
+
+
+
 
         if (person.isDie())
             return 2;

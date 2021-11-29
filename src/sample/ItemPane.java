@@ -3,6 +3,7 @@ package sample;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import sample.itemPart.characterSystem.Person;
 
 public class ItemPane extends Pane {
     String url;
@@ -10,10 +11,12 @@ public class ItemPane extends Pane {
     boolean select = false;
     ImageView hover;
     ImageView bet;
+    int index;
 
 
     public ItemPane(int num){
         super();
+        index = num;
         int[] itemx = {177,275,373,470,564,659,755};
         int itemy = 595;
         setLayoutX(itemx[num%7]);
@@ -43,7 +46,7 @@ public class ItemPane extends Pane {
         });
         setOnMouseReleased(e -> {
             setSelect(!isSelect());
-            System.out.println("adsfouhiaoeiuhfa");
+
         });
     }
 
@@ -53,6 +56,10 @@ public class ItemPane extends Pane {
         imageView.setImage(image);
     }
 
+    public int getIndex() {
+        return index;
+    }
+
     public boolean isSelect() {
         return select;
     }
@@ -60,6 +67,13 @@ public class ItemPane extends Pane {
     public void setSelect(boolean select) {
         this.select = select;
         bet.setVisible(select);
+
+        Person person = Person.getInstance();
+        if (select){
+            person.getSelectArms().add(person.getItemList().get(getIndex()));
+        }else {
+            person.getSelectArms().remove(person.getItemList().get(getIndex()));
+        }
     }
 
 

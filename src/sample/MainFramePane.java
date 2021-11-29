@@ -156,6 +156,10 @@ public class MainFramePane extends Pane {
 
         homeofseaPane.setVisible(false);
         this.getChildren().add(homeofseaPane);
+
+        BattlePane battlePane = BattlePane.getInstance();
+        this.getChildren().add(battlePane);
+        battlePane.setVisible(true);
     }
 
     public void initPane(Pane p,int x, int y,String url){

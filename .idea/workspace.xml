@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/battleGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/battleMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/arms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/arms.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ItemPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MainFramePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MainFramePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +196,8 @@
       <workItem from="1637739744325" duration="2769000" />
       <workItem from="1637767274967" duration="1047000" />
       <workItem from="1637852337673" duration="1695000" />
-      <workItem from="1638106539760" duration="5315000" />
+      <workItem from="1638106539760" duration="6938000" />
+      <workItem from="1638199040814" duration="3517000" />
     </task>
     <task id="LOCAL-00001" summary="t">
       <created>1633765111863</created>
@@ -525,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638112691913</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="在BattlePane里查找“要求”，根据要求修改。">
+      <created>1638113524356</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1638113524356</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +593,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="add button images and vocabulary" />
     <MESSAGE value="improve the way to locate the dot at the colock" />
     <MESSAGE value="change absolute path to relatively path" />
     <MESSAGE value="reaname classname" />
@@ -601,7 +617,8 @@
     <MESSAGE value="初步战斗系统" />
     <MESSAGE value="进一步战斗系统" />
     <MESSAGE value="战斗系大致完成，还需与gui对接" />
-    <option name="LAST_COMMIT_MESSAGE" value="战斗系大致完成，还需与gui对接" />
+    <MESSAGE value="在BattlePane里查找“要求”，根据要求修改。" />
+    <option name="LAST_COMMIT_MESSAGE" value="在BattlePane里查找“要求”，根据要求修改。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637063592186">
@@ -637,10 +654,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#项目结构/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633855511587" />
-    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2" timestamp="1638112689885">
+    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2" timestamp="1638113522946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638112689885" />
+    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638113522946" />
     <state x="588" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1637750498274" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637594812997">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -650,25 +667,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="265" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593266817" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638112839912">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638116382936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638112839912" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638116382936" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638112839912">
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638116382936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638112839912" />
+    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638116382936" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638112839912">
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638116382935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638112839912" />
+    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638116382935" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638112839912">
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638116382936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638112839912" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638116382936" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
     <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1637594917625">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -704,10 +721,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="98" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637595033224" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638112700612">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638113534782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638112700612" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638113534782" />
     <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1637750553520" />
     <state x="630" y="257" key="VcsDiffUtil.ChangesDialog" timestamp="1637594682287">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -733,10 +750,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="749" y="322" key="git4idea.merge.GitMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594592249" />
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638106556432">
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638199054226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638106556432" />
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638199054226" />
     <state x="682" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637108569368" />
     <state x="661" y="437" key="git4idea.rebase.GitUnstructuredEditor" timestamp="1637593792029">
       <screen x="0" y="0" width="1920" height="1040" />
