@@ -164,10 +164,12 @@ public class MazePane extends Pane {
             currentMaze[2][currentCard-1].setOnMouseClicked(e->{
                 currentCard-=1;
                 currentRow = (currentRow+1)%logicalMaze.length;
+                t.walkOneCard();
+                changeClockStatues();
                 initTheMaze();
                 initAllStep();
                 initCharacter(currentCard);
-                initLeftBar(currentCard);
+                initBarIfMoveLeft(currentCard);
             });
         }
     }
@@ -177,6 +179,8 @@ public class MazePane extends Pane {
         if (cardCanPass) {
         currentMaze[2][currentCard].setOnMouseClicked(e ->{
             currentRow = (currentRow+1)%logicalMaze.length;
+            t.walkOneCard();
+            changeClockStatues();
             initTheMaze();
             initAllStep();
         } );}
@@ -188,10 +192,12 @@ public class MazePane extends Pane {
             currentMaze[2][currentCard+1].setOnMouseClicked(e->{
                 currentCard+=1;//
                 currentRow = (currentRow+1)%logicalMaze.length;
+                t.walkOneCard();
+                changeClockStatues();
                 initTheMaze();
                 initAllStep();
                 initCharacter(currentCard);
-                initRightBar(currentCard);
+                initBarIfMoveRight(currentCard);
             });
         }
     }
@@ -201,15 +207,15 @@ public class MazePane extends Pane {
         setXY(Character,390 + (currentCard-2)*160,570);
     }
 
-
-    public void initLeftBar(int currentCard){
+    //准确的说，这个函数的全程称是如果你往左边移动了就用这个函数
+    public void initBarIfMoveLeft(int currentCard){
         if((currentCard==1)||(currentCard==0))  setXY(leftMazeBar,100,340);
         else  setXY(leftMazeBar,390+(currentCard-2)*160-130,340);
         setXY(rightMazeBar,390+(currentCard-2)*160+290,340);
     }
 
 
-    public void initRightBar(int currentCard){
+    public void initBarIfMoveRight(int currentCard){
         if((currentCard==3)||(currentCard==4))  setXY(rightMazeBar,840,340);
         else  setXY(rightMazeBar,390+(currentCard-2)*160+290,340);
         setXY(leftMazeBar, 390+(currentCard-2)*160-130,340);
@@ -251,13 +257,15 @@ public class MazePane extends Pane {
         currentMaze[2][whichCardSelected].setOnMouseClicked(e->{
             if(whichCardSelected<currentCard){
                 initCharacter(whichCardSelected);
-                initLeftBar(whichCardSelected);
+                initBarIfMoveLeft(whichCardSelected);
             }else if(whichCardSelected>currentCard){
                 initCharacter(whichCardSelected);
-                initRightBar(whichCardSelected);
+                initBarIfMoveRight(whichCardSelected);
             }
             currentCard = whichCardSelected;
             currentRow = (currentRow+1)%logicalMaze.length;
+            t.walkOneCard();
+            changeClockStatues();
             initTheMaze();
             initAllStep();
         });
@@ -372,19 +380,9 @@ public class MazePane extends Pane {
         }
     }
 
-
+    //类比下面的实现去完成本函数
     public void forCardType7OuterCity(CardPane cardPane){
-        cardPane.setOnMouseClicked(e->{
-            logicalMaze = logicalMazeOuterCityStore.logicalMaze;
-            MazeCanBeSeen = logicalMazeOuterCityStore.MazeCanBeSeen;
-            currentCard = 2;
-            currentRow = 0;
-            initTheMaze();
-            initAllStep();
-            initPane(Character,390,570,".\\images\\rancewalkingmaze.png");
-        });
     }
-
 
 
     public void forCardType7Floor1(CardPane cardPane){
@@ -397,28 +395,18 @@ public class MazePane extends Pane {
         pane7.setOnMouseClicked(e->{
             logicalMaze = logicalMazeCaveFloor1Store.logicalMaze;
             MazeCanBeSeen = logicalMazeCaveFloor1Store.MazeCanBeSeen;
-            //currentCard = 2;
             currentRow = 0;
             initCharacter(currentCard);
-            initLeftBar(currentCard);
-            initRightBar(currentCard);
+            initBarIfMoveLeft(currentCard);
+            initBarIfMoveRight(currentCard);
             initTheMaze();
             initAllStep();
             cardPane.getChildren().remove(pane7);
         });
     }
 
-
+    //类比上面面的实现去完成本函数
     public void forCardType7Underground(CardPane cardPane){
-        cardPane.setOnMouseClicked(e->{
-            logicalMaze = logicalMazeCaveUndergroundStore.logicalMaze;
-            MazeCanBeSeen = logicalMazeCaveUndergroundStore.MazeCanBeSeen;
-            currentCard = 2;
-            currentRow = 0;
-            initTheMaze();
-            initAllStep();
-            initPane(Character,390,570,".\\images\\rancewalkingmaze.png");
-        });
     }
 
 
@@ -443,6 +431,13 @@ public class MazePane extends Pane {
     public void initLabel(Label l,int x, int y){
         l.setLayoutX(x);
         l.setLayoutY(y);
+    }
+
+
+    public void changeClockStatues(){
+        initDot(dot);
+        setXY(CI, 890, -65);
+        ImageProcess.changeImage(CI, selectClockIndicator());
     }
 
 
