@@ -29,13 +29,13 @@ public class Person {
 
         //test
         simpleFactory s = new simpleFactory();
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
-        itemList.add(s.buildFirefly());
+        itemList.add(s.buildMagicSword());
+        itemList.add(s.buildMagicSword());
+        itemList.add(s.buildMagicSword());
+        itemList.add(s.buildMagicSword());
+        itemList.add(s.buildMagicSword());
+        itemList.add(s.buildMagicSword());
+        itemList.add(s.buildMagicSword());
     }
 
     public static Person getInstance(){
@@ -124,6 +124,6 @@ public class Person {
 
     //还没有实现，需要对接
     public void die(){
-
+        System.out.println("die");
     }
 }

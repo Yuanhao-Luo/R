@@ -16,6 +16,7 @@ public class StartBattleButton extends TextButton {
             int result = battle.startBattle();
             if (result == 1){
                 BattlePane.getInstance().concludBattle();
+                System.out.println("monster die");
             }else if (result == 2){
                 //死亡页面
 

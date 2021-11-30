@@ -13,7 +13,8 @@ public class Battle {
     private int turn = 0;
 
     private Battle(){
-
+        MonsterFactory monsterFactory = new MonsterFactory();
+        setMonster(monsterFactory.buildPurin());
     }
 
     public static Battle getInstance() {

@@ -30,11 +30,14 @@ public class BattlePane extends Pane {
 
 
     private BattlePane(){
-
+        //冷却图标
+        //总结页面
+        //无法存放道具
+        //没有道具依然能选择
+        //战斗伤害
+        //战斗过程页面
 
         Person p = Person.getInstance();
-        //要求
-        //变量名指示不清，改变量名
         Image battleBackground = new Image("file:.\\images\\battleBackground.png");
         Image battledRance = new Image("file:.\\images\\ranceinbattle.png");
         Image tentPicture = new Image("file:.\\images\\tent2.png");

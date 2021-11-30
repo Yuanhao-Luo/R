@@ -5,6 +5,12 @@ public class BehaviorLogic {
     private Defence defence;
     private Weakness weakness;
     public BehaviorLogic(Attack attack, Defence defence){
+        if (attack == null){
+            attack = new Attack(null, 0);
+        }
+        if (defence == null){
+            defence = new Defence(null, 0);
+        }
         this.attack = attack;
         this.defence = defence;
         this.weakness = new Weakness(null, 0);
