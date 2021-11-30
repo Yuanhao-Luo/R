@@ -30,6 +30,8 @@ public class BattlePane extends Pane {
 
 
     private BattlePane(){
+
+
         Person p = Person.getInstance();
         //要求
         //变量名指示不清，改变量名

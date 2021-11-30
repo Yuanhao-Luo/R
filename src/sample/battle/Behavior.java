@@ -1,9 +1,9 @@
 package sample.battle;
 
-public class Behaviour {
-    String url;
+public class Behavior {
+    String url = null;
 
-    public Behaviour(String url){
+    public Behavior(String url){
         this.url = url;
     }
 

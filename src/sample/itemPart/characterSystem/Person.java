@@ -14,6 +14,8 @@ public class Person {
     private int money = 1000;
     private int attack = 100;
     private int critical = 10;
+    private int exp = 0;
+    private int level = 0;
     //backpack part
 
     private ItemList itemList = new ItemList();
@@ -96,6 +98,29 @@ public class Person {
         }
     }
 
+    public int getExp() {
+        return exp;
+    }
+
+    public void setExp(int exp) {
+        this.exp = exp;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    public int getMoney() {
+        return money;
+    }
 
     //还没有实现，需要对接
     public void die(){

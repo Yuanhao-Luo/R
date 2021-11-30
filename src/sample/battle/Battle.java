@@ -31,11 +31,25 @@ public class Battle {
 
     //都没死返回0，怪死返回1，人死返回2
     public int startBattle(){
-        BehaviourLogic bl = monster.getBehaviourLogics()[turn%monster.getBehaviourLogics().length];
-        int monAtt = bl.getAttack().getAttackNum();
-        int monAttAb = bl.getAttack().getAttributeType();
-        int monDef = bl.getDefence().getDefenceNum();
-        int monDefAb = bl.getDefence().getAttributeType();
+        BehaviorLogic bl = monster.getBehaviourLogics()[turn%monster.getBehaviourLogics().length];
+        //att、def可能为null
+        int monAtt;
+        int monAttAb;
+        int monDef;
+        int monDefAb;
+        if (bl.getAttack() == null){
+            monAtt = 0;
+        }else {
+            monAtt = bl.getAttack().getAttackNum();
+        }
+        if (bl.getDefence() == null){
+            monDef = 0;
+        }else {
+            monDef = bl.getDefence().getDefenceNum();
+        }
+        monAttAb = bl.getAttack().getAttributeType();
+        monDefAb = bl.getDefence().getAttributeType();
+
 
         Person person = Person.getInstance();
         ArrayList<arms> arms = person.getSelectArms();
@@ -55,12 +69,12 @@ public class Battle {
             a.used();
             int temA = a.getDamage();
             int temD = a.getDefence();
-            if (a.getAttribute() == bl.getWeekness().getWeeknessType()){
+            if (bl.getWeakness().getWeeknessType() != 0 && a.getAttribute() == bl.getWeakness().getWeeknessType()){
                 temA = temA * 3;
-            }else if (a.getAttribute() == monDefAb){
+            }else if (monDefAb != 0 && a.getAttribute() == monDefAb){
                 temA = temA / 3;
             }
-            if (a.getAttribute() == monAttAb){
+            if (monAttAb != 0 && a.getAttribute() == monAttAb){
                 temD = temD * 3;
             }
             perAtt += temA;
@@ -84,8 +98,11 @@ public class Battle {
 
         if (person.isDie())
             return 2;
-        else if (monster.isDie())
+        else if (monster.isDie()){
+            person.setMoney(person.getMoney() + monster.getMoney());
+            person.setExp(person.getExp() + monster.getExp());
             return 1;
+        }
         else
             return 0;
     }

@@ -1,6 +1,6 @@
 package sample.battle;
 
-public class Defence extends Behaviour {
+public class Defence extends Behavior {
     private int defence;
     private int attribute = 0;
     public Defence(String url, int defence) {

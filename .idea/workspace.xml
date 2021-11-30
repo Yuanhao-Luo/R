@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/battleGUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/battleMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/arms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/arms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ItemPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MainFramePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MainFramePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Attack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/battle/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Battle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/Behaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Behavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/BehaviourLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/BehaviorLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/Defence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Defence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/Weekness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Weakness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/itemPart/characterSystem/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemPart/characterSystem/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,14 +203,8 @@
       <workItem from="1637767274967" duration="1047000" />
       <workItem from="1637852337673" duration="1695000" />
       <workItem from="1638106539760" duration="6938000" />
-      <workItem from="1638199040814" duration="3517000" />
-    </task>
-    <task id="LOCAL-00001" summary="t">
-      <created>1633765111863</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1633765111863</updated>
+      <workItem from="1638199040814" duration="3615000" />
+      <workItem from="1638230720467" duration="1858000" />
     </task>
     <task id="LOCAL-00002" summary="t">
       <created>1633855346093</created>
@@ -542,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638113524356</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="进一步战斗系统">
+      <created>1638202581252</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1638202581253</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,10 +622,10 @@
     <MESSAGE value="Merge branch 'main' of https://github.com/Yuanhao-Luo/R into BattleSystemLJ&#10;&#10; Conflicts:&#10;&#9;out/production/R/sample/ItemPane.class&#10;&#9;out/production/R/sample/MainFramePane.class&#10;&#9;out/production/R/sample/buttons/TextButton.class&#10;&#9;out/production/R/sample/itemPart/characterSystem/Person.class&#10;&#9;out/production/R/sample/tentPane.class&#10;&#9;src/sample/ItemPane.java&#10;&#9;src/sample/MainFramePane.java&#10;&#9;src/sample/TentPane.java&#10;&#9;src/sample/buttons/TextButton.java" />
     <MESSAGE value="1111" />
     <MESSAGE value="初步战斗系统" />
-    <MESSAGE value="进一步战斗系统" />
     <MESSAGE value="战斗系大致完成，还需与gui对接" />
     <MESSAGE value="在BattlePane里查找“要求”，根据要求修改。" />
-    <option name="LAST_COMMIT_MESSAGE" value="在BattlePane里查找“要求”，根据要求修改。" />
+    <MESSAGE value="进一步战斗系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="进一步战斗系统" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637063592186">
@@ -629,11 +636,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="329" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634029140411" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1637046970480">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1638232207253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637046970480" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1635845160556" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1638232207253" />
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1633936118810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -642,10 +649,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="799" y="410" width="331" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637047075365" />
-    <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1638106628127">
+    <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1638231849061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638106628127" />
+    <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638231849061" />
     <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1634114417789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -654,10 +662,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#项目结构/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633855511587" />
-    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2" timestamp="1638113522946">
+    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2" timestamp="1638202578337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638113522946" />
+    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638202578337" />
     <state x="588" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1637750498274" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637594812997">
       <screen x="0" y="0" width="1920" height="1040" />
