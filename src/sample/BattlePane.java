@@ -174,7 +174,7 @@ public class BattlePane extends Pane {
     public void refreshItems(){
         Person person = Person.getInstance();
         for (int i = 0; i < person.getItemList().size(); i++) {
-            itemList[i].setImage(person.getItemList().get(i).getUrl());
+            itemList[i].refresh(person.getItemList().get(i));
         }
     }
 

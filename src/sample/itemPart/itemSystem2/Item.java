@@ -2,11 +2,11 @@ package sample.itemPart.itemSystem2;
 
 import sample.itemPart.characterSystem.Person;
 
-public class item {
+public class Item {
     private String url;
     private int price;
 
-    public item(String url, int price) {
+    public Item(String url, int price) {
         this.url = url;
         this.price = price;
     }
