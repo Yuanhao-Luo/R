@@ -16,6 +16,7 @@ public class BattlePane extends Pane {
     GeneralButton nextPage;
     GeneralButton prePage;
     ImageView battleBackground1 = new ImageView();
+    ImageView settlementInterface1 = new ImageView();
     ImageView battledRance2 = new ImageView();
     ImageView tentPicture3 = new ImageView();
     ImageView thief = new ImageView();
@@ -31,15 +32,15 @@ public class BattlePane extends Pane {
 
 
     private BattlePane(){
-        //å†·å´å›¾æ ‡
+        //ÀäÈ´Í¼±ê
         Image wait = new Image("file:.\\images\\wait.png");
-        //æ€»ç»“é¡µé¢
+        //×Ü½áÒ³Ãæ
         Image settlementInterface = new Image("file:.\\images\\settlementInterface.png");
-        //æ— æ³•å­˜æ”¾é“å…·
+        //ÎŞ·¨´æ·ÅµÀ¾ß
         Image canNotUsePicture = new Image("file:.\\images\\CanNotUse.png");
-        //æˆ˜æ–—ä¼¤å®³
+        //Õ½¶·ÉËº¦
         Image damage = new Image("file:.\\images\\damage.png");
-        //æˆ˜æ–—è¿‡ç¨‹é¡µé¢
+        //Õ½¶·¹ı³ÌÒ³Ãæ
 
         Person p = Person.getInstance();
         Image battleBackground = new Image("file:.\\images\\battleBackground.png");
@@ -49,8 +50,36 @@ public class BattlePane extends Pane {
         Image defenseD = new Image("file:.\\images\\defenseD.png");
         Image HPBackground = new Image("file:.\\images\\HPBackground.png");
         Image HPCurrent = new Image("file:.\\images\\HPCurrent.png");
-        //åœ¨è¿™é‡Œé¢æ”¾backpack
+        //ÔÚÕâÀïÃæ·Åbackpack
 
+
+        settlementInterface1.setImage(settlementInterface);
+        settlementInterface1.setFitHeight(settlementInterface.getHeight());
+        settlementInterface1.setFitWidth(settlementInterface.getWidth());
+        int settlementInterfaceLeft = 80;
+        int settlementInterfaceTop = -340;
+        settlementInterface1.setX(settlementInterfaceLeft);
+        settlementInterface1.setY(settlementInterfaceTop);
+
+        Label exp = new Label("10");
+        exp.setLayoutX(540);
+        exp.setLayoutY(313);
+        exp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+
+        Label current_exp = new Label("94");
+        current_exp.setLayoutX(540);
+        current_exp.setLayoutY(375);
+        current_exp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+
+        Label gold = new Label("9");
+        gold.setLayoutX(860);
+        gold.setLayoutY(313);
+        gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+
+        Label current_gold = new Label("177");
+        current_gold.setLayoutX(804);
+        current_gold.setLayoutY(375);
+        current_gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
         battleBackground1.setImage(battleBackground);
         battleBackground1.setFitHeight(battleBackground.getHeight());
@@ -126,41 +155,46 @@ public class BattlePane extends Pane {
 
         this.getChildren().add(hp);
         this.getChildren().add(currentHp);
+        this.getChildren().add(settlementInterface1);
+        this.getChildren().add(exp);
+        this.getChildren().add(current_exp);
+        this.getChildren().add(gold);
+        this.getChildren().add(current_gold);
 
-        CloseTentButton closeTentButton = new CloseTentButton("å¿«ç‚¹å›å»åŸä¸‹ç”ºå§","200",10,720);
+        CloseTentButton closeTentButton = new CloseTentButton("¿ìµã»ØÈ¥³ÇÏÂî®°É","200",10,720);
         this.getChildren().add(closeTentButton);
 
-        StartBattleButton startBattleButton = new StartBattleButton("    æˆ˜æ–—å¼€å§‹ï¼","200",350,520);
+        StartBattleButton startBattleButton = new StartBattleButton("    Õ½¶·¿ªÊ¼£¡","200",350,520);
         this.getChildren().add(startBattleButton);
 
-        SelectAllButton selectAllButton = new SelectAllButton("     å…¨é€‰æ‹©","200",570,520);
+        SelectAllButton selectAllButton = new SelectAllButton("     È«Ñ¡Ôñ","200",570,520);
         this.getChildren().add(selectAllButton);
 
-        CancelAllButton cancelAllButton = new CancelAllButton("   å…¨é€‰æ‹©è§£é™¤","200",800,520);
+        CancelAllButton cancelAllButton = new CancelAllButton("   È«Ñ¡Ôñ½â³ı","200",800,520);
         this.getChildren().add(cancelAllButton);
 
-        //ä»¥ä¸‹æ˜¯ç‰©å“ç³»ç»ŸåŠ çš„ä¸œè¥¿
-        //betçš„ä½ç½®å¤§å°è¿˜è¦è°ƒä¸€ä¸‹
+        //ÒÔÏÂÊÇÎïÆ·ÏµÍ³¼ÓµÄ¶«Î÷
+        //betµÄÎ»ÖÃ´óĞ¡»¹Òªµ÷Ò»ÏÂ
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
-        //å›¾ç‰‡è¿˜æ²¡æœ‰æ”¾è¿›å»
+        //Í¼Æ¬»¹Ã»ÓĞ·Å½øÈ¥
         nextPage.setOnMouseReleased(e->{
             if (getItemPage() != 3){
                 setItemPage(getItemPage()+1);
             }
         });
         getChildren().add(nextPage);
-        nextPage.setLayoutX(843);//éœ€è¦è°ƒæ•´ä½ç½®
+        nextPage.setLayoutX(843);//ĞèÒªµ÷ÕûÎ»ÖÃ
         nextPage.setLayoutY(578);
 
         prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
-        //å›¾ç‰‡è¿˜æ²¡æœ‰æ”¾è¿›å»
+        //Í¼Æ¬»¹Ã»ÓĞ·Å½øÈ¥
         prePage.setOnMouseReleased(e->{
             if (getItemPage() != 0){
                 setItemPage(getItemPage()-1);
             }
         });
         getChildren().add(prePage);
-        prePage.setLayoutX(131);//éœ€è¦è°ƒæ•´ä½ç½®
+        prePage.setLayoutX(131);//ĞèÒªµ÷ÕûÎ»ÖÃ
         prePage.setLayoutY(578);
 
         for (int i = 0; i < itemList.length; i++) {

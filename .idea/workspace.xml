@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="1409">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vocabulary (2).docx" beforeDir="false" afterPath="$PROJECT_DIR$/vocabulary (2).docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +38,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -201,20 +207,6 @@
       <workItem from="1638199040814" duration="3615000" />
       <workItem from="1638230720467" duration="4811000" />
       <workItem from="1638239385714" duration="5406000" />
-    </task>
-    <task id="LOCAL-00005" summary="t">
-      <created>1633873791509</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1633873791509</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add javafx">
-      <created>1633936221842</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1633936221842</updated>
     </task>
     <task id="LOCAL-00007" summary="add javafx">
       <created>1633936798411</created>
@@ -545,7 +537,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638239398460</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="1409">
+      <created>1638252573050</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1638252573050</updated>
+    </task>
+    <task id="LOCAL-00055" summary="1409">
+      <created>1638252610126</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1638252610126</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="improve the way to locate the dot at the colock" />
     <MESSAGE value="change absolute path to relatively path" />
     <MESSAGE value="reaname classname" />
     <MESSAGE value="revise tentPane" />
@@ -615,6 +620,7 @@
     <MESSAGE value="战斗系大致完成，还需与gui对接" />
     <MESSAGE value="在BattlePane里查找“要求”，根据要求修改。" />
     <MESSAGE value="进一步战斗系统" />
-    <option name="LAST_COMMIT_MESSAGE" value="进一步战斗系统" />
+    <MESSAGE value="1409" />
+    <option name="LAST_COMMIT_MESSAGE" value="1409" />
   </component>
 </project>
