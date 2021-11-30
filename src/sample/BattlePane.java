@@ -8,6 +8,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import test.mainPane;
 
 
 public class BattlePane extends Pane {
@@ -17,6 +18,7 @@ public class BattlePane extends Pane {
     GeneralButton prePage;
     ImageView battleBackground1 = new ImageView();
     ImageView settlementInterface1 = new ImageView();
+    Pane settlementInterface2 = new mainPane();
     ImageView battledRance2 = new ImageView();
     ImageView tentPicture3 = new ImageView();
     ImageView thief = new ImageView();
@@ -28,6 +30,11 @@ public class BattlePane extends Pane {
     Label currentHp = new Label("125");
     public Label monsterDamage;
     public Label personDamage;
+
+    Label exp = new Label("10");
+    Label current_exp = new Label("94");
+    Label gold = new Label("9");
+    Label current_gold = new Label("177");
 
     private static BattlePane battlePane = new BattlePane();
 
@@ -63,22 +70,18 @@ public class BattlePane extends Pane {
         settlementInterface1.setX(settlementInterfaceLeft);
         settlementInterface1.setY(settlementInterfaceTop);
 
-        Label exp = new Label("10");
         exp.setLayoutX(540);
         exp.setLayoutY(313);
         exp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
-        Label current_exp = new Label("94");
         current_exp.setLayoutX(540);
         current_exp.setLayoutY(375);
         current_exp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
-        Label gold = new Label("9");
         gold.setLayoutX(860);
         gold.setLayoutY(313);
         gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
-        Label current_gold = new Label("177");
         current_gold.setLayoutX(804);
         current_gold.setLayoutY(375);
         current_gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
@@ -167,11 +170,13 @@ public class BattlePane extends Pane {
         this.getChildren().add(currentHp);
         this.getChildren().add(monsterDamage);
         this.getChildren().add(personDamage);
-        this.getChildren().add(settlementInterface1);
-        this.getChildren().add(exp);
-        this.getChildren().add(current_exp);
-        this.getChildren().add(gold);
-        this.getChildren().add(current_gold);
+//        this.getChildren().add(settlementInterface1);
+        settlementInterface2.getChildren().add(settlementInterface1);
+        settlementInterface2.getChildren().add(exp);
+        settlementInterface2.getChildren().add(current_exp);
+        settlementInterface2.getChildren().add(gold);
+        settlementInterface2.getChildren().add(current_gold);
+        this.getChildren().add(settlementInterface2);
 
         CloseTentButton closeTentButton = new CloseTentButton("����ȥ�����","200",10,720);
         this.getChildren().add(closeTentButton);
