@@ -26,21 +26,23 @@ public class BattlePane extends Pane {
     double hpCurrentWidth;
     Label hp = new Label("160");
     Label currentHp = new Label("125");
+    public Label monsterDamage;
+    public Label personDamage;
 
     private static BattlePane battlePane = new BattlePane();
 
 
 
     private BattlePane(){
-        //ÀäÈ´Í¼±ê
+        //å†·å´å›¾æ ‡
         Image wait = new Image("file:.\\images\\wait.png");
-        //×Ü½áÒ³Ãæ
+        //æ€»ç»“é¡µé¢
         Image settlementInterface = new Image("file:.\\images\\settlementInterface.png");
-        //ÎÞ·¨´æ·ÅµÀ¾ß
+        //æ— æ³•å­˜æ”¾é“å…·
         Image canNotUsePicture = new Image("file:.\\images\\CanNotUse.png");
-        //Õ½¶·ÉËº¦
+        //æˆ˜æ–—ä¼¤å®³
         Image damage = new Image("file:.\\images\\damage.png");
-        //Õ½¶·¹ý³ÌÒ³Ãæ
+        //æˆ˜æ–—è¿‡ç¨‹é¡µé¢
 
         Person p = Person.getInstance();
         Image battleBackground = new Image("file:.\\images\\battleBackground.png");
@@ -50,7 +52,7 @@ public class BattlePane extends Pane {
         Image defenseD = new Image("file:.\\images\\defenseD.png");
         Image HPBackground = new Image("file:.\\images\\HPBackground.png");
         Image HPCurrent = new Image("file:.\\images\\HPCurrent.png");
-        //ÔÚÕâÀïÃæ·Åbackpack
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½backpack
 
 
         settlementInterface1.setImage(settlementInterface);
@@ -144,6 +146,14 @@ public class BattlePane extends Pane {
         currentHp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  35));
         setCurrentHp(Integer.parseInt(currentHp.getText()));
 
+        monsterDamage = new Label();
+        monsterDamage.setVisible(false);
+        monsterDamage.setFont(new Font(45));
+
+        personDamage = new Label();
+        personDamage.setVisible(false);
+        personDamage.setFont(new Font(45));
+
 
         this.getChildren().add(battleBackground1);
         this.getChildren().add(battledRance2);
@@ -155,53 +165,55 @@ public class BattlePane extends Pane {
 
         this.getChildren().add(hp);
         this.getChildren().add(currentHp);
+        this.getChildren().add(monsterDamage);
+        this.getChildren().add(personDamage);
         this.getChildren().add(settlementInterface1);
         this.getChildren().add(exp);
         this.getChildren().add(current_exp);
         this.getChildren().add(gold);
         this.getChildren().add(current_gold);
 
-        CloseTentButton closeTentButton = new CloseTentButton("¿ìµã»ØÈ¥³ÇÏÂî®°É","200",10,720);
+        CloseTentButton closeTentButton = new CloseTentButton("ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½î®°ï¿½","200",10,720);
         this.getChildren().add(closeTentButton);
 
-        StartBattleButton startBattleButton = new StartBattleButton("    Õ½¶·¿ªÊ¼£¡","200",350,520);
+        StartBattleButton startBattleButton = new StartBattleButton("    æˆ˜æ–—ï¿½?å§‹ï¼","200",350,520);
         this.getChildren().add(startBattleButton);
 
-        SelectAllButton selectAllButton = new SelectAllButton("     È«Ñ¡Ôñ","200",570,520);
+        SelectAllButton selectAllButton = new SelectAllButton("     å…¨ï¿½?ï¿½æ‹©","200",570,520);
         this.getChildren().add(selectAllButton);
 
-        CancelAllButton cancelAllButton = new CancelAllButton("   È«Ñ¡Ôñ½â³ý","200",800,520);
+        CancelAllButton cancelAllButton = new CancelAllButton("   å…¨ï¿½?ï¿½æ‹©è§£é™¤","200",800,520);
         this.getChildren().add(cancelAllButton);
 
-        //ÒÔÏÂÊÇÎïÆ·ÏµÍ³¼ÓµÄ¶«Î÷
-        //betµÄÎ»ÖÃ´óÐ¡»¹Òªµ÷Ò»ÏÂ
+        //ä»¥ä¸‹æ˜¯ç‰©å“ç³»ç»ŸåŠ çš„ä¸œï¿½?
+        //betçš„ä½ç½®å¤§å°è¿˜è¦è°ƒï¿½?ï¿½?
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
-        //Í¼Æ¬»¹Ã»ÓÐ·Å½øÈ¥
+        //å›¾ç‰‡è¿˜æ²¡æœ‰æ”¾è¿›åŽ»
         nextPage.setOnMouseReleased(e->{
             if (getItemPage() != 3){
                 setItemPage(getItemPage()+1);
             }
         });
         getChildren().add(nextPage);
-        nextPage.setLayoutX(843);//ÐèÒªµ÷ÕûÎ»ÖÃ
+        nextPage.setLayoutX(843);//ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
         nextPage.setLayoutY(578);
 
         prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
-        //Í¼Æ¬»¹Ã»ÓÐ·Å½øÈ¥
+        //Í¼Æ¬ï¿½ï¿½Ã»ï¿½Ð·Å½ï¿½È¥
         prePage.setOnMouseReleased(e->{
             if (getItemPage() != 0){
                 setItemPage(getItemPage()-1);
             }
         });
         getChildren().add(prePage);
-        prePage.setLayoutX(131);//ÐèÒªµ÷ÕûÎ»ÖÃ
+        prePage.setLayoutX(131);//ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
         prePage.setLayoutY(578);
 
         for (int i = 0; i < itemList.length; i++) {
             itemList[i] = new ItemPane(i);
             getChildren().add(itemList[i]);
         }
-        refreshItems();
+        refreshall();
         changeToItemPage(0);
     }
 
@@ -245,6 +257,19 @@ public class BattlePane extends Pane {
         double x = (double)hp / (double)Integer.parseInt(this.hp.getText());
         System.out.println(hpCurrentWidth);
         HPCurrent5.setFitWidth(hpCurrentWidth * x);
+    }
+
+    public void setMaxHp(int maxHp){
+        hp.setText(String.valueOf(maxHp));
+    }
+
+    //åˆ·æ–°å½“å‰ï¿½?é‡ï¿½?ï¿½è¡€é‡ä¸Šé™å’Œç‰©å“ï¿½?
+    public void refreshall(){
+        Person person = Person.getInstance();
+        refreshItems();
+        setMaxHp(person.getMaxHealth());
+        int hp = person.getHealth();
+        setCurrentHp(hp);
     }
 
     public void concludBattle(){
