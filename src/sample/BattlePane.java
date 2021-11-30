@@ -34,9 +34,13 @@ public class BattlePane extends Pane {
 
     private BattlePane(){
         //冷却图标
+        Image wait = new Image("file:.\\images\\wait.png");
         //总结页面
+        Image settlementInterface = new Image("file:.\\images\\settlementInterface.png");
         //无法存放道具
+        Image canNotUsePicture = new Image("file:.\\images\\CanNotUse.png");
         //战斗伤害
+        Image damage = new Image("file:.\\images\\damage.png");
         //战斗过程页面
 
         Person p = Person.getInstance();
