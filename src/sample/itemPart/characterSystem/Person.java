@@ -10,7 +10,7 @@ public class Person {
     private boolean getLost = false;
     private boolean squidMan = false;
     private int health = 900;
-    private int maxHealth;
+    private int maxHealth = 900;
     private int money = 1000;
     private int attack = 100;
     private int critical = 10;

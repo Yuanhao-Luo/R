@@ -34,13 +34,10 @@ public class BattlePane extends Pane {
 
     private BattlePane(){
         //冷却图标
-        Image wait = new Image("file:.\\images\\wait.png");
         //总结页面
         Image settlementInterface = new Image("file:.\\images\\settlementInterface.png");
         //无法存放道具
-        Image canNotUsePicture = new Image("file:.\\images\\CanNotUse.png");
         //战斗伤害
-        Image damage = new Image("file:.\\images\\damage.png");
         //战斗过程页面
 
         Person p = Person.getInstance();
@@ -183,7 +180,7 @@ public class BattlePane extends Pane {
             itemList[i] = new ItemPane(i);
             getChildren().add(itemList[i]);
         }
-        refreshItems();
+        refreshall();
         changeToItemPage(0);
     }
 
@@ -229,7 +226,22 @@ public class BattlePane extends Pane {
         HPCurrent5.setFitWidth(hpCurrentWidth * x);
     }
 
+    public void setMaxHp(int maxHp){
+        hp.setText(String.valueOf(maxHp));
+    }
+
+    //刷新当前血量、血量上限和物品栏
+    public void refreshall(){
+        Person person = Person.getInstance();
+        refreshItems();
+        setMaxHp(person.getMaxHealth());
+        int hp = person.getHealth();
+        setCurrentHp(hp);
+    }
+
     public void concludBattle(){
 
     }
+
+
 }

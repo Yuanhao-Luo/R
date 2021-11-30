@@ -45,8 +45,9 @@ public class Battle {
     }
 
     public void startBattle(){
+        monsterDamage = 0;
+        personDamage = 0;
         BehaviorLogic bl = monster.getBehaviourLogics()[turn%monster.getBehaviourLogics().length];
-        //att、def可能为null
         int monAtt;
         int monAttAb;
         int monDef;
@@ -104,8 +105,8 @@ public class Battle {
         person.loseHp(mondamage);
         monster.loseHp(pdamage);
 
-        monsterDamage = mondamage;
-        personDamage = personDamage;
+        this.monsterDamage = mondamage;
+        this.personDamage = pdamage;
 
         if (person.isDie())
             result =  2;

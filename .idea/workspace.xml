@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/wait.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vocabulary (2).docx" beforeDir="false" afterPath="$PROJECT_DIR$/vocabulary (2).docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ItemPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/itemPart/characterSystem/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemPart/characterSystem/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +90,11 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="应用程序.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="R" />
-      <option name="VM_PARAMETERS" value="--module-path D:\大三上\rance1\javafx-sdk-11.0.2\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path E:\programming\plugin\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -120,13 +132,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.test" />
-      <item itemvalue="应用程序.Main" />
-      <item itemvalue="应用程序.mainframe1" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.mainframe1" />
+      <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -581,12 +593,13 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -616,5 +629,31 @@
     <MESSAGE value="在BattlePane里查找“要求”，根据要求修改。" />
     <MESSAGE value="进一步战斗系统" />
     <option name="LAST_COMMIT_MESSAGE" value="进一步战斗系统" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638253484350">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638253484350" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638255776566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638255776566" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638255776566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638255776566" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638255776565">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638255776565" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638255776566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638255776566" />
+    <state x="440" y="98" key="SettingsEditor" timestamp="1638253308014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="98" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638253308014" />
   </component>
 </project>

@@ -22,21 +22,7 @@ public class StartBattleButton extends TextButton {
             battlePane.monsterDamage.setText(String.valueOf(mondamage));
             battlePane.personDamage.setText(String.valueOf(perdamage));
             battlePane.monsterDamage.setVisible(true);
-//            try {
-//                System.out.println(battlePane.monsterDamage.getText());
-//                Thread.sleep(100);
-//                Thread.sleep(4000);
-//            } catch (InterruptedException ex) {
-//                ex.printStackTrace();
-//            }
-//            battlePane.monsterDamage.setVisible(false);
             battlePane.personDamage.setVisible(true);
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException ex) {
-                ex.printStackTrace();
-            }
-            battlePane.personDamage.setVisible(false);
 
             if (result == 1){
                 BattlePane.getInstance().concludBattle();
@@ -47,6 +33,8 @@ public class StartBattleButton extends TextButton {
 
 
             }
+
+            battlePane.refreshall();
         });
     }
 }
