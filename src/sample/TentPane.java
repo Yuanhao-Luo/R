@@ -140,8 +140,8 @@ public class TentPane extends Pane {
 
     //page start from 0
     public void changeToItemPage(int page){
-        for (ItemPane item : itemList) {
-            item.setVisible(false);
+        for (ItemPane i : itemList) {
+            i.setVisible(false);
         }
         for (int i = 7*page; i < 7*page + 7; i++) {
             itemList[i].setVisible(true);

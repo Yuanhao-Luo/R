@@ -4,98 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="Merge remote-tracking branch 'origin/BattleSystemLJ'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/R/sample/BattlePane.class&#10;#&#9;out/production/R/sample/ItemPane.class&#10;#&#9;out/production/R/sample/MainFramePane.class&#10;#&#9;out/production/R/sample/MazePane.class&#10;#&#9;out/production/R/sample/TentPane.class&#10;#&#9;out/production/R/sample/battle/battleGUI.class&#10;#&#9;out/production/R/sample/battle/battleMain.class&#10;#&#9;out/production/R/sample/buttons/CancelAllButton.class&#10;#&#9;out/production/R/sample/buttons/StartBattleButton.class&#10;#&#9;out/production/R/sample/tentPane.class&#10;#&#9;src/sample/BattlePane.java&#10;#&#9;src/sample/MainFramePane.java&#10;#&#9;src/sample/TentPane.java&#10;#&#9;src/sample/battle/battleGUI.java&#10;#&#9;src/sample/battle/battleMain.java&#10;#&#9;src/sample/buttons/CancelAllButton.java&#10;#&#9;src/sample/buttons/StartBattleButton.java">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]/BattlePane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]/StartBattleButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]/TentPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]/vocabulary (2).docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/BattlePane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/StartBattleButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/TentPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/vocabulary (2).docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/CanNotUse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cooldown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cooldown_clock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/damage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/settlementInterface.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/production/R/META-INF/R.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/production/R/production/R/META-INF/R.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Attack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Behavior.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/BehaviorLogic.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Behaviour.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/BehaviourLogic.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Defence.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Monster.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Weakness.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Weekness.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/battle/Attack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/battle/Battle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/battle/Behavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/battle/BehaviorLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/battle/Defence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/battle/Monster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/battle/Weakness.java" afterDir="false" />
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rance1复刻设计文档（初稿）ver1.2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Rance1复刻设计文档（初稿）ver1.2.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Event/EnterPlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Event/EnterPlace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ImageProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ImageProcess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/battleGUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/battleMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/LeaveHereButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/LeaveHereButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/ItemList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/ItemList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/PassiveEffect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/PassiveEffect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/arms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/arms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/manyTimesItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/manyTimesItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/oneTimeItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/oneTimeItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/storeExample/mainframe1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemPart/storeExample/mainframe1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HomeofseaPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HomeofseaPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/tentPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ImageProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ImageProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ItemPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MainFramePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MainFramePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/battle/battleGUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/battle/battleMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/CancelAllButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/CancelAllButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/LeaveHereButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/LeaveHereButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/MapButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/MapButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/itemPart/characterSystem/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemPart/characterSystem/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/ItemList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/ItemList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/arms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/arms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/manyTimesItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/manyTimesItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/oneTimeItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemPart/itemSystem2/oneTimeItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vocabulary (2).docx" beforeDir="false" afterPath="$PROJECT_DIR$/vocabulary (2).docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$nce1复刻设计文档（初稿）ver1.2.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,13 +198,6 @@
       <workItem from="1638199040814" duration="3615000" />
       <workItem from="1638230720467" duration="4811000" />
       <workItem from="1638239385714" duration="5406000" />
-    </task>
-    <task id="LOCAL-00008" summary="add javafx">
-      <created>1633963336954</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1633963336954</updated>
     </task>
     <task id="LOCAL-00009" summary="t">
       <created>1633963663449</created>
@@ -632,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638262457527</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Merge remote-tracking branch 'origin/BattleSystemLJ'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/R/sample/BattlePane.class&#10;#&#9;out/production/R/sample/ItemPane.class&#10;#&#9;out/production/R/sample/MainFramePane.class&#10;#&#9;out/production/R/sample/MazePane.class&#10;#&#9;out/production/R/sample/TentPane.class&#10;#&#9;out/production/R/sample/battle/battleGUI.class&#10;#&#9;out/production/R/sample/battle/battleMain.class&#10;#&#9;out/production/R/sample/buttons/CancelAllButton.class&#10;#&#9;out/production/R/sample/buttons/StartBattleButton.class&#10;#&#9;out/production/R/sample/tentPane.class&#10;#&#9;src/sample/BattlePane.java&#10;#&#9;src/sample/MainFramePane.java&#10;#&#9;src/sample/TentPane.java&#10;#&#9;src/sample/battle/battleGUI.java&#10;#&#9;src/sample/battle/battleMain.java&#10;#&#9;src/sample/buttons/CancelAllButton.java&#10;#&#9;src/sample/buttons/StartBattleButton.java">
+      <created>1638273529595</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1638273529595</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -710,26 +620,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638253484350" />
-    <state x="588" y="0" key="CommitChangelistDialog2" timestamp="1638273429833">
+    <state x="588" y="0" key="CommitChangelistDialog2" timestamp="1638273527681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="588" y="0" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638273429833" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638273397393">
+    <state x="588" y="0" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638273527681" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638277940249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638273397393" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638273397393">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638277940249" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638277940248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638273397393" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638273397392">
+    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638277940248" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638277940248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638273397392" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638273397393">
+    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638277940248" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638277940249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638273397393" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638277940249" />
     <state x="184" y="92" key="MergeDialog" timestamp="1638273510500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -746,10 +656,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638272807042" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638260891363">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638273545384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638260891363" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638273545384" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1638272663258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
