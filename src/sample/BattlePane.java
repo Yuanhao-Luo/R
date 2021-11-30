@@ -25,6 +25,8 @@ public class BattlePane extends Pane {
     double hpCurrentWidth;
     Label hp = new Label("160");
     Label currentHp = new Label("125");
+    public Label monsterDamage;
+    public Label personDamage;
 
     private static BattlePane battlePane = new BattlePane();
 
@@ -111,6 +113,18 @@ public class BattlePane extends Pane {
         currentHp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  35));
         setCurrentHp(Integer.parseInt(currentHp.getText()));
 
+        monsterDamage = new Label("50");
+        monsterDamage.setLayoutX(190);
+        monsterDamage.setLayoutY(365);
+        monsterDamage.setFont(new Font(45));
+        monsterDamage.setVisible(false);
+
+        personDamage = new Label("60");
+        personDamage.setLayoutX(718);
+        personDamage.setLayoutY(180);
+        personDamage.setFont(new Font(45));
+        personDamage.setVisible(false);
+
 
         this.getChildren().add(battleBackground1);
         this.getChildren().add(battledRance2);
@@ -122,6 +136,8 @@ public class BattlePane extends Pane {
 
         this.getChildren().add(hp);
         this.getChildren().add(currentHp);
+        this.getChildren().add(monsterDamage);
+        this.getChildren().add(personDamage);
 
         CloseTentButton closeTentButton = new CloseTentButton("快点回去城下町吧","200",10,720);
         this.getChildren().add(closeTentButton);
