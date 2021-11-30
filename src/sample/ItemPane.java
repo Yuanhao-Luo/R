@@ -45,13 +45,16 @@ public class ItemPane extends Pane {
         bet.setY(3);
         getChildren().add(bet);
 
-        coodownClock = new ImageView();
+        coodownClock = new ImageView(new Image("file:.\\images\\cooldown_clock.png"));
+        coodownClock.setVisible(false);
         getChildren().add(coodownClock);
 
-        cooldown = new ImageView();
+        cooldown = new ImageView(new Image("file:.\\images\\cooldown.png"));
+        cooldown.setVisible(false);
         getChildren().add(cooldown);
 
         currentCooldownLabel = new Label();
+        currentCooldownLabel.setVisible(false);
         getChildren().add(currentCooldownLabel);
 
         setOnMouseEntered(e -> {
@@ -67,6 +70,10 @@ public class ItemPane extends Pane {
             }
         });
         setOnMouseReleased(e -> {
+
+
+
+            System.out.println(index);
             if (isSelectable()){
                 setSelect(!isSelect());
             }
@@ -109,11 +116,13 @@ public class ItemPane extends Pane {
 
     public void changeCooldown(int currentCooldown){
         if (currentCooldown > 0){
+            setSelectable(false);
             coodownClock.setVisible(true);
             cooldown.setVisible(true);
             currentCooldownLabel.setVisible(true);
             currentCooldownLabel.setText(String.valueOf(currentCooldown));
         }else {
+            setSelectable(true);
             coodownClock.setVisible(false);
             cooldown.setVisible(false);
             currentCooldownLabel.setVisible(false);
@@ -122,6 +131,7 @@ public class ItemPane extends Pane {
     }
 
     public void refresh(Item item){
+        setSelect(false);
         if (item == null){
             setSelectable(false);
             return;

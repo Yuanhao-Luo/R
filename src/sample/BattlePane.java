@@ -26,21 +26,23 @@ public class BattlePane extends Pane {
     double hpCurrentWidth;
     Label hp = new Label("160");
     Label currentHp = new Label("125");
+    public Label monsterDamage;
+    public Label personDamage;
 
     private static BattlePane battlePane = new BattlePane();
 
 
 
     private BattlePane(){
-        //冷却图标
+        //鍐峰嵈鍥炬爣
         Image wait = new Image("file:.\\images\\wait.png");
-        //总结页面
+        //鎬荤粨椤甸潰
         Image settlementInterface = new Image("file:.\\images\\settlementInterface.png");
-        //无法存放道具
+        //鏃犳硶瀛樻斁閬撳叿
         Image canNotUsePicture = new Image("file:.\\images\\CanNotUse.png");
-        //战斗伤害
+        //鎴樻枟浼ゅ
         Image damage = new Image("file:.\\images\\damage.png");
-        //战斗过程页面
+        //鎴樻枟杩囩▼椤甸潰
 
         Person p = Person.getInstance();
         Image battleBackground = new Image("file:.\\images\\battleBackground.png");
@@ -155,6 +157,8 @@ public class BattlePane extends Pane {
 
         this.getChildren().add(hp);
         this.getChildren().add(currentHp);
+        this.getChildren().add(monsterDamage);
+        this.getChildren().add(personDamage);
         this.getChildren().add(settlementInterface1);
         this.getChildren().add(exp);
         this.getChildren().add(current_exp);
@@ -164,19 +168,19 @@ public class BattlePane extends Pane {
         CloseTentButton closeTentButton = new CloseTentButton("快点回去城下町吧","200",10,720);
         this.getChildren().add(closeTentButton);
 
-        StartBattleButton startBattleButton = new StartBattleButton("    战斗开始！","200",350,520);
+        StartBattleButton startBattleButton = new StartBattleButton("    鎴樻枟寮?濮嬶紒","200",350,520);
         this.getChildren().add(startBattleButton);
 
-        SelectAllButton selectAllButton = new SelectAllButton("     全选择","200",570,520);
+        SelectAllButton selectAllButton = new SelectAllButton("     鍏ㄩ?夋嫨","200",570,520);
         this.getChildren().add(selectAllButton);
 
-        CancelAllButton cancelAllButton = new CancelAllButton("   全选择解除","200",800,520);
+        CancelAllButton cancelAllButton = new CancelAllButton("   鍏ㄩ?夋嫨瑙ｉ櫎","200",800,520);
         this.getChildren().add(cancelAllButton);
 
-        //以下是物品系统加的东西
-        //bet的位置大小还要调一下
+        //浠ヤ笅鏄墿鍝佺郴缁熷姞鐨勪笢瑗?
+        //bet鐨勪綅缃ぇ灏忚繕瑕佽皟涓?涓?
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
-        //图片还没有放进去
+        //鍥剧墖杩樻病鏈夋斁杩涘幓
         nextPage.setOnMouseReleased(e->{
             if (getItemPage() != 3){
                 setItemPage(getItemPage()+1);
@@ -201,7 +205,7 @@ public class BattlePane extends Pane {
             itemList[i] = new ItemPane(i);
             getChildren().add(itemList[i]);
         }
-        refreshItems();
+        refreshall();
         changeToItemPage(0);
     }
 
@@ -245,6 +249,19 @@ public class BattlePane extends Pane {
         double x = (double)hp / (double)Integer.parseInt(this.hp.getText());
         System.out.println(hpCurrentWidth);
         HPCurrent5.setFitWidth(hpCurrentWidth * x);
+    }
+
+    public void setMaxHp(int maxHp){
+        hp.setText(String.valueOf(maxHp));
+    }
+
+    //鍒锋柊褰撳墠琛?閲忋?佽閲忎笂闄愬拰鐗╁搧鏍?
+    public void refreshall(){
+        Person person = Person.getInstance();
+        refreshItems();
+        setMaxHp(person.getMaxHealth());
+        int hp = person.getHealth();
+        setCurrentHp(hp);
     }
 
     public void concludBattle(){
