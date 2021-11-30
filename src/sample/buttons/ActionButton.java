@@ -19,9 +19,9 @@ public class ActionButton extends GeneralButton {
     GeneralPlacePane gpp;
 
     public void openActionDialogPane(){
-        ActionDialogPane actionDialogPane = new ActionDialogPane(placeName,actionName);
+        ActionDialogPane actionDialogPane = new ActionDialogPane(gpp,placeName,actionName);
         try{
-            gpp.getChildren().remove(8);
+            gpp.getChildren().remove(9);
         }
         catch (Exception ignored){
         }

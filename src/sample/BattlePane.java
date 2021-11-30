@@ -10,7 +10,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
-import test.mainPane;
 
 
 public class BattlePane extends Pane {
@@ -182,6 +181,11 @@ public class BattlePane extends Pane {
         settlementInterface2.getChildren().add(current_exp);
         settlementInterface2.getChildren().add(gold);
         settlementInterface2.getChildren().add(current_gold);
+        settlementInterface1.setOnMouseReleased(e->{
+            System.out.println("conclude Pane");
+            this.setVisible(false);
+            MazePane.getInstance().setVisible(true);
+        });
         this.getChildren().add(settlementInterface2);
 
         settlementInterface2.setVisible(false);
@@ -303,6 +307,7 @@ public class BattlePane extends Pane {
     public void startBattle(Monster monster){
         settlementInterface2.setVisible(false);
         thief.setImage(new Image("file:"+monster.getUrl()));
+        Battle.getInstance().setMonster(monster);
         refreshall();
     }
 }

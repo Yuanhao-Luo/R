@@ -11,7 +11,7 @@ import sample.Event.KillTime;
 import sample.Event.PassOneTime;
 import sample.buttons.MapButton;
 import sample.buttons.OpenTentButton;
-import sample.specificPlace.HomeofseaPane;
+import sample.specificPlace.*;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -32,9 +32,9 @@ public class MainFramePane extends Pane {
     MapButton bBistro = new MapButton(".\\images\\bistroButton_hover.png",".\\images\\bistroButton_preparing.png",".\\images\\bistroButton_pressable.png",".\\images\\bistroButton_pressed.png",bistroAvailable,"bistro");
     MapButton bSea = new MapButton(".\\images\\homeofseaButton_hover.png",".\\images\\homeofseaButton_preparing.png",".\\images\\homeofseaButton_pressable.png",".\\images\\homeofseaButton_pressed.png",seaAvailable,"homeofsea");
     MapButton bHotel = new MapButton(".\\images\\hotelButton_hover.png",".\\images\\hotelButton_preparing.png",".\\images\\hotelButton_pressable.png",".\\images\\hotelButton_pressed.png",hotelAvailable,"hotel");
-    MapButton bLevel = new MapButton(".\\images\\levelhouseButton_hover.png",".\\images\\levelhouseButton_preparing.png",".\\images\\levelhouseButton_pressable.png",".\\images\\levelhouseButton_pressed.png",levelAvailable,"levelhouse");
-    MapButton bMaze = new MapButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable,"walkthemaze");
-    MapButton bWS = new MapButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable,"weaponstore");
+    MapButton bLevel = new MapButton(".\\images\\levelhouseButton_hover.png",".\\images\\levelhouseButton_preparing.png",".\\images\\levelhouseButton_pressable.png",".\\images\\levelhouseButton_pressed.png",levelAvailable,"level");
+    MapButton bMaze = new MapButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable,"maze");
+    MapButton bWS = new MapButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable,"weapons");
     MapButton bKillTime = new MapButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable,"killtime");
     OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
 
@@ -46,7 +46,13 @@ public class MainFramePane extends Pane {
     Pane HPBlackImg = new Pane();
     Label HPCurrentLabel = new Label("" + HPCurrent);
 
+    public TentPane tentPane = TentPane.getInstance();
     public HomeofseaPane homeofseaPane = new HomeofseaPane();
+    public WeaponsPane weaponsPane = new WeaponsPane();
+    public HotelPane hotelPane = new HotelPane();
+    public LevelPane levelPane = new LevelPane();
+    public BistroPane bistroPane = new BistroPane();
+    public MazePane mazePane = MazePane.getInstance();
 
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
@@ -62,7 +68,7 @@ public class MainFramePane extends Pane {
 
         this.getChildren().add(bBistro);
         setXY(bBistro, 360,560);
-        bBistro.setOnMouseClicked(new PassOneTime());
+        bBistro.setOnMouseClicked(new EnterPlace());
 
         this.getChildren().add(bSea);
         setXY(bSea, 730, 589);
@@ -70,24 +76,24 @@ public class MainFramePane extends Pane {
 
         this.getChildren().add(bHotel);
         setXY(bHotel, 217, 505);
-        bHotel.setOnMouseClicked(new PassOneTime());
+        bHotel.setOnMouseClicked(new EnterPlace());
 
         this.getChildren().add(bLevel);
         setXY(bLevel, 550, 620);
-        bLevel.setOnMouseClicked(new PassOneTime());
+        bLevel.setOnMouseClicked(new EnterPlace());
 
         this.getChildren().add(bMaze);
         setXY(bMaze, 460, 705);
-        bMaze.setOnMouseClicked(new PassOneTime());
+        bMaze.setOnMouseClicked(new EnterPlace());
 
         this.getChildren().add(bWS);
         setXY(bWS, 660, 494);
-        bWS.setOnMouseClicked(new PassOneTime());
+        bWS.setOnMouseClicked(new EnterPlace());
 
         this.getChildren().add(bKillTime);
         setXY(bKillTime, 580, 60);
         bKillTime.setOnMouseClicked(new KillTime());
-
+//
         this.getChildren().add(bOpenTent);
 
         this.getChildren().add(clockImv);
@@ -154,12 +160,28 @@ public class MainFramePane extends Pane {
         HPTotalLabel.setFont(Font.font("Arial",28));
         HPTotalLabel.setTextFill(Color.web("#000000"));
 
+        tentPane.setVisible(false);
+        this.getChildren().add(tentPane);
+
         homeofseaPane.setVisible(false);
         this.getChildren().add(homeofseaPane);
 
-        BattlePane battlePane = BattlePane.getInstance();
-        this.getChildren().add(battlePane);
-        battlePane.setVisible(true);
+
+
+        weaponsPane.setVisible(false);
+        this.getChildren().add(weaponsPane);
+
+        hotelPane.setVisible(false);
+        this.getChildren().add(hotelPane);
+
+        levelPane.setVisible(false);
+        this.getChildren().add(levelPane);
+
+        bistroPane.setVisible(false);
+        this.getChildren().add(bistroPane);
+
+        mazePane.setVisible(false);
+        this.getChildren().add(mazePane);
     }
 
     public void initPane(Pane p,int x, int y,String url){

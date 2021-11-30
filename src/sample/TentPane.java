@@ -22,8 +22,6 @@ public class TentPane extends Pane {
 
     public static TentPane getInstance(){return tentPane;}
 
-
-
     private TentPane(){
         Person p = Person.getInstance();
         Image imageTent1 = new Image("file:.\\images\\tent1.png");

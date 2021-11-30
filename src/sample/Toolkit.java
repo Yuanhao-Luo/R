@@ -1,7 +1,7 @@
 package sample;
 
-        import javafx.scene.image.ImageView;
-        import sample.buttons.MapButton;
+import javafx.scene.image.ImageView;
+import sample.buttons.MapButton;
 
 public class Toolkit {
     public static MapButton peaceKeeperImageView(Object o){
