@@ -1,53 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="1111">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MazeBackground1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BasicCard1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BasicCard2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BasicCard3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_pressable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_pressable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/Card.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/CardPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/GUIMazeStore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeStore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/CardPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/GUIMazeStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/LogicalMazeStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R.iml" beforeDir="false" afterPath="$PROJECT_DIR$/R.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CloseTentButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/CloseTentButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/OpenTentButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/OpenTentButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/TextButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/TextButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/production/R/production/R/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/tentPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/tentPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ClockStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ClockStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/ItemPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MainFramePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MainFramePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/CloseTentButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/CloseTentButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/OpenTentButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/OpenTentButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/TextButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/TextButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/production/R/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="BattleSystemLJ" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,9 +101,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.itemPart.itemSystem2.test" />
+      <module name="R" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.itemPart.itemSystem2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.mainframe1" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.mainframe1" />
@@ -211,34 +184,16 @@
       <workItem from="1637394432795" duration="2621000" />
       <workItem from="1637468979675" duration="2441000" />
       <workItem from="1637591811643" duration="1457000" />
-    </task>
-    <task id="LOCAL-00001" summary="t">
-      <created>1633765111863</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1633765111863</updated>
-    </task>
-    <task id="LOCAL-00002" summary="t">
-      <created>1633855346093</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1633855346093</updated>
-    </task>
-    <task id="LOCAL-00003" summary="t">
-      <created>1633855561036</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1633855561036</updated>
-    </task>
-    <task id="LOCAL-00004" summary="t">
-      <created>1633855704885</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1633855704885</updated>
+      <workItem from="1637594931851" duration="356000" />
+      <workItem from="1637678081821" duration="3983000" />
+      <workItem from="1637723385263" duration="1676000" />
+      <workItem from="1637739744325" duration="2769000" />
+      <workItem from="1637767274967" duration="1047000" />
+      <workItem from="1637852337673" duration="1695000" />
+      <workItem from="1638106539760" duration="6938000" />
+      <workItem from="1638199040814" duration="3615000" />
+      <workItem from="1638230720467" duration="4811000" />
+      <workItem from="1638239385714" duration="5406000" />
     </task>
     <task id="LOCAL-00005" summary="t">
       <created>1633873791509</created>
@@ -513,7 +468,77 @@
       <option name="project" value="LOCAL" />
       <updated>1637591886007</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="1111">
+      <created>1637678128986</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1637678128986</updated>
+    </task>
+    <task id="LOCAL-00045" summary="初步战斗系统">
+      <created>1637681600067</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1637681600067</updated>
+    </task>
+    <task id="LOCAL-00046" summary="进一步战斗系统">
+      <created>1637724941535</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1637724941535</updated>
+    </task>
+    <task id="LOCAL-00047" summary="进一步战斗系统">
+      <created>1637750499885</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1637750499885</updated>
+    </task>
+    <task id="LOCAL-00048" summary="战斗系大致完成，还需与gui对接">
+      <created>1638112691913</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1638112691913</updated>
+    </task>
+    <task id="LOCAL-00049" summary="在BattlePane里查找“要求”，根据要求修改。">
+      <created>1638113524356</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1638113524356</updated>
+    </task>
+    <task id="LOCAL-00050" summary="进一步战斗系统">
+      <created>1638202581252</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1638202581253</updated>
+    </task>
+    <task id="LOCAL-00051" summary="进一步战斗系统">
+      <created>1638232588508</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1638232588509</updated>
+    </task>
+    <task id="LOCAL-00052" summary="进一步战斗系统">
+      <created>1638234042237</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1638234042237</updated>
+    </task>
+    <task id="LOCAL-00053" summary="进一步战斗系统">
+      <created>1638239398459</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1638239398460</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,9 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="add javafx" />
-    <MESSAGE value="t" />
-    <MESSAGE value="add button images and vocabulary" />
     <MESSAGE value="improve the way to locate the dot at the colock" />
     <MESSAGE value="change absolute path to relatively path" />
     <MESSAGE value="reaname classname" />
@@ -588,7 +610,11 @@
     <MESSAGE value="图片" />
     <MESSAGE value="Merge branch 'main' of https://github.com/Yuanhao-Luo/R into BattleSystemLJ&#10;&#10; Conflicts:&#10;&#9;out/production/R/sample/ItemPane.class&#10;&#9;out/production/R/sample/MainFramePane.class&#10;&#9;out/production/R/sample/buttons/TextButton.class&#10;&#9;out/production/R/sample/itemPart/characterSystem/Person.class&#10;&#9;out/production/R/sample/tentPane.class&#10;&#9;src/sample/ItemPane.java&#10;&#9;src/sample/MainFramePane.java&#10;&#9;src/sample/TentPane.java&#10;&#9;src/sample/buttons/TextButton.java" />
     <MESSAGE value="1111" />
-    <option name="LAST_COMMIT_MESSAGE" value="1111" />
+    <MESSAGE value="初步战斗系统" />
+    <MESSAGE value="战斗系大致完成，还需与gui对接" />
+    <MESSAGE value="在BattlePane里查找“要求”，根据要求修改。" />
+    <MESSAGE value="进一步战斗系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="进一步战斗系统" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637063592186">
@@ -599,11 +625,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="329" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634029140411" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1637046970480">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1638232207253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637046970480" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1635845160556" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1638232207253" />
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1633936118810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -612,6 +638,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="799" y="410" width="331" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637047075365" />
+    <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1638231849061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638106628127" />
+    <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638231849061" />
     <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1634114417789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -620,82 +651,82 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#项目结构/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633855511587" />
-    <state x="588" y="0" width="744" height="803" key="CommitChangelistDialog2" timestamp="1637594467278">
+    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2" timestamp="1638239395378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="588" y="0" width="744" height="803" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594467278" />
-    <state x="588" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1637110549131" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637594437913">
+    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638239395378" />
+    <state x="588" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1638234040219" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637594812997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594437913" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594812997" />
     <state x="739" y="265" key="FileChooserDialogImpl" timestamp="1637593266817">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="265" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593266817" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1637594188514">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638249624828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594188514" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1637594188514">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638249624828" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638235535690" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638249624828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594188514" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1637594188514">
+    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638249624828" />
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638235535690" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638249624828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594188514" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1637594188514">
+    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638249624828" />
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638235535690" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638249624828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594188514" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637112459061" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1637593845351">
+    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638249624828" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638235535690" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1637594917625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593845351" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594917625" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1637593845351">
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1637594917625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593845351" />
+    <state width="938" height="348" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594917625" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1637593845351">
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1637594917625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593845351" />
+    <state width="938" height="348" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594917625" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1637593845351">
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1637594917625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593845351" />
+    <state width="938" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594917625" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state x="223" y="92" key="MergeDialog" timestamp="1637594022022">
+    <state x="223" y="92" key="MergeDialog" timestamp="1637595160885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="223" y="92" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594022022" />
+    <state x="223" y="92" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637595160885" />
     <state x="223" y="92" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637108603155" />
-    <state x="670" y="237" key="MultipleFileMergeDialog" timestamp="1637594022032">
+    <state x="670" y="237" key="MultipleFileMergeDialog" timestamp="1637595160894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="237" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594022032" />
+    <state x="670" y="237" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637595160894" />
     <state x="670" y="237" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637108603163" />
-    <state x="440" y="98" key="SettingsEditor" timestamp="1637593268623">
+    <state x="440" y="98" key="SettingsEditor" timestamp="1637595033224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="98" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593268623" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1637594491017">
+    <state x="440" y="98" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637595033224" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638239408840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594491017" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1637110591775" />
-    <state x="630" y="257" key="VcsDiffUtil.ChangesDialog" timestamp="1636293057897">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638239408840" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638234061522" />
+    <state x="630" y="257" key="VcsDiffUtil.ChangesDialog" timestamp="1637594682287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="630" y="257" key="VcsDiffUtil.ChangesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636293057897" />
+    <state x="630" y="257" key="VcsDiffUtil.ChangesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594682287" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1636292973567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -708,23 +739,27 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634982194830" />
-    <state x="749" y="322" key="git4idea.merge.GitMergeDialog" timestamp="1637594526521">
+    <state x="722" y="235" key="git4idea.branch.GitSmartOperationDialog" timestamp="1637595144849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="749" y="322" key="git4idea.merge.GitMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594526521" />
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1637593874609">
+    <state x="722" y="235" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637595144849" />
+    <state x="749" y="322" key="git4idea.merge.GitMergeDialog" timestamp="1637594592249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593874609" />
+    <state x="749" y="322" key="git4idea.merge.GitMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594592249" />
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638199054226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638199054226" />
     <state x="682" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637108569368" />
     <state x="661" y="437" key="git4idea.rebase.GitUnstructuredEditor" timestamp="1637593792029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="437" key="git4idea.rebase.GitUnstructuredEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593792029" />
-    <state x="785" y="429" key="git4idea.ui.GitStashDialog" timestamp="1634654832807">
+    <state x="785" y="429" key="git4idea.ui.GitStashDialog" timestamp="1637594843859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="785" y="429" key="git4idea.ui.GitStashDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634654832807" />
+    <state x="785" y="429" key="git4idea.ui.GitStashDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594843859" />
     <state x="334" y="224" key="new project wizard" timestamp="1633879172048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
