@@ -1,5 +1,7 @@
 package sample;
 
+import sample.battle.Battle;
+import sample.battle.Monster;
 import sample.buttons.*;
 import sample.itemPart.characterSystem.Person;
 import javafx.scene.control.Label;
@@ -18,7 +20,7 @@ public class BattlePane extends Pane {
     GeneralButton prePage;
     ImageView battleBackground1 = new ImageView();
     ImageView settlementInterface1 = new ImageView();
-    Pane settlementInterface2 = new mainPane();
+    Pane settlementInterface2 = new Pane();
     ImageView battledRance2 = new ImageView();
     ImageView tentPicture3 = new ImageView();
     ImageView thief = new ImageView();
@@ -151,10 +153,14 @@ public class BattlePane extends Pane {
 
         monsterDamage = new Label();
         monsterDamage.setVisible(false);
+        monsterDamage.setLayoutX(215);
+        monsterDamage.setLayoutY(360);
         monsterDamage.setFont(new Font(45));
 
         personDamage = new Label();
         personDamage.setVisible(false);
+        personDamage.setLayoutX(720);
+        personDamage.setLayoutY(160);
         personDamage.setFont(new Font(45));
 
 
@@ -177,6 +183,15 @@ public class BattlePane extends Pane {
         settlementInterface2.getChildren().add(gold);
         settlementInterface2.getChildren().add(current_gold);
         this.getChildren().add(settlementInterface2);
+
+        settlementInterface2.setVisible(false);
+        settlementInterface2.setOnMouseReleased(e->{
+            //对接迷宫
+
+
+
+
+        });
 
         CloseTentButton closeTentButton = new CloseTentButton("����ȥ�����","200",10,720);
         this.getChildren().add(closeTentButton);
@@ -278,6 +293,18 @@ public class BattlePane extends Pane {
     }
 
     public void concludBattle(){
+        Person person = Person.getInstance();
+        Battle battle = Battle.getInstance();
+        exp.setText(String.valueOf(person.getExp()));
+        current_exp.setText(String.valueOf(battle.getMonster().getExp()));
+        gold.setText(String.valueOf(person.getMoney()));
+        current_gold.setText(String.valueOf(battle.getMonster().getMoney()));
+        settlementInterface2.setVisible(true);
+    }
 
+    public void startBattle(Monster monster){
+        settlementInterface2.setVisible(false);
+        thief.setImage(new Image("file:"+monster.getUrl()));
+        refreshall();
     }
 }

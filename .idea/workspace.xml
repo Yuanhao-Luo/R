@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,13 +204,6 @@
       <workItem from="1638199040814" duration="3615000" />
       <workItem from="1638230720467" duration="4811000" />
       <workItem from="1638239385714" duration="5406000" />
-    </task>
-    <task id="LOCAL-00007" summary="add javafx">
-      <created>1633936798411</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1633936798411</updated>
     </task>
     <task id="LOCAL-00008" summary="add javafx">
       <created>1633963336954</created>
@@ -542,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638260885998</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="进一步战斗系统">
+      <created>1638262457527</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1638262457527</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,26 +626,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638253484350" />
-    <state x="588" y="118" key="CommitChangelistDialog2" timestamp="1638260884480">
+    <state x="588" y="118" key="CommitChangelistDialog2" timestamp="1638262456711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="588" y="118" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638260884480" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638262343432">
+    <state x="588" y="118" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638262456711" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638263625264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638262343432" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638262343432">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638263625264" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638263625263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638262343432" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638262343432">
+    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638263625263" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638263625263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638262343432" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638262343432">
+    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638263625263" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638263625263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638262343432" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638263625263" />
+    <state x="670" y="237" key="MultipleFileMergeDialog" timestamp="1638262472244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="237" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638262472244" />
     <state x="440" y="98" key="SettingsEditor" timestamp="1638253308014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -648,9 +658,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638260891363" />
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638262427706">
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638262464724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638262427706" />
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638262464724" />
   </component>
 </project>

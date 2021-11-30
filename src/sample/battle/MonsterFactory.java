@@ -10,7 +10,7 @@ public class MonsterFactory {
         BehaviorLogic[] bls = {b1};
 
         String monster_url = "";
-        int maxHp = 10000;
+        int maxHp = 500;
         int critical = 5;
         int exp = 12;
         int money = 10;
