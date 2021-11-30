@@ -11,6 +11,9 @@ public class Battle {
     private static Battle battle = new Battle();
     private Monster monster;
     private int turn = 0;
+    private int result;//都没死0，怪死1，人死2
+    private int monsterDamage;
+    private int personDamage;
 
     private Battle(){
         MonsterFactory monsterFactory = new MonsterFactory();
@@ -29,9 +32,19 @@ public class Battle {
         this.monster = monster;
     }
 
+    public int getMonsterDamage() {
+        return monsterDamage;
+    }
 
-    //都没死返回0，怪死返回1，人死返回2
-    public int startBattle(){
+    public int getPersonDamage() {
+        return personDamage;
+    }
+
+    public int getResult() {
+        return result;
+    }
+
+    public void startBattle(){
         BehaviorLogic bl = monster.getBehaviourLogics()[turn%monster.getBehaviourLogics().length];
         //att、def可能为null
         int monAtt;
@@ -88,23 +101,20 @@ public class Battle {
         int pdamage = (person.getAttackNum() + perAtt - monDef) * pcritical;
         int mondamage = (monAtt - perDef) * moncritical;
 
-        person.loseHp(pdamage);
+        person.loseHp(mondamage);
         monster.loseHp(pdamage);
 
-        //加经验，加钱
-
-
-
-
+        monsterDamage = mondamage;
+        personDamage = personDamage;
 
         if (person.isDie())
-            return 2;
+            result =  2;
         else if (monster.isDie()){
             person.setMoney(person.getMoney() + monster.getMoney());
             person.setExp(person.getExp() + monster.getExp());
-            return 1;
+            result =  1;
         }
         else
-            return 0;
+            result =  0;
     }
 }

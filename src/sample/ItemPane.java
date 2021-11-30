@@ -11,7 +11,7 @@ import sample.itemPart.itemSystem2.arms;
 public class ItemPane extends Pane {
     String url;
     boolean select = false;
-    boolean selectable = true;
+    boolean selectable = false;
     ImageView imageView;
     ImageView hover;
     ImageView bet;
@@ -45,10 +45,10 @@ public class ItemPane extends Pane {
         bet.setY(3);
         getChildren().add(bet);
 
-        coodownClock = new ImageView(new Image(""));
+        coodownClock = new ImageView();
         getChildren().add(coodownClock);
 
-        cooldown = new ImageView(new Image(""));
+        cooldown = new ImageView();
         getChildren().add(cooldown);
 
         currentCooldownLabel = new Label();
@@ -69,9 +69,7 @@ public class ItemPane extends Pane {
         setOnMouseReleased(e -> {
             if (isSelectable()){
                 setSelect(!isSelect());
-
             }
-
         });
     }
 
@@ -114,14 +112,25 @@ public class ItemPane extends Pane {
             coodownClock.setVisible(true);
             cooldown.setVisible(true);
             currentCooldownLabel.setVisible(true);
-            currentCooldownLabel.setText();
+            currentCooldownLabel.setText(String.valueOf(currentCooldown));
+        }else {
+            coodownClock.setVisible(false);
+            cooldown.setVisible(false);
+            currentCooldownLabel.setVisible(false);
         }
+
     }
 
     public void refresh(Item item){
+        if (item == null){
+            setSelectable(false);
+            return;
+        }
+        setSelectable(true);
         setImage(item.getUrl());
         if (item instanceof arms){
-
+            arms a = (arms) item;
+            changeCooldown(a.getCurrentCoolDown());
         }
     }
 }

@@ -13,7 +13,8 @@ public class StartBattleButton extends TextButton {
         super(text, type, X, Y);
         setOnMouseReleased(e->{
             Battle battle = Battle.getInstance();
-            int result = battle.startBattle();
+            battle.startBattle();
+            int result = battle.getResult();
             if (result == 1){
                 BattlePane.getInstance().concludBattle();
                 System.out.println("monster die");

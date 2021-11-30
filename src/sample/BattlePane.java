@@ -22,6 +22,7 @@ public class BattlePane extends Pane {
     ImageView defense = new ImageView();
     ImageView HPBackground4 = new ImageView();
     ImageView HPCurrent5 = new ImageView();
+    double hpCurrentWidth;
     Label hp = new Label("160");
     Label currentHp = new Label("125");
 
@@ -33,7 +34,6 @@ public class BattlePane extends Pane {
         //冷却图标
         //总结页面
         //无法存放道具
-        //没有道具依然能选择
         //战斗伤害
         //战斗过程页面
 
@@ -99,6 +99,8 @@ public class BattlePane extends Pane {
         int HPCurrentTop = 281;
         HPCurrent5.setX(HPCurrentLeft);
         HPCurrent5.setY(HPCurrentTop);
+        System.out.println();
+        hpCurrentWidth = HPCurrent.getWidth();
 
         hp.setLayoutX(50);
         hp.setLayoutY(280);
@@ -107,6 +109,8 @@ public class BattlePane extends Pane {
         currentHp.setLayoutX(50);
         currentHp.setLayoutY(240);
         currentHp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  35));
+        setCurrentHp(Integer.parseInt(currentHp.getText()));
+
 
         this.getChildren().add(battleBackground1);
         this.getChildren().add(battledRance2);
@@ -141,8 +145,8 @@ public class BattlePane extends Pane {
             }
         });
         getChildren().add(nextPage);
-        nextPage.setLayoutX(0);//需要调整位置
-        nextPage.setLayoutY(0);
+        nextPage.setLayoutX(843);//需要调整位置
+        nextPage.setLayoutY(578);
 
         prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
         //图片还没有放进去
@@ -152,8 +156,8 @@ public class BattlePane extends Pane {
             }
         });
         getChildren().add(prePage);
-        prePage.setLayoutX(0);//需要调整位置
-        prePage.setLayoutY(0);
+        prePage.setLayoutX(131);//需要调整位置
+        prePage.setLayoutY(578);
 
         for (int i = 0; i < itemList.length; i++) {
             itemList[i] = new ItemPane(i);
@@ -196,6 +200,13 @@ public class BattlePane extends Pane {
 
     public int getItemPage() {
         return itemPage;
+    }
+
+    public void setCurrentHp(int hp){
+        currentHp.setText(String.valueOf(hp));
+        double x = (double)hp / (double)Integer.parseInt(this.hp.getText());
+        System.out.println(hpCurrentWidth);
+        HPCurrent5.setFitWidth(hpCurrentWidth * x);
     }
 
     public void concludBattle(){
