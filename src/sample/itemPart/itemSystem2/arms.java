@@ -6,12 +6,20 @@ public class arms extends manyTimesItem implements combat{
     private int price;
     private int damage;
     private int defence;
+    private int attribute;
 
 
     public arms(String url, int price, int totalCoolDown, int damage, int defence) {
         super(url,price,totalCoolDown);
         this.damage = damage;
         this.defence = defence;
+    }
+
+    public arms(String url, int price, int totalCoolDown, int damage, int defence, int attribute){
+        super(url, price, totalCoolDown);
+        this.damage = damage;
+        this.defence = defence;
+        this.attribute = attribute;
     }
 
     @Override
@@ -21,5 +29,9 @@ public class arms extends manyTimesItem implements combat{
     @Override
     public int getDefence() {
         return defence;
+    }
+
+    public int getAttribute() {
+        return attribute;
     }
 }

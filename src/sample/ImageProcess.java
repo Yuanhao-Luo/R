@@ -52,7 +52,7 @@ public class ImageProcess {
     }
 
     public static void initDialogMeImage(Pane p, String url){
-        initPane(p,-50,-120,url);
+        initPane(p,0,0,url);
     }
 
     private static void initPane(Pane p, int x, int y, String url) {
