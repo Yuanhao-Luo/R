@@ -1,54 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="1111">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MazeBackground1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BasicCard1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BasicCard2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BasicCard3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_pressable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nextItemPage_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_pressable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/preItemPage_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/Card.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/CardPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/GUIMazeStore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeStore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/CardPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/GUIMazeStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/LogicalMazeStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R.iml" beforeDir="false" afterPath="$PROJECT_DIR$/R.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CloseTentButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/CloseTentButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/OpenTentButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/OpenTentButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/TextButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/TextButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/production/R/production/R/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/tentPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/tentPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ClockStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ClockStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ItemPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MainFramePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MainFramePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/CloseTentButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/CloseTentButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/OpenTentButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/OpenTentButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/TextButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/TextButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/production/R/sample/sample.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="1eaa0e63-bc3a-4f29-842d-3f91a5549222" name="默认更改列表" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +48,7 @@
   </component>
   <component name="ProjectId" id="1zGCFG1goG3u1wl8eWHYJlIbzB0" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="更新" />
     <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectViewState">
@@ -517,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637591886007</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="1111">
+      <created>1638317455009</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1638317455009</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
