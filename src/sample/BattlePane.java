@@ -112,9 +112,9 @@ public class BattlePane extends Pane {
         tentPicture3.setY(tentPictureTop);
 
         thief.setImage(thief1);
-        thief.setFitHeight(thief1.getHeight());
+//        thief.setFitHeight(thief1.getHeight());
         int thiefLeft = 600;
-        int thiefTop = 30;
+        int thiefTop = 80;
         thief.setX(thiefLeft);
         thief.setY(thiefTop);
 

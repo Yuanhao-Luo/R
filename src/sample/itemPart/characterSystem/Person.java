@@ -36,6 +36,7 @@ public class Person {
         itemList.add(s.buildMagicSword());
         itemList.add(s.buildMagicSword());
         itemList.add(s.buildMagicSword());
+        itemList.add(s.buildBigStick());
     }
 
     public static Person getInstance(){
