@@ -107,7 +107,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work2021.9/Rance" />
+    <property name="last_opened_file_path" value="$USER_HOME$/work2021.9/Rance" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -142,6 +142,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.mainframe1" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -625,10 +629,11 @@
     </state>
     <state x="588" y="0" width="744" height="803" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594467278" />
     <state x="588" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1637110549131" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637594437913">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1638317450405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594437913" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638317450405" />
     <state x="739" y="265" key="FileChooserDialogImpl" timestamp="1637593266817">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -687,6 +692,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="98" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593268623" />
+    <state x="727" y="237" key="VCS.ChangeListViewerDialog" timestamp="1638317440025">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="237" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638317440025" />
     <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1637594491017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
