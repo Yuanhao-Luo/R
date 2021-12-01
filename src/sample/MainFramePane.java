@@ -33,7 +33,7 @@ public class MainFramePane extends Pane {
     MapButton bSea = new MapButton(".\\images\\homeofseaButton_hover.png",".\\images\\homeofseaButton_preparing.png",".\\images\\homeofseaButton_pressable.png",".\\images\\homeofseaButton_pressed.png",seaAvailable,"homeofsea");
     MapButton bHotel = new MapButton(".\\images\\hotelButton_hover.png",".\\images\\hotelButton_preparing.png",".\\images\\hotelButton_pressable.png",".\\images\\hotelButton_pressed.png",hotelAvailable,"hotel");
     MapButton bLevel = new MapButton(".\\images\\levelhouseButton_hover.png",".\\images\\levelhouseButton_preparing.png",".\\images\\levelhouseButton_pressable.png",".\\images\\levelhouseButton_pressed.png",levelAvailable,"level");
-    MapButton bMaze = new MapButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable,"walkthemaze");
+    MapButton bMaze = new MapButton(".\\images\\walkthemazeButton_hover.png",".\\images\\walkthemazeButton_preparing.png",".\\images\\walkthemazeButton_pressable.png",".\\images\\walkthemazeButton_pressed.png",mazeAvailable,"maze");
     MapButton bWS = new MapButton(".\\images\\weaponstoreButton_hover.png",".\\images\\weaponstoreButton_preparing.png",".\\images\\weaponstoreButton_pressable.png",".\\images\\weaponstoreButton_pressed.png",WSAvailable,"weapons");
     MapButton bKillTime = new MapButton(".\\images\\killtimeButton_hover.png",".\\images\\killtimeButton_preparing.png",".\\images\\killtimeButton_pressable.png",".\\images\\killtimeButton_pressed.png",killTimeAvailable,"killtime");
     OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
@@ -52,6 +52,7 @@ public class MainFramePane extends Pane {
     public HotelPane hotelPane = new HotelPane();
     public LevelPane levelPane = new LevelPane();
     public BistroPane bistroPane = new BistroPane();
+    public MazePane mazePane = MazePane.getInstance();
 
     Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
@@ -83,7 +84,7 @@ public class MainFramePane extends Pane {
 
         this.getChildren().add(bMaze);
         setXY(bMaze, 460, 705);
-        bMaze.setOnMouseClicked(new PassOneTime());
+        bMaze.setOnMouseClicked(new EnterPlace());
 
         this.getChildren().add(bWS);
         setXY(bWS, 660, 494);
@@ -165,6 +166,8 @@ public class MainFramePane extends Pane {
         homeofseaPane.setVisible(false);
         this.getChildren().add(homeofseaPane);
 
+
+
         weaponsPane.setVisible(false);
         this.getChildren().add(weaponsPane);
 
@@ -176,6 +179,9 @@ public class MainFramePane extends Pane {
 
         bistroPane.setVisible(false);
         this.getChildren().add(bistroPane);
+
+        mazePane.setVisible(false);
+        this.getChildren().add(mazePane);
     }
 
     public void initPane(Pane p,int x, int y,String url){

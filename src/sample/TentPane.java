@@ -13,7 +13,6 @@ import sample.buttons.CloseTentButton;
 
 public class TentPane extends Pane {
 
-    private boolean visiable = false;
     int itemPage = 0;
     ItemPane[] itemList = new ItemPane[21];
     GeneralButton nextPage;
@@ -22,14 +21,6 @@ public class TentPane extends Pane {
     private static TentPane tentPane = new TentPane();
 
     public static TentPane getInstance(){return tentPane;}
-
-    public void setVisiable(boolean visiable) {
-        this.visiable = visiable;
-    }
-
-    public boolean isVisiable() {
-        return visiable;
-    }
 
     private TentPane(){
         Person p = Person.getInstance();
@@ -147,8 +138,8 @@ public class TentPane extends Pane {
 
     //page start from 0
     public void changeToItemPage(int page){
-        for (ItemPane item : itemList) {
-            item.setVisible(false);
+        for (ItemPane i : itemList) {
+            i.setVisible(false);
         }
         for (int i = 7*page; i < 7*page + 7; i++) {
             itemList[i].setVisible(true);

@@ -1,19 +1,29 @@
 package sample;
 
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import sample.itemPart.characterSystem.Person;
+import sample.itemPart.itemSystem2.Item;
+import sample.itemPart.itemSystem2.arms;
 
 public class ItemPane extends Pane {
     String url;
-    ImageView imageView;
     boolean select = false;
+    boolean selectable = false;
+    ImageView imageView;
     ImageView hover;
     ImageView bet;
+    ImageView coodownClock;
+    ImageView cooldown;
+    Label currentCooldownLabel;
+    int index;
 
 
     public ItemPane(int num){
         super();
+        index = num;
         int[] itemx = {177,275,373,470,564,659,755};
         int itemy = 595;
         setLayoutX(itemx[num%7]);
@@ -35,15 +45,38 @@ public class ItemPane extends Pane {
         bet.setY(3);
         getChildren().add(bet);
 
+        coodownClock = new ImageView(new Image("file:.\\images\\cooldown_clock.png"));
+        coodownClock.setVisible(false);
+        getChildren().add(coodownClock);
+
+        cooldown = new ImageView(new Image("file:.\\images\\cooldown.png"));
+        cooldown.setVisible(false);
+        getChildren().add(cooldown);
+
+        currentCooldownLabel = new Label();
+        currentCooldownLabel.setVisible(false);
+        getChildren().add(currentCooldownLabel);
+
         setOnMouseEntered(e -> {
-            hover.setVisible(true);
+            if (isSelectable()){
+                hover.setVisible(true);
+
+            }
         });
         setOnMouseExited(e -> {
-            hover.setVisible(false);
+            if (isSelectable()){
+                hover.setVisible(false);
+
+            }
         });
         setOnMouseReleased(e -> {
-            setSelect(!isSelect());
-            System.out.println("adsfouhiaoeiuhfa");
+
+
+
+            System.out.println(index);
+            if (isSelectable()){
+                setSelect(!isSelect());
+            }
         });
     }
 
@@ -53,14 +86,61 @@ public class ItemPane extends Pane {
         imageView.setImage(image);
     }
 
+    public int getIndex() {
+        return index;
+    }
+
     public boolean isSelect() {
         return select;
+    }
+
+    public boolean isSelectable() {
+        return selectable;
+    }
+
+    public void setSelectable(boolean selectable) {
+        this.selectable = selectable;
     }
 
     public void setSelect(boolean select) {
         this.select = select;
         bet.setVisible(select);
+
+        Person person = Person.getInstance();
+        if (select){
+            person.getSelectArms().add(person.getItemList().get(getIndex()));
+        }else {
+            person.getSelectArms().remove(person.getItemList().get(getIndex()));
+        }
     }
 
+    public void changeCooldown(int currentCooldown){
+        if (currentCooldown > 0){
+            setSelectable(false);
+            coodownClock.setVisible(true);
+            cooldown.setVisible(true);
+            currentCooldownLabel.setVisible(true);
+            currentCooldownLabel.setText(String.valueOf(currentCooldown));
+        }else {
+            setSelectable(true);
+            coodownClock.setVisible(false);
+            cooldown.setVisible(false);
+            currentCooldownLabel.setVisible(false);
+        }
 
+    }
+
+    public void refresh(Item item){
+        setSelect(false);
+        if (item == null){
+            setSelectable(false);
+            return;
+        }
+        setSelectable(true);
+        setImage(item.getUrl());
+        if (item instanceof arms){
+            arms a = (arms) item;
+            changeCooldown(a.getCurrentCoolDown());
+        }
+    }
 }

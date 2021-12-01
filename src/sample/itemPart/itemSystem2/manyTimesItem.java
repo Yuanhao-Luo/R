@@ -1,6 +1,6 @@
 package sample.itemPart.itemSystem2;
 
-public class manyTimesItem extends item{
+public class manyTimesItem extends Item {
     private boolean canBeSelected;
     private int currentCoolDown;
     private int totalCoolDown;

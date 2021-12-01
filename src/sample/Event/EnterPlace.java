@@ -2,6 +2,7 @@ package sample.Event;
 
 import javafx.event.Event;
 import sample.MainFramePane;
+import sample.MazePane;
 import sample.TimeSingleton;
 import sample.Toolkit;
 import sample.buttons.MapButton;
@@ -19,42 +20,54 @@ public class EnterPlace extends PassOneTime {
         switch (mapButton.getName()){
 
             case "homeofsea":
-                System.out.println("clicked");
-                HomeofseaPane homeofseaPane = (HomeofseaPane) MainFramePane.getInstance().homeofseaPane;
+                HomeofseaPane homeofseaPane = MainFramePane.getInstance().homeofseaPane;
                 if (!homeofseaPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     homeofseaPane.setVisible(true);
                 };
+                homeofseaPane.dialogBegin(homeofseaPane.getPlaceName(), new String[]{"我来到了海之家","欢迎光临"},1);
                 break;
             case "weapons":
-                WeaponsPane weaponsPane = (WeaponsPane) MainFramePane.getInstance().weaponsPane;
-                System.out.println("clicked1");
+                WeaponsPane weaponsPane = MainFramePane.getInstance().weaponsPane;
                 if (!weaponsPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     weaponsPane.setVisible(true);
                 };
+                weaponsPane.dialogBegin(weaponsPane.getPlaceName(), new String[]{"我来到了武器店","欢迎光临"},1);
+
                 break;
 
             case "hotel":
-                HotelPane hotelPane = (HotelPane) MainFramePane.getInstance().hotelPane;
-                System.out.println("clicked1");
+                HotelPane hotelPane = MainFramePane.getInstance().hotelPane;
                 if (!hotelPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     hotelPane.setVisible(true);
                 };
+                hotelPane.dialogBegin(hotelPane.getPlaceName(), new String[]{"我来到了旅馆","欢迎光临"},1);
+
                 break;
 
             case "level":
-                LevelPane levelPane = (LevelPane) MainFramePane.getInstance().levelPane;
-                System.out.println("clicked1");
+                LevelPane levelPane = MainFramePane.getInstance().levelPane;
                 if (!levelPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     levelPane.setVisible(true);
                 };
+                levelPane.dialogBegin(levelPane.getPlaceName(), new String[]{"我来到了等级店","欢迎光临"},1);
+
                 break;
             case "bistro":
-                BistroPane bistroPane = (BistroPane) MainFramePane.getInstance().bistroPane;
-                System.out.println("clicked1");
+                BistroPane bistroPane = MainFramePane.getInstance().bistroPane;
                 if (!bistroPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     bistroPane.setVisible(true);
                 };
+                bistroPane.dialogBegin(bistroPane.getPlaceName(), new String[]{"我来到了酒馆","欢迎光临"},1);
+
                 break;
+
+            case "maze":
+                MazePane mazePane = MainFramePane.getInstance().mazePane;
+                if (!mazePane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
+                    mazePane.setVisible(true);
+                    System.out.println("q");
+                };
+                System.out.println("qw");
         }
     }
 
