@@ -189,13 +189,7 @@ public class BattlePane extends Pane {
         this.getChildren().add(settlementInterface2);
 
         settlementInterface2.setVisible(false);
-        settlementInterface2.setOnMouseReleased(e->{
-            //对接迷宫
 
-
-
-
-        });
 
         CloseTentButton closeTentButton = new CloseTentButton("   逃往城下町","200",10,720);
         this.getChildren().add(closeTentButton);
@@ -213,7 +207,7 @@ public class BattlePane extends Pane {
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
         //图片还没有放进去
         nextPage.setOnMouseReleased(e->{
-            if (getItemPage() != 3){
+            if (getItemPage() != 2){
                 setItemPage(getItemPage()+1);
             }
         });

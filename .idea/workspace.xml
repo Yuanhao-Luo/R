@@ -4,139 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="Merge branch 'BranchForMaze'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/R/sample/Event/EnterPlace.class&#10;#&#9;out/production/R/sample/ImageProcess.class&#10;#&#9;out/production/R/sample/MainFramePane.class&#10;#&#9;out/production/R/sample/MazePane.class&#10;#&#9;out/production/R/sample/TentPane.class&#10;#&#9;out/production/R/sample/battle/battleMain.class&#10;#&#9;out/production/R/sample/buttons/LeaveHereButton.class&#10;#&#9;out/production/R/sample/itemPart/storeExample/mainframe1.class&#10;#&#9;out/production/R/sample/specificPlace/ActionDialogPane.class&#10;#&#9;out/production/R/sample/specificPlace/GeneralPlacePane.class&#10;#&#9;out/production/R/sample/specificPlace/HomeofseaPane.class&#10;#&#9;out/production/R/sample/tentPane.class&#10;#&#9;src/sample/Event/EnterPlace.java&#10;#&#9;src/sample/MainFramePane.java&#10;#&#9;src/sample/TentPane.java&#10;#&#9;src/sample/battle/battleMain.java&#10;#&#9;src/sample/buttons/LeaveHereButton.java&#10;#&#9;src/sample/specificPlace/ActionDialogPane.java&#10;#&#9;src/sample/specificPlace/GeneralPlacePane.java&#10;#&#9;src/sample/specificPlace/HomeofseaPane.java">
-      <change afterPath="$PROJECT_DIR$/images/bistroYouDialog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/AbnormalState.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/BackOfTheCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/Cave.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/Fox.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/Frog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/Honey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/Jelly.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/Miskon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/OuterCity.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/Prohibited.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/RedThief.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/Thief.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/Treasure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cards/WormDX.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/dialogPlace.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/homeofseaYouDialog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hotelYouDialog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/leftMazeBar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/levelYouDialog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/meDialog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/rancewalkingmaze.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/rightMazeBar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/weaponsYouDialog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/LogicalMazeCaveFloor1Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/LogicalMazeCaveUndergroundStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MazePart/LogicalMazeOuterCityStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____1.xml" afterDir="false" />
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R.iml" beforeDir="false" afterPath="$PROJECT_DIR$/R.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/DialogMe.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/me.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cards/BasicCard1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/cards/BlankCard1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cards/BasicCard2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cards/BasicCard3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ClockStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Event/EnterPlace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Event/KillTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Event/PassOneTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ImageProcess.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/CardPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/GUIMazeStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TimeSingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Toolkit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Attack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Behavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/BehaviorLogic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Defence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Monster.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Weakness.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionDialogButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CloseTentButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/GeneralButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/LeaveHereButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/MapButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/OpenTentButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/SelectAllButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/TextButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/flagControl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/FireFly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/HuXiHuHu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/ItemList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/PassiveEffect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/Useable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/arms.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/combat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/manyTimesItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/medicine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/oneTimeItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/ordinaryItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/simpleFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/storeExample/mainframe1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/BistroPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HomeofseaPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HotelPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/LevelPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/WeaponsPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/test/KAMi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/test/lhf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/test/mainPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/test/test3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ImageProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ImageProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MainFramePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MainFramePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MazePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MazePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MazePart/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MazePart/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MazePart/CardPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MazePart/CardPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MazePart/GUIMazeStore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MazePart/LogicalMazeStore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TimeSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TimeSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Toolkit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Toolkit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/ActionButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/ActionButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/ActionDialogButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/ActionDialogButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/LeaveHereButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/LeaveHereButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/TextButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/TextButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/itemPart/storeExample/mainframe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemPart/storeExample/mainframe1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/KAMi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/lhf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/mainPane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test3.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,13 +200,7 @@
       <workItem from="1638199040814" duration="3615000" />
       <workItem from="1638230720467" duration="4811000" />
       <workItem from="1638239385714" duration="5406000" />
-    </task>
-    <task id="LOCAL-00009" summary="t">
-      <created>1633963663449</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1633963663450</updated>
+      <workItem from="1638317120052" duration="346000" />
     </task>
     <task id="LOCAL-00010" summary="t">
       <created>1634028591976</created>
@@ -674,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638273529595</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Merge branch 'BranchForMaze'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/R/sample/Event/EnterPlace.class&#10;#&#9;out/production/R/sample/ImageProcess.class&#10;#&#9;out/production/R/sample/MainFramePane.class&#10;#&#9;out/production/R/sample/MazePane.class&#10;#&#9;out/production/R/sample/TentPane.class&#10;#&#9;out/production/R/sample/battle/battleMain.class&#10;#&#9;out/production/R/sample/buttons/LeaveHereButton.class&#10;#&#9;out/production/R/sample/itemPart/storeExample/mainframe1.class&#10;#&#9;out/production/R/sample/specificPlace/ActionDialogPane.class&#10;#&#9;out/production/R/sample/specificPlace/GeneralPlacePane.class&#10;#&#9;out/production/R/sample/specificPlace/HomeofseaPane.class&#10;#&#9;out/production/R/sample/tentPane.class&#10;#&#9;src/sample/Event/EnterPlace.java&#10;#&#9;src/sample/MainFramePane.java&#10;#&#9;src/sample/TentPane.java&#10;#&#9;src/sample/battle/battleMain.java&#10;#&#9;src/sample/buttons/LeaveHereButton.java&#10;#&#9;src/sample/specificPlace/ActionDialogPane.java&#10;#&#9;src/sample/specificPlace/GeneralPlacePane.java&#10;#&#9;src/sample/specificPlace/HomeofseaPane.java">
+      <created>1638282014024</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1638282014024</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -752,46 +623,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638253484350" />
-    <state x="588" y="0" key="CommitChangelistDialog2" timestamp="1638281466662">
+    <state x="588" y="0" key="CommitChangelistDialog2" timestamp="1638282012702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="588" y="0" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281466662" />
+    <state x="588" y="0" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638282012702" />
     <state x="740" y="236" key="FileChooserDialogImpl" timestamp="1638281976710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="236" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281976710" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1638281991042">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638317574914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281991042" />
-    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1638281991042">
+    <state width="938" height="348" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638288562860" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638317574914" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638317574914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281991042" />
-    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1638281991042">
+    <state width="938" height="348" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638288562860" />
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638317574914" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638317574913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281991042" />
-    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1638281991042">
+    <state width="938" height="348" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638288562860" />
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638317574913" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638317574914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281991042" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1638281990836">
+    <state width="938" height="348" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638288562860" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638317574914" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1638288562860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281990836" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1638281990836">
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638288562860" />
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1638288562860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281990836" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1638281990836">
+    <state width="938" height="348" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638288562860" />
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1638288562860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281990836" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1638281990836">
+    <state width="938" height="348" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638288562860" />
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1638288562860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281990836" />
+    <state width="938" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638288562860" />
     <state x="184" y="92" key="MergeDialog" timestamp="1638281285012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -812,10 +687,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638272807042" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638273545384">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638282024158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638273545384" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638282024158" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1638272663258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -824,9 +699,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="749" y="322" key="git4idea.merge.GitMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281398997" />
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638262464724">
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638317160083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638262464724" />
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638317160083" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/MazePane.java</url>
+          <line>326</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
