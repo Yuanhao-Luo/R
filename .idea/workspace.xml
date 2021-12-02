@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="实现的全选择和取消，另外给jpy发布了任务">
+      <change afterPath="$PROJECT_DIR$/src/sample/communicationStorage/commutest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/CancelAllButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/CancelAllButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/SelectAllButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/SelectAllButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="XML" />
       </list>
     </option>
   </component>
@@ -80,7 +78,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -208,14 +206,8 @@
       <workItem from="1638317120052" duration="5512000" />
       <workItem from="1638330309430" duration="11173000" />
       <workItem from="1638426308097" duration="349000" />
-      <workItem from="1638426941366" duration="889000" />
-    </task>
-    <task id="LOCAL-00014" summary="t">
-      <created>1634036441686</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1634036441686</updated>
+      <workItem from="1638426941366" duration="2228000" />
+      <workItem from="1638430795832" duration="427000" />
     </task>
     <task id="LOCAL-00015" summary="t">
       <created>1634105343244</created>
@@ -553,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638341625900</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="实现的全选择和取消，另外给jpy发布了任务">
+      <created>1638428009013</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1638428009014</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="change MapButton.buttonAction into not static" />
     <MESSAGE value="rebuild&#10;change adding ImageView to set Images&#10;other many things" />
     <MESSAGE value="rebuild TentPane OpenTentButton CloseTentButton clock in mainframepane" />
     <MESSAGE value="only xy left" />
@@ -622,100 +620,7 @@
     <MESSAGE value="加了怪物图片" />
     <MESSAGE value="结算页面事件" />
     <MESSAGE value="修好的fyk的bug&#10;范义琨因此与罗元昊签订不平等条约：&#10;   （1）范义琨每日必须观看1小时的vtuber&#10;   （2）此条约生效至2022年3月1日" />
-    <option name="LAST_COMMIT_MESSAGE" value="修好的fyk的bug&#10;范义琨因此与罗元昊签订不平等条约：&#10;   （1）范义琨每日必须观看1小时的vtuber&#10;   （2）此条约生效至2022年3月1日" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638253484350">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638253484350" />
-    <state x="588" y="0" key="CommitChangelistDialog2" timestamp="1638341624370">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="588" y="0" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341624370" />
-    <state x="588" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1638319438145" />
-    <state x="740" y="236" key="FileChooserDialogImpl" timestamp="1638318738395">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="236" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281976710" />
-    <state x="740" y="236" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1638318738395" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1638341665364">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
-    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1638341665364">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
-    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637284" />
-    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1638341665364">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
-    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637284" />
-    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1638341665364">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
-    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637284" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1638341665364">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1638341665364">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
-    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1638341665364">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
-    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1638341665364">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
-    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
-    <state x="184" y="92" key="MergeDialog" timestamp="1638281285012">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="184" y="92" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281285012" />
-    <state x="670" y="237" key="MultipleFileMergeDialog" timestamp="1638281348578">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="670" y="237" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281348578" />
-    <state x="773" y="233" key="RollbackChangesDialog" timestamp="1638281541176">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="773" y="233" key="RollbackChangesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281541176" />
-    <state x="440" y="98" key="SettingsEditor" timestamp="1638281979290">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="98" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281979290" />
-    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1638272807042">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638272807042" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638341640131">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341640131" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638319446453" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1638272663258">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638272663258" />
-    <state x="749" y="322" key="git4idea.merge.GitMergeDialog" timestamp="1638281398997">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="749" y="322" key="git4idea.merge.GitMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281398997" />
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638426343416">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638335591140" />
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638426343416" />
+    <MESSAGE value="实现的全选择和取消，另外给jpy发布了任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现的全选择和取消，另外给jpy发布了任务" />
   </component>
 </project>
