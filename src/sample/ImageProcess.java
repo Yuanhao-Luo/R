@@ -37,6 +37,7 @@ public class ImageProcess {
         p.getChildren().add(imageView);
     }
 
+
     public static void changeImage(ImageView imageView, String url) {
         Image imageBack = null;
         try {
@@ -55,9 +56,18 @@ public class ImageProcess {
         initPane(p,0,0,url);
     }
 
-    private static void initPane(Pane p, int x, int y, String url) {
+    public static void initPane(Pane p, int x, int y, String url) {
         ImageProcess.addImage(p, url);
         setXY(p, x, y);
+    }
+
+    public static void initImageView(ImageView imageView, int x, int y, String url) {
+        try {
+            imageView.setImage(new Image(new FileInputStream(url)));
+        }catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        setXY(imageView, x, y);
     }
 
     public static void setXY(Node p, int x, int y){

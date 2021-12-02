@@ -22,8 +22,6 @@ public class TentPane extends Pane {
 
     public static TentPane getInstance(){return tentPane;}
 
-
-
     private TentPane(){
         Person p = Person.getInstance();
         Image imageTent1 = new Image("file:.\\images\\tent1.png");
@@ -140,8 +138,8 @@ public class TentPane extends Pane {
 
     //page start from 0
     public void changeToItemPage(int page){
-        for (ItemPane item : itemList) {
-            item.setVisible(false);
+        for (ItemPane i : itemList) {
+            i.setVisible(false);
         }
         for (int i = 7*page; i < 7*page + 7; i++) {
             itemList[i].setVisible(true);

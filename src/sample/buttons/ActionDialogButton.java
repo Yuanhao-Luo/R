@@ -8,6 +8,9 @@ public class ActionDialogButton extends TextButton {
         super(text, type, X, Y);
         this.actionName = actionName;
         this.placeName = placeName;
+        this.setOnMouseClicked(e->{
+            
+        });
     }
 
     String actionName;

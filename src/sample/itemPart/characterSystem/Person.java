@@ -10,7 +10,7 @@ public class Person {
     private boolean getLost = false;
     private boolean squidMan = false;
     private int health = 900;
-    private int maxHealth;
+    private int maxHealth = 900;
     private int money = 1000;
     private int attack = 100;
     private int critical = 10;
@@ -31,11 +31,12 @@ public class Person {
         simpleFactory s = new simpleFactory();
         itemList.add(s.buildMagicSword());
         itemList.add(s.buildMagicSword());
+        itemList.add(s.buildGuerrillaSword());
+        itemList.add(s.buildGuerrillaSword());
+        itemList.add(s.buildSmallShield());
         itemList.add(s.buildMagicSword());
-        itemList.add(s.buildMagicSword());
-        itemList.add(s.buildMagicSword());
-        itemList.add(s.buildMagicSword());
-        itemList.add(s.buildMagicSword());
+        itemList.add(s.buildTH180());
+        itemList.add(s.buildBigStick());
     }
 
     public static Person getInstance(){

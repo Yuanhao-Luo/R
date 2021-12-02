@@ -13,9 +13,6 @@ public class TextButton extends GeneralButton {
         super(".\\images\\normalButton" + type + "_hover.png", ".\\images\\normalButton" + type + "_unpressable.png", ".\\images\\normalButton" + type + "_pressable.png", ".\\images\\normalButton" + type + "_pressed.png");
         this.text = text;
         addButtonEvent();
-        setOnMouseClicked(e -> {
-            TentPane.getInstance().setVisible(false);
-        });
         setLayoutX(X);
         setLayoutY(Y);
         textLabel.setText(text);

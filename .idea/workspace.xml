@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ItemPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/battle/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Battle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/StartBattleButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/CancelAllButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/CancelAllButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/SelectAllButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/SelectAllButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +41,9 @@
       </set>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -54,11 +60,11 @@
   </component>
   <component name="ProjectId" id="1zGCFG1goG3u1wl8eWHYJlIbzB0" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="更新" />
     <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -67,11 +73,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work2021.9/Rance" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -114,13 +123,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.mainframe1" />
+      <item itemvalue="Application.test" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.mainframe1" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.mainframe1" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +146,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -194,69 +205,10 @@
       <workItem from="1638199040814" duration="3615000" />
       <workItem from="1638230720467" duration="4811000" />
       <workItem from="1638239385714" duration="5406000" />
-    </task>
-    <task id="LOCAL-00005" summary="t">
-      <created>1633873791509</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1633873791509</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add javafx">
-      <created>1633936221842</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1633936221842</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add javafx">
-      <created>1633936798411</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1633936798411</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add javafx">
-      <created>1633963336954</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1633963336954</updated>
-    </task>
-    <task id="LOCAL-00009" summary="t">
-      <created>1633963663449</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1633963663450</updated>
-    </task>
-    <task id="LOCAL-00010" summary="t">
-      <created>1634028591976</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1634028591976</updated>
-    </task>
-    <task id="LOCAL-00011" summary="t">
-      <created>1634028738494</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1634028738494</updated>
-    </task>
-    <task id="LOCAL-00012" summary="t">
-      <created>1634028896622</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1634028896622</updated>
-    </task>
-    <task id="LOCAL-00013" summary="t">
-      <created>1634032555553</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1634032555554</updated>
+      <workItem from="1638317120052" duration="5512000" />
+      <workItem from="1638330309430" duration="11173000" />
+      <workItem from="1638426308097" duration="349000" />
+      <workItem from="1638426941366" duration="889000" />
     </task>
     <task id="LOCAL-00014" summary="t">
       <created>1634036441686</created>
@@ -538,11 +490,74 @@
       <option name="project" value="LOCAL" />
       <updated>1638239398460</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="进一步战斗系统">
+      <created>1638255816661</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1638255816661</updated>
+    </task>
+    <task id="LOCAL-00055" summary="进一步战斗系统">
+      <created>1638260885998</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1638260885998</updated>
+    </task>
+    <task id="LOCAL-00056" summary="进一步战斗系统">
+      <created>1638262457527</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1638262457527</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Merge remote-tracking branch 'origin/BattleSystemLJ'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/R/sample/BattlePane.class&#10;#&#9;out/production/R/sample/ItemPane.class&#10;#&#9;out/production/R/sample/MainFramePane.class&#10;#&#9;out/production/R/sample/MazePane.class&#10;#&#9;out/production/R/sample/TentPane.class&#10;#&#9;out/production/R/sample/battle/battleGUI.class&#10;#&#9;out/production/R/sample/battle/battleMain.class&#10;#&#9;out/production/R/sample/buttons/CancelAllButton.class&#10;#&#9;out/production/R/sample/buttons/StartBattleButton.class&#10;#&#9;out/production/R/sample/tentPane.class&#10;#&#9;src/sample/BattlePane.java&#10;#&#9;src/sample/MainFramePane.java&#10;#&#9;src/sample/TentPane.java&#10;#&#9;src/sample/battle/battleGUI.java&#10;#&#9;src/sample/battle/battleMain.java&#10;#&#9;src/sample/buttons/CancelAllButton.java&#10;#&#9;src/sample/buttons/StartBattleButton.java">
+      <created>1638273529595</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1638273529595</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Merge branch 'BranchForMaze'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/R/sample/Event/EnterPlace.class&#10;#&#9;out/production/R/sample/ImageProcess.class&#10;#&#9;out/production/R/sample/MainFramePane.class&#10;#&#9;out/production/R/sample/MazePane.class&#10;#&#9;out/production/R/sample/TentPane.class&#10;#&#9;out/production/R/sample/battle/battleMain.class&#10;#&#9;out/production/R/sample/buttons/LeaveHereButton.class&#10;#&#9;out/production/R/sample/itemPart/storeExample/mainframe1.class&#10;#&#9;out/production/R/sample/specificPlace/ActionDialogPane.class&#10;#&#9;out/production/R/sample/specificPlace/GeneralPlacePane.class&#10;#&#9;out/production/R/sample/specificPlace/HomeofseaPane.class&#10;#&#9;out/production/R/sample/tentPane.class&#10;#&#9;src/sample/Event/EnterPlace.java&#10;#&#9;src/sample/MainFramePane.java&#10;#&#9;src/sample/TentPane.java&#10;#&#9;src/sample/battle/battleMain.java&#10;#&#9;src/sample/buttons/LeaveHereButton.java&#10;#&#9;src/sample/specificPlace/ActionDialogPane.java&#10;#&#9;src/sample/specificPlace/GeneralPlacePane.java&#10;#&#9;src/sample/specificPlace/HomeofseaPane.java">
+      <created>1638282014024</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1638282014024</updated>
+    </task>
+    <task id="LOCAL-00059" summary="修了个小bug">
+      <created>1638317610193</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1638317610194</updated>
+    </task>
+    <task id="LOCAL-00060" summary="加了怪物图片">
+      <created>1638318258133</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1638318258133</updated>
+    </task>
+    <task id="LOCAL-00061" summary="结算页面事件">
+      <created>1638319439753</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1638319439753</updated>
+    </task>
+    <task id="LOCAL-00062" summary="修好的fyk的bug&#10;范义琨因此与罗元昊签订不平等条约：&#10;   （1）范义琨每日必须观看1小时的vtuber&#10;   （2）此条约生效至2022年3月1日">
+      <created>1638341625899</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1638341625900</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -574,27 +589,14 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="improve the way to locate the dot at the colock" />
-    <MESSAGE value="change absolute path to relatively path" />
-    <MESSAGE value="reaname classname" />
-    <MESSAGE value="revise tentPane" />
-    <MESSAGE value="photo used by tentPane" />
-    <MESSAGE value="out files" />
     <MESSAGE value="change MapButton.buttonAction into not static" />
     <MESSAGE value="rebuild&#10;change adding ImageView to set Images&#10;other many things" />
     <MESSAGE value="rebuild TentPane OpenTentButton CloseTentButton clock in mainframepane" />
@@ -614,163 +616,106 @@
     <MESSAGE value="战斗系大致完成，还需与gui对接" />
     <MESSAGE value="在BattlePane里查找“要求”，根据要求修改。" />
     <MESSAGE value="进一步战斗系统" />
-    <option name="LAST_COMMIT_MESSAGE" value="进一步战斗系统" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/BattleSystemLJ'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/R/sample/BattlePane.class&#10;#&#9;out/production/R/sample/ItemPane.class&#10;#&#9;out/production/R/sample/MainFramePane.class&#10;#&#9;out/production/R/sample/MazePane.class&#10;#&#9;out/production/R/sample/TentPane.class&#10;#&#9;out/production/R/sample/battle/battleGUI.class&#10;#&#9;out/production/R/sample/battle/battleMain.class&#10;#&#9;out/production/R/sample/buttons/CancelAllButton.class&#10;#&#9;out/production/R/sample/buttons/StartBattleButton.class&#10;#&#9;out/production/R/sample/tentPane.class&#10;#&#9;src/sample/BattlePane.java&#10;#&#9;src/sample/MainFramePane.java&#10;#&#9;src/sample/TentPane.java&#10;#&#9;src/sample/battle/battleGUI.java&#10;#&#9;src/sample/battle/battleMain.java&#10;#&#9;src/sample/buttons/CancelAllButton.java&#10;#&#9;src/sample/buttons/StartBattleButton.java" />
+    <MESSAGE value="Merge branch 'BranchForMaze'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/R/sample/Event/EnterPlace.class&#10;#&#9;out/production/R/sample/ImageProcess.class&#10;#&#9;out/production/R/sample/MainFramePane.class&#10;#&#9;out/production/R/sample/MazePane.class&#10;#&#9;out/production/R/sample/TentPane.class&#10;#&#9;out/production/R/sample/battle/battleMain.class&#10;#&#9;out/production/R/sample/buttons/LeaveHereButton.class&#10;#&#9;out/production/R/sample/itemPart/storeExample/mainframe1.class&#10;#&#9;out/production/R/sample/specificPlace/ActionDialogPane.class&#10;#&#9;out/production/R/sample/specificPlace/GeneralPlacePane.class&#10;#&#9;out/production/R/sample/specificPlace/HomeofseaPane.class&#10;#&#9;out/production/R/sample/tentPane.class&#10;#&#9;src/sample/Event/EnterPlace.java&#10;#&#9;src/sample/MainFramePane.java&#10;#&#9;src/sample/TentPane.java&#10;#&#9;src/sample/battle/battleMain.java&#10;#&#9;src/sample/buttons/LeaveHereButton.java&#10;#&#9;src/sample/specificPlace/ActionDialogPane.java&#10;#&#9;src/sample/specificPlace/GeneralPlacePane.java&#10;#&#9;src/sample/specificPlace/HomeofseaPane.java" />
+    <MESSAGE value="修了个小bug" />
+    <MESSAGE value="加了怪物图片" />
+    <MESSAGE value="结算页面事件" />
+    <MESSAGE value="修好的fyk的bug&#10;范义琨因此与罗元昊签订不平等条约：&#10;   （1）范义琨每日必须观看1小时的vtuber&#10;   （2）此条约生效至2022年3月1日" />
+    <option name="LAST_COMMIT_MESSAGE" value="修好的fyk的bug&#10;范义琨因此与罗元昊签订不平等条约：&#10;   （1）范义琨每日必须观看1小时的vtuber&#10;   （2）此条约生效至2022年3月1日" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637063592186">
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638253484350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637063592186" />
-    <state x="656" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1634029140411">
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638253484350" />
+    <state x="588" y="0" key="CommitChangelistDialog2" timestamp="1638341624370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="329" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634029140411" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1638232207253">
+    <state x="588" y="0" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341624370" />
+    <state x="588" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1638319438145" />
+    <state x="740" y="236" key="FileChooserDialogImpl" timestamp="1638318738395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637046970480" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1638232207253" />
-    <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1633936118810">
+    <state x="740" y="236" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281976710" />
+    <state x="740" y="236" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1638318738395" />
+    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1638341665364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633936118810" />
-    <state x="799" y="410" width="331" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1637047075365">
+    <state width="938" height="348" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
+    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
+    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1638341665364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="799" y="410" width="331" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637047075365" />
-    <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1638231849061">
+    <state width="938" height="348" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
+    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637284" />
+    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1638341665364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638106628127" />
-    <state x="707" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638231849061" />
-    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1634114417789">
+    <state width="938" height="348" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
+    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637284" />
+    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1638341665364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634114417789" />
-    <state x="552" y="182" key="#项目结构" timestamp="1633855511587">
+    <state width="938" height="348" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
+    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637284" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1638341665364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="182" key="#项目结构/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633855511587" />
-    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2" timestamp="1638239395378">
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1638341665364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="510" y="122" width="744" height="803" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638239395378" />
-    <state x="588" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1638234040219" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637594812997">
+    <state width="938" height="348" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
+    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1638341665364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594812997" />
-    <state x="739" y="265" key="FileChooserDialogImpl" timestamp="1637593266817">
+    <state width="938" height="348" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
+    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1638341665364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="265" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593266817" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1638249624828">
+    <state width="938" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341665364" />
+    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638322637285" />
+    <state x="184" y="92" key="MergeDialog" timestamp="1638281285012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638249624828" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638235535690" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1638249624828">
+    <state x="184" y="92" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281285012" />
+    <state x="670" y="237" key="MultipleFileMergeDialog" timestamp="1638281348578">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638249624828" />
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638235535690" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1638249624828">
+    <state x="670" y="237" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281348578" />
+    <state x="773" y="233" key="RollbackChangesDialog" timestamp="1638281541176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638249624828" />
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638235535690" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1638249624828">
+    <state x="773" y="233" key="RollbackChangesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281541176" />
+    <state x="440" y="98" key="SettingsEditor" timestamp="1638281979290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638249624828" />
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638235535690" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1637594917625">
+    <state x="440" y="98" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281979290" />
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1638272807042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594917625" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1637594917625">
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638272807042" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638341640131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594917625" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1637594917625">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638341640131" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638319446453" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1638272663258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594917625" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1637594917625">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638272663258" />
+    <state x="749" y="322" key="git4idea.merge.GitMergeDialog" timestamp="1638281398997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594917625" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634692731171" />
-    <state x="223" y="92" key="MergeDialog" timestamp="1637595160885">
+    <state x="749" y="322" key="git4idea.merge.GitMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638281398997" />
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638426343416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="223" y="92" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637595160885" />
-    <state x="223" y="92" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637108603155" />
-    <state x="670" y="237" key="MultipleFileMergeDialog" timestamp="1637595160894">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="670" y="237" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637595160894" />
-    <state x="670" y="237" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637108603163" />
-    <state x="440" y="98" key="SettingsEditor" timestamp="1637595033224">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="98" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637595033224" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1638239408840">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638239408840" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1638234061522" />
-    <state x="630" y="257" key="VcsDiffUtil.ChangesDialog" timestamp="1637594682287">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="630" y="257" key="VcsDiffUtil.ChangesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594682287" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1636292973567">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636292973567" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1636293136964">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636293136964" />
-    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1634982194830">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634982194830" />
-    <state x="722" y="235" key="git4idea.branch.GitSmartOperationDialog" timestamp="1637595144849">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="722" y="235" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637595144849" />
-    <state x="749" y="322" key="git4idea.merge.GitMergeDialog" timestamp="1637594592249">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="749" y="322" key="git4idea.merge.GitMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594592249" />
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog" timestamp="1638199054226">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638199054226" />
-    <state x="682" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637108569368" />
-    <state x="661" y="437" key="git4idea.rebase.GitUnstructuredEditor" timestamp="1637593792029">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="661" y="437" key="git4idea.rebase.GitUnstructuredEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637593792029" />
-    <state x="785" y="429" key="git4idea.ui.GitStashDialog" timestamp="1637594843859">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="785" y="429" key="git4idea.ui.GitStashDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1637594843859" />
-    <state x="334" y="224" key="new project wizard" timestamp="1633879172048">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="334" y="224" key="new project wizard/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633879172048" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1634688251783">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634688251783" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1634108982856">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634108982856" />
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638335591140" />
+    <state x="682" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638426343416" />
   </component>
 </project>
