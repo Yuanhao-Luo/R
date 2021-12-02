@@ -43,15 +43,15 @@ public class BattlePane extends Pane {
 
 
     private BattlePane(){
-        //冷却图标
+        //??????
         Image wait = new Image("file:.\\images\\wait.png");
-        //总结页面
+        //??????
         Image settlementInterface = new Image("file:.\\images\\settlementInterface.png");
-        //无法存放道具
+        //?????????
         Image canNotUsePicture = new Image("file:.\\images\\CanNotUse.png");
-        //战斗伤害
+        //??????
         Image damage = new Image("file:.\\images\\damage.png");
-        //战斗过程页面
+        //??????????
 
         Person p = Person.getInstance();
         Image battleBackground = new Image("file:.\\images\\battleBackground.png");
@@ -61,7 +61,7 @@ public class BattlePane extends Pane {
         Image defenseD = new Image("file:.\\images\\defenseD.png");
         Image HPBackground = new Image("file:.\\images\\HPBackground.png");
         Image HPCurrent = new Image("file:.\\images\\HPCurrent.png");
-        //���������backpack
+        //?????????backpack
 
 
         settlementInterface1.setImage(settlementInterface);
@@ -72,15 +72,15 @@ public class BattlePane extends Pane {
         settlementInterface1.setX(settlementInterfaceLeft);
         settlementInterface1.setY(settlementInterfaceTop);
 
-        exp.setLayoutX(540);
+        exp.setLayoutX(520);
         exp.setLayoutY(313);
         exp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
-        current_exp.setLayoutX(540);
+        current_exp.setLayoutX(520);
         current_exp.setLayoutY(375);
         current_exp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
-        gold.setLayoutX(860);
+        gold.setLayoutX(800);
         gold.setLayoutY(313);
         gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
@@ -193,20 +193,18 @@ public class BattlePane extends Pane {
 
         });
 
-        CloseTentButton closeTentButton = new CloseTentButton("����ȥ�����","200",10,720);
-        this.getChildren().add(closeTentButton);
+        RunAwayButton runAwayButton = new RunAwayButton("快点回城下町吧！","200",10,720);
+        this.getChildren().add(runAwayButton);
 
-        StartBattleButton startBattleButton = new StartBattleButton("    战斗�?始！","200",350,520);
+        StartBattleButton startBattleButton = new StartBattleButton("    开始战斗！","200",350,520);
         this.getChildren().add(startBattleButton);
 
-        SelectAllButton selectAllButton = new SelectAllButton("     全�?�择","200",570,520);
+        SelectAllButton selectAllButton = new SelectAllButton("     全选择","200",570,520);
         this.getChildren().add(selectAllButton);
 
-        CancelAllButton cancelAllButton = new CancelAllButton("   全�?�择解除","200",800,520);
+        CancelAllButton cancelAllButton = new CancelAllButton("   全选择解除","200",800,520);
         this.getChildren().add(cancelAllButton);
 
-        //以下是物品系统加的东�?
-        //bet的位置大小还要调�?�?
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
         //图片还没有放进去
         nextPage.setOnMouseReleased(e->{
@@ -215,18 +213,17 @@ public class BattlePane extends Pane {
             }
         });
         getChildren().add(nextPage);
-        nextPage.setLayoutX(843);//��Ҫ����λ��
+        nextPage.setLayoutX(843);
         nextPage.setLayoutY(578);
 
         prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
-        //ͼƬ��û�зŽ�ȥ
         prePage.setOnMouseReleased(e->{
             if (getItemPage() != 0){
                 setItemPage(getItemPage()-1);
             }
         });
         getChildren().add(prePage);
-        prePage.setLayoutX(131);//��Ҫ����λ��
+        prePage.setLayoutX(131);
         prePage.setLayoutY(578);
 
         for (int i = 0; i < itemList.length; i++) {
@@ -283,7 +280,6 @@ public class BattlePane extends Pane {
         hp.setText(String.valueOf(maxHp));
     }
 
-    //刷新当前�?量�?�血量上限和物品�?
     public void refreshall(){
         Person person = Person.getInstance();
         refreshItems();
