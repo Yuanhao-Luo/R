@@ -31,11 +31,12 @@ public class Person {
         simpleFactory s = new simpleFactory();
         itemList.add(s.buildMagicSword());
         itemList.add(s.buildMagicSword());
+        itemList.add(s.buildGuerrillaSword());
+        itemList.add(s.buildGuerrillaSword());
+        itemList.add(s.buildSmallShield());
         itemList.add(s.buildMagicSword());
-        itemList.add(s.buildMagicSword());
-        itemList.add(s.buildMagicSword());
-        itemList.add(s.buildMagicSword());
-        itemList.add(s.buildMagicSword());
+        itemList.add(s.buildTH180());
+        itemList.add(s.buildBigStick());
     }
 
     public static Person getInstance(){

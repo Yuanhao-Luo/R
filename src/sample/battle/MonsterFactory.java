@@ -9,7 +9,7 @@ public class MonsterFactory {
 
         BehaviorLogic[] bls = {b1};
 
-        String monster_url = "";
+        String monster_url = ".\\images\\monster\\purin.png";
         int maxHp = 500;
         int critical = 5;
         int exp = 12;

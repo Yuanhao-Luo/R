@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.scene.paint.Color;
 import sample.battle.Battle;
 import sample.battle.Monster;
 import sample.buttons.*;
@@ -31,6 +32,7 @@ public class BattlePane extends Pane {
     Label currentHp = new Label("125");
     public Label monsterDamage;
     public Label personDamage;
+    Pane concludeEvent;
 
     Label exp = new Label("10");
     Label current_exp = new Label("94");
@@ -70,6 +72,16 @@ public class BattlePane extends Pane {
         int settlementInterfaceTop = -340;
         settlementInterface1.setX(settlementInterfaceLeft);
         settlementInterface1.setY(settlementInterfaceTop);
+
+        concludeEvent = new Pane();
+        concludeEvent.setPrefHeight(808);
+        concludeEvent.setPrefWidth(1040);
+        concludeEvent.setVisible(false);
+        concludeEvent.setOnMouseReleased(e->{
+            System.out.println("conclude Pane");
+            this.setVisible(false);
+            MazePane.getInstance().setVisible(true);
+        });
 
         exp.setLayoutX(540);
         exp.setLayoutY(313);
@@ -112,9 +124,9 @@ public class BattlePane extends Pane {
         tentPicture3.setY(tentPictureTop);
 
         thief.setImage(thief1);
-        thief.setFitHeight(thief1.getHeight());
+//        thief.setFitHeight(thief1.getHeight());
         int thiefLeft = 600;
-        int thiefTop = 30;
+        int thiefTop = 80;
         thief.setX(thiefLeft);
         thief.setY(thiefTop);
 
@@ -161,6 +173,7 @@ public class BattlePane extends Pane {
         personDamage.setLayoutX(720);
         personDamage.setLayoutY(160);
         personDamage.setFont(new Font(45));
+        personDamage.setTextFill(Color.AZURE);
 
 
         this.getChildren().add(battleBackground1);
@@ -181,16 +194,12 @@ public class BattlePane extends Pane {
         settlementInterface2.getChildren().add(current_exp);
         settlementInterface2.getChildren().add(gold);
         settlementInterface2.getChildren().add(current_gold);
-        settlementInterface1.setOnMouseReleased(e->{
-            System.out.println("conclude Pane");
-            this.setVisible(false);
-            MazePane.getInstance().setVisible(true);
-        });
         this.getChildren().add(settlementInterface2);
 
         settlementInterface2.setVisible(false);
 
-
+        //jpy
+        //这个closetentbutton改掉，这战斗页面哪来的closetent？
         CloseTentButton closeTentButton = new CloseTentButton("   逃往城下町","200",10,720);
         this.getChildren().add(closeTentButton);
 
@@ -202,6 +211,8 @@ public class BattlePane extends Pane {
 
         CancelAllButton cancelAllButton = new CancelAllButton("   全选择解除","200",800,520);
         this.getChildren().add(cancelAllButton);
+        this.getChildren().add(concludeEvent);
+
 
 
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
@@ -237,7 +248,7 @@ public class BattlePane extends Pane {
         return battlePane;
     }
 
-    public Pane[] getItemList() {
+    public ItemPane[] getItemList() {
         return itemList;
     }
 
@@ -296,10 +307,14 @@ public class BattlePane extends Pane {
         gold.setText(String.valueOf(person.getMoney()));
         current_gold.setText(String.valueOf(battle.getMonster().getMoney()));
         settlementInterface2.setVisible(true);
+        concludeEvent.setVisible(true);
     }
 
     public void startBattle(Monster monster){
         settlementInterface2.setVisible(false);
+        monsterDamage.setVisible(false);
+        personDamage.setVisible(false);
+        concludeEvent.setVisible(false);
         thief.setImage(new Image("file:"+monster.getUrl()));
         Battle.getInstance().setMonster(monster);
         refreshall();
