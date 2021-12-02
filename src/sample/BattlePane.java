@@ -123,8 +123,8 @@ public class BattlePane extends Pane {
         this.getChildren().add(hp);
         this.getChildren().add(currentHp);
 
-        CloseTentButton closeTentButton = new CloseTentButton("快点回去城下町吧","200",10,720);
-        this.getChildren().add(closeTentButton);
+        RunAwayButton runAwayButton = new RunAwayButton("快点回去城下町吧","200",10,720);
+        this.getChildren().add(runAwayButton);
 
         StartBattleButton startBattleButton = new StartBattleButton("    战斗开始！","200",350,520);
         this.getChildren().add(startBattleButton);

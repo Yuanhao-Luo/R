@@ -2,7 +2,6 @@ package sample.buttons;
 
 
 import javafx.scene.control.Label;
-import javafx.scene.text.Font;
 import sample.BattlePane;
 import sample.ItemPane;
 import sample.MainFramePane;
