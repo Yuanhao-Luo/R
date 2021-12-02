@@ -198,7 +198,8 @@ public class BattlePane extends Pane {
 
         settlementInterface2.setVisible(false);
 
-
+        //jpy
+        //这个closetentbutton改掉，这战斗页面哪来的closetent？
         CloseTentButton closeTentButton = new CloseTentButton("   逃往城下町","200",10,720);
         this.getChildren().add(closeTentButton);
 
@@ -247,7 +248,7 @@ public class BattlePane extends Pane {
         return battlePane;
     }
 
-    public Pane[] getItemList() {
+    public ItemPane[] getItemList() {
         return itemList;
     }
 
