@@ -2,9 +2,11 @@ package sample.buttons;
 
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
+import sample.BattlePane;
 import sample.MainFramePane;
 import sample.TentPane;
 import sample.buttons.GeneralButton;
+import sample.itemPart.characterSystem.Person;
 
 public class RunAwayButton extends TextButton {
 
@@ -12,7 +14,11 @@ public class RunAwayButton extends TextButton {
         super(text, type, X, Y);
         addButtonEvent();
         setOnMouseClicked(e -> {
-            TentPane.getInstance().setVisible(false);
+            Person person = Person.getInstance();
+            int money = person.getMoney();
+            person.setMoney((int)(money - (money*0.1)));
+            BattlePane.getInstance().setVisible(false);
+            MainFramePane.getInstance().setVisible(true);
         });
     }
 }

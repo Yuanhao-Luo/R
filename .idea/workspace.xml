@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="尝试了一下xml">
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="不让pull">
+      <change afterPath="$PROJECT_DIR$/src/sample/communicationStorage/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_04____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_04____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_06____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_06____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/___.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/___.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/SelectAllButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="XML" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,6 +69,7 @@
   <component name="ProjectId" id="1zGCFG1goG3u1wl8eWHYJlIbzB0" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="更新" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectViewState">
@@ -79,7 +91,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.test (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="R" />
@@ -107,6 +119,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.communicationStorage.test" />
+      <module name="R" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.communicationStorage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.itemPart.itemSystem2.test" />
       <module name="R" />
@@ -124,9 +149,11 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.mainframe1" />
       <item itemvalue="Application.test" />
+      <item itemvalue="Application.test (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -207,20 +234,9 @@
       <workItem from="1638426308097" duration="349000" />
       <workItem from="1638426941366" duration="2228000" />
       <workItem from="1638430795832" duration="1508000" />
-    </task>
-    <task id="LOCAL-00016" summary="t">
-      <created>1634105451186</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1634105451186</updated>
-    </task>
-    <task id="LOCAL-00017" summary="t">
-      <created>1634105522796</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1634105522796</updated>
+      <workItem from="1638455842725" duration="950000" />
+      <workItem from="1638491122046" duration="2223000" />
+      <workItem from="1638517612696" duration="616000" />
     </task>
     <task id="LOCAL-00018" summary="t">
       <created>1634116840419</created>
@@ -551,7 +567,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638431240663</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="不让pull">
+      <created>1638455900951</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1638455900951</updated>
+    </task>
+    <task id="LOCAL-00066" summary="不让pull">
+      <created>1638455940335</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1638455940335</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +625,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="rebuild TentPane OpenTentButton CloseTentButton clock in mainframepane" />
     <MESSAGE value="only xy left" />
     <MESSAGE value="对medicine以及itemlist进行的相关的调整" />
     <MESSAGE value="完善物品系统" />
@@ -620,6 +649,7 @@
     <MESSAGE value="修好的fyk的bug&#10;范义琨因此与罗元昊签订不平等条约：&#10;   （1）范义琨每日必须观看1小时的vtuber&#10;   （2）此条约生效至2022年3月1日" />
     <MESSAGE value="实现的全选择和取消，另外给jpy发布了任务" />
     <MESSAGE value="尝试了一下xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="尝试了一下xml" />
+    <MESSAGE value="不让pull" />
+    <option name="LAST_COMMIT_MESSAGE" value="不让pull" />
   </component>
 </project>

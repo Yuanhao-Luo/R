@@ -171,7 +171,7 @@ public class BattlePane extends Pane {
         return battlePane;
     }
 
-    public Pane[] getItemList() {
+    public ItemPane[] getItemList() {
         return itemList;
     }
 
