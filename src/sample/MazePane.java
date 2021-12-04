@@ -1,15 +1,12 @@
 package sample;
-import javafx.event.Event;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import sample.MazePart.*;
-import sample.battle.Battle;
 import sample.battle.MonsterFactory;
 import sample.buttons.OpenTentButton;
 
@@ -26,7 +23,7 @@ public class MazePane extends Pane {
     Card[][] logicalMaze;
     Card[][] MazeCanBeSeen;
     CardPane[][] currentMaze = new CardPane[3][5];//这就是当前显示的部分
-    int currentRow = 5;//现在应该在迷宫的第几行 0~15
+    int currentRow = 0;//现在应该在迷宫的第几行 0~15
     int currentCard = 2;//现在是第几列，也就是第几张牌 0~4
     int whichCardSelected = currentCard;
 
@@ -35,6 +32,7 @@ public class MazePane extends Pane {
     Pane Character = new Pane();
     Pane leftMazeBar = new Pane();
     Pane rightMazeBar = new Pane();
+    ImageView MazeBackground = new ImageView();
     ImageView clockImv = new ImageView();
     Pane HPBackgroundPane = new Pane();
     Pane HPCurrentImg = new Pane();
@@ -53,7 +51,14 @@ public class MazePane extends Pane {
     }
 
     private MazePane(){
-        ImageProcess.addImage(this,".\\images\\MazeBackground1.png");
+        MazeBackground = new ImageView();
+        this.getChildren().add(MazeBackground);
+        //setXY(clockImv, 840, -100);
+        try {
+            MazeBackground.setImage(new Image(new FileInputStream(".\\images\\MazeBackgroundOuterCity.png")));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         this.getChildren().add(bOpenTent);
 
@@ -130,9 +135,9 @@ public class MazePane extends Pane {
         this.getChildren().add(Character);
         this.getChildren().add(leftMazeBar);
         this.getChildren().add(rightMazeBar);
-        initPane(Character,390,570,".\\images\\rancewalkingmaze.png");
-        initPane(leftMazeBar,260,340,".\\images\\leftMazeBar.png");
-        initPane(rightMazeBar,680,340,".\\images\\rightMazeBar.png");
+        initPane(Character,390,560,".\\images\\rancewalkingmaze.png");
+        initPane(leftMazeBar,260,290,".\\images\\leftMazeBar.png");
+        initPane(rightMazeBar,680,290,".\\images\\rightMazeBar.png");
     }
 
 
@@ -140,13 +145,13 @@ public class MazePane extends Pane {
         for(int j = 0; j < 5; j++) {
             currentMaze[0][j] = new CardPane(MazeCanBeSeen[(currentRow+2)%MazeCanBeSeen.length][j]);
             this.getChildren().add(currentMaze[0][j]);
-            setXY(currentMaze[0][j],160*j + 120, 150);
+            setXY(currentMaze[0][j],160*j + 120, 200);
             currentMaze[1][j] = new CardPane(MazeCanBeSeen[(currentRow+1)%MazeCanBeSeen.length][j]);
             this.getChildren().add(currentMaze[1][j]);
             setXY(currentMaze[1][j],160*j + 120, 250);
             currentMaze[2][j] = new CardPane(MazeCanBeSeen[(currentRow)%MazeCanBeSeen.length][j]);
             this.getChildren().add(currentMaze[2][j]);
-            setXY(currentMaze[2][j],160*j + 120, 350);
+            setXY(currentMaze[2][j],160*j + 120, 300);
             whichCardSelected = currentCard;
         }
     }
@@ -181,27 +186,19 @@ public class MazePane extends Pane {
 
     public void initCenterStep(boolean cardCanPass){
         if (cardCanPass) {
-            currentMaze[2][currentCard].addEventFilter(MouseEvent.MOUSE_RELEASED,e->{
-
-            });
             currentMaze[2][currentCard].setOnMouseClicked(e ->{
-                System.out.println("click center card");
-
-
                 currentRow = (currentRow+1)%logicalMaze.length;
                 t.walkOneCard();
                 changeClockStatues();
                 initTheMaze();
                 initAllStep();
-        } );}
+            } );}
     }
 
 
     public void initRightStep(boolean cardCanPass){
         if (cardCanPass) {
             currentMaze[2][currentCard+1].setOnMouseClicked(e->{
-                System.out.println("click right card");
-
                 currentCard+=1;//
                 currentRow = (currentRow+1)%logicalMaze.length;
                 t.walkOneCard();
@@ -216,54 +213,38 @@ public class MazePane extends Pane {
 
 
     public void initCharacter(int currentCard){
-        setXY(Character,390 + (currentCard-2)*160,570);
+        setXY(Character,390 + (currentCard-2)*160,560);
     }
 
     //准确的说，这个函数的全程称是如果你往左边移动了就用这个函数
     public void initBarIfMoveLeft(int currentCard){
-        if((currentCard==1)||(currentCard==0))  setXY(leftMazeBar,100,340);
-        else  setXY(leftMazeBar,390+(currentCard-2)*160-130,340);
-        setXY(rightMazeBar,390+(currentCard-2)*160+290,340);
+        if((currentCard==1)||(currentCard==0))  setXY(leftMazeBar,100,290);
+        else  setXY(leftMazeBar,390+(currentCard-2)*160-130,290);
+        setXY(rightMazeBar,390+(currentCard-2)*160+290,290);
     }
 
 
     public void initBarIfMoveRight(int currentCard){
-        if((currentCard==3)||(currentCard==4))  setXY(rightMazeBar,840,340);
-        else  setXY(rightMazeBar,390+(currentCard-2)*160+290,340);
-        setXY(leftMazeBar, 390+(currentCard-2)*160-130,340);
+        if((currentCard==3)||(currentCard==4))  setXY(rightMazeBar,840,290);
+        else  setXY(rightMazeBar,390+(currentCard-2)*160+290,290);
+        setXY(leftMazeBar, 390+(currentCard-2)*160-130,290);
     }
-
 
 
     public void whichCardSelected(){
         whichCardSelected = currentCard;
-        Pane panewhichCardSelected1 = new Pane();
-        panewhichCardSelected1.setMinHeight(240);
-        panewhichCardSelected1.setMaxHeight(240);
-        panewhichCardSelected1.setMaxWidth(160);
-        panewhichCardSelected1.setMinWidth(160);
-        Pane panewhichCardSelected2 = new Pane();
-        panewhichCardSelected2.setMinHeight(240);
-        panewhichCardSelected2.setMaxHeight(240);
-        panewhichCardSelected2.setMaxWidth(160);
-        panewhichCardSelected2.setMinWidth(160);
-        if (currentCard > 0 && currentMaze[2][currentCard-1].getCard().getType().equals("3")) {
-
+        Pane panewhichCardSelected1 = paneForCardCreater();
+        Pane panewhichCardSelected2 = paneForCardCreater();
+        if (currentCard > 0 && currentMaze[2][currentCard-1].getCard().getType().equals("背面")) {
             currentMaze[2][currentCard-1].getChildren().add(panewhichCardSelected1);
             panewhichCardSelected1.setOnMouseClicked(e->{
-                System.out.println("click sth.        1");
-
-
                 whichCardSelected-=1;
                 currentMaze[2][currentCard-1].getChildren().remove(panewhichCardSelected1);
             });
         }
-        if (currentCard < 4 && currentMaze[2][currentCard+1].getCard().getType().equals("3")){
+        if (currentCard < 4 && currentMaze[2][currentCard+1].getCard().getType().equals("背面")){
             currentMaze[2][currentCard+1].getChildren().add(panewhichCardSelected2);
             panewhichCardSelected2.setOnMouseReleased(e->{
-                System.out.println("click sth.           2");
-
-
                 whichCardSelected+=1;
                 currentMaze[2][currentCard+1].getChildren().remove(panewhichCardSelected1);
             });
@@ -274,9 +255,6 @@ public class MazePane extends Pane {
     //4,这里就是承接上文所说，用了whichCardSelected来初始化新一行的Maze
     public void initForCardType3(){
         currentMaze[2][whichCardSelected].setOnMouseClicked(e->{
-            System.out.println("initforcardtype");
-
-
             if(whichCardSelected<currentCard){
                 initCharacter(whichCardSelected);
                 initBarIfMoveLeft(whichCardSelected);
@@ -301,13 +279,13 @@ public class MazePane extends Pane {
         if (whichCardSelected<currentCard){
             currentMaze[2][currentCard-1] = new CardPane(logicalMaze[currentRow][currentCard-1]);
             this.getChildren().add(currentMaze[2][currentCard-1]);
-            setXY(currentMaze[2][currentCard-1],160*currentCard - 40, 350);
-            whichAction(currentMaze[2][currentCard-1]);
+            setXY(currentMaze[2][currentCard-1],160*currentCard - 40, 300);
             initForCardType3();
+            whichAction(currentMaze[2][currentCard-1]);
         }else {
             currentMaze[2][currentCard-1] = new CardPane(MazeCanBeSeen[currentRow][currentCard-1]);
             this.getChildren().add(currentMaze[2][currentCard-1]);
-            setXY(currentMaze[2][currentCard-1],160*currentCard - 40, 350);
+            setXY(currentMaze[2][currentCard-1],160*currentCard - 40, 300);
         }
     }
 
@@ -316,13 +294,13 @@ public class MazePane extends Pane {
         if (whichCardSelected==currentCard) {
             currentMaze[2][currentCard] = new CardPane(logicalMaze[currentRow][currentCard]);
             this.getChildren().add(currentMaze[2][currentCard]);
-            setXY(currentMaze[2][currentCard],160*currentCard + 120, 350);
-            whichAction(currentMaze[2][currentCard]);
+            setXY(currentMaze[2][currentCard],160*currentCard + 120, 300);
             initForCardType3();
+            whichAction(currentMaze[2][currentCard]);
         }else {
             currentMaze[2][currentCard] = new CardPane(MazeCanBeSeen[currentRow][currentCard]);
             this.getChildren().add(currentMaze[2][currentCard]);
-            setXY(currentMaze[2][currentCard],160*currentCard + 120, 350);
+            setXY(currentMaze[2][currentCard],160*currentCard + 120, 300);
         }
     }
 
@@ -331,13 +309,13 @@ public class MazePane extends Pane {
         if (whichCardSelected>currentCard) {
             currentMaze[2][currentCard+1] = new CardPane(logicalMaze[currentRow][currentCard+1]);
             this.getChildren().add(currentMaze[2][currentCard+1]);
-            setXY(currentMaze[2][currentCard+1],160*currentCard + 280, 350);
-            whichAction(currentMaze[2][currentCard+1]);
+            setXY(currentMaze[2][currentCard+1],160*currentCard + 280, 300);
             initForCardType3();
+            whichAction(currentMaze[2][currentCard+1]);
         }else {
             currentMaze[2][currentCard+1] = new CardPane(MazeCanBeSeen[currentRow][currentCard+1]);
             this.getChildren().add(currentMaze[2][currentCard+1]);
-            setXY(currentMaze[2][currentCard+1],160*currentCard + 280, 350);
+            setXY(currentMaze[2][currentCard+1],160*currentCard + 280, 300);
         }
     }
 
@@ -345,43 +323,24 @@ public class MazePane extends Pane {
     //1，他执行whichAction（），然后发现了这三张牌中有一张是背面卡；给这张背面卡上处理
     public boolean whichAction(CardPane cardPane){
         switch (cardPane.getCard().getType()){
-            case "1":
+            case "空白卡片":
                 return true;
-            case "2":
+            case "障碍":
                 return false;
-            case "3":
+            case "背面":
                 forCardType3(cardPane);
                 return false;
-            case "4":
-                //System.out.println(4);
-                //System.out.println(cardPane.getCard().getContent());
+            case "陷阱":
+                forCardType4(cardPane);
                 return true;
-            case "5":
-                //System.out.println(5);
-                //System.out.println(cardPane.getCard().getContent());
+            case "宝箱":
+                forCardType5(cardPane);
                 return true;
-            case "6":
-//                BattlePane battlePane = BattlePane.getInstance();
-//                MonsterFactory mf = new MonsterFactory();
-//                battlePane.startBattle(mf.buildPurin());
-//                battlePane.setVisible(true);
-//                MazePane.getInstance().setVisible(false);
-                System.out.println("给有怪的初始化了");
+            case "怪物":
                 forCardType6(cardPane);
                 return true;
-            case "7":
-                //System.out.println(7);
-                if (cardPane.getCard().getContent().equals("0"))  {
-                    forCardType7Floor1(cardPane);
-                }
-                return true;
-            case "8":
-                //System.out.println(8);
-                //System.out.println(cardPane.getCard().getContent());
-                return true;
-            case "9":
-                //System.out.println(9);
-                //System.out.println(cardPane.getCard().getContent());
+            case "传送":
+                forCardType7(cardPane);
                 return true;
         }
         return true;
@@ -393,25 +352,16 @@ public class MazePane extends Pane {
         whichCardSelected();
         if(currentCard == 0){
             cardPane.setOnMouseClicked(e->{
-                System.out.println("for card type 3");
-
-
                 reloadCenterCard();
                 reloadRightCard();
             });
         }else if(currentCard == 4){
             cardPane.setOnMouseClicked(e-> {
-                System.out.println("for card type 3");
-
-
                 reloadLeftCard();
                 reloadCenterCard();
             });
         }else{
             cardPane.setOnMouseClicked(e->{
-                System.out.println("for card type 3");
-
-
                 reloadLeftCard();
                 reloadCenterCard();
                 reloadRightCard();
@@ -419,65 +369,106 @@ public class MazePane extends Pane {
         }
     }
 
-    public void forCardType6(CardPane cardPane){
-        Pane pane6 = new Pane();
-        cardPane.getChildren().add(pane6);
-        pane6.setMinHeight(240);
-        pane6.setMaxHeight(240);
-        pane6.setMaxWidth(160);
-        pane6.setMinWidth(160);
-//        pane6.setOnMouseClicked(e->{
-//
-//        });
-//        pane6.addEventFilter(MouseEvent.MOUSE_RELEASED, e->{
-//
-//        });
-        pane6.setOnMouseClicked(e->{
-            System.out.println("monster click event");
 
+    public void forCardType4(CardPane cardPane){
+        Pane pane4 = paneForCardCreater();
+        cardPane.getChildren().add(pane4);
+        pane4.setOnMouseClicked(e->{
+            //扣血
+
+        });
+    }
+
+
+
+    public void forCardType5(CardPane cardPane){
+        Pane pane5 = paneForCardCreater();
+        cardPane.getChildren().add(pane5);
+        pane5.setOnMouseClicked(e->{
+            //宝箱
+
+        });
+    }
+
+
+
+    public void forCardType6(CardPane cardPane){
+        Pane pane6 = paneForCardCreater();
+        cardPane.getChildren().add(pane6);
+        pane6.setOnMouseClicked(e->{
             BattlePane battlePane = BattlePane.getInstance();
             MonsterFactory mf = new MonsterFactory();
             battlePane.startBattle(mf.buildPurin());
             battlePane.setVisible(true);
             MazePane.getInstance().setVisible(false);
-            initTheMaze();
-            initAllStep();
-            cardPane.getChildren().remove(pane6);
-        });
-        System.out.println("初始化怪的函数执行完了");
-    }
-
-    //类比下面的实现去完成本函数
-    public void forCardType7OuterCity(CardPane cardPane){
-    }
-
-
-    public void forCardType7Floor1(CardPane cardPane){
-        Pane pane7 = new Pane();
-        cardPane.getChildren().add(pane7);
-        pane7.setMinHeight(240);
-        pane7.setMaxHeight(240);
-        pane7.setMaxWidth(160);
-        pane7.setMinWidth(160);
-        pane7.setOnMouseClicked(e->{
-            System.out.println("forcardtype7");
-
-
-
-            logicalMaze = logicalMazeCaveFloor1Store.logicalMaze;
-            MazeCanBeSeen = logicalMazeCaveFloor1Store.MazeCanBeSeen;
-            currentRow = 0;
             initCharacter(currentCard);
             initBarIfMoveLeft(currentCard);
             initBarIfMoveRight(currentCard);
             initTheMaze();
             initAllStep();
-            cardPane.getChildren().remove(pane7);
+            cardPane.getChildren().remove(pane6);
         });
     }
 
-    //类比上面面的实现去完成本函数
-    public void forCardType7Underground(CardPane cardPane){
+
+    public void forCardType7(CardPane cardPane){
+        Pane pane7 = paneForCardCreater();
+        cardPane.getChildren().add(pane7);
+        pane7.setOnMouseClicked(e->{
+            switch (cardPane.getCard().getContent()){
+                case "边境"://去边境，第一张地图
+                    ImageProcess.changeImage(MazeBackground,".\\images\\MazeBackgroundCave.png");
+                    logicalMaze = logicalMazeOuterCityStore.logicalMaze;
+                    MazeCanBeSeen = logicalMazeOuterCityStore.MazeCanBeSeen;
+                    jumpCard7();
+                    break;
+                case "洞窟上层"://去洞窟的上层
+                    ImageProcess.changeImage(MazeBackground,".\\images\\MazeBackgroundCave.png");
+                    logicalMaze = logicalMazeCaveFloor1Store.logicalMaze;
+                    MazeCanBeSeen = logicalMazeCaveFloor1Store.MazeCanBeSeen;
+                    jumpCard7();
+                    break;
+                case "下层"://去洞窟的下层
+                    ImageProcess.changeImage(MazeBackground,".\\images\\MazeBackgroundCave.png");
+                    logicalMaze = logicalMazeCaveUndergroundStore.logicalMaze;
+                    MazeCanBeSeen = logicalMazeCaveUndergroundStore.MazeCanBeSeen;
+                    jumpCard7();
+                    break;
+                case "城下町"://回到主界面
+                    ImageProcess.changeImage(MazeBackground,".\\images\\MazeBackgroundCave.png");
+                    logicalMaze = logicalMazeOuterCityStore.logicalMaze;
+                    MazeCanBeSeen = logicalMazeOuterCityStore.MazeCanBeSeen;
+                    currentCard = 2;
+                    jumpCard7();
+                    MazePane.getInstance().setVisible(false);
+                    break;
+                case "团长室"://一个具体场景，对应着团长室
+
+                    break;
+                case "副团长室"://一个具体场景，对应着副团长室
+
+                    break;
+            }
+        });
+    }
+
+
+    public void jumpCard7(){
+        currentRow = 0;
+        initCharacter(currentCard);
+        initBarIfMoveLeft(currentCard);
+        initBarIfMoveRight(currentCard);
+        initTheMaze();
+        initAllStep();
+    }
+
+    public Pane paneForCardCreater(){
+        Pane pane = new Pane();
+        pane.setMinHeight(240);
+        pane.setMaxHeight(240);
+        pane.setMaxWidth(160);
+        pane.setMinWidth(160);
+        return pane;
     }
 
 
@@ -516,7 +507,7 @@ public class MazePane extends Pane {
         int time = t.getCurrentTime();
         if(time > 5){
             return ".\\images\\night.png";
-        }else if (time <3){
+        }else if (time < 3){
             return ".\\images\\morning.png";
         }else
             return ".\\images\\afternoon.png";
