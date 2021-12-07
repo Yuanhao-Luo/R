@@ -1,6 +1,6 @@
-package sample.itemPart.itemSystem2;
+package sample.itemSystem;
 
-import sample.itemPart.characterSystem.Person;
+import sample.characterSystem.Person;
 
 public class FireFly extends oneTimeItem implements Useable {
     public FireFly(String url, int price) {

@@ -1,6 +1,9 @@
-package sample.itemPart.characterSystem;
+package sample.characterSystem;
 
-import sample.itemPart.itemSystem2.*;
+
+import sample.itemSystem.ItemList;
+import sample.itemSystem.arms;
+import sample.itemSystem.simpleFactory;
 
 import java.util.ArrayList;
 

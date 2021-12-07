@@ -1,6 +1,6 @@
-package sample.itemPart.itemSystem2;
+package sample.itemSystem;
 
-import sample.itemPart.characterSystem.Person;
+import sample.characterSystem.Person;
 
 //只实现迷路，内八，结石，熬夜，乌贼人5个负面状态
 //对应的药就是利萨斯的旅行方法，绿茶（这个有点不太全年龄段，建议改为萤火虫），闪跳君，稀稀糊糊全治疗

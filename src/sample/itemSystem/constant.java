@@ -1,4 +1,4 @@
-package sample.itemPart.itemSystem2;
+package sample.itemSystem;
 
 public class constant {
 

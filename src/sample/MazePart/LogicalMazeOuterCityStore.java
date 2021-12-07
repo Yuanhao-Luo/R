@@ -50,22 +50,22 @@ public class LogicalMazeOuterCityStore{
 
 
         //怪物
-        logicalMaze[1][1] = new Card(".\\images\\cards\\Jelly.png","怪物","0");
-        logicalMaze[2][0] = new Card(".\\images\\cards\\Jelly.png","怪物","0");
-        logicalMaze[2][3] = new Card(".\\images\\cards\\Jelly.png","怪物","0");
-        logicalMaze[4][0] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        logicalMaze[4][2] = new Card(".\\images\\cards\\Fox.png","怪物","0");
-        logicalMaze[6][0] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        logicalMaze[6][4] = new Card(".\\images\\cards\\Frog.png","怪物","0");
-        logicalMaze[7][0] = new Card(".\\images\\cards\\Fox.png","怪物","0");
-        logicalMaze[7][2] = new Card(".\\images\\cards\\Frog.png","怪物","0");
-        logicalMaze[8][3] = new Card(".\\images\\cards\\Honey.png","怪物","0");
-        logicalMaze[9][1] = new Card(".\\images\\cards\\WormDX.png","怪物","0");
-        logicalMaze[10][3] = new Card(".\\images\\cards\\Miskon.png","怪物","0");
-        logicalMaze[11][1] = new Card(".\\images\\cards\\WormDX.png","怪物","0");
-        logicalMaze[12][4] = new Card(".\\images\\cards\\Miskon.png","怪物","0");
-        logicalMaze[13][0] = new Card(".\\images\\cards\\Honey.png","怪物","0");
-        logicalMaze[15][2] = new Card(".\\images\\cards\\Honey.png","怪物","0");
+        logicalMaze[1][1] = new Card(".\\images\\cards\\Jelly.png","怪物","果冻");
+        logicalMaze[2][0] = new Card(".\\images\\cards\\Jelly.png","怪物","果冻");
+        logicalMaze[2][3] = new Card(".\\images\\cards\\Jelly.png","怪物","果冻");
+        logicalMaze[4][0] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        logicalMaze[4][2] = new Card(".\\images\\cards\\Fox.png","怪物","狐狸");
+        logicalMaze[6][0] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        logicalMaze[6][4] = new Card(".\\images\\cards\\Frog.png","怪物","噪音蟾蜍");
+        logicalMaze[7][0] = new Card(".\\images\\cards\\Fox.png","怪物","狐狸");
+        logicalMaze[7][2] = new Card(".\\images\\cards\\Frog.png","怪物","噪音蟾蜍");
+        logicalMaze[8][3] = new Card(".\\images\\cards\\Honey.png","怪物","哈尼");
+        logicalMaze[9][1] = new Card(".\\images\\cards\\WormDX.png","怪物","芋虫DX");
+        logicalMaze[10][3] = new Card(".\\images\\cards\\Miskon.png","怪物","米斯恐");
+        logicalMaze[11][1] = new Card(".\\images\\cards\\WormDX.png","怪物","芋虫DX");
+        logicalMaze[12][4] = new Card(".\\images\\cards\\Miskon.png","怪物","米斯恐");
+        logicalMaze[13][0] = new Card(".\\images\\cards\\Honey.png","怪物","哈尼");
+        logicalMaze[15][2] = new Card(".\\images\\cards\\Honey.png","怪物","哈尼");
 
 
         //传送
@@ -102,22 +102,22 @@ public class LogicalMazeOuterCityStore{
         MazeCanBeSeen[8][1] = new Card(".\\images\\cards\\Treasure.png","宝箱","0");
         MazeCanBeSeen[13][4] = new Card(".\\images\\cards\\Treasure.png","宝箱","0");
         //怪物
-        MazeCanBeSeen[1][1] = new Card(".\\images\\cards\\Jelly.png","怪物","0");
-        MazeCanBeSeen[2][0] = new Card(".\\images\\cards\\Jelly.png","怪物","0");
-        MazeCanBeSeen[2][3] = new Card(".\\images\\cards\\Jelly.png","怪物","0");
-        MazeCanBeSeen[4][0] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        MazeCanBeSeen[4][2] = new Card(".\\images\\cards\\Fox.png","怪物","0");
-        MazeCanBeSeen[6][0] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        MazeCanBeSeen[6][4] = new Card(".\\images\\cards\\Frog.png","怪物","0");
-        MazeCanBeSeen[7][0] = new Card(".\\images\\cards\\Fox.png","怪物","0");
-        MazeCanBeSeen[7][2] = new Card(".\\images\\cards\\Frog.png","怪物","0");
-        MazeCanBeSeen[8][3] = new Card(".\\images\\cards\\Honey.png","怪物","0");
-        MazeCanBeSeen[9][1] = new Card(".\\images\\cards\\WormDX.png","怪物","0");
-        MazeCanBeSeen[10][3] = new Card(".\\images\\cards\\Miskon.png","怪物","0");
-        MazeCanBeSeen[11][1] = new Card(".\\images\\cards\\WormDX.png","怪物","0");
-        MazeCanBeSeen[12][4] = new Card(".\\images\\cards\\Miskon.png","怪物","0");
-        MazeCanBeSeen[13][0] = new Card(".\\images\\cards\\Honey.png","怪物","0");
-        MazeCanBeSeen[15][2] = new Card(".\\images\\cards\\Honey.png","怪物","0");
+        MazeCanBeSeen[1][1] = new Card(".\\images\\cards\\Jelly.png","怪物","果冻");
+        MazeCanBeSeen[2][0] = new Card(".\\images\\cards\\Jelly.png","怪物","果冻");
+        MazeCanBeSeen[2][3] = new Card(".\\images\\cards\\Jelly.png","怪物","果冻");
+        MazeCanBeSeen[4][0] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        MazeCanBeSeen[4][2] = new Card(".\\images\\cards\\Fox.png","怪物","狐狸");
+        MazeCanBeSeen[6][0] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        MazeCanBeSeen[6][4] = new Card(".\\images\\cards\\Frog.png","怪物","噪音蟾蜍");
+        MazeCanBeSeen[7][0] = new Card(".\\images\\cards\\Fox.png","怪物","狐狸");
+        MazeCanBeSeen[7][2] = new Card(".\\images\\cards\\Frog.png","怪物","噪音蟾蜍");
+        MazeCanBeSeen[8][3] = new Card(".\\images\\cards\\Honey.png","怪物","哈尼");
+        MazeCanBeSeen[9][1] = new Card(".\\images\\cards\\WormDX.png","怪物","芋虫DX");
+        MazeCanBeSeen[10][3] = new Card(".\\images\\cards\\Miskon.png","怪物","米斯恐");
+        MazeCanBeSeen[11][1] = new Card(".\\images\\cards\\WormDX.png","怪物","芋虫DX");
+        MazeCanBeSeen[12][4] = new Card(".\\images\\cards\\Miskon.png","怪物","米斯恐");
+        MazeCanBeSeen[13][0] = new Card(".\\images\\cards\\Honey.png","怪物","哈尼");
+        MazeCanBeSeen[15][2] = new Card(".\\images\\cards\\Honey.png","怪物","哈尼");
         //传送
         MazeCanBeSeen[4][1] = new Card(".\\images\\cards\\Cave.png","传送","洞窟上层");
         MazeCanBeSeen[7][3] = new Card(".\\images\\cards\\OuterCity.png","传送","城下町");

@@ -4,7 +4,7 @@ import javafx.scene.paint.Color;
 import sample.battle.Battle;
 import sample.battle.Monster;
 import sample.buttons.*;
-import sample.itemPart.characterSystem.Person;
+import sample.characterSystem.Person;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -62,7 +62,6 @@ public class BattlePane extends Pane {
         Image defenseD = new Image("file:.\\images\\defenseD.png");
         Image HPBackground = new Image("file:.\\images\\HPBackground.png");
         Image HPCurrent = new Image("file:.\\images\\HPCurrent.png");
-        //���������backpack
 
 
         settlementInterface1.setImage(settlementInterface);
@@ -81,6 +80,8 @@ public class BattlePane extends Pane {
             System.out.println("conclude Pane");
             this.setVisible(false);
             MazePane.getInstance().setVisible(true);
+            MazePane.getInstance().initHealthForMaze();
+            MainFramePane.getInstance().initHealthForMain();
         });
 
         exp.setLayoutX(540);
@@ -188,7 +189,6 @@ public class BattlePane extends Pane {
         this.getChildren().add(currentHp);
         this.getChildren().add(monsterDamage);
         this.getChildren().add(personDamage);
-//        this.getChildren().add(settlementInterface1);
         settlementInterface2.getChildren().add(settlementInterface1);
         settlementInterface2.getChildren().add(exp);
         settlementInterface2.getChildren().add(current_exp);
@@ -240,7 +240,7 @@ public class BattlePane extends Pane {
             itemList[i] = new ItemPane(i);
             getChildren().add(itemList[i]);
         }
-        refreshall();
+        refreshAll();
         changeToItemPage(0);
     }
 
@@ -291,7 +291,7 @@ public class BattlePane extends Pane {
     }
 
 
-    public void refreshall(){
+    public void refreshAll(){
         Person person = Person.getInstance();
         refreshItems();
         setMaxHp(person.getMaxHealth());
@@ -317,6 +317,6 @@ public class BattlePane extends Pane {
         concludeEvent.setVisible(false);
         thief.setImage(new Image("file:"+monster.getUrl()));
         Battle.getInstance().setMonster(monster);
-        refreshall();
+        refreshAll();
     }
 }

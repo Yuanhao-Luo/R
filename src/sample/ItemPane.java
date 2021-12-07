@@ -4,9 +4,9 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import sample.itemPart.characterSystem.Person;
-import sample.itemPart.itemSystem2.Item;
-import sample.itemPart.itemSystem2.arms;
+import sample.characterSystem.Person;
+import sample.itemSystem.Item;
+import sample.itemSystem.arms;
 
 public class ItemPane extends Pane {
     String url;
@@ -15,7 +15,7 @@ public class ItemPane extends Pane {
     ImageView imageView;
     ImageView hover;
     ImageView bet;
-    ImageView coodownClock;
+    ImageView cooldownClock;
     ImageView cooldown;
     Label currentCooldownLabel;
     int index;
@@ -45,9 +45,9 @@ public class ItemPane extends Pane {
         bet.setY(3);
         getChildren().add(bet);
 
-        coodownClock = new ImageView(new Image("file:.\\images\\cooldown_clock.png"));
-        coodownClock.setVisible(false);
-        getChildren().add(coodownClock);
+        cooldownClock = new ImageView(new Image("file:.\\images\\cooldown_clock.png"));
+        cooldownClock.setVisible(false);
+        getChildren().add(cooldownClock);
 
         cooldown = new ImageView(new Image("file:.\\images\\cooldown.png"));
         cooldown.setVisible(false);
@@ -73,7 +73,7 @@ public class ItemPane extends Pane {
 
 
 
-            System.out.println(index);
+            //System.out.println(index);
             if (isSelectable()){
                 setSelect(!isSelect());
             }
@@ -117,13 +117,13 @@ public class ItemPane extends Pane {
     public void changeCooldown(int currentCooldown){
         if (currentCooldown > 0){
             setSelectable(false);
-            coodownClock.setVisible(true);
+            cooldownClock.setVisible(true);
             cooldown.setVisible(true);
             currentCooldownLabel.setVisible(true);
             currentCooldownLabel.setText(String.valueOf(currentCooldown));
         }else {
             setSelectable(true);
-            coodownClock.setVisible(false);
+            cooldownClock.setVisible(false);
             cooldown.setVisible(false);
             currentCooldownLabel.setVisible(false);
         }

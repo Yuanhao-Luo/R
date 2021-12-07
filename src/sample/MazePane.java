@@ -9,14 +9,20 @@ import javafx.scene.text.Font;
 import sample.MazePart.*;
 import sample.battle.MonsterFactory;
 import sample.buttons.OpenTentButton;
+import sample.characterSystem.Person;
+import sample.itemSystem.simpleFactory;
 
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class MazePane extends Pane {
-    int HPTotal = 120;
-    int HPCurrent = 8;
+    Person person = Person.getInstance();
+    int HPTotal = person.getMaxHealth();
+    int HPCurrent = person.getHealth();
+    int HPCurrentImgLeft = 61;
+    int HPCurrentImgRight = 190;
+
     LogicalMazeOuterCityStore logicalMazeOuterCityStore = LogicalMazeOuterCityStore.getInstance();
     LogicalMazeCaveFloor1Store logicalMazeCaveFloor1Store = LogicalMazeCaveFloor1Store.getInstance();
     LogicalMazeCaveUndergroundStore logicalMazeCaveUndergroundStore = LogicalMazeCaveUndergroundStore.getInstance();
@@ -26,7 +32,6 @@ public class MazePane extends Pane {
     int currentRow = 0;//现在应该在迷宫的第几行 0~15
     int currentCard = 2;//现在是第几列，也就是第几张牌 0~4
     int whichCardSelected = currentCard;
-
 
     OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
     Pane Character = new Pane();
@@ -53,7 +58,6 @@ public class MazePane extends Pane {
     private MazePane(){
         MazeBackground = new ImageView();
         this.getChildren().add(MazeBackground);
-        //setXY(clockImv, 840, -100);
         try {
             MazeBackground.setImage(new Image(new FileInputStream(".\\images\\MazeBackgroundOuterCity.png")));
         } catch (FileNotFoundException e) {
@@ -85,47 +89,12 @@ public class MazePane extends Pane {
         this.getChildren().add(HPBackgroundPane);
         initPane(HPBackgroundPane,-15,15,".\\images\\HPBackground.png");
 
-        int HPCurrentImgLeft = 61;
-        int HPCurrentImgRight = 190;
-        this.getChildren().add(HPCurrentImg);
-        initPane(HPCurrentImg,HPCurrentImgLeft,86,".\\images\\HPCurrent.png");
-        //记录一下血条和血条背景还有几个数字的相对位置差值，方便以后调整
-
-        double ratioOfHP = (double) (HPTotal - HPCurrent) / (double)HPTotal;
-        int HPBlackImgLeft = (int) (HPCurrentImgLeft + (HPCurrentImgRight - HPCurrentImgLeft) * (1 - ratioOfHP));//这个left是左边的意思不是剩余的意思
-        int HPBlackImgWidth = (int)((HPCurrentImgRight - HPCurrentImgLeft) * ratioOfHP) + 1;
-        this.getChildren().add(HPBlackImg);
-        initPaneWidthHeight(HPBlackImg,HPBlackImgLeft,86,".\\images\\black.png",HPBlackImgWidth,2);
-        //调整位置的时候要特别注意上面的几个值
-
-        this.getChildren().add(HPCurrentLabel);
-        HPCurrentLabel.setFont(Font.font("Arial",40));
-        if(HPCurrent >= 100){
-            initLabel(HPCurrentLabel,90,40);
-        }
-        else if(HPCurrent <= 9){
-            initLabel(HPCurrentLabel,110,40);
-        }
-        else{
-            initLabel(HPCurrentLabel,100,40);
-        }
-
-
-        if (HPCurrent < HPTotal && HPCurrent > HPTotal * 0.3){
-            HPCurrentLabel.setTextFill(Color.web("#FFFFFF"));
-        }
-        else if (HPCurrent < HPTotal * 0.3){
-            HPCurrentLabel.setTextFill(Color.web("red"));
-        }
-        else{
-            HPCurrentLabel.setTextFill(Color.web("yellow"));
-        }
+        initHealthForMaze();
 
         this.getChildren().add(HPTotalLabel);
-        initLabel(HPTotalLabel,95,93);
-        HPTotalLabel.setFont(Font.font("Arial",28));
-        HPTotalLabel.setTextFill(Color.web("#000000"));
-
+        this.getChildren().add(HPCurrentLabel);
+        this.getChildren().add(HPCurrentImg);
+        this.getChildren().add(HPBlackImg);
 
         //这主要是选定好一个迷宫，因为传送走之后会换迷宫的,换迷宫直接换这两个就好了
         logicalMaze = logicalMazeOuterCityStore.logicalMaze;
@@ -154,6 +123,7 @@ public class MazePane extends Pane {
             setXY(currentMaze[2][j],160*j + 120, 300);
             whichCardSelected = currentCard;
         }
+        initHealthForMaze();
     }
 
 
@@ -165,6 +135,7 @@ public class MazePane extends Pane {
         if (currentCard<4){//他会给牌加一些函数，然后根据牌的类型决定牌能不能走
             initRightStep(whichAction(currentMaze[2][currentCard+1]));
         }
+
     }
 
 
@@ -320,7 +291,7 @@ public class MazePane extends Pane {
     }
 
 
-    //1，他执行whichAction（），然后发现了这三张牌中有一张是背面卡；给这张背面卡上处理
+    //1，他执行whichAction()，然后发现了这三张牌中有一张是背面卡；给这张背面卡上处理
     public boolean whichAction(CardPane cardPane){
         switch (cardPane.getCard().getType()){
             case "空白卡片":
@@ -375,7 +346,9 @@ public class MazePane extends Pane {
         cardPane.getChildren().add(pane4);
         pane4.setOnMouseClicked(e->{
             //扣血
-
+            double healthLost = person.getMaxHealth() * 0.1;
+            int newHealth = (int) (person.getHealth()-healthLost);
+            person.setHealth(newHealth);
         });
     }
 
@@ -386,7 +359,9 @@ public class MazePane extends Pane {
         cardPane.getChildren().add(pane5);
         pane5.setOnMouseClicked(e->{
             //宝箱
-
+            simpleFactory s = new simpleFactory();
+            Person p = Person.getInstance();
+            p.getItemList().add(s.buildBoomerang());
         });
     }
 
@@ -396,9 +371,34 @@ public class MazePane extends Pane {
         Pane pane6 = paneForCardCreater();
         cardPane.getChildren().add(pane6);
         pane6.setOnMouseClicked(e->{
-            BattlePane battlePane = BattlePane.getInstance();
             MonsterFactory mf = new MonsterFactory();
-            battlePane.startBattle(mf.buildPurin());
+            BattlePane battlePane = BattlePane.getInstance();
+            switch (cardPane.getCard().getContent()){
+                case "果冻":
+                    battlePane.startBattle(mf.buildPurin());
+                    break;
+                case "盗贼":
+                    battlePane.startBattle(mf.buildPurin());
+                    break;
+                case "红盗贼":
+                    battlePane.startBattle(mf.buildPurin());
+                    break;
+                case "芋虫DX":
+                    battlePane.startBattle(mf.buildPurin());
+                    break;
+                case "狐狸":
+                    battlePane.startBattle(mf.buildPurin());
+                    break;
+                case "米斯恐":
+                    battlePane.startBattle(mf.buildPurin());
+                    break;
+                case "哈尼":
+                    battlePane.startBattle(mf.buildPurin());
+                    break;
+                case "噪音蟾蜍":
+                    battlePane.startBattle(mf.buildPurin());
+                    break;
+            }
             battlePane.setVisible(true);
             MazePane.getInstance().setVisible(false);
             initCharacter(currentCard);
@@ -417,7 +417,7 @@ public class MazePane extends Pane {
         pane7.setOnMouseClicked(e->{
             switch (cardPane.getCard().getContent()){
                 case "边境"://去边境，第一张地图
-                    ImageProcess.changeImage(MazeBackground,".\\images\\MazeBackgroundCave.png");
+                    ImageProcess.changeImage(MazeBackground,".\\images\\MazeBackgroundOuterCity.png");
                     logicalMaze = logicalMazeOuterCityStore.logicalMaze;
                     MazeCanBeSeen = logicalMazeOuterCityStore.MazeCanBeSeen;
                     jumpCard7();
@@ -435,7 +435,7 @@ public class MazePane extends Pane {
                     jumpCard7();
                     break;
                 case "城下町"://回到主界面
-                    ImageProcess.changeImage(MazeBackground,".\\images\\MazeBackgroundCave.png");
+                    ImageProcess.changeImage(MazeBackground,".\\images\\MazeBackgroundOuterCity.png");
                     logicalMaze = logicalMazeOuterCityStore.logicalMaze;
                     MazeCanBeSeen = logicalMazeOuterCityStore.MazeCanBeSeen;
                     currentCard = 2;
@@ -471,6 +471,44 @@ public class MazePane extends Pane {
         return pane;
     }
 
+
+    public void initHealthForMaze(){
+        //相当于重置血量
+        HPTotal = person.getMaxHealth();
+        HPCurrent = person.getHealth();
+        this.HPCurrentLabel.setText("" + HPCurrent);
+        this.HPTotalLabel.setText(""+HPTotal);
+
+        initLabel(HPTotalLabel,95,93);
+        HPTotalLabel.setFont(Font.font("Arial",28));
+        HPTotalLabel.setTextFill(Color.web("#000000"));
+        System.out.println(" gjlfjg");
+
+        HPCurrentLabel.setFont(Font.font("Arial",40));
+        if(HPCurrent >= 100){
+            initLabel(HPCurrentLabel,90,40);
+        }else if(HPCurrent <= 9){
+            initLabel(HPCurrentLabel,110,40);
+        }else{
+            initLabel(HPCurrentLabel,100,40);
+        }
+
+        if (HPCurrent < HPTotal && HPCurrent > HPTotal * 0.3){
+            HPCurrentLabel.setTextFill(Color.web("#FFFFFF"));
+        }else if (HPCurrent < HPTotal * 0.3){
+            HPCurrentLabel.setTextFill(Color.web("red"));
+        }else{
+            HPCurrentLabel.setTextFill(Color.web("yellow"));
+        }
+
+        initPane(HPCurrentImg,HPCurrentImgLeft,86,".\\images\\HPCurrent.png");
+        //记录一下血条和血条背景还有几个数字的相对位置差值，方便以后调整
+        double ratioOfHP = (double) (HPTotal - HPCurrent) / (double)HPTotal;
+        int HPBlackImgLeft = (int) (HPCurrentImgLeft + (HPCurrentImgRight - HPCurrentImgLeft) * (1 - ratioOfHP));//这个left是左边的意思不是剩余的意思
+        int HPBlackImgWidth = (int)((HPCurrentImgRight - HPCurrentImgLeft) * ratioOfHP) + 1;
+        initPaneWidthHeight(HPBlackImg,HPBlackImgLeft,86,".\\images\\black.png",HPBlackImgWidth,2);
+        //调整位置的时候要特别注意上面的几个值
+    }
 
     public void initPane(Pane p,int x, int y,String url){
         ImageProcess.addImage(p, url);

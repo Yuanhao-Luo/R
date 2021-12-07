@@ -1,7 +1,7 @@
 package sample;
 
 import sample.buttons.GeneralButton;
-import sample.itemPart.characterSystem.Person;
+import sample.characterSystem.Person;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;

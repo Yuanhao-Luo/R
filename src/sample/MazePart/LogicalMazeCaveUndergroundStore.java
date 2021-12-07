@@ -36,18 +36,18 @@ public class LogicalMazeCaveUndergroundStore{
         logicalMaze[1][4] = new Card(".\\images\\cards\\Treasure.png","宝箱","0");
 
         //怪物
-        logicalMaze[0][1] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        logicalMaze[1][1] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        logicalMaze[2][4] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        logicalMaze[4][0] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        logicalMaze[5][4] = new Card(".\\images\\cards\\Frog.png","怪物","0");
-        logicalMaze[6][2] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        logicalMaze[7][2] = new Card(".\\images\\cards\\Frog.png","怪物","0");
+        logicalMaze[0][1] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        logicalMaze[1][1] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        logicalMaze[2][4] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        logicalMaze[4][0] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        logicalMaze[5][4] = new Card(".\\images\\cards\\Frog.png","怪物","噪音蟾蜍");
+        logicalMaze[6][2] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        logicalMaze[7][2] = new Card(".\\images\\cards\\Frog.png","怪物","噪音蟾蜍");
 
         //传送,这个地方有需要修改的，图片待定
-        logicalMaze[3][2] = new Card(".\\images\\cards\\Cave.png","传送","团长室");
-        logicalMaze[5][1] = new Card(".\\images\\cards\\Cave.png","传送","副团长室");
-        logicalMaze[7][4] = new Card(".\\images\\cards\\Cave.png","传送","洞窟上层");
+        logicalMaze[3][2] = new Card(".\\images\\cards\\HeadRoom.png","传送","团长室");
+        logicalMaze[5][1] = new Card(".\\images\\cards\\DeputyHeadRoom.png","传送","副团长室");
+        logicalMaze[7][0] = new Card(".\\images\\cards\\F1ToUnderground.png","传送","洞窟上层");
 
 
 
@@ -66,17 +66,17 @@ public class LogicalMazeCaveUndergroundStore{
         //这是宝箱卡,这个地方本来是葡萄酒，这里准备以宝箱的形式出现
         MazeCanBeSeen[1][4] = new Card(".\\images\\cards\\Treasure.png","宝箱","0");
         //怪物
-        MazeCanBeSeen[0][1] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        MazeCanBeSeen[1][1] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        MazeCanBeSeen[2][4] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        MazeCanBeSeen[4][0] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        MazeCanBeSeen[5][4] = new Card(".\\images\\cards\\Frog.png","怪物","0");
-        MazeCanBeSeen[6][2] = new Card(".\\images\\cards\\RedThief.png","怪物","0");
-        MazeCanBeSeen[7][2] = new Card(".\\images\\cards\\Frog.png","怪物","0");
+        MazeCanBeSeen[0][1] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        MazeCanBeSeen[1][1] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        MazeCanBeSeen[2][4] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        MazeCanBeSeen[4][0] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        MazeCanBeSeen[5][4] = new Card(".\\images\\cards\\Frog.png","怪物","噪音蟾蜍");
+        MazeCanBeSeen[6][2] = new Card(".\\images\\cards\\RedThief.png","怪物","红盗贼");
+        MazeCanBeSeen[7][2] = new Card(".\\images\\cards\\Frog.png","怪物","噪音蟾蜍");
         //传送,这个地方有需要修改的，图片待定
-        MazeCanBeSeen[3][2] = new Card(".\\images\\cards\\Cave.png","传送","团长室");
-        MazeCanBeSeen[5][1] = new Card(".\\images\\cards\\Cave.png","传送","副团长室");
-        MazeCanBeSeen[7][4] = new Card(".\\images\\cards\\Cave.png","传送","洞窟上层");
+        MazeCanBeSeen[3][2] = new Card(".\\images\\cards\\HeadRoom.png","传送","团长室");
+        MazeCanBeSeen[5][1] = new Card(".\\images\\cards\\DeputyHeadRoom.png","传送","副团长室");
+        MazeCanBeSeen[7][0] = new Card(".\\images\\cards\\F1ToUnderground.png","传送","洞窟上层");
 
         //背面
         MazeCanBeSeen[0][1] = new Card(".\\images\\cards\\BackOfTheCard.png","背面","0");

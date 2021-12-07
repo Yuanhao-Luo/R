@@ -1,4 +1,4 @@
-package sample.itemPart.itemSystem2;
+package sample.itemSystem;
 
 public class test {
     //测试一下这个super

@@ -38,15 +38,16 @@ public class LogicalMazeCaveFloor1Store{
 
 
         //怪物
-        logicalMaze[0][2] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        logicalMaze[2][1] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        logicalMaze[2][3] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        logicalMaze[2][4] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        logicalMaze[5][1] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        logicalMaze[6][2] = new Card(".\\images\\cards\\Thief.png","怪物","0");
+        logicalMaze[0][2] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        logicalMaze[2][1] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        logicalMaze[2][3] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        logicalMaze[2][4] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        logicalMaze[5][1] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        logicalMaze[6][2] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
 
         //传送,这个地方有需要修改的，机制，图片都待定
-        logicalMaze[4][0] = new Card(".\\images\\cards\\Cave.png","传送","下层");
+        logicalMaze[4][0] = new Card(".\\images\\cards\\F1ToUnderground.png","传送","下层");
+        logicalMaze[7][1] = new Card(".\\images\\cards\\F1ToOuterCity.png","传送","边境");
 
 
         //这些是不能通行的障碍卡部分
@@ -64,15 +65,15 @@ public class LogicalMazeCaveFloor1Store{
         //这是宝箱卡
         MazeCanBeSeen[5][2] = new Card(".\\images\\cards\\Treasure.png","宝箱","0");
         //怪物
-        MazeCanBeSeen[0][2] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        MazeCanBeSeen[2][1] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        MazeCanBeSeen[2][3] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        MazeCanBeSeen[2][4] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        MazeCanBeSeen[5][1] = new Card(".\\images\\cards\\Thief.png","怪物","0");
-        MazeCanBeSeen[6][2] = new Card(".\\images\\cards\\Thief.png","怪物","0");
+        MazeCanBeSeen[0][2] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        MazeCanBeSeen[2][1] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        MazeCanBeSeen[2][3] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        MazeCanBeSeen[2][4] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        MazeCanBeSeen[5][1] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
+        MazeCanBeSeen[6][2] = new Card(".\\images\\cards\\Thief.png","怪物","盗贼");
         //传送,这个地方有需要修改的，机制，图片都待定
-        MazeCanBeSeen[4][0] = new Card(".\\images\\cards\\Cave.png","传送","下层");
-
+        MazeCanBeSeen[4][0] = new Card(".\\images\\cards\\F1ToUnderground.png","传送","下层");
+        MazeCanBeSeen[7][1] = new Card(".\\images\\cards\\F1ToOuterCity.png","传送","边境");
         //背面
         MazeCanBeSeen[0][0] = new Card(".\\images\\cards\\BackOfTheCard.png","背面","0");
         MazeCanBeSeen[0][3] = new Card(".\\images\\cards\\BackOfTheCard.png","背面","0");
