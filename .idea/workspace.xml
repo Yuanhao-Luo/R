@@ -4,47 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="不让pull">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__2_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__3_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__4_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__5_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__6_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__7_.xml" beforeDir="false" />
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="931">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R.iml" beforeDir="false" afterPath="$PROJECT_DIR$/R.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Event/EnterPlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Event/EnterPlace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveFloor1Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveFloor1Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveUndergroundStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveUndergroundStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeOuterCityStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeOuterCityStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +30,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -107,7 +67,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../大三上/rance1/javafx-sdk-11.0.2" />
@@ -267,13 +226,7 @@
       <workItem from="1638517612696" duration="616000" />
       <workItem from="1638605206518" duration="257000" />
       <workItem from="1638921771384" duration="829000" />
-    </task>
-    <task id="LOCAL-00020" summary="improve the way to locate the dot at the colock">
-      <created>1634197732194</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1634197732194</updated>
+      <workItem from="1638930136893" duration="1178000" />
     </task>
     <task id="LOCAL-00021" summary="improve the way to locate the dot at the colock">
       <created>1634368609512</created>
@@ -611,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638921910640</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="931">
+      <created>1638927147222</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1638927147222</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +616,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="only xy left" />
     <MESSAGE value="对medicine以及itemlist进行的相关的调整" />
     <MESSAGE value="完善物品系统" />
     <MESSAGE value="gui中的物品栏初步实现" />
@@ -681,6 +640,7 @@
     <MESSAGE value="实现的全选择和取消，另外给jpy发布了任务" />
     <MESSAGE value="尝试了一下xml" />
     <MESSAGE value="不让pull" />
-    <option name="LAST_COMMIT_MESSAGE" value="不让pull" />
+    <MESSAGE value="931" />
+    <option name="LAST_COMMIT_MESSAGE" value="931" />
   </component>
 </project>
