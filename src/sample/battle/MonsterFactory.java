@@ -1,7 +1,7 @@
 package sample.battle;
 
 public class MonsterFactory {
-    //没加图片
+    //像以下这个方法，为每个怪物都写一个方法，怪物的信息在设计档案里有
     public Monster buildPurin(){
         String b1a_url = "";
         Attack b1a = new Attack(b1a_url, 20);

@@ -6,7 +6,7 @@ import sample.BattlePane;
 import sample.MainFramePane;
 import sample.TentPane;
 import sample.buttons.GeneralButton;
-import sample.itemPart.characterSystem.Person;
+import sample.characterSystem.Person;
 
 public class RunAwayButton extends TextButton {
 

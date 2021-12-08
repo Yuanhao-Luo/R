@@ -5,7 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="不让pull">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveFloor1Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveFloor1Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveUndergroundStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveUndergroundStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeOuterCityStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeOuterCityStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TimeSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/TimeSingleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/flagControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/FireFly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/HuXiHuHu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/ItemList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/PassiveEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/Useable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/arms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/combat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/constant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/manyTimesItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/medicine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/oneTimeItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/ordinaryItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/simpleFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/storeExample/mainframe1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +122,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work2021.9/Rance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../plugin/javafx-sdk-11.0.2/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -227,13 +279,7 @@
       <workItem from="1638491122046" duration="2223000" />
       <workItem from="1638517612696" duration="616000" />
       <workItem from="1638605206518" duration="257000" />
-    </task>
-    <task id="LOCAL-00019" summary="add button images and vocabulary">
-      <created>1634196722393</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1634196722393</updated>
+      <workItem from="1638921771384" duration="829000" />
     </task>
     <task id="LOCAL-00020" summary="improve the way to locate the dot at the colock">
       <created>1634197732194</created>
@@ -571,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638605262011</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="不让pull">
+      <created>1638921910640</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1638921910640</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
