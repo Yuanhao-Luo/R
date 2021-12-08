@@ -24,7 +24,8 @@ public class EnterPlace extends PassOneTime {
                 if (!homeofseaPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     homeofseaPane.setVisible(true);
                 };
-                homeofseaPane.dialogBegin(homeofseaPane.getPlaceName(), new String[]{"我来到了海之家","欢迎光临"},1);
+//                homeofseaPane.dialogBegin(homeofseaPane.getPlaceName(), new String[]{"我来到了海之家","欢迎光临"},1);
+                homeofseaPane.dialogBegin(homeofseaPane.getPlaceName(), new Dialogue("123").getSentence(),new Dialogue("123").getFirst());
                 break;
             case "weapons":
                 WeaponsPane weaponsPane = MainFramePane.getInstance().weaponsPane;
