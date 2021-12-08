@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="不让pull">
-      <change afterPath="$PROJECT_DIR$/src/sample/communicationStorage/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_04____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_04____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_06____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_06____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/___.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/___.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/SelectAllButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +80,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
-  <component name="RunManager" selected="Application.test (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="R" />
@@ -153,8 +142,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test (1)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -237,13 +226,7 @@
       <workItem from="1638455842725" duration="950000" />
       <workItem from="1638491122046" duration="2223000" />
       <workItem from="1638517612696" duration="616000" />
-    </task>
-    <task id="LOCAL-00018" summary="t">
-      <created>1634116840419</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1634116840419</updated>
+      <workItem from="1638605206518" duration="257000" />
     </task>
     <task id="LOCAL-00019" summary="add button images and vocabulary">
       <created>1634196722393</created>
@@ -581,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638455940335</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="不让pull">
+      <created>1638605262011</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1638605262011</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
