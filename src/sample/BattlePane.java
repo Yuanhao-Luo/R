@@ -1,7 +1,10 @@
 package sample;
 
+import javafx.scene.paint.Color;
+import sample.battle.Battle;
+import sample.battle.Monster;
 import sample.buttons.*;
-import sample.itemPart.characterSystem.Person;
+import sample.characterSystem.Person;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -16,6 +19,8 @@ public class BattlePane extends Pane {
     GeneralButton nextPage;
     GeneralButton prePage;
     ImageView battleBackground1 = new ImageView();
+    ImageView settlementInterface1 = new ImageView();
+    Pane settlementInterface2 = new Pane();
     ImageView battledRance2 = new ImageView();
     ImageView tentPicture3 = new ImageView();
     ImageView thief = new ImageView();
@@ -25,6 +30,14 @@ public class BattlePane extends Pane {
     double hpCurrentWidth;
     Label hp = new Label("160");
     Label currentHp = new Label("125");
+    public Label monsterDamage;
+    public Label personDamage;
+    Pane concludeEvent;
+
+    Label exp = new Label("10");
+    Label current_exp = new Label("94");
+    Label gold = new Label("9");
+    Label current_gold = new Label("177");
 
     private static BattlePane battlePane = new BattlePane();
 
@@ -32,9 +45,13 @@ public class BattlePane extends Pane {
 
     private BattlePane(){
         //冷却图标
+        Image wait = new Image("file:.\\images\\wait.png");
         //总结页面
+        Image settlementInterface = new Image("file:.\\images\\settlementInterface.png");
         //无法存放道具
+        Image canNotUsePicture = new Image("file:.\\images\\CanNotUse.png");
         //战斗伤害
+        Image damage = new Image("file:.\\images\\damage.png");
         //战斗过程页面
 
         Person p = Person.getInstance();
@@ -45,8 +62,43 @@ public class BattlePane extends Pane {
         Image defenseD = new Image("file:.\\images\\defenseD.png");
         Image HPBackground = new Image("file:.\\images\\HPBackground.png");
         Image HPCurrent = new Image("file:.\\images\\HPCurrent.png");
-        //在这里面放backpack
 
+
+        settlementInterface1.setImage(settlementInterface);
+        settlementInterface1.setFitHeight(settlementInterface.getHeight());
+        settlementInterface1.setFitWidth(settlementInterface.getWidth());
+        int settlementInterfaceLeft = 80;
+        int settlementInterfaceTop = -340;
+        settlementInterface1.setX(settlementInterfaceLeft);
+        settlementInterface1.setY(settlementInterfaceTop);
+
+        concludeEvent = new Pane();
+        concludeEvent.setPrefHeight(808);
+        concludeEvent.setPrefWidth(1040);
+        concludeEvent.setVisible(false);
+        concludeEvent.setOnMouseReleased(e->{
+            System.out.println("conclude Pane");
+            this.setVisible(false);
+            MazePane.getInstance().setVisible(true);
+            MazePane.getInstance().initHealthForMaze();
+            MainFramePane.getInstance().initHealthForMain();
+        });
+
+        exp.setLayoutX(540);
+        exp.setLayoutY(313);
+        exp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+
+        current_exp.setLayoutX(540);
+        current_exp.setLayoutY(375);
+        current_exp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+
+        gold.setLayoutX(860);
+        gold.setLayoutY(313);
+        gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+
+        current_gold.setLayoutX(804);
+        current_gold.setLayoutY(375);
+        current_gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
         battleBackground1.setImage(battleBackground);
         battleBackground1.setFitHeight(battleBackground.getHeight());
@@ -73,9 +125,9 @@ public class BattlePane extends Pane {
         tentPicture3.setY(tentPictureTop);
 
         thief.setImage(thief1);
-        thief.setFitHeight(thief1.getHeight());
+//        thief.setFitHeight(thief1.getHeight());
         int thiefLeft = 600;
-        int thiefTop = 30;
+        int thiefTop = 80;
         thief.setX(thiefLeft);
         thief.setY(thiefTop);
 
@@ -111,6 +163,19 @@ public class BattlePane extends Pane {
         currentHp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  35));
         setCurrentHp(Integer.parseInt(currentHp.getText()));
 
+        monsterDamage = new Label();
+        monsterDamage.setVisible(false);
+        monsterDamage.setLayoutX(215);
+        monsterDamage.setLayoutY(360);
+        monsterDamage.setFont(new Font(45));
+
+        personDamage = new Label();
+        personDamage.setVisible(false);
+        personDamage.setLayoutX(720);
+        personDamage.setLayoutY(160);
+        personDamage.setFont(new Font(45));
+        personDamage.setTextFill(Color.AZURE);
+
 
         this.getChildren().add(battleBackground1);
         this.getChildren().add(battledRance2);
@@ -122,9 +187,21 @@ public class BattlePane extends Pane {
 
         this.getChildren().add(hp);
         this.getChildren().add(currentHp);
+        this.getChildren().add(monsterDamage);
+        this.getChildren().add(personDamage);
+        settlementInterface2.getChildren().add(settlementInterface1);
+        settlementInterface2.getChildren().add(exp);
+        settlementInterface2.getChildren().add(current_exp);
+        settlementInterface2.getChildren().add(gold);
+        settlementInterface2.getChildren().add(current_gold);
+        this.getChildren().add(settlementInterface2);
 
-        RunAwayButton runAwayButton = new RunAwayButton("快点回去城下町吧","200",10,720);
-        this.getChildren().add(runAwayButton);
+        settlementInterface2.setVisible(false);
+
+        //jpy
+        //这个closetentbutton改掉，这战斗页面哪来的closetent？
+        CloseTentButton closeTentButton = new CloseTentButton("   逃往城下町","200",10,720);
+        this.getChildren().add(closeTentButton);
 
         StartBattleButton startBattleButton = new StartBattleButton("    战斗开始！","200",350,520);
         this.getChildren().add(startBattleButton);
@@ -134,36 +211,36 @@ public class BattlePane extends Pane {
 
         CancelAllButton cancelAllButton = new CancelAllButton("   全选择解除","200",800,520);
         this.getChildren().add(cancelAllButton);
+        this.getChildren().add(concludeEvent);
 
-        //以下是物品系统加的东西
-        //bet的位置大小还要调一下
+
+
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
         //图片还没有放进去
         nextPage.setOnMouseReleased(e->{
-            if (getItemPage() != 3){
+            if (getItemPage() != 2){
                 setItemPage(getItemPage()+1);
             }
         });
         getChildren().add(nextPage);
-        nextPage.setLayoutX(843);//需要调整位置
+        nextPage.setLayoutX(843);
         nextPage.setLayoutY(578);
 
         prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
-        //图片还没有放进去
         prePage.setOnMouseReleased(e->{
             if (getItemPage() != 0){
                 setItemPage(getItemPage()-1);
             }
         });
         getChildren().add(prePage);
-        prePage.setLayoutX(131);//需要调整位置
+        prePage.setLayoutX(131);
         prePage.setLayoutY(578);
 
         for (int i = 0; i < itemList.length; i++) {
             itemList[i] = new ItemPane(i);
             getChildren().add(itemList[i]);
         }
-        refreshItems();
+        refreshAll();
         changeToItemPage(0);
     }
 
@@ -171,7 +248,7 @@ public class BattlePane extends Pane {
         return battlePane;
     }
 
-    public Pane[] getItemList() {
+    public ItemPane[] getItemList() {
         return itemList;
     }
 
@@ -209,7 +286,37 @@ public class BattlePane extends Pane {
         HPCurrent5.setFitWidth(hpCurrentWidth * x);
     }
 
-    public void concludBattle(){
+    public void setMaxHp(int maxHp){
+        hp.setText(String.valueOf(maxHp));
+    }
 
+
+    public void refreshAll(){
+        Person person = Person.getInstance();
+        refreshItems();
+        setMaxHp(person.getMaxHealth());
+        int hp = person.getHealth();
+        setCurrentHp(hp);
+    }
+
+    public void concludBattle(){
+        Person person = Person.getInstance();
+        Battle battle = Battle.getInstance();
+        exp.setText(String.valueOf(person.getExp()));
+        current_exp.setText(String.valueOf(battle.getMonster().getExp()));
+        gold.setText(String.valueOf(person.getMoney()));
+        current_gold.setText(String.valueOf(battle.getMonster().getMoney()));
+        settlementInterface2.setVisible(true);
+        concludeEvent.setVisible(true);
+    }
+
+    public void startBattle(Monster monster){
+        settlementInterface2.setVisible(false);
+        monsterDamage.setVisible(false);
+        personDamage.setVisible(false);
+        concludeEvent.setVisible(false);
+        thief.setImage(new Image("file:"+monster.getUrl()));
+        Battle.getInstance().setMonster(monster);
+        refreshAll();
     }
 }

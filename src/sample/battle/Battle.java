@@ -1,8 +1,8 @@
 package sample.battle;
 
-import sample.itemPart.characterSystem.Person;
-import sample.itemPart.itemSystem2.ItemList;
-import sample.itemPart.itemSystem2.arms;
+import sample.characterSystem.Person;
+import sample.itemSystem.ItemList;
+import sample.itemSystem.arms;
 
 import java.util.ArrayList;
 import java.util.Random;

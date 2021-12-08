@@ -1,11 +1,7 @@
 package sample.buttons;
 
 
-import javafx.scene.control.Label;
-import javafx.scene.text.Font;
 import sample.BattlePane;
-import sample.MainFramePane;
-import sample.TentPane;
 import sample.battle.Battle;
 
 public class StartBattleButton extends TextButton {
@@ -35,7 +31,7 @@ public class StartBattleButton extends TextButton {
 
             }
 
-            battlePane.refreshall();
+            battlePane.refreshAll();
         });
     }
 }

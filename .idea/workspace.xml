@@ -4,15 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="1624">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/BattlePane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/StartBattleButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/TentPane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/vocabulary (2).docx" beforeDir="false" />
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="不让pull">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/production/R/sample/sample.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveFloor1Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveFloor1Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveUndergroundStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveUndergroundStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeOuterCityStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeOuterCityStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TimeSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/TimeSingleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/characterSystem/flagControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/FireFly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/HuXiHuHu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/ItemList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/PassiveEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/Useable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/arms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/combat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/constant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/manyTimesItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/medicine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/oneTimeItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/ordinaryItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/simpleFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/itemSystem2/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemPart/storeExample/mainframe1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +68,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="XML" />
         <option value="Class" />
       </list>
     </option>
@@ -30,11 +76,12 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="BattleSystemLJ" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -63,6 +110,7 @@
   <component name="ProjectId" id="1zGCFG1goG3u1wl8eWHYJlIbzB0" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="更新" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectViewState">
@@ -74,21 +122,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../大三上/rance1/R2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../plugin/javafx-sdk-11.0.2/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="应用程序.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="R" />
-      <option name="VM_PARAMETERS" value="--module-path D:\大三上\rance1\javafx-sdk-11.0.2\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path E:\programming\plugin\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -112,6 +160,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.communicationStorage.test" />
+      <module name="R" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.communicationStorage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.itemPart.itemSystem2.test" />
       <module name="R" />
@@ -126,13 +187,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.Main" />
-      <item itemvalue="应用程序.mainframe1" />
-      <item itemvalue="应用程序.test" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.mainframe1" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.test (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -210,36 +273,13 @@
       <workItem from="1638317120052" duration="5512000" />
       <workItem from="1638330309430" duration="11173000" />
       <workItem from="1638426308097" duration="349000" />
-      <workItem from="1638426941366" duration="889000" />
-      <workItem from="1638922892046" duration="849000" />
-    </task>
-    <task id="LOCAL-00016" summary="t">
-      <created>1634105451186</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1634105451186</updated>
-    </task>
-    <task id="LOCAL-00017" summary="t">
-      <created>1634105522796</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1634105522796</updated>
-    </task>
-    <task id="LOCAL-00018" summary="t">
-      <created>1634116840419</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1634116840419</updated>
-    </task>
-    <task id="LOCAL-00019" summary="add button images and vocabulary">
-      <created>1634196722393</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1634196722393</updated>
+      <workItem from="1638426941366" duration="2228000" />
+      <workItem from="1638430795832" duration="1508000" />
+      <workItem from="1638455842725" duration="950000" />
+      <workItem from="1638491122046" duration="2223000" />
+      <workItem from="1638517612696" duration="616000" />
+      <workItem from="1638605206518" duration="257000" />
+      <workItem from="1638921771384" duration="829000" />
     </task>
     <task id="LOCAL-00020" summary="improve the way to locate the dot at the colock">
       <created>1634197732194</created>
@@ -542,21 +582,49 @@
       <option name="project" value="LOCAL" />
       <updated>1638341625900</updated>
     </task>
-    <task id="LOCAL-00063" summary="1624">
-      <created>1638511250912</created>
+    <task id="LOCAL-00063" summary="实现的全选择和取消，另外给jpy发布了任务">
+      <created>1638428009013</created>
       <option name="number" value="00063" />
       <option name="presentableId" value="LOCAL-00063" />
       <option name="project" value="LOCAL" />
-      <updated>1638511250912</updated>
+      <updated>1638428009014</updated>
     </task>
-    <task id="LOCAL-00064" summary="1624">
-      <created>1638511254633</created>
+    <task id="LOCAL-00064" summary="尝试了一下xml">
+      <created>1638431240663</created>
       <option name="number" value="00064" />
       <option name="presentableId" value="LOCAL-00064" />
       <option name="project" value="LOCAL" />
-      <updated>1638511254633</updated>
+      <updated>1638431240663</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="不让pull">
+      <created>1638455900951</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1638455900951</updated>
+    </task>
+    <task id="LOCAL-00066" summary="不让pull">
+      <created>1638455940335</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1638455940335</updated>
+    </task>
+    <task id="LOCAL-00067" summary="不让pull">
+      <created>1638605262011</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1638605262011</updated>
+    </task>
+    <task id="LOCAL-00068" summary="不让pull">
+      <created>1638921910640</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1638921910640</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,12 +665,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="rebuild&#10;change adding ImageView to set Images&#10;other many things" />
-    <MESSAGE value="rebuild TentPane OpenTentButton CloseTentButton clock in mainframepane" />
     <MESSAGE value="only xy left" />
     <MESSAGE value="对medicine以及itemlist进行的相关的调整" />
     <MESSAGE value="完善物品系统" />
@@ -625,7 +690,9 @@
     <MESSAGE value="加了怪物图片" />
     <MESSAGE value="结算页面事件" />
     <MESSAGE value="修好的fyk的bug&#10;范义琨因此与罗元昊签订不平等条约：&#10;   （1）范义琨每日必须观看1小时的vtuber&#10;   （2）此条约生效至2022年3月1日" />
-    <MESSAGE value="1624" />
-    <option name="LAST_COMMIT_MESSAGE" value="1624" />
+    <MESSAGE value="实现的全选择和取消，另外给jpy发布了任务" />
+    <MESSAGE value="尝试了一下xml" />
+    <MESSAGE value="不让pull" />
+    <option name="LAST_COMMIT_MESSAGE" value="不让pull" />
   </component>
 </project>

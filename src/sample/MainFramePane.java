@@ -8,9 +8,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import sample.Event.EnterPlace;
 import sample.Event.KillTime;
-import sample.Event.PassOneTime;
 import sample.buttons.MapButton;
 import sample.buttons.OpenTentButton;
+import sample.characterSystem.Person;
 import sample.specificPlace.*;
 
 import java.io.FileInputStream;
@@ -25,9 +25,11 @@ public class MainFramePane extends Pane {
     boolean[] WSAvailable = {false,false,false,true,true,true,true,true,false};
     boolean[] killTimeAvailable = {true,true,true,true,true,true,true,true,false};
     //tem
-    boolean OpenTentAvailable = true;
-    int HPTotal = 120;
-    int HPCurrent = 8;
+    Person person = Person.getInstance();
+    int HPTotal = person.getMaxHealth();
+    int HPCurrent = person.getHealth();
+    int HPCurrentImgLeft = 61;
+    int HPCurrentImgRight = 190;
 
     MapButton bBistro = new MapButton(".\\images\\bistroButton_hover.png",".\\images\\bistroButton_preparing.png",".\\images\\bistroButton_pressable.png",".\\images\\bistroButton_pressed.png",bistroAvailable,"bistro");
     MapButton bSea = new MapButton(".\\images\\homeofseaButton_hover.png",".\\images\\homeofseaButton_preparing.png",".\\images\\homeofseaButton_pressable.png",".\\images\\homeofseaButton_pressed.png",seaAvailable,"homeofsea");
@@ -45,6 +47,7 @@ public class MainFramePane extends Pane {
     ImageView CI = new ImageView();
     Pane HPBlackImg = new Pane();
     Label HPCurrentLabel = new Label("" + HPCurrent);
+    Label HPTotalLabel = new Label("" + HPTotal);
 
     public TentPane tentPane = TentPane.getInstance();
     public HomeofseaPane homeofseaPane = new HomeofseaPane();
@@ -53,8 +56,6 @@ public class MainFramePane extends Pane {
     public LevelPane levelPane = new LevelPane();
     public BistroPane bistroPane = new BistroPane();
     public MazePane mazePane = MazePane.getInstance();
-
-    Label HPTotalLabel = new Label("" + HPTotal);
     ClockStatus[] ClS = new ClockStatus[9];
 
     private static MainFramePane m = new MainFramePane();
@@ -93,7 +94,7 @@ public class MainFramePane extends Pane {
         this.getChildren().add(bKillTime);
         setXY(bKillTime, 580, 60);
         bKillTime.setOnMouseClicked(new KillTime());
-//
+
         this.getChildren().add(bOpenTent);
 
         this.getChildren().add(clockImv);
@@ -119,54 +120,20 @@ public class MainFramePane extends Pane {
         this.getChildren().add(HPBackgroundPane);
         initPane(HPBackgroundPane,-15,15,".\\images\\HPBackground.png");
 
-        int HPCurrentImgLeft = 61;
-        int HPCurrentImgRight = 190;
         this.getChildren().add(HPCurrentImg);
-        initPane(HPCurrentImg,HPCurrentImgLeft,86,".\\images\\HPCurrent.png");
-        //记录一下血条和血条背景还有几个数字的相对位置差值，方便以后调整
-
-        double ratioOfHP = (double) (HPTotal - HPCurrent) / (double)HPTotal;
-        int HPBlackImgLeft = (int) (HPCurrentImgLeft + (HPCurrentImgRight - HPCurrentImgLeft) * (1 - ratioOfHP));//这个left是左边的意思不是剩余的意思
-        int HPBlackImgWidth = (int)((HPCurrentImgRight - HPCurrentImgLeft) * ratioOfHP) + 1;
         this.getChildren().add(HPBlackImg);
-        initPaneWidthHeight(HPBlackImg,HPBlackImgLeft,86,".\\images\\black.png",HPBlackImgWidth,2);
-        //调整位置的时候要特别注意上面的几个值
 
+
+
+
+        initHealthForMain();
         this.getChildren().add(HPCurrentLabel);
-        HPCurrentLabel.setFont(Font.font("Arial",40));
-        if(HPCurrent >= 100){
-            initLabel(HPCurrentLabel,90,40);
-        }
-        else if(HPCurrent <= 9){
-            initLabel(HPCurrentLabel,110,40);
-        }
-        else{
-            initLabel(HPCurrentLabel,100,40);
-        }
-
-
-        if (HPCurrent < HPTotal && HPCurrent > HPTotal * 0.3){
-            HPCurrentLabel.setTextFill(Color.web("#FFFFFF"));
-        }
-        else if (HPCurrent < HPTotal * 0.3){
-            HPCurrentLabel.setTextFill(Color.web("red"));
-        }
-        else{
-            HPCurrentLabel.setTextFill(Color.web("yellow"));
-        }
-
         this.getChildren().add(HPTotalLabel);
-        initLabel(HPTotalLabel,95,93);
-        HPTotalLabel.setFont(Font.font("Arial",28));
-        HPTotalLabel.setTextFill(Color.web("#000000"));
-
         tentPane.setVisible(false);
         this.getChildren().add(tentPane);
 
         homeofseaPane.setVisible(false);
         this.getChildren().add(homeofseaPane);
-
-
 
         weaponsPane.setVisible(false);
         this.getChildren().add(weaponsPane);
@@ -182,6 +149,46 @@ public class MainFramePane extends Pane {
 
         mazePane.setVisible(false);
         this.getChildren().add(mazePane);
+    }
+
+    public void initHealthForMain(){
+        HPTotal = person.getMaxHealth();
+        HPCurrent = person.getHealth();
+        this.HPCurrentLabel.setText("" + HPCurrent);
+        this.HPTotalLabel.setText(""+HPTotal);
+
+        initLabel(HPTotalLabel,95,93);
+        HPTotalLabel.setFont(Font.font("Arial",28));
+        HPTotalLabel.setTextFill(Color.web("#000000"));
+        System.out.println(" gjlfjg");
+
+        HPCurrentLabel.setFont(Font.font("Arial",40));
+        if(HPCurrent >= 100){
+            initLabel(HPCurrentLabel,90,40);
+        }else if(HPCurrent <= 9){
+            initLabel(HPCurrentLabel,110,40);
+        }else{
+            initLabel(HPCurrentLabel,100,40);
+        }
+
+        if (HPCurrent < HPTotal && HPCurrent > HPTotal * 0.3){
+            HPCurrentLabel.setTextFill(Color.web("#FFFFFF"));
+        }else if (HPCurrent < HPTotal * 0.3){
+            HPCurrentLabel.setTextFill(Color.web("red"));
+        }else{
+            HPCurrentLabel.setTextFill(Color.web("yellow"));
+        }
+
+        initPane(HPCurrentImg,HPCurrentImgLeft,86,".\\images\\HPCurrent.png");
+        //记录一下血条和血条背景还有几个数字的相对位置差值，方便以后调整
+
+
+        double ratioOfHP = (double) (HPTotal - HPCurrent) / (double)HPTotal;
+        int HPBlackImgLeft = (int) (HPCurrentImgLeft + (HPCurrentImgRight - HPCurrentImgLeft) * (1 - ratioOfHP));//这个left是左边的意思不是剩余的意思
+        int HPBlackImgWidth = (int)((HPCurrentImgRight - HPCurrentImgLeft) * ratioOfHP) + 1;
+
+        initPaneWidthHeight(HPBlackImg,HPBlackImgLeft,86,".\\images\\black.png",HPBlackImgWidth,2);
+        //调整位置的时候要特别注意上面的几个值
     }
 
     public void initPane(Pane p,int x, int y,String url){
