@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="1624" />
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="1624">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_11_30_14_08____1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/BattlePane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/StartBattleButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/TentPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_11_30_14_08_取消提交了变更_[默认更改列表]1/vocabulary (2).docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +74,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work2021.9/Rance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../大三上/rance1/R2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -202,20 +211,7 @@
       <workItem from="1638330309430" duration="11173000" />
       <workItem from="1638426308097" duration="349000" />
       <workItem from="1638426941366" duration="889000" />
-    </task>
-    <task id="LOCAL-00014" summary="t">
-      <created>1634036441686</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1634036441686</updated>
-    </task>
-    <task id="LOCAL-00015" summary="t">
-      <created>1634105343244</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1634105343244</updated>
+      <workItem from="1638922892046" duration="849000" />
     </task>
     <task id="LOCAL-00016" summary="t">
       <created>1634105451186</created>
@@ -546,7 +542,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638341625900</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="1624">
+      <created>1638511250912</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1638511250912</updated>
+    </task>
+    <task id="LOCAL-00064" summary="1624">
+      <created>1638511254633</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1638511254633</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="change MapButton.buttonAction into not static" />
     <MESSAGE value="rebuild&#10;change adding ImageView to set Images&#10;other many things" />
     <MESSAGE value="rebuild TentPane OpenTentButton CloseTentButton clock in mainframepane" />
     <MESSAGE value="only xy left" />
@@ -616,6 +625,7 @@
     <MESSAGE value="加了怪物图片" />
     <MESSAGE value="结算页面事件" />
     <MESSAGE value="修好的fyk的bug&#10;范义琨因此与罗元昊签订不平等条约：&#10;   （1）范义琨每日必须观看1小时的vtuber&#10;   （2）此条约生效至2022年3月1日" />
-    <option name="LAST_COMMIT_MESSAGE" value="修好的fyk的bug&#10;范义琨因此与罗元昊签订不平等条约：&#10;   （1）范义琨每日必须观看1小时的vtuber&#10;   （2）此条约生效至2022年3月1日" />
+    <MESSAGE value="1624" />
+    <option name="LAST_COMMIT_MESSAGE" value="1624" />
   </component>
 </project>
