@@ -1,4 +1,4 @@
-package sample.itemPart.itemSystem2;
+package sample.itemSystem;
 
 public class manyTimesItem extends Item {
     private boolean canBeSelected;

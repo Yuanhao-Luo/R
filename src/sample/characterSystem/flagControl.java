@@ -1,4 +1,4 @@
-package sample.itemPart.characterSystem;
+package sample.characterSystem;
 
 public class flagControl {
     boolean [] flag = new boolean[5];

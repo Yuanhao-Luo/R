@@ -1,4 +1,4 @@
-package sample.itemPart.itemSystem2;
+package sample.itemSystem;
 
 //arms是军备,军火的意思
 public class arms extends manyTimesItem implements combat{

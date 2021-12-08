@@ -1,4 +1,4 @@
-package sample.itemPart.itemSystem2;
+package sample.itemSystem;
 
 public class ordinaryItem extends oneTimeItem implements combat{
     //什么倾斜装甲板，飞镖，葡萄酒都算是这个，他们能在战斗中使用，所以独立为一类

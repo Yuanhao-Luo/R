@@ -31,10 +31,8 @@ public class TimeSingleton {
     }
 
     public void walkOneCard(){
-        //每六张牌能跳一格时间
-        cardWalked = (cardWalked + 1) % 7;
-        System.out.println("cardWalked is "+ cardWalked);
-        currentTime = (currentTime + (cardWalked / 6)) % 9;
-        System.out.println("currentTime is "+ currentTime);
+        //每9张牌能跳一格时间
+        cardWalked = (cardWalked + 1) % 10;
+        currentTime = (currentTime + (cardWalked / 9)) % 9;
     }
 }

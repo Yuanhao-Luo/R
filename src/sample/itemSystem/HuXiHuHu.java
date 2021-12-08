@@ -1,6 +1,6 @@
-package sample.itemPart.itemSystem2;
+package sample.itemSystem;
 
-import sample.itemPart.characterSystem.Person;
+import sample.characterSystem.Person;
 
 public class HuXiHuHu extends oneTimeItem implements Useable {
     public HuXiHuHu(String url, int price, int heal) {

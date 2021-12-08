@@ -1,8 +1,7 @@
 package sample;
 
 import sample.buttons.GeneralButton;
-import sample.buttons.LeaveMazeButton;
-import sample.itemPart.characterSystem.Person;
+import sample.characterSystem.Person;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -90,9 +89,7 @@ public class TentPane extends Pane {
         this.getChildren().add(chip);
 
         CloseTentButton closeTentButton = new CloseTentButton("    关闭帐篷","200",820,720);
-        LeaveMazeButton bReturn = new LeaveMazeButton("快点回去城下町吧","200",0,720);
         this.getChildren().add(closeTentButton);
-        this.getChildren().add(bReturn);
 
         //以下是物品系统加的东西
         //bet的位置大小还要调一下
