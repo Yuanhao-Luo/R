@@ -200,8 +200,8 @@ public class BattlePane extends Pane {
 
         //jpy
         //这个closetentbutton改掉，这战斗页面哪来的closetent？
-        CloseTentButton closeTentButton = new CloseTentButton("   逃往城下町","200",10,720);
-        this.getChildren().add(closeTentButton);
+        RunAwayButton runAwayButton = new RunAwayButton("   逃往城下町","200",10,720);
+        this.getChildren().add(runAwayButton);
 
         StartBattleButton startBattleButton = new StartBattleButton("    战斗开始！","200",350,520);
         this.getChildren().add(startBattleButton);
