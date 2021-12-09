@@ -14,6 +14,7 @@ import javafx.scene.text.FontWeight;
 
 
 public class BattlePane extends Pane {
+//    ItemListPane itemListPane;
     ItemPane[] itemList = new ItemPane[21];
     int itemPage = 0;
     GeneralButton nextPage;
@@ -214,9 +215,13 @@ public class BattlePane extends Pane {
         this.getChildren().add(concludeEvent);
 
 
+//        itemListPane = new ItemListPane();
+//        this.getChildren().add(itemListPane);
+//        refreshAll();
+
+
 
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
-        //图片还没有放进去
         nextPage.setOnMouseReleased(e->{
             if (getItemPage() != 2){
                 setItemPage(getItemPage()+1);
@@ -319,4 +324,8 @@ public class BattlePane extends Pane {
         Battle.getInstance().setMonster(monster);
         refreshAll();
     }
+
+//    public ItemListPane getItemListPane() {
+//        return itemListPane;
+//    }
 }
