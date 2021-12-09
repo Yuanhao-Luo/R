@@ -12,14 +12,14 @@ public class SelectAllButton extends TextButton {
     public SelectAllButton(String text, String type, int X, int Y) {
         super(text, type, X, Y);
         setOnMouseReleased(e->{
-//            BattlePane battlePane = BattlePane.getInstance();
-//            for (ItemPane i :
-//                    battlePane.getItemListPane().getItemList()) {
-//                if (i.isSelectable()) {
-//                    i.setSelect(true);
-//                }
-//            }
-//            battlePane.getItemListPane().getItemList();
+            BattlePane battlePane = BattlePane.getInstance();
+            for (ItemPane i :
+                    battlePane.getItemListPane().getItemList()) {
+                if (i.isSelectable()) {
+                    i.setSelect(true);
+                }
+            }
+            battlePane.getItemListPane().getItemList();
         });
     }
 }

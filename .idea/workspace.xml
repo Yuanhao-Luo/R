@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="解决一次性物品的使用问题">
-      <change afterPath="$PROJECT_DIR$/src/sample/ItemListPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_04____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_12_2_16_06____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_12_2_16_04_取消提交了变更_[变更]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2021_12_2_16_06_取消提交了变更_[变更]/shelved.patch" beforeDir="false" />
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="合并">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/SelectAllButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/SelectAllButton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ItemListPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemListPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/buttons/CancelAllButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/CancelAllButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/buttons/SelectAllButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/SelectAllButton.java" afterDir="false" />
     </list>
@@ -269,14 +265,7 @@
       <workItem from="1638605206518" duration="257000" />
       <workItem from="1638921771384" duration="8154000" />
       <workItem from="1639037064971" duration="4878000" />
-      <workItem from="1639045355575" duration="343000" />
-    </task>
-    <task id="LOCAL-00022" summary="change absolute path to relatively path">
-      <created>1634369015495</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1634369015495</updated>
+      <workItem from="1639045355575" duration="1571000" />
     </task>
     <task id="LOCAL-00023" summary="reaname classname">
       <created>1634544080297</created>
@@ -614,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639040441998</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="合并">
+      <created>1639045713037</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1639045713037</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +654,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="完善物品系统" />
     <MESSAGE value="gui中的物品栏初步实现" />
     <MESSAGE value="不commit就pull不了" />
     <MESSAGE value="item的按钮可以点了" />
@@ -683,6 +678,7 @@
     <MESSAGE value="不让pull" />
     <MESSAGE value="给jpy发了任务，具体内容在battle.MonsterFactory里" />
     <MESSAGE value="解决一次性物品的使用问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决一次性物品的使用问题" />
+    <MESSAGE value="合并" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并" />
   </component>
 </project>

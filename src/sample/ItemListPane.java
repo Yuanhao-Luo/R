@@ -12,7 +12,8 @@ public class ItemListPane extends Pane {
 
     public ItemListPane(){
         super();
-
+        setWidth(0);
+        setHeight(0);
 
 
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");

@@ -14,11 +14,11 @@ import javafx.scene.text.FontWeight;
 
 
 public class BattlePane extends Pane {
-//    ItemListPane itemListPane;
-    ItemPane[] itemList = new ItemPane[21];
-    int itemPage = 0;
-    GeneralButton nextPage;
-    GeneralButton prePage;
+    ItemListPane itemListPane;
+//    ItemPane[] itemList = new ItemPane[21];
+//    int itemPage = 0;
+//    GeneralButton nextPage;
+//    GeneralButton prePage;
     ImageView battleBackground1 = new ImageView();
     ImageView settlementInterface1 = new ImageView();
     Pane settlementInterface2 = new Pane();
@@ -199,6 +199,13 @@ public class BattlePane extends Pane {
 
         settlementInterface2.setVisible(false);
 
+
+
+        itemListPane = new ItemListPane();
+        this.getChildren().add(itemListPane);
+        refreshAll();
+
+
         //jpy
         //这个closetentbutton改掉，这战斗页面哪来的closetent？
         RunAwayButton runAwayButton = new RunAwayButton("   逃往城下町","200",10,720);
@@ -215,74 +222,72 @@ public class BattlePane extends Pane {
         this.getChildren().add(concludeEvent);
 
 
-//        itemListPane = new ItemListPane();
-//        this.getChildren().add(itemListPane);
+
+
+
+
+//        nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
+//        nextPage.setOnMouseReleased(e->{
+//            if (getItemPage() != 2){
+//                setItemPage(getItemPage()+1);
+//            }
+//        });
+//        getChildren().add(nextPage);
+//        nextPage.setLayoutX(843);
+//        nextPage.setLayoutY(578);
+//
+//        prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
+//        prePage.setOnMouseReleased(e->{
+//            if (getItemPage() != 0){
+//                setItemPage(getItemPage()-1);
+//            }
+//        });
+//        getChildren().add(prePage);
+//        prePage.setLayoutX(131);
+//        prePage.setLayoutY(578);
+//
+//        for (int i = 0; i < itemList.length; i++) {
+//            itemList[i] = new ItemPane(i);
+//            getChildren().add(itemList[i]);
+//        }
 //        refreshAll();
-
-
-
-        nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
-        nextPage.setOnMouseReleased(e->{
-            if (getItemPage() != 2){
-                setItemPage(getItemPage()+1);
-            }
-        });
-        getChildren().add(nextPage);
-        nextPage.setLayoutX(843);
-        nextPage.setLayoutY(578);
-
-        prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
-        prePage.setOnMouseReleased(e->{
-            if (getItemPage() != 0){
-                setItemPage(getItemPage()-1);
-            }
-        });
-        getChildren().add(prePage);
-        prePage.setLayoutX(131);
-        prePage.setLayoutY(578);
-
-        for (int i = 0; i < itemList.length; i++) {
-            itemList[i] = new ItemPane(i);
-            getChildren().add(itemList[i]);
-        }
-        refreshAll();
-        changeToItemPage(0);
+//        changeToItemPage(0);
     }
 
     public static BattlePane getInstance(){
         return battlePane;
     }
 
-    public ItemPane[] getItemList() {
-        return itemList;
-    }
-
-    public void refreshItems(){
-        Person person = Person.getInstance();
-        for (int i = 0; i < person.getItemList().size(); i++) {
-            itemList[i].refresh(person.getItemList().get(i));
-        }
-    }
-
-    //page start from 0
-    public void changeToItemPage(int page){
-        for (ItemPane item :
-                itemList) {
-            item.setVisible(false);
-        }
-        for (int i = 7*page; i < 7*page + 7; i++) {
-            itemList[i].setVisible(true);
-        }
-    }
-
-    public void setItemPage(int itemPage) {
-        this.itemPage = itemPage;
-        changeToItemPage(itemPage);
-    }
-
-    public int getItemPage() {
-        return itemPage;
-    }
+//    public ItemPane[] getItemList() {
+//        return itemList;
+//    }
+//
+//    public void refreshItems(){
+//        Person person = Person.getInstance();
+//        for (int i = 0; i < person.getItemList().size(); i++) {
+//            itemList[i].refresh(person.getItemList().get(i));
+//        }
+//    }
+//
+//    //page start from 0
+//    public void changeToItemPage(int page){
+//        for (ItemPane item :
+//                itemList) {
+//            item.setVisible(false);
+//        }
+//        for (int i = 7*page; i < 7*page + 7; i++) {
+//            itemList[i].setVisible(true);
+//        }
+//    }
+//
+//    public void setItemPage(int itemPage) {
+//        this.itemPage = itemPage;
+//        changeToItemPage(itemPage);
+//    }
+//
+//    public int getItemPage() {
+//        return itemPage;
+//    }
 
     public void setCurrentHp(int hp){
         currentHp.setText(String.valueOf(hp));
@@ -298,7 +303,7 @@ public class BattlePane extends Pane {
 
     public void refreshAll(){
         Person person = Person.getInstance();
-        refreshItems();
+        itemListPane.refreshItems();
         setMaxHp(person.getMaxHealth());
         int hp = person.getHealth();
         setCurrentHp(hp);
@@ -325,7 +330,7 @@ public class BattlePane extends Pane {
         refreshAll();
     }
 
-//    public ItemListPane getItemListPane() {
-//        return itemListPane;
-//    }
+    public ItemListPane getItemListPane() {
+        return itemListPane;
+    }
 }

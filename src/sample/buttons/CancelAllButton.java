@@ -11,12 +11,12 @@ public class CancelAllButton extends TextButton {
         super(text, type, X, Y);
         setOnMouseReleased(e->{
             BattlePane battlePane = BattlePane.getInstance();
-//            for (ItemPane i :
-//                    battlePane.getItemListPane().getItemList()) {
-//                if (i.isSelectable()){
-//                    i.setSelect(false);
-//                }
-//            }
+            for (ItemPane i :
+                    battlePane.getItemListPane().getItemList()) {
+                if (i.isSelectable()){
+                    i.setSelect(false);
+                }
+            }
         });
     }
 }
