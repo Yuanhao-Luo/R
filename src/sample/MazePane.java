@@ -182,7 +182,6 @@ public class MazePane extends Pane {
         }
     }
 
-
     public void initCharacter(int currentCard){
         setXY(Character,390 + (currentCard-2)*160,560);
     }
