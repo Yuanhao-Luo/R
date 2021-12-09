@@ -5,7 +5,7 @@ public class test {
 
 
     public static void main(String[] args) {
-        simpleFactory s1 = new simpleFactory();
+        SimpleFactory s1 = new SimpleFactory();
 
     }
 }

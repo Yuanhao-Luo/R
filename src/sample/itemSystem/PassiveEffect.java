@@ -4,7 +4,7 @@ import sample.characterSystem.Person;
 
 import java.util.Random;
 
-public class PassiveEffect extends medicine {
+public class PassiveEffect extends Medicine {
     //闪跳君、旅行方法、绿茶等
 
     int effectId;

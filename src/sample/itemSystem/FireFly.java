@@ -2,7 +2,7 @@ package sample.itemSystem;
 
 import sample.characterSystem.Person;
 
-public class FireFly extends oneTimeItem implements Useable {
+public class FireFly extends OneTimeItem implements Useable {
     public FireFly(String url, int price) {
         super(url, price);
     }

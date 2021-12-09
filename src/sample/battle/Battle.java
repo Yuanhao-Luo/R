@@ -1,8 +1,10 @@
 package sample.battle;
 
 import sample.characterSystem.Person;
+import sample.itemSystem.Item;
 import sample.itemSystem.ItemList;
-import sample.itemSystem.arms;
+import sample.itemSystem.Arms;
+import sample.itemSystem.OrdinaryItem;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -44,6 +46,27 @@ public class Battle {
         return result;
     }
 
+    public Arms ordinary2Arm(OrdinaryItem ordinaryItem){
+        Arms a = new Arms(ordinaryItem.getUrl(), ordinaryItem.getPrice(), 0, ordinaryItem.getDamage(), ordinaryItem.getDefence());
+        return a;
+    }
+
+    public ArrayList<Arms> items2Arms(ArrayList<Item> items){
+        ArrayList<Arms> arms = new ArrayList<>();
+        for (Object i :
+                items.toArray()) {
+            if (i instanceof Arms){
+                arms.add((Arms) i);
+            }
+            else if (i instanceof OrdinaryItem){
+                OrdinaryItem oi = (OrdinaryItem) i;
+                arms.add(ordinary2Arm(oi));
+                Person.getInstance().getItemList().dropItem(oi);
+            }
+        }
+        return arms;
+    }
+
     public void startBattle(){
         monsterDamage = 0;
         personDamage = 0;
@@ -67,20 +90,20 @@ public class Battle {
 
 
         Person person = Person.getInstance();
-        ArrayList<arms> arms = person.getSelectArms();
+        ArrayList<Arms> arms = items2Arms(person.getSelectItems());
         ItemList itemList = person.getItemList();
 
         for (int i = 0; i < itemList.size(); i++) {
             Object item = itemList.get(i);
-            if (item instanceof arms){
-                ((arms) item).refreshCoolDown();
+            if (item instanceof Arms){
+                ((Arms) item).refreshCoolDown();
             }
         }
 
         int perAtt = 0;
         int perDef = 0;
         for (int i = 0; i < arms.size(); i++) {
-            arms a = arms.get(i);
+            Arms a = arms.get(i);
             a.used();
             int temA = a.getDamage();
             int temD = a.getDefence();

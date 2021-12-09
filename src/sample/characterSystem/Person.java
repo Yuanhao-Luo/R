@@ -1,9 +1,10 @@
 package sample.characterSystem;
 
 
+import sample.itemSystem.Item;
 import sample.itemSystem.ItemList;
-import sample.itemSystem.arms;
-import sample.itemSystem.simpleFactory;
+import sample.itemSystem.Arms;
+import sample.itemSystem.SimpleFactory;
 
 import java.util.ArrayList;
 
@@ -22,7 +23,7 @@ public class Person {
     //backpack part
 
     private ItemList itemList = new ItemList();
-    private ArrayList selectArms = new ArrayList<arms>();
+    private ArrayList selectItems = new ArrayList<Item>();
 
     private static Person p = new Person();
 
@@ -31,7 +32,7 @@ public class Person {
 
 
         //test
-        simpleFactory s = new simpleFactory();
+        SimpleFactory s = new SimpleFactory();
         itemList.add(s.buildMagicSword());
         itemList.add(s.buildMagicSword());
         itemList.add(s.buildGuerrillaSword());
@@ -74,8 +75,8 @@ public class Person {
         this.squidMan = squidMan;
     }
 
-    public ArrayList getSelectArms() {
-        return selectArms;
+    public ArrayList getSelectItems() {
+        return selectItems;
     }
 
     public int getMaxHealth() {

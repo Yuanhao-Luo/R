@@ -2,7 +2,7 @@ package sample.itemSystem;
 
 import sample.characterSystem.Person;
 
-public class HuXiHuHu extends oneTimeItem implements Useable {
+public class HuXiHuHu extends OneTimeItem implements Useable {
     public HuXiHuHu(String url, int price, int heal) {
         super(url, price);
     }

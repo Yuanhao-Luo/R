@@ -9,10 +9,10 @@ import sample.characterSystem.Person;
 //
 //修改后：此类仅仅只是用于回血的道具。例如：世色癌
 //
-public class medicine extends oneTimeItem implements Useable{
+public class Medicine extends OneTimeItem implements Useable{
     private int heal;
 
-    public medicine(String url, int price,int heal) {
+    public Medicine(String url, int price, int heal) {
         super(url,price);
         this.heal = heal;
     }

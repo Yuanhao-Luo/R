@@ -10,7 +10,7 @@ import sample.MazePart.*;
 import sample.battle.MonsterFactory;
 import sample.buttons.OpenTentButton;
 import sample.characterSystem.Person;
-import sample.itemSystem.simpleFactory;
+import sample.itemSystem.SimpleFactory;
 
 
 import java.io.FileInputStream;
@@ -359,7 +359,7 @@ public class MazePane extends Pane {
         cardPane.getChildren().add(pane5);
         pane5.setOnMouseClicked(e->{
             //宝箱
-            simpleFactory s = new simpleFactory();
+            SimpleFactory s = new SimpleFactory();
             Person p = Person.getInstance();
             p.getItemList().add(s.buildBoomerang());
         });
@@ -482,7 +482,6 @@ public class MazePane extends Pane {
         initLabel(HPTotalLabel,95,93);
         HPTotalLabel.setFont(Font.font("Arial",28));
         HPTotalLabel.setTextFill(Color.web("#000000"));
-        System.out.println(" gjlfjg");
 
         HPCurrentLabel.setFont(Font.font("Arial",40));
         if(HPCurrent >= 100){

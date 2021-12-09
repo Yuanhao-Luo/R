@@ -1,6 +1,6 @@
 package sample.itemSystem;
 
-public interface combat {
+public interface Combat {
     public int getDamage();
 
     public int getDefence();

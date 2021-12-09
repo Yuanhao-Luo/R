@@ -1,6 +1,6 @@
 package sample.itemSystem;
 
-public class constant {
+public class Constant {
 
     //Medicine from here
     //static final public String XIHUXIHU_URL = "C:\\Users\\Administrator\\IdeaProjects\\R\\images\\seaHouse\\XIHUXIHU.png";

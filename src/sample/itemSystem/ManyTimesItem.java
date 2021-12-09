@@ -1,12 +1,12 @@
 package sample.itemSystem;
 
-public class manyTimesItem extends Item {
+public class ManyTimesItem extends Item {
     private boolean canBeSelected;
     private int currentCoolDown;
     private int totalCoolDown;
 
 
-    public manyTimesItem(String url, int price, int totalCoolDown) {
+    public ManyTimesItem(String url, int price, int totalCoolDown) {
         super(url, price);
         this.canBeSelected = true;
         this.currentCoolDown = 0;

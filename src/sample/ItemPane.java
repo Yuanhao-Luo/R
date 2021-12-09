@@ -6,7 +6,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import sample.characterSystem.Person;
 import sample.itemSystem.Item;
-import sample.itemSystem.arms;
+import sample.itemSystem.Arms;
 
 public class ItemPane extends Pane {
     String url;
@@ -108,9 +108,9 @@ public class ItemPane extends Pane {
 
         Person person = Person.getInstance();
         if (select){
-            person.getSelectArms().add(person.getItemList().get(getIndex()));
+            person.getSelectItems().add(person.getItemList().get(getIndex()));
         }else {
-            person.getSelectArms().remove(person.getItemList().get(getIndex()));
+            person.getSelectItems().remove(person.getItemList().get(getIndex()));
         }
     }
 
@@ -138,8 +138,8 @@ public class ItemPane extends Pane {
         }
         setSelectable(true);
         setImage(item.getUrl());
-        if (item instanceof arms){
-            arms a = (arms) item;
+        if (item instanceof Arms){
+            Arms a = (Arms) item;
             changeCooldown(a.getCurrentCoolDown());
         }
     }
