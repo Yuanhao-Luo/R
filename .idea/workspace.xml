@@ -681,4 +681,10 @@
     <MESSAGE value="合并" />
     <option name="LAST_COMMIT_MESSAGE" value="合并" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="588" y="117" key="CommitChangelistDialog2" timestamp="1639107592743">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="588" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1639107592743" />
+  </component>
 </project>
