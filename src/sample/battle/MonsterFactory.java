@@ -4,7 +4,7 @@ public class MonsterFactory {
     //像以下这个方法，为每个怪物都写一个方法，怪物的信息在设计档案里有
     public Monster buildPurin(){
         String b1a_url = "";
-        Attack b1a = new Attack(b1a_url, 20);
+        Attack b1a = new Attack(b1a_url, 1000000);
         BehaviorLogic b1 = new BehaviorLogic(b1a, null);
 
         BehaviorLogic[] bls = {b1};

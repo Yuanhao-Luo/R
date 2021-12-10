@@ -62,6 +62,7 @@ public class Battle {
                 OrdinaryItem oi = (OrdinaryItem) i;
                 arms.add(ordinary2Arm(oi));
                 Person.getInstance().getItemList().dropItem(oi);
+                Person.getInstance().getSelectItems().remove(oi);
             }
         }
         return arms;
