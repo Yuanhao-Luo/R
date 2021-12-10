@@ -17,6 +17,15 @@ public class TentPane extends Pane {
 //    ItemPane[] itemList = new ItemPane[21];
 //    GeneralButton nextPage;
 //    GeneralButton prePage;
+    Label levelLabel;
+    Label hpLabel;
+    Label maxhpLabel;
+    Label luckLabel;
+    Label expLabel;
+    Label goldLabel;
+    Label chipLabel;
+    Label scheduleLabel;
+    String[] scheduleList = {"寻找小光"};
 
     private static TentPane tentPane = new TentPane();
 
@@ -44,49 +53,59 @@ public class TentPane extends Pane {
         tent2.setX(tent2Left);
         tent2.setY(tent2Top);
 
-        Label level = new Label("?");
-        level.setLayoutX(460 -100 + tent1Left);
-        level.setLayoutY(90 - (-300) + tent1Top);
-        level.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+        levelLabel = new Label("5");
+        levelLabel.setLayoutX(460 -100 + tent1Left);
+        levelLabel.setLayoutY(90 - (-300) + tent1Top);
+        levelLabel.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
-        Label hp = new Label("10 40");
-        hp.setLayoutX(605 -100 + tent1Left);
-        hp.setLayoutY(90 - (-300) + tent1Top);
-        hp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+        hpLabel = new Label("10");
+        hpLabel.setLayoutX(570 -100 + tent1Left);
+        hpLabel.setLayoutY(90 - (-300) + tent1Top);
+        hpLabel.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
-        Label luck = new Label("3");
-        luck.setLayoutX(855 -100 + tent1Left);
-        luck.setLayoutY(90 - (-300) + tent1Top);
-        luck.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+        maxhpLabel = new Label("40");
+        maxhpLabel.setLayoutX(700 -100 + tent1Left);
+        maxhpLabel.setLayoutY(90 - (-300) + tent1Top);
+        maxhpLabel.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
-        Label exp = new Label("4");
-        exp.setLayoutX(575 -100 + tent1Left);
-        exp.setLayoutY(185 - (-300) + tent1Top);
-        exp.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+        luckLabel = new Label("3");
+        luckLabel.setLayoutX(855 -100 + tent1Left);
+        luckLabel.setLayoutY(90 - (-300) + tent1Top);
+        luckLabel.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
-        Label gold = new Label("6");
-        gold.setLayoutX(707 -100 + tent1Left);
-        gold.setLayoutY(185 - (-300) + tent1Top);
-        gold.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+        expLabel = new Label("4");
+        expLabel.setLayoutX(570 -100 + tent1Left);
+        expLabel.setLayoutY(190 - (-300) + tent1Top);
+        expLabel.setFont(Font.font("Timer New Roman",  35));
 
-        Label chip = new Label("7 10");
-        chip.setLayoutX(807 -100 + tent1Left);
-        chip.setLayoutY(185 - (-300) + tent1Top);
-        chip.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
+        goldLabel = new Label("6");
+        goldLabel.setLayoutX(700 -100 + tent1Left);
+        goldLabel.setLayoutY(190 - (-300) + tent1Top);
+        goldLabel.setFont(Font.font("Timer New Roman",  35));
 
-        Label skill = new Label("8");
-        Label condition = new Label("9");
-        Label note = new Label("10");
+        chipLabel = new Label("7");
+        chipLabel.setLayoutX(835 -100 + tent1Left);
+        chipLabel.setLayoutY(190 - (-300) + tent1Top);
+        chipLabel.setFont(Font.font("Timer New Roman",  35));
+
+        scheduleLabel = new Label();
+        scheduleLabel.setText(scheduleList[0]);
+        scheduleLabel.setLayoutX(500);
+        scheduleLabel.setLayoutY(380);
+        scheduleLabel.setFont(Font.font("kaiti",20));
+
 
         this.getChildren().add(tent1);
         this.getChildren().add(tent2);
 
-        this.getChildren().add(level);
-        this.getChildren().add(hp);
-        this.getChildren().add(luck);
-        this.getChildren().add(exp);
-        this.getChildren().add(gold);
-        this.getChildren().add(chip);
+        this.getChildren().add(levelLabel);
+        this.getChildren().add(hpLabel);
+        this.getChildren().add(maxhpLabel);
+        this.getChildren().add(luckLabel);
+        this.getChildren().add(expLabel);
+        this.getChildren().add(goldLabel);
+        this.getChildren().add(chipLabel);
+        this.getChildren().add(scheduleLabel);
 
         itemListPane = new ItemListPane();
         this.getChildren().add(itemListPane);
@@ -94,6 +113,8 @@ public class TentPane extends Pane {
 
         CloseTentButton closeTentButton = new CloseTentButton("    关闭帐篷","200",820,720);
         this.getChildren().add(closeTentButton);
+
+        refreshNum();
 
 //        //以下是物品系统加的东西
 //        //bet的位置大小还要调一下
@@ -162,5 +183,47 @@ public class TentPane extends Pane {
 
     public ItemListPane getItemListPane() {
         return itemListPane;
+    }
+
+    public void refreshNum(){
+        Person person = Person.getInstance();
+        setLevel(person.getLevel());
+        sethp(person.getHealth());
+        setMaxhp(person.getMaxHealth());
+        setLuck(person.getLuck());
+        setGold(person.getMoney());
+        setChip(person.getItemList().size());
+    }
+
+    public void setLevel(int level){
+        levelLabel.setText(String.valueOf(level));
+    }
+
+    public void sethp(int hp){
+        hpLabel.setText(String.valueOf(hp));
+    }
+
+    public void setMaxhp(int maxhp){
+        maxhpLabel.setText(String.valueOf(maxhp));
+    }
+
+    public void setLuck(int luck){
+        luckLabel.setText(String.valueOf(luck));
+    }
+
+    public void setExp(int exp){
+        expLabel.setText(String.valueOf(exp));
+    }
+
+    public void setGold(int gold){
+        goldLabel.setText(String.valueOf(gold));
+    }
+
+    public void setChip(int chip){
+        chipLabel.setText(String.valueOf(chip));
+    }
+
+    public void setSchedule(int i){
+        scheduleLabel.setText(scheduleList[i]);
     }
 }

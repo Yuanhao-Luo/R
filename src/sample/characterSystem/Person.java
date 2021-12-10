@@ -20,6 +20,7 @@ public class Person {
     private int critical = 10;
     private int exp = 0;
     private int level = 0;
+    private int luck = 5;
     //backpack part
 
     private ItemList itemList = new ItemList();
@@ -41,6 +42,8 @@ public class Person {
         itemList.add(s.buildMagicSword());
         itemList.add(s.buildTH180());
         itemList.add(s.buildBigStick());
+        itemList.add(s.buildBaseball());
+        itemList.add(s.buildBaseball());
     }
 
     public static Person getInstance(){
@@ -96,11 +99,9 @@ public class Person {
     }
 
     public void loseHp(int damage){
-        if (damage >= health){
+        setHealth(getHealth()-damage);
+        if (damage >= health)
             die();
-        }else {
-            setHealth(getHealth()-damage);
-        }
     }
 
     public int getExp() {
@@ -125,6 +126,14 @@ public class Person {
 
     public int getMoney() {
         return money;
+    }
+
+    public int getLuck() {
+        return luck;
+    }
+
+    public void setLuck(int luck) {
+        this.luck = luck;
     }
 
     //还没有实现，需要对接
