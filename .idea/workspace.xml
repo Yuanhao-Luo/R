@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="931">
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="1046">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,14 +225,7 @@
       <workItem from="1638517612696" duration="616000" />
       <workItem from="1638605206518" duration="257000" />
       <workItem from="1638921771384" duration="829000" />
-      <workItem from="1638930136893" duration="1178000" />
-    </task>
-    <task id="LOCAL-00021" summary="improve the way to locate the dot at the colock">
-      <created>1634368609512</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1634368609512</updated>
+      <workItem from="1638930136893" duration="2116000" />
     </task>
     <task id="LOCAL-00022" summary="change absolute path to relatively path">
       <created>1634369015495</created>
@@ -571,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638927147222</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="1046">
+      <created>1638931603347</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1638931603348</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +615,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="对medicine以及itemlist进行的相关的调整" />
     <MESSAGE value="完善物品系统" />
     <MESSAGE value="gui中的物品栏初步实现" />
     <MESSAGE value="不commit就pull不了" />
@@ -641,6 +639,7 @@
     <MESSAGE value="尝试了一下xml" />
     <MESSAGE value="不让pull" />
     <MESSAGE value="931" />
-    <option name="LAST_COMMIT_MESSAGE" value="931" />
+    <MESSAGE value="1046" />
+    <option name="LAST_COMMIT_MESSAGE" value="1046" />
   </component>
 </project>
