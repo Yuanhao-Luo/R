@@ -14,6 +14,8 @@ public class OpenTentButton extends TextButton {
             TentPane tentPane = TentPane.getInstance();
             if (!tentPane.isVisible()){
                 tentPane.setVisible(true);
+                tentPane.refreshNum();
+                tentPane.getItemListPane().refreshAll();
             }
         });
     }
