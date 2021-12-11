@@ -4,6 +4,7 @@ import javafx.scene.control.Label;
 import javafx.scene.text.Font;
 import sample.BattlePane;
 import sample.MainFramePane;
+import sample.MazePane;
 import sample.TentPane;
 import sample.buttons.GeneralButton;
 import sample.characterSystem.Person;
@@ -18,6 +19,7 @@ public class RunAwayButton extends TextButton {
             int money = person.getMoney();
             person.setMoney((int)(money - (money*0.1)));
             BattlePane.getInstance().setVisible(false);
+            MazePane.getInstance().setVisible(false);
             MainFramePane.getInstance().setVisible(true);
         });
     }

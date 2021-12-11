@@ -321,6 +321,7 @@ public class BattlePane extends Pane {
     }
 
     public void startBattle(Monster monster){
+        Person.getInstance().getSelectItems().clear();
         settlementInterface2.setVisible(false);
         monsterDamage.setVisible(false);
         personDamage.setVisible(false);
