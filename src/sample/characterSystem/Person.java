@@ -21,6 +21,7 @@ public class Person {
     private int exp = 0;
     private int level = 0;
     private int luck = 5;
+    private int schedule = 0;
     //backpack part
 
     private ItemList itemList = new ItemList();
@@ -134,6 +135,14 @@ public class Person {
 
     public void setLuck(int luck) {
         this.luck = luck;
+    }
+
+    public void setSchedule(int schedule) {
+        this.schedule = schedule;
+    }
+
+    public int getSchedule() {
+        return schedule;
     }
 
     //还没有实现，需要对接

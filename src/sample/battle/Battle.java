@@ -12,10 +12,10 @@ import java.util.Random;
 public class Battle {
     private static Battle battle = new Battle();
     private Monster monster;
-    private int turn = 0;
+    private int turn = 0;//回合数
     private int result;//都没死0，怪死1，人死2
-    private int monsterDamage;
-    private int personDamage;
+    private int monsterDamage;//怪物对玩家造成的伤害
+    private int personDamage;//玩家对怪物造成的伤害
 
     private Battle(){
         MonsterFactory monsterFactory = new MonsterFactory();
@@ -69,13 +69,16 @@ public class Battle {
     }
 
     public void startBattle(){
+        //将双方的伤害初始化为0
         monsterDamage = 0;
         personDamage = 0;
+
+        //选择怪物这一回合的行动
         BehaviorLogic bl = monster.getBehaviourLogics()[turn%monster.getBehaviourLogics().length];
-        int monAtt;
-        int monAttAb;
-        int monDef;
-        int monDefAb;
+        int monAtt;//怪物的攻击力
+        int monAttAb;//怪物的攻击属性
+        int monDef;//怪物的防御力
+        int monDefAb;//怪物的防御属性
         if (bl.getAttack() == null){
             monAtt = 0;
         }else {
@@ -131,6 +134,7 @@ public class Battle {
 
         this.monsterDamage = mondamage;
         this.personDamage = pdamage;
+        turn++;
 
         if (person.isDie())
             result =  2;
