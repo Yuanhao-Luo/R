@@ -1,10 +1,18 @@
 package sample.specificPlace;
 
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import sample.ImageProcess;
+import sample.ItemListPane;
 import sample.buttons.ActionDialogButton;
 import sample.buttons.LeaveHereButton;
+import sample.buttons.TextButton;
+import sample.characterSystem.Person;
+import sample.itemSystem.Item;
+import sample.itemSystem.SimpleFactory;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class ActionDialogPane extends Pane {
@@ -13,15 +21,35 @@ public class ActionDialogPane extends Pane {
         this.setLayoutX(200);
         this.placeName = placeName;
         this.actionName = actionName;
-        if (Objects.equals(actionName, "foot")){
-            adb1 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+
+
+
+        switch (actionName){
+            case "foot":
+                adb1 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+                break;
+            case "eye":
+                adb1 = new ActionDialogButton("      有什么在卖吗","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+                adb1.setOnMouseClicked(e->{
+                    gpp.dialogBegin(placeName,actionName,1,new String[]{"有个屁","滚"},2,"openHomeofseaShop");
+//                    gpp.shopPane.setVisible(true);
+                });
+                break;
+            default:
+                adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+                adb1.setOnMouseClicked(e->{
+                    gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
+                });
         }
-        else{
-            adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
-            adb1.setOnMouseClicked(e->{
-                gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
-            });
-        }
+//        if (Objects.equals(actionName, "foot")){
+//            adb1 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+//        }
+//        else{
+//            adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+//            adb1.setOnMouseClicked(e->{
+//                gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
+//            });
+//        }
         adb2 = new ActionDialogButton("      这是二段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
         adb3 = new ActionDialogButton("      这是三段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
         this.getChildren().add(adb1);
@@ -39,6 +67,7 @@ public class ActionDialogPane extends Pane {
     ActionDialogButton adb1;
     ActionDialogButton adb2;
     ActionDialogButton adb3;
+
 
     public int actionDialogButtonYCalculator(String actionName, int number){
         int Y;
@@ -72,4 +101,6 @@ public class ActionDialogPane extends Pane {
     public void setActionName(String actionName) {
         this.actionName = actionName;
     }
+
+
 }
