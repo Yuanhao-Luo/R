@@ -2,7 +2,10 @@ package sample.buttons;
 
 
 import sample.BattlePane;
+import sample.MainFramePane;
+import sample.TimeSingleton;
 import sample.battle.Battle;
+import sample.characterSystem.Person;
 
 public class StartBattleButton extends TextButton {
     public StartBattleButton(String text, String type, int X, int Y) {
@@ -26,6 +29,14 @@ public class StartBattleButton extends TextButton {
                 battlePane.concludBattle();
             }else if (result == 2){
                 //����ҳ��
+                MainFramePane mainFramePane = MainFramePane.getInstance();
+                Person person = Person.getInstance();
+                BattlePane.getInstance().setVisible(false);
+                mainFramePane.setVisible(true);
+                TimeSingleton.getInstance().setCurrentTime(0);
+                person.setHealth(person.getMaxHealth());
+                mainFramePane.initHealthForMain();
+                mainFramePane.changeAllButtonStatues();
 
 
 

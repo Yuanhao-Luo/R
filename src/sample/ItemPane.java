@@ -107,6 +107,9 @@ public class ItemPane extends Pane {
         bet.setVisible(select);
 
         Person person = Person.getInstance();
+        if (index >= person.getItemList().size()){
+            return;
+        }
         if (select){
             person.getSelectItems().add(person.getItemList().get(getIndex()));
         }else {
@@ -134,10 +137,12 @@ public class ItemPane extends Pane {
         setSelect(false);
         if (item == null){
             setSelectable(false);
+            imageView.setVisible(false);
             return;
         }
         setSelectable(true);
         setImage(item.getUrl());
+        imageView.setVisible(true);
         if (item instanceof Arms){
             Arms a = (Arms) item;
             changeCooldown(a.getCurrentCoolDown());

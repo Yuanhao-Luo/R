@@ -53,6 +53,9 @@ public class ItemListPane extends Pane {
         for (int i = 0; i < person.getItemList().size(); i++) {
             itemList[i].refresh(person.getItemList().get(i));
         }
+        for (int i = person.getItemList().size(); i < 21; i++) {
+            itemList[i].refresh(null);
+        }
     }
 
     //page start from 0
