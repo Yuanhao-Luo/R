@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <communication>
+        <id>123</id>
+
+<!--        1 means Rance say first, 2 means other people say first-->
+        <first>1</first>
+        <sentence>又是一个平常的一天</sentence>
+        <sentence>是啊</sentence>
+        <sentence>不对，哪里平常了？</sentence>
+    </communication>
+</configuration>
