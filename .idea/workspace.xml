@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="cannot pull">
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="Battle中的注释">
+      <change afterPath="$PROJECT_DIR$/src/sample/specificPlace/GoodPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/specificPlace/GoodsListPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/battle/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/RunAwayButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/RunAwayButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MazePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MazePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,14 +291,7 @@
       <workItem from="1639095379343" duration="8059000" />
       <workItem from="1639111782463" duration="3901000" />
       <workItem from="1639150402768" duration="306000" />
-      <workItem from="1639200568518" duration="5680000" />
-    </task>
-    <task id="LOCAL-00029" summary="rebuild&#10;change adding ImageView to set Images&#10;other many things">
-      <created>1634975703404</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1634975703405</updated>
+      <workItem from="1639200568518" duration="10895000" />
     </task>
     <task id="LOCAL-00030" summary="rebuild TentPane OpenTentButton CloseTentButton clock in mainframepane">
       <created>1634980245701</created>
@@ -626,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639203512643</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Battle中的注释">
+      <created>1639207925690</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1639207925690</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +680,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="1123" />
     <MESSAGE value="图片" />
     <MESSAGE value="Merge branch 'main' of https://github.com/Yuanhao-Luo/R into BattleSystemLJ&#10;&#10; Conflicts:&#10;&#9;out/production/R/sample/ItemPane.class&#10;&#9;out/production/R/sample/MainFramePane.class&#10;&#9;out/production/R/sample/buttons/TextButton.class&#10;&#9;out/production/R/sample/itemPart/characterSystem/Person.class&#10;&#9;out/production/R/sample/tentPane.class&#10;&#9;src/sample/ItemPane.java&#10;&#9;src/sample/MainFramePane.java&#10;&#9;src/sample/TentPane.java&#10;&#9;src/sample/buttons/TextButton.java" />
     <MESSAGE value="1111" />
@@ -695,7 +704,8 @@
     <MESSAGE value="整体优化" />
     <MESSAGE value="怪物图片" />
     <MESSAGE value="cannot pull" />
-    <option name="LAST_COMMIT_MESSAGE" value="cannot pull" />
+    <MESSAGE value="Battle中的注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="Battle中的注释" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

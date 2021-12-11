@@ -9,6 +9,7 @@ import javafx.scene.text.Font;
 import sample.MazePart.*;
 import sample.battle.MonsterFactory;
 import sample.buttons.OpenTentButton;
+import sample.buttons.RunAwayButton;
 import sample.characterSystem.Person;
 import sample.itemSystem.SimpleFactory;
 
@@ -90,6 +91,9 @@ public class MazePane extends Pane {
         initPane(HPBackgroundPane,-15,15,".\\images\\HPBackground.png");
 
         initHealthForMaze();
+
+        RunAwayButton runAwayButton = new RunAwayButton("   逃往城下町","200",10,720);
+        this.getChildren().add(runAwayButton);
 
         this.getChildren().add(HPTotalLabel);
         this.getChildren().add(HPCurrentLabel);
