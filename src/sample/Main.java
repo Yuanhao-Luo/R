@@ -21,11 +21,11 @@ public class Main extends Application {
         mazePane.setVisible(false);
         p1.getChildren().add(battlePane);
         battlePane.setVisible(false);
-//        p1.getChildren().add(m1);
-//        p1.setOnMouseClicked(e ->{
-//            System.out.println(e.getX());
-//            System.out.println(e.getY());
-//        });
+        //p1.getChildren().add(m1);
+        p1.setOnMouseClicked(e ->{
+            System.out.println(e.getX());
+            System.out.println(e.getY());
+        });
 
         t1.setVisible(false);
         p1.getChildren().add(t1);
