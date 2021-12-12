@@ -9,6 +9,7 @@ import sample.buttons.ActionDialogButton;
 import sample.buttons.LeaveHereButton;
 import sample.buttons.TextButton;
 import sample.characterSystem.Person;
+import sample.characterSystem.Schedule;
 import sample.itemSystem.Item;
 import sample.itemSystem.SimpleFactory;
 
@@ -61,6 +62,16 @@ public class ActionDialogPane extends Pane {
 //                        });
                 }
                 break;
+            case "mouth":
+                switch (placeName){
+                    case "bistro":
+                        if (Person.getInstance().getSchedule() == Schedule.START){
+                            adb3.setOnMouseClicked(e->{
+                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"0").getSentence(),new Dialogue(placeName+actionName+"3").getFirst());
+                                Person.getInstance().setSchedule(Schedule.BEAT_THIEF);
+                            });
+                        }
+                }
             case "hand":
                 switch (placeName){
                     case "level" :

@@ -467,6 +467,17 @@
     </communication>
 
     <communication>
+        <!--        Schule.START特殊对话-->
+        <id>bistromouth30</id>
+        <first>1</first>
+        <sentence>你有听说过盗贼团的消息吗？</sentence>
+        <sentence>什么！盗贼团！他们把我的女儿抓走了！！！</sentence>
+        <sentence>冷静一下，我会帮你夺回女儿的，把相关信息告诉我</sentence>
+        <sentence>他们都在城外的盗贼基地里</sentence>
+        <sentence>好</sentence>
+    </communication>
+
+    <communication>
         <!--        看下四周-->
         <id>bistroeye1</id>
         <button>看下四周</button>

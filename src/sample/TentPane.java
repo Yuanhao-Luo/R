@@ -25,7 +25,7 @@ public class TentPane extends Pane {
     Label goldLabel;
     Label chipLabel;
     Label scheduleLabel;
-    String[] scheduleList = {"寻找小光"};
+    String[] scheduleList = {"打听盗贼团","去城外打击盗贼团伙"};
 
     private static TentPane tentPane = new TentPane();
 
@@ -193,6 +193,7 @@ public class TentPane extends Pane {
         setLuck(person.getLuck());
         setGold(person.getMoney());
         setExp(person.getExp());
+        setSchedule(person.getSchedule());
         setChip(person.getItemList().size());
     }
 
