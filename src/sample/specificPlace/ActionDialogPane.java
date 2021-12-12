@@ -21,19 +21,42 @@ public class ActionDialogPane extends Pane {
         this.setLayoutX(200);
         this.placeName = placeName;
         this.actionName = actionName;
-
-
+        adb2 = new ActionDialogButton("      看看四周","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
+        adb3 = new ActionDialogButton("      看看五周","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
+        adb2.setOnMouseClicked(e->{
+            gpp.dialogBegin(placeName,actionName,2,new Dialogue(placeName+actionName+"2").getSentence(),new Dialogue(placeName+actionName+"2").getFirst());
+        });
 
         switch (actionName){
             case "foot":
                 adb1 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
                 break;
             case "eye":
-                adb1 = new ActionDialogButton("      有什么在卖吗","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
-                adb1.setOnMouseClicked(e->{
-                    gpp.dialogBegin(placeName,actionName,1,new String[]{"有个屁","滚"},2,"openHomeofseaShop");
+                switch (placeName){
+                    case "homeofsea":
+                        adb1 = new ActionDialogButton("      有什么在卖吗","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+                        adb1.setOnMouseClicked(e->{
+                            gpp.dialogBegin(placeName,actionName,1,new String[]{"有个屁","滚"},2,"openHomeofseaShop");
 //                    gpp.shopPane.setVisible(true);
-                });
+                        });
+//                        adb2.setOnMouseClicked(e->{
+//                            gpp.dialogBegin(placeName,actionName,2,new Dialogue(placeName+actionName+"2").getSentence(),new Dialogue(placeName+actionName+"2").getFirst());
+//                        });
+                        break;
+                    case "weapons":
+                        adb1 = new ActionDialogButton("      有什么在卖吗","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+                        adb1.setOnMouseClicked(e->{
+                            gpp.dialogBegin(placeName,actionName,1,new String[]{"有个屁","滚"},2,"openWeaponShop");
+//                    gpp.shopPane.setVisible(true);
+                        });
+                        break;
+                    default:
+                        adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+                        adb1.setOnMouseClicked(e->{
+                            gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
+                        });
+                }
+
                 break;
             default:
                 adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
@@ -50,8 +73,6 @@ public class ActionDialogPane extends Pane {
 //                gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
 //            });
 //        }
-        adb2 = new ActionDialogButton("      这是二段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
-        adb3 = new ActionDialogButton("      这是三段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
         this.getChildren().add(adb1);
         this.getChildren().add(adb2);
         this.getChildren().add(adb3);

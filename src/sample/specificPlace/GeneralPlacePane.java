@@ -15,6 +15,7 @@ import sample.itemSystem.Item;
 import sample.itemSystem.SimpleFactory;
 
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class GeneralPlacePane extends Pane {
@@ -42,12 +43,19 @@ public class GeneralPlacePane extends Pane {
     ActionButton bfootButton;
 
     ImageView goodBackground;
+    ImageView goodBackground1;
     GoodsListPane goodsListPane;
+    GoodsListPane weaponGoodsListPane;
     TextButton buyButton;
+    TextButton buyButton1;
     Pane shopPane;
+    Pane weaponShopPane;
     ImageView itemBackground;
+    ImageView itemBackground1;
     ItemListPane itemListPane;
+    ItemListPane itemListPane1;
     TextButton quitShop;
+    TextButton quitShop1;
 
 
     public GeneralPlacePane(String placeName){
@@ -78,18 +86,14 @@ public class GeneralPlacePane extends Pane {
         this.getChildren().add(bfootButton);
         ImageProcess.setXY(bfootButton,actionButtonX,firstActionButtonY + actionbuttonInterval*4);
 
-
-        ArrayList<Item> items = new ArrayList<Item>();
-        SimpleFactory sf = new SimpleFactory();
-        items.add(sf.buildBaseball());
-        items.add(sf.buildBoomerang());
-        items.add(sf.buildBarrelBreakingHammer());
-        items.add(sf.buildPillow());
-
         shopPane = new Pane();
         shopPane.setPrefWidth(0);
         shopPane.setPrefHeight(0);
         shopPane.setVisible(false);
+        weaponShopPane = new Pane();
+        weaponShopPane.setPrefWidth(0);
+        weaponShopPane.setPrefHeight(0);
+        weaponShopPane.setVisible(false);
 
         Image imageTent2 = new Image("file:.\\images\\tent2.png");
         itemBackground = new ImageView();
@@ -99,25 +103,46 @@ public class GeneralPlacePane extends Pane {
         int tent2Top = 510;
         itemBackground.setX(tent2Left);
         itemBackground.setY(tent2Top);
+        itemBackground1 = new ImageView();
+        itemBackground1.setImage(imageTent2);
+        itemBackground1.setFitHeight(imageTent2.getHeight());
+        itemBackground1.setX(tent2Left);
+        itemBackground1.setY(tent2Top);
         shopPane.getChildren().add(itemBackground);
+        weaponShopPane.getChildren().add(itemBackground1);
 
         itemListPane = new ItemListPane();
+        itemListPane1 = new ItemListPane();
         shopPane.getChildren().add(itemListPane);
+        weaponShopPane.getChildren().add(itemListPane1);
         itemListPane.refreshAll();
+        itemListPane1.refreshAll();
 
 
 
         goodBackground = new ImageView();
         ImageProcess.initImageView(goodBackground, 0, 0, ".\\images\\shopListBackground.png");
+        goodBackground1 = new ImageView();
+        ImageProcess.initImageView(goodBackground1, 0, 0, ".\\images\\shopListBackground.png");
         shopPane.getChildren().add(goodBackground);
+        weaponShopPane.getChildren().add(goodBackground1);
         goodBackground.setFitWidth(1025);
+        goodBackground1.setFitWidth(1025);
 
-        goodsListPane = new GoodsListPane(items);
+        goodsListPane = new GoodsListPane();
+        weaponGoodsListPane = new GoodsListPane();
         shopPane.getChildren().add(goodsListPane);
+        weaponShopPane.getChildren().add(weaponGoodsListPane);
+        resetGoodsList(goodsListPane,"homeofsea");
+        resetGoodsList(weaponGoodsListPane,"weapons");
+
         goodsListPane.refreshAll();
+        weaponGoodsListPane.refreshAll();
 
         buyButton = new TextButton("    购买", "200", 200, 200);
+        buyButton1 = new TextButton("    购买", "200", 200, 200);
         shopPane.getChildren().add(buyButton);
+        weaponShopPane.getChildren().add(buyButton1);
         buyButton.setOnMouseReleased(e->{
             Person person = Person.getInstance();
             int cost = 0;
@@ -134,16 +159,44 @@ public class GeneralPlacePane extends Pane {
                     }
                 }
                 person.setMoney(person.getMoney()-cost);
-                resetGoodsList();
+                resetGoodsList(goodsListPane,"homeofsea");
+                itemListPane.refreshAll();
+            }
+        });
+
+        buyButton1.setOnMouseReleased(e->{
+            Person person = Person.getInstance();
+            int cost = 0;
+            for (int i = 0; i < weaponGoodsListPane.getItemList().length; i++) {
+                if (weaponGoodsListPane.getItemList()[i].isSelect()){
+                    cost += weaponGoodsListPane.items.get(i).getPrice();
+                }
+            }
+            if (cost <= person.getMoney()){
+                for (int i = 0; i < weaponGoodsListPane.getItemList().length; i++) {
+                    if (weaponGoodsListPane.getItemList()[i].isSelect()){
+                        person.getItemList().add(weaponGoodsListPane.items.get(i));
+                        weaponGoodsListPane.getItemList()[i].setSelect(false);
+                    }
+                }
+                person.setMoney(person.getMoney()-cost);
+                resetGoodsList(weaponGoodsListPane,"weapons");
                 itemListPane.refreshAll();
             }
         });
 
         quitShop = new TextButton("    退出商店","200", 800, 710);
+        quitShop1 = new TextButton("    退出商店","200", 800, 710);
         shopPane.getChildren().add(quitShop);
+        weaponShopPane.getChildren().add(quitShop1);
         quitShop.setOnMouseReleased(e->{
             shopPane.setVisible(false);
         });
+        quitShop1.setOnMouseReleased(e->{
+            weaponShopPane.setVisible(false);
+        });
+
+
 
 
     }
@@ -278,8 +331,12 @@ public class GeneralPlacePane extends Pane {
                     case "openHomeofseaShop":
                         this.shopPane.setVisible(true);
                         break;
+                    case "openWeaponShop":
+                        this.weaponShopPane.setVisible(true);
+                        break;
                     default:
                         this.shopPane.setVisible(false);
+                        this.weaponShopPane.setVisible(false);
                 }
             }
             else {
@@ -300,13 +357,23 @@ public class GeneralPlacePane extends Pane {
         return placeName;
     }
 
-    public void resetGoodsList(){
+    public void resetGoodsList(GoodsListPane goodsListPane, String type){
         ArrayList<Item> items = new ArrayList<Item>();
         SimpleFactory sf = new SimpleFactory();
-        items.add(sf.buildBaseball());
-        items.add(sf.buildBoomerang());
-        items.add(sf.buildBarrelBreakingHammer());
-        items.add(sf.buildPillow());
+        if (Objects.equals(type,"homeofsea")){
+            items.add(sf.buildBaseball());
+            items.add(sf.buildBoomerang());
+            items.add(sf.buildBarrelBreakingHammer());
+            items.add(sf.buildPillow());
+        }
+        else if(Objects.equals(type,"weapons")){
+            items.add(sf.buildVeryShortSword());
+            items.add(sf.buildSmallShield());
+            items.add(sf.buildGuerrillaSword());
+            items.add(sf.buildBigStick());
+            items.add(sf.buildPlainShield());
+            items.add(sf.buildPURUPURUShield());
+        }
         goodsListPane.setItems(items);
     }
 }

@@ -11,6 +11,6 @@ public class WeaponsPane extends GeneralPlacePane {
         this.getChildren().add(weaponsYou);
         ImageProcess.initDialogYouImage(weaponsYou,".\\images\\weaponsYou.png");
         ImageProcess.setXY(weaponsYou,500,160);
-
+        this.getChildren().add(weaponShopPane);
     }
 }

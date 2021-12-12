@@ -24,7 +24,7 @@ public class GoodPane extends Pane {
     public GoodPane(int num){
         super();
         index = num;
-        int[] itemx = {177,275,373,470,564,659,755};
+        int[] itemx = {206,295,382,471,558,647,735};
         int itemy = 88;
         setLayoutX(itemx[num%7]);
         setLayoutY(itemy);
