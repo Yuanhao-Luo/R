@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="图片">
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="cannot pull">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,14 +283,8 @@
       <workItem from="1639095379343" duration="8059000" />
       <workItem from="1639111782463" duration="3901000" />
       <workItem from="1639150402768" duration="306000" />
-      <workItem from="1639200568518" duration="13323000" />
-    </task>
-    <task id="LOCAL-00032" summary="only xy left">
-      <created>1634982588028</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1634982588028</updated>
+      <workItem from="1639200568518" duration="13871000" />
+      <workItem from="1639288957137" duration="606000" />
     </task>
     <task id="LOCAL-00033" summary="对medicine以及itemlist进行的相关的调整">
       <created>1636292701082</created>
@@ -625,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639232366204</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="cannot pull">
+      <created>1639239419112</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1639239419112</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -690,11 +694,11 @@
     <MESSAGE value="tt" />
     <MESSAGE value="整体优化" />
     <MESSAGE value="怪物图片" />
-    <MESSAGE value="cannot pull" />
     <MESSAGE value="Battle中的注释" />
     <MESSAGE value="商店基本做完，还需调位置以及与对话对接" />
     <MESSAGE value="图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="图片" />
+    <MESSAGE value="cannot pull" />
+    <option name="LAST_COMMIT_MESSAGE" value="cannot pull" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
