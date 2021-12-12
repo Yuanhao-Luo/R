@@ -69,15 +69,6 @@ public class GoodPane extends Pane {
 
             }
         });
-        setOnMouseReleased(e -> {
-
-
-
-            //System.out.println(index);
-            if (isSelectable()){
-                setSelect(!isSelect());
-            }
-        });
     }
 
     public void setImage(String url){

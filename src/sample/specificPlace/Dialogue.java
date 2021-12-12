@@ -13,6 +13,7 @@ public class Dialogue {
     int first;
     String[] sentence = new String[10];
     int size = 0;
+    String button;
 
     public Dialogue(String id){
         DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
@@ -40,6 +41,9 @@ public class Dialogue {
                     }
                     else if (content.getNodeName().equals("id")){
                         find = false;
+                    }
+                    else if (content.getNodeName().equals("button") && find){
+                        button = content.getFirstChild().getNodeValue();
                     }
                     else if (content.getNodeName().equals("first") && find){
                         first = Integer.parseInt(content.getFirstChild().getNodeValue());
@@ -86,5 +90,9 @@ public class Dialogue {
 
     public String getId() {
         return id;
+    }
+
+    public String getButton() {
+        return button;
     }
 }

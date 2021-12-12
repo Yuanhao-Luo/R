@@ -11,8 +11,9 @@
     </communication>
 
     <communication>
-        <!--        看下四周-->
+    <!--        看下四周-->
         <id>homeofseaeye1</id>
+        <button>看下四周</button>
         <first>1</first>
         <sentence>为啥这里放着一个儿童泳池</sentence>
         <sentence>不是泳池，这是海，象征手法知道么</sentence>
@@ -21,6 +22,7 @@
     <communication>
         <!--        看向头顶-->
         <id>homeofseaeye2</id>
+        <button>看向头顶</button>
         <first>1</first>
         <sentence>为啥这里放着一个吊灯</sentence>
         <sentence>不是吊灯，这是太阳，象征手法明白么</sentence>
@@ -29,6 +31,7 @@
     <communication>
         <!--        看向商品-->
         <id>homeofseaeye3</id>
+        <button>看向商品</button>
         <first>1</first>
         <sentence>道具店主力商品回复药[世色癌]一排摆到头</sentence>
     </communication>
@@ -36,6 +39,7 @@
     <communication>
         <!--        和谁说下话-->
         <id>homeofseamouth1</id>
+        <button>和谁说下话</button>
         <first>2</first>
         <sentence>兰斯兰斯，咖喱和拉面，买哪个</sentence>
         <sentence>哪个都不买</sentence>
@@ -45,6 +49,7 @@
     <communication>
         <!--        打听下光的事情-->
         <id>homeofseamouth2</id>
+        <button>打听下光的事情</button>
         <first>2</first>
         <sentence>没来过我的店噢</sentence>
     </communication>
@@ -52,6 +57,7 @@
     <communication>
         <!--        问下米莉的事情-->
         <id>homeofseamouth3</id>
+        <button>问下米莉的事情</button>
         <first>1</first>
         <sentence>再跟我讲讲米莉</sentence>
         <sentence>和米莉去买衣服，她总是买黑色的</sentence>
@@ -60,6 +66,7 @@
     <communication>
         <!--        触摸些什么-->
         <id>homeofseahand1</id>
+        <button>触摸些什么</button>
         <first>1</first>
         <sentence>摸了摸地板，因为撒了沙子，地板滑滑的</sentence>
     </communication>
@@ -67,6 +74,7 @@
     <communication>
         <!--        在泳池玩耍-->
         <id>homeofseahand2</id>
+        <button>在泳池玩耍</button>
         <first>1</first>
         <sentence>一个人玩也没啥意思</sentence>
     </communication>
@@ -74,6 +82,7 @@
     <communication>
         <!--        触碰食品-->
         <id>homeofseahand3</id>
+        <button>触碰食品</button>
         <first>2</first>
         <sentence>要买吗，要买吗</sentence>
         <sentence>不要！</sentence>
@@ -82,6 +91,7 @@
     <communication>
         <!--        袭击帕蒂-->
         <id>homeofseaattack1</id>
+        <button>袭击帕蒂</button>
         <first>1</first>
         <sentence>喝！水枪攻击 啊。。被躲开了</sentence>
         <sentence>真是的。。</sentence>
@@ -90,6 +100,7 @@
     <communication>
         <!--        袭击些什么-->
         <id>homeofseaattack2</id>
+        <button>袭击些什么</button>
         <first>2</first>
         <sentence>不可以，这里禁止滑行</sentence>
         <sentence>切</sentence>
@@ -98,6 +109,7 @@
     <communication>
         <!--        袭击泳池-->
         <id>homeofseaattack3</id>
+        <button>袭击泳池</button>
         <sentence>哇，水好冷</sentence>
         <first>1</first>
     </communication>
@@ -114,6 +126,7 @@
     <communication>
         <!--        看下四周-->
         <id>weaponseye1</id>
+        <button>看下四周</button>
         <first>1</first>
         <sentence>冒险者...死亡保险？</sentence>
         <sentence>嗯...是有的，不过请不必在意</sentence>
@@ -122,6 +135,7 @@
     <communication>
         <!--        看一下商品-->
         <id>weaponseye2</id>
+        <button>看一下商品</button>
         <first>1</first>
         <sentence>有没有好武器呢</sentence>
     </communication>
@@ -129,6 +143,7 @@
     <communication>
         <!--        看下米莉-->
         <id>weaponseye3</id>
+        <button>看下米莉</button>
         <first>1</first>
         <sentence>好像在忙着一下事情，算了</sentence>
     </communication>
@@ -136,6 +151,7 @@
     <communication>
         <!--        和谁说下话-->
         <id>weaponsmouth1</id>
+        <button>和谁说下话</button>
         <first>1</first>
         <sentence>最近有没有遇到怪事</sentence>
         <sentence>怪事...</sentence>
@@ -146,6 +162,7 @@
     <communication>
         <!--        打听下光的事情-->
         <id>weaponsmouth2</id>
+        <button>打听下光的事情</button>
         <first>1</first>
         <sentence>没见过那个人</sentence>
     </communication>
@@ -153,6 +170,7 @@
     <communication>
         <!--        打听盗贼团的事情-->
         <id>weaponsmouth3</id>
+        <button>打听盗贼团的事情</button>
         <first>2</first>
         <sentence>盗贼团，其他什么不知道了</sentence>
     </communication>
@@ -160,6 +178,7 @@
     <communication>
         <!--        触摸些什么-->
         <id>weaponshand1</id>
+        <button>触摸些什么</button>
         <first>1</first>
         <sentence>哇，手指被剑划到了</sentence>
     </communication>
@@ -167,6 +186,7 @@
     <communication>
         <!--        触摸柜台-->
         <id>weaponshand2</id>
+        <button>触摸柜台</button>
         <first>1</first>
         <sentence>里面的武器好像很帅的样子的</sentence>
         <sentence>盯...</sentence>
@@ -176,6 +196,7 @@
     <communication>
         <!--        触碰武器-->
         <id>weaponshand3</id>
+        <button>触碰武器</button>
         <first>1</first>
         <sentence>随便乱摸这里的武器可是很危险的</sentence>
     </communication>
@@ -183,6 +204,7 @@
     <communication>
         <!--        袭击米莉-->
         <id>weaponsattack1</id>
+        <button>袭击米莉</button>
         <first>1</first>
         <sentence>上次被追了几条街，还是算了</sentence>
     </communication>
@@ -190,6 +212,7 @@
     <communication>
         <!--        袭击些什么-->
         <id>weaponsattack2</id>
+        <button>袭击些什么</button>
         <first>1</first>
         <sentence>盯...</sentence>
         <sentence>米莉在盯着，还是算了</sentence>
@@ -198,12 +221,14 @@
     <communication>
         <!--        袭击柜台-->
         <id>weaponsattack3</id>
+        <button>袭击柜台</button>
         <sentence>随便乱动这里的武器可是很危险的</sentence>
     </communication>
 
     <communication>
         <!--        hotel-->
         <id>hotel</id>
+        <button></button>
         <first>2</first>
         <sentence>今天的冒险还顺利么，兰斯先生</sentence>
         <sentence>哈哈哈，那当然顺畅无比</sentence>
@@ -212,6 +237,7 @@
     <communication>
         <!--        看下四周-->
         <id>hoteleye1</id>
+        <button>看下四周</button>
         <first>1</first>
         <sentence>新鲜玩意已经看过一遍了,不错的房间</sentence>
     </communication>
@@ -219,6 +245,7 @@
     <communication>
         <!--        看下挂历-->
         <id>hoteleye2</id>
+        <button>看下挂历</button>
         <first>1</first>
         <sentence>有奈美的保证，后面什么都没有。算了</sentence>
     </communication>
@@ -226,6 +253,7 @@
     <communication>
         <!--        看下时钟-->
         <id>hoteleye3</id>
+        <button>看下时钟</button>
         <first>1</first>
         <sentence>看下枕头边的钟，时间还早着呢</sentence>
     </communication>
@@ -233,6 +261,7 @@
     <communication>
         <!--        和谁说下话-->
         <id>hotelmouth1</id>
+        <button>和谁说下话</button>
         <first>1</first>
         <sentence>找不到话题...算了不叫奈美过来了</sentence>
     </communication>
@@ -240,6 +269,7 @@
     <communication>
         <!--        打听光的事情-->
         <id>hotelmouth2</id>
+        <button>打听光的事情</button>
         <first>1</first>
         <sentence>奈美好像不认识，问也白问</sentence>
     </communication>
@@ -247,6 +277,7 @@
     <communication>
         <!--        打听下寄出的剑-->
         <id>hotelmouth3</id>
+        <button>打听下寄出的剑</button>
         <first>1</first>
         <sentence>那把剑放在奈美那儿了</sentence>
     </communication>
@@ -254,6 +285,7 @@
     <communication>
         <!--        触摸些什么-->
         <id>hotelhand1</id>
+        <button>触摸些什么</button>
         <first>1</first>
         <sentence>我在房间里面四处摸下，已经没有值得注意的地方了</sentence>
     </communication>
@@ -261,6 +293,7 @@
     <communication>
         <!--        打开壁橱-->
         <id>hotelhand2</id>
+        <button>打开壁橱</button>
         <first>1</first>
         <sentence>柜橱里面没啥东西了</sentence>
     </communication>
@@ -268,6 +301,7 @@
     <communication>
         <!--        触摸茶壶-->
         <id>hotelhand3</id>
+        <button>触摸茶壶</button>
         <first>1</first>
         <sentence>茶壶里面有一些新鲜的茶叶，没有什么秘密机关</sentence>
     </communication>
@@ -275,6 +309,7 @@
     <communication>
         <!--        袭击墙壁-->
         <id>hotelattack1</id>
+        <button>袭击墙壁</button>
         <first>1</first>
         <sentence>哇，手好痛</sentence>
     </communication>
@@ -282,6 +317,7 @@
     <communication>
         <!--        袭击奈美-->
         <id>hotelattack2</id>
+        <button>袭击奈美</button>
         <first>2</first>
         <sentence>请问你有什么吩咐？ 兰斯先...</sentence>
         <sentence>喝--！突然袭击</sentence>
@@ -295,6 +331,7 @@
     <communication>
         <!--        袭击桌子-->
         <id>hotelattack3</id>
+        <button>袭击桌子</button>
         <first>1</first>
         <sentence>哇，再用力可能会坏，还是算了吧</sentence>
     </communication>
@@ -309,6 +346,7 @@
     <communication>
         <!--        看下四周-->
         <id>leveleye1</id>
+        <button>看下四周</button>
         <first>1</first>
         <sentence>店里的布置倒是很整齐，喔有糖</sentence>
         <sentence>那是应付小孩子的，想吃的话也随意</sentence>
@@ -317,6 +355,7 @@
     <communication>
         <!--        看向办公桌-->
         <id>leveleye2</id>
+        <button>看向办公桌</button>
         <first>1</first>
         <sentence>看向办公桌，上面堆着书</sentence>
     </communication>
@@ -324,6 +363,7 @@
     <communication>
         <!--        看向窗户-->
         <id>leveleye3</id>
+        <button>看向窗户</button>
         <first>1</first>
         <sentence>窗户上面贴满了...什么？</sentence>
     </communication>
@@ -331,6 +371,7 @@
     <communication>
         <!--        和谁说下话-->
         <id>levelmouth1</id>
+        <button>和谁说下话</button>
         <first>2</first>
         <sentence>除了升级服务，本店还提供高效积攒经验值的咨询</sentence>
         <sentence>那是什么？</sentence>
@@ -341,6 +382,7 @@
     <communication>
         <!--        打听下光的事情-->
         <id>levelmouth2</id>
+        <button>打听下光的事情</button>
         <first>1</first>
         <sentence>见过这个人吗</sentence>
         <sentence>额...叫什么名字</sentence>
@@ -352,6 +394,7 @@
     <communication>
         <!--        听下建议-->
         <id>levelmouth3</id>
+        <button>听下建议</button>
         <first>1</first>
         <sentence>能不能告诉我让冒险变得简单的方法？</sentence>
         <sentence>好啊，嗯，我想想，赚钱的诀窍怎么样？</sentence>
@@ -362,6 +405,7 @@
     <communication>
         <!--        触摸些什么-->
         <id>levelhand1</id>
+        <button>触摸些什么</button>
         <first>1</first>
         <sentence>看到垒球在一起的书，就想要推倒，不够温妮丝会生气，算了</sentence>
     </communication>
@@ -369,6 +413,7 @@
     <communication>
         <!--        触摸水晶球-->
         <id>levelhand2</id>
+        <button>触摸水晶球</button>
         <first>1</first>
         <sentence>给我看看，那个水晶球...</sentence>
         <sentence>啊，不行，那是神圣的物品！</sentence>
@@ -378,6 +423,7 @@
     <communication>
         <!--        触碰桌子-->
         <id>levelhand3</id>
+        <button>触碰桌子</button>
         <first>1</first>
         <sentence>桌子上面空空的，没什么好摸的</sentence>
     </communication>
@@ -385,6 +431,7 @@
     <communication>
         <!--        袭击薇利斯-->
         <id>levelattack1</id>
+        <button>袭击薇利斯</button>
         <first>1</first>
         <sentence>......</sentence>
         <sentence>......</sentence>
@@ -394,6 +441,7 @@
     <communication>
         <!--        袭击些什么-->
         <id>levelattack2</id>
+        <button>袭击些什么</button>
         <first>1</first>
         <sentence>眼前，是不可名状的，带着狂气亵渎表情的，怪物般的棉与布的集合</sentence>
         <sentence>兰斯先生？那个娃娃怎么了嘛</sentence>
@@ -405,6 +453,8 @@
     <communication>
         <!--        袭击书架-->
         <id>levelattack3</id>
+        <first>1</first>
+        <button>袭击书架</button>
         <sentence>咚咚，书砸到头了</sentence>
     </communication>
 
@@ -419,6 +469,7 @@
     <communication>
         <!--        看下四周-->
         <id>bistroeye1</id>
+        <button>看下四周</button>
         <first>1</first>
         <sentence>我对店里的装修没啥兴趣</sentence>
     </communication>
@@ -426,6 +477,7 @@
     <communication>
         <!--        看向酒棚-->
         <id>bistroeye2</id>
+        <button>看向酒棚</button>
         <first>1</first>
         <sentence>我并不嗜酒，只是没得喝的时候会想喝而已</sentence>
     </communication>
@@ -433,6 +485,7 @@
     <communication>
         <!--        不去看老板-->
         <id>bistroeye3</id>
+        <button>不去看老板</button>
         <first>1</first>
         <sentence>从精神卫生来说，是个正确的选择</sentence>
     </communication>
@@ -440,6 +493,7 @@
     <communication>
         <!--        和谁说下话-->
         <id>bistromouth1</id>
+        <button>和谁说下话</button>
         <first>1</first>
         <sentence>老板看你赚钱不多啊</sentence>
         <sentence>噢...</sentence>
@@ -448,6 +502,7 @@
     <communication>
         <!--        打听下光的事情-->
         <id>bistromouth2</id>
+        <button>打听下光的事情</button>
         <first>1</first>
         <sentence>这老板啥都不知道</sentence>
     </communication>
@@ -455,6 +510,7 @@
     <communication>
         <!--        打听盗贼团的事情-->
         <id>bistromouth3</id>
+        <button>打听盗贼团的事情</button>
         <first>2</first>
         <sentence>女儿就拜托你了...</sentence>
         <sentence>我可是兰斯，盗贼什么的小菜一碟</sentence>
@@ -463,6 +519,7 @@
     <communication>
         <!--        触摸些什么-->
         <id>bistrohand1</id>
+        <button>触摸些什么</button>
         <first>1</first>
         <sentence>抓住桌上的一次性筷子，叮叮咚咚敲起来，好无聊</sentence>
     </communication>
@@ -470,6 +527,7 @@
     <communication>
         <!--        触摸酒桶-->
         <id>bistrohand2</id>
+        <button>触摸酒桶</button>
         <first>1</first>
         <sentence>吱，转动酒桶的开关看看 空的...无聊</sentence>
     </communication>
@@ -477,6 +535,7 @@
     <communication>
         <!--        触碰桌子-->
         <id>bistrohand3</id>
+        <button>触碰桌子</button>
         <first>1</first>
         <sentence>桌子上面空空的，没什么好摸的</sentence>
     </communication>
@@ -484,6 +543,7 @@
     <communication>
         <!--        袭击老板-->
         <id>bistroattack1</id>
+        <button>袭击老板</button>
         <first>1</first>
         <sentence>贤明的我决定什么都不做</sentence>
     </communication>
@@ -491,6 +551,7 @@
     <communication>
         <!--        袭击些什么-->
         <id>bistroattack2</id>
+        <button>袭击些什么</button>
         <first>1</first>
         <sentence>眶！发个飙</sentence>
     </communication>
@@ -498,6 +559,7 @@
     <communication>
         <!--        袭击酒杯-->
         <id>bistroattack3</id>
+        <button>袭击酒杯</button>
         <sentence>算了，老板在看着</sentence>
 
     </communication>

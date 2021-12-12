@@ -21,15 +21,24 @@ public class ActionDialogPane extends Pane {
         this.setLayoutX(200);
         this.placeName = placeName;
         this.actionName = actionName;
-        adb2 = new ActionDialogButton("      看看四周","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
-        adb3 = new ActionDialogButton("      看看五周","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
+        adb1 = new ActionDialogButton("      "+new Dialogue(placeName+actionName+"1").getButton(),"400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+        adb2 = new ActionDialogButton("      "+new Dialogue(placeName+actionName+"2").getButton(),"400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
+        adb3 = new ActionDialogButton("      "+new Dialogue(placeName+actionName+"3").getButton(),"400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
+        adb1.setOnMouseClicked(e->{
+            gpp.dialogBegin(placeName,actionName,1,new Dialogue(placeName+actionName+"1").getSentence(),new Dialogue(placeName+actionName+"1").getFirst());
+        });
         adb2.setOnMouseClicked(e->{
             gpp.dialogBegin(placeName,actionName,2,new Dialogue(placeName+actionName+"2").getSentence(),new Dialogue(placeName+actionName+"2").getFirst());
+        });
+        adb3.setOnMouseClicked(e->{
+            gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3").getSentence(),new Dialogue(placeName+actionName+"3").getFirst());
         });
 
         switch (actionName){
             case "foot":
                 adb1 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+                adb2 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
+                adb3 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
                 break;
             case "eye":
                 switch (placeName){
@@ -51,18 +60,18 @@ public class ActionDialogPane extends Pane {
                         });
                         break;
                     default:
-                        adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
-                        adb1.setOnMouseClicked(e->{
-                            gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
-                        });
+//                        adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+//                        adb1.setOnMouseClicked(e->{
+//                            gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
+//                        });
                 }
 
                 break;
             default:
-                adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
-                adb1.setOnMouseClicked(e->{
-                    gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
-                });
+//                adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+//                adb1.setOnMouseClicked(e->{
+//                    gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
+//                });
         }
 //        if (Objects.equals(actionName, "foot")){
 //            adb1 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);

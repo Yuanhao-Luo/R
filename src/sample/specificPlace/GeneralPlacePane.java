@@ -160,6 +160,7 @@ public class GeneralPlacePane extends Pane {
                 }
                 person.setMoney(person.getMoney()-cost);
                 resetGoodsList(goodsListPane,"homeofsea");
+                goodsListPane.refreshMoney();
                 itemListPane.refreshAll();
             }
         });
@@ -181,7 +182,8 @@ public class GeneralPlacePane extends Pane {
                 }
                 person.setMoney(person.getMoney()-cost);
                 resetGoodsList(weaponGoodsListPane,"weapons");
-                itemListPane.refreshAll();
+                weaponGoodsListPane.refreshMoney();
+                itemListPane1.refreshAll();
             }
         });
 
