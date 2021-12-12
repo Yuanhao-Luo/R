@@ -43,31 +43,41 @@ public class ActionDialogPane extends Pane {
             case "eye":
                 switch (placeName){
                     case "homeofsea":
-                        adb1 = new ActionDialogButton("      有什么在卖吗","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
-                        adb1.setOnMouseClicked(e->{
-                            gpp.dialogBegin(placeName,actionName,1,new String[]{"有个屁","滚"},2,"openHomeofseaShop");
-//                    gpp.shopPane.setVisible(true);
+                        adb3.setOnMouseClicked(e->{
+                            gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3").getSentence(),new Dialogue(placeName+actionName+"3").getFirst(),"openHomeofseaShop");
                         });
-//                        adb2.setOnMouseClicked(e->{
-//                            gpp.dialogBegin(placeName,actionName,2,new Dialogue(placeName+actionName+"2").getSentence(),new Dialogue(placeName+actionName+"2").getFirst());
-//                        });
+
                         break;
                     case "weapons":
                         adb1 = new ActionDialogButton("      有什么在卖吗","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
                         adb1.setOnMouseClicked(e->{
                             gpp.dialogBegin(placeName,actionName,1,new String[]{"有个屁","滚"},2,"openWeaponShop");
-//                    gpp.shopPane.setVisible(true);
                         });
                         break;
-                    default:
+//                    default:
 //                        adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
 //                        adb1.setOnMouseClicked(e->{
 //                            gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);
 //                        });
                 }
-
                 break;
-            default:
+            case "hand":
+                switch (placeName){
+                    case "level" :
+                        adb1 = new ActionDialogButton("      升级","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+                        if (Person.getInstance().canLevelUp()){
+                            adb1.setOnMouseClicked(e->{
+                                gpp.dialogBegin(placeName,actionName,1,new String[]{"好"},2,"levelUp");
+                            });
+                        }else {
+                            adb1.setOnMouseClicked(e->{
+                                gpp.dialogBegin(placeName,actionName,1,new String[]{"经验不够"},2);
+                            });
+                        }
+
+
+                }
+//            default:
 //                adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
 //                adb1.setOnMouseClicked(e->{
 //                    gpp.dialogBegin(placeName,actionName,1,new String[]{"你有出国留学证明吗","没有"},2);

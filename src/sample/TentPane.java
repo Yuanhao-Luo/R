@@ -54,7 +54,7 @@ public class TentPane extends Pane {
         tent2.setY(tent2Top);
 
         levelLabel = new Label("5");
-        levelLabel.setLayoutX(460 -100 + tent1Left);
+        levelLabel.setLayoutX(445 -100 + tent1Left);
         levelLabel.setLayoutY(90 - (-300) + tent1Top);
         levelLabel.setFont(Font.font("Timer New Roman", FontWeight.BOLD,  45));
 
@@ -192,6 +192,7 @@ public class TentPane extends Pane {
         setMaxhp(person.getMaxHealth());
         setLuck(person.getLuck());
         setGold(person.getMoney());
+        setExp(person.getExp());
         setChip(person.getItemList().size());
     }
 

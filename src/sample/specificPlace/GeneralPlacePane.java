@@ -336,6 +336,8 @@ public class GeneralPlacePane extends Pane {
                     case "openWeaponShop":
                         this.weaponShopPane.setVisible(true);
                         break;
+                    case "levelUp":
+                        Person.getInstance().levelUp();
                     default:
                         this.shopPane.setVisible(false);
                         this.weaponShopPane.setVisible(false);

@@ -3,6 +3,7 @@ package sample.specificPlace;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import sample.ImageProcess;
 import sample.ItemPane;
@@ -73,36 +74,42 @@ public class GoodsListPane extends Pane {
         price.setLayoutX(price_x);
         price.setLayoutY(200);
         price.setFont(Font.font("kaiti", 35));
+        price.setTextFill(Color.AZURE);
         this.getChildren().add(price);
 
         priceLabel = new Label();
         priceLabel.setLayoutX(price_x + 100);
         priceLabel.setLayoutY(200);
         priceLabel.setFont(Font.font("kaiti", 35));
+        priceLabel.setTextFill(Color.AZURE);
         this.getChildren().add(priceLabel);
 
         att = new Label("攻击：");
         att.setLayoutX(price_x+200);
         att.setLayoutY(200);
         att.setFont(Font.font("kaiti", 35));
+        att.setTextFill(Color.AZURE);
         this.getChildren().add(att);
 
         attLabel = new Label();
         attLabel.setLayoutX(price_x + 300);
         attLabel.setLayoutY(200);
         attLabel.setFont(Font.font("kaiti", 35));
+        attLabel.setTextFill(Color.AZURE);
         this.getChildren().add(attLabel);
 
         def = new Label("防御：");
         def.setLayoutX(price_x+400);
         def.setLayoutY(200);
         def.setFont(Font.font("kaiti", 35));
+        def.setTextFill(Color.AZURE);
         this.getChildren().add(def);
 
         defLabel = new Label();
         defLabel.setLayoutX(price_x + 500);
         defLabel.setLayoutY(200);
         defLabel.setFont(Font.font("kaiti", 35));
+        defLabel.setTextFill(Color.AZURE);
         this.getChildren().add(defLabel);
 
         moneyBackground = new ImageView();
@@ -112,8 +119,9 @@ public class GoodsListPane extends Pane {
 
         moneyLabel = new Label();
         moneyLabel.setLayoutX(20);
-        moneyLabel.setLayoutY(moneyBackground_y + 285);
+        moneyLabel.setLayoutY(moneyBackground_y + 290);
         moneyLabel.setFont(Font.font("kaiti", 35));
+        moneyLabel.setTextFill(Color.AZURE);
         refreshMoney();
         this.getChildren().add(moneyLabel);
 

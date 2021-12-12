@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="cannot pull">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/characterSystem/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/characterSystem/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GoodsListPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GoodsListPane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,35 +288,7 @@
       <workItem from="1639111782463" duration="3901000" />
       <workItem from="1639150402768" duration="306000" />
       <workItem from="1639200568518" duration="13871000" />
-      <workItem from="1639288957137" duration="606000" />
-    </task>
-    <task id="LOCAL-00033" summary="对medicine以及itemlist进行的相关的调整">
-      <created>1636292701082</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1636292701082</updated>
-    </task>
-    <task id="LOCAL-00034" summary="完善物品系统">
-      <created>1637049280939</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1637049280939</updated>
-    </task>
-    <task id="LOCAL-00035" summary="gui中的物品栏初步实现">
-      <created>1637064632611</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1637064632611</updated>
-    </task>
-    <task id="LOCAL-00036" summary="不commit就pull不了">
-      <created>1637069037771</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1637069037771</updated>
+      <workItem from="1639288957137" duration="12484000" />
     </task>
     <task id="LOCAL-00037" summary="不commit就pull不了">
       <created>1637108559353</created>
@@ -629,7 +605,35 @@
       <option name="project" value="LOCAL" />
       <updated>1639239419112</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="cannot pull">
+      <created>1639289578462</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1639289578463</updated>
+    </task>
+    <task id="LOCAL-00083" summary="cannot pull">
+      <created>1639289597102</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1639289597102</updated>
+    </task>
+    <task id="LOCAL-00084" summary="商店价格信息">
+      <created>1639297679368</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1639297679368</updated>
+    </task>
+    <task id="LOCAL-00085" summary="图片">
+      <created>1639298674866</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1639298674866</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +677,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="1111" />
     <MESSAGE value="初步战斗系统" />
     <MESSAGE value="战斗系大致完成，还需与gui对接" />
     <MESSAGE value="在BattlePane里查找“要求”，根据要求修改。" />
@@ -696,9 +699,10 @@
     <MESSAGE value="怪物图片" />
     <MESSAGE value="Battle中的注释" />
     <MESSAGE value="商店基本做完，还需调位置以及与对话对接" />
-    <MESSAGE value="图片" />
     <MESSAGE value="cannot pull" />
-    <option name="LAST_COMMIT_MESSAGE" value="cannot pull" />
+    <MESSAGE value="商店价格信息" />
+    <MESSAGE value="图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="图片" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

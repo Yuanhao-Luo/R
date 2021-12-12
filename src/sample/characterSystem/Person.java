@@ -13,13 +13,13 @@ public class Person {
     private boolean blind = false;
     private boolean getLost = false;
     private boolean squidMan = false;
-    private int health = 900;
+    private int health = 160;
     private int maxHealth = 900;
     private int money = 1000;
     private int attack = 100;
     private int critical = 10;
-    private int exp = 0;
-    private int level = 0;
+    private int exp = 500;
+    private int level = 10;
     private int luck = 5;
     private int schedule = 0;
     //backpack part
@@ -143,6 +143,35 @@ public class Person {
 
     public int getSchedule() {
         return schedule;
+    }
+
+    public void setMaxHealth(int maxHealth) {
+        this.maxHealth = maxHealth;
+    }
+
+    public void levelUp(){
+        int needExp = 100000000;
+        if (level>=10 && level<=15){
+            needExp = (level + 1) * 10;
+        }else if (level > 15 && level <= 20){
+            needExp = (level - 10) *90;
+        }
+        if (getExp() > needExp){
+            setExp(getExp()-needExp);
+            setLevel(getLevel()+1);
+            setMaxHealth(getMaxHealth()+40);
+            setHealth(getHealth()+40);
+        }
+    }
+
+    public boolean canLevelUp(){
+        int needExp = 100000000;
+        if (level>=10 && level<=15){
+            needExp = (level + 1) * 10;
+        }else if (level > 15 && level <= 20){
+            needExp = (level - 10) *90;
+        }
+        return getExp() > needExp;
     }
 
     //还没有实现，需要对接
