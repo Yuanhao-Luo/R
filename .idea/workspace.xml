@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="cannot pull">
+    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="升级">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/characterSystem/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/characterSystem/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GoodsListPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GoodsListPane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +17,7 @@
       <list>
         <option value="Interface" />
         <option value="XML" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -288,21 +282,7 @@
       <workItem from="1639111782463" duration="3901000" />
       <workItem from="1639150402768" duration="306000" />
       <workItem from="1639200568518" duration="13871000" />
-      <workItem from="1639288957137" duration="12484000" />
-    </task>
-    <task id="LOCAL-00037" summary="不commit就pull不了">
-      <created>1637108559353</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1637108559353</updated>
-    </task>
-    <task id="LOCAL-00038" summary="item的按钮可以点了">
-      <created>1637110550758</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1637110550758</updated>
+      <workItem from="1639288957137" duration="14053000" />
     </task>
     <task id="LOCAL-00039" summary="在做物品的系统的gui的时候突然想到忘记commit了，于是就来commit了">
       <created>1637237657736</created>
@@ -633,7 +613,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639298674866</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="升级">
+      <created>1639306749974</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306749974</updated>
+    </task>
+    <task id="LOCAL-00087" summary="任务">
+      <created>1639308103181</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1639308103181</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,8 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="初步战斗系统" />
-    <MESSAGE value="战斗系大致完成，还需与gui对接" />
     <MESSAGE value="在BattlePane里查找“要求”，根据要求修改。" />
     <MESSAGE value="进一步战斗系统" />
     <MESSAGE value="Merge remote-tracking branch 'origin/BattleSystemLJ'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/R/sample/BattlePane.class&#10;#&#9;out/production/R/sample/ItemPane.class&#10;#&#9;out/production/R/sample/MainFramePane.class&#10;#&#9;out/production/R/sample/MazePane.class&#10;#&#9;out/production/R/sample/TentPane.class&#10;#&#9;out/production/R/sample/battle/battleGUI.class&#10;#&#9;out/production/R/sample/battle/battleMain.class&#10;#&#9;out/production/R/sample/buttons/CancelAllButton.class&#10;#&#9;out/production/R/sample/buttons/StartBattleButton.class&#10;#&#9;out/production/R/sample/tentPane.class&#10;#&#9;src/sample/BattlePane.java&#10;#&#9;src/sample/MainFramePane.java&#10;#&#9;src/sample/TentPane.java&#10;#&#9;src/sample/battle/battleGUI.java&#10;#&#9;src/sample/battle/battleMain.java&#10;#&#9;src/sample/buttons/CancelAllButton.java&#10;#&#9;src/sample/buttons/StartBattleButton.java" />
@@ -702,7 +694,9 @@
     <MESSAGE value="cannot pull" />
     <MESSAGE value="商店价格信息" />
     <MESSAGE value="图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="图片" />
+    <MESSAGE value="升级" />
+    <MESSAGE value="任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="任务" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

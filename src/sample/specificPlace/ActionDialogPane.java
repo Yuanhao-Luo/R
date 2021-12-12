@@ -50,9 +50,8 @@ public class ActionDialogPane extends Pane {
 
                         break;
                     case "weapons":
-                        adb1 = new ActionDialogButton("      有什么在卖吗","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
-                        adb1.setOnMouseClicked(e->{
-                            gpp.dialogBegin(placeName,actionName,1,new String[]{"有个屁","滚"},2,"openWeaponShop");
+                        adb2.setOnMouseClicked(e->{
+                            gpp.dialogBegin(placeName,actionName,2,new Dialogue(placeName+actionName+"2").getSentence(),new Dialogue(placeName+actionName+"2").getFirst(),"openWeaponShop");
                         });
                         break;
 //                    default:
