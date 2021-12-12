@@ -15,11 +15,10 @@ public class GoodsListPane extends Pane {
     GeneralButton prePage;
     ArrayList<Item> items;
 
-    public GoodsListPane(ArrayList<Item> items){
+    public GoodsListPane(){
         super();
         setWidth(0);
         setHeight(0);
-        this.items = items;
 
 
 
@@ -28,7 +27,6 @@ public class GoodsListPane extends Pane {
             itemList[i] = new GoodPane(i);
             getChildren().add(itemList[i]);
         }
-        refreshAll();
         changeToItemPage(0);
 
         nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
@@ -38,8 +36,8 @@ public class GoodsListPane extends Pane {
             }
         });
         getChildren().add(nextPage);
-        nextPage.setLayoutX(800);
-        nextPage.setLayoutY(80);
+        nextPage.setLayoutX(815);
+        nextPage.setLayoutY(75);
 
         prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
         prePage.setOnMouseReleased(e->{
@@ -48,8 +46,8 @@ public class GoodsListPane extends Pane {
             }
         });
         getChildren().add(prePage);
-        prePage.setLayoutX(131);
-        prePage.setLayoutY(80);
+        prePage.setLayoutX(165);
+        prePage.setLayoutY(75);
 
     }
 
