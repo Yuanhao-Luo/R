@@ -692,10 +692,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639107652463" />
-    <state x="588" y="117" key="CommitChangelistDialog2" timestamp="1639239150665">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="627" y="125" key="CommitChangelistDialog2" timestamp="1639289068343">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="588" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1639239150665" />
+    <state x="627" y="125" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1639289068343" />
     <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1639107650900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -745,10 +746,11 @@
     </state>
     <state x="670" y="236" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639107625068" />
     <state x="715" y="252" key="MultipleFileMergeDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639232445404" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1639239165029">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="589" y="273" key="Vcs.Push.Dialog.v2" timestamp="1639289079294">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1639239165029" />
+    <state x="589" y="273" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1639289079294" />
     <state x="718" y="188" width="611" height="735" key="find.popup" timestamp="1639237536306">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
