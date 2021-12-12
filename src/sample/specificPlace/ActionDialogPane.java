@@ -36,11 +36,7 @@ public class ActionDialogPane extends Pane {
         });
 
         switch (actionName){
-            case "foot":
-                adb1 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
-                adb2 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
-                adb3 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
-                break;
+
             case "eye":
                 switch (placeName){
                     case "homeofsea":
@@ -69,7 +65,20 @@ public class ActionDialogPane extends Pane {
                                 gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"0").getSentence(),new Dialogue(placeName+actionName+"3").getFirst());
                                 Person.getInstance().setSchedule(Schedule.BEAT_THIEF);
                             });
+                        }else if (Person.getInstance().getSchedule() == Schedule.GET_DAUGHTER){
+                            adb3 = new ActionDialogButton("      你女儿回来了","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
+                            adb3.setOnMouseClicked(e->{
+                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"2").getSentence(),new Dialogue(placeName+actionName+"3").getFirst());
+                                Person.getInstance().setSchedule(Schedule.FINISH);
+                            });
+                        }else if (Person.getInstance().getSchedule() == Schedule.FINISH){
+                            adb3 = new ActionDialogButton("      和老板说些什么","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
+                            adb3.setOnMouseClicked(e->{
+                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"3").getSentence(),new Dialogue(placeName+actionName+"3").getFirst());
+                                Person.getInstance().setSchedule(Schedule.FINISH);
+                            });
                         }
+
                 }
             case "hand":
                 switch (placeName){
@@ -87,6 +96,22 @@ public class ActionDialogPane extends Pane {
 
 
                 }
+
+            case "attack":
+                switch (placeName){
+                    case "headroom":
+                        adb3.setOnMouseClicked(e->{
+                            gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3").getSentence(),new Dialogue(placeName+actionName+"3").getFirst(),"attackHead");
+                        });
+                }
+
+                break;
+
+            case "foot":
+                adb1 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
+                adb2 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
+                adb3 = new LeaveHereButton("      从这里离开","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
+                break;
 //            default:
 //                adb1 = new ActionDialogButton("      这是一段测试用对话","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
 //                adb1.setOnMouseClicked(e->{

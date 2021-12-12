@@ -1,10 +1,8 @@
 package sample.battle;
 
 import sample.characterSystem.Person;
-import sample.itemSystem.Item;
-import sample.itemSystem.ItemList;
-import sample.itemSystem.Arms;
-import sample.itemSystem.OrdinaryItem;
+import sample.characterSystem.Schedule;
+import sample.itemSystem.*;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -156,6 +154,10 @@ public class Battle {
             person.setMoney(person.getMoney() + monster.getMoney());
             person.setExp(person.getExp() + monster.getExp());
             result =  1;
+            if (monster.getUrl().equals(".\\images\\monster\\head.png")){
+                person.getItemList().add(new SimpleFactory().buildDaughter());
+                person.setSchedule(Schedule.GET_DAUGHTER);
+            }
         }
         else
             result =  0;

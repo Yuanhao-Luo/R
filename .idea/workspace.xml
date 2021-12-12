@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="R:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c231e273-41db-4a3b-8abd-7a2b3cf0a378" name="默认更改列表" comment="升级">
+    <list default="true" id="f68af5ce-4c55-4bf9-b375-9e596151da96" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/R_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/specificPlace/HeadroomPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/production/R/production/R/META-INF/R.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/SimpleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/SimpleFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/communication.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/communication.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MainFramePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MainFramePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MazePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MazePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/battle/MonsterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/characterSystem/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/characterSystem/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/itemSystem/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemSystem/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/itemSystem/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/itemSystem/SimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/communication.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/communication.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +104,6 @@
   <component name="ProjectId" id="1zGCFG1goG3u1wl8eWHYJlIbzB0" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="更新" />
-    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectViewState">
@@ -81,15 +115,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../plugin/javafx-sdk-11.0.2/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resource" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -100,7 +134,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="R" />
-      <option name="VM_PARAMETERS" value="--module-path E:\programming\plugin\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\plugin\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -205,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -663,7 +697,9 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -698,10 +734,60 @@
     <MESSAGE value="任务" />
     <option name="LAST_COMMIT_MESSAGE" value="任务" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="479" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639311046382">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="479" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639311046382" />
+    <state x="301" y="399" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1639321433153">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="301" y="399" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639321433153" />
+    <state x="804" y="314" key="FileChooserDialogImpl" timestamp="1639321519037">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="804" y="314" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1639321519037" />
+    <state width="1022" height="207" key="GridCell.Tab.0.bottom" timestamp="1639321232331">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1022" height="207" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1639321232331" />
+    <state width="1022" height="207" key="GridCell.Tab.0.center" timestamp="1639321232330">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1022" height="207" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1639321232330" />
+    <state width="1022" height="207" key="GridCell.Tab.0.left" timestamp="1639321232330">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1022" height="207" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1639321232330" />
+    <state width="1022" height="207" key="GridCell.Tab.0.right" timestamp="1639321232330">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1022" height="207" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1639321232330" />
+    <state x="735" y="272" key="MultipleFileMergeDialog" timestamp="1639310574973">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="735" y="272" key="MultipleFileMergeDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639310574973" />
+    <state x="103" y="200" key="SettingsEditor" timestamp="1639322207151">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="103" y="200" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1639322207151" />
+    <state x="694" y="319" width="611" height="490" key="find.popup" timestamp="1639310849893">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="694" y="319" width="611" height="490" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1639310849893" />
+    <state x="859" y="464" key="git4idea.ui.GitStashDialog" timestamp="1639310588177">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="859" y="464" key="git4idea.ui.GitStashDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639310588177" />
+    <state x="597" y="222" key="scopes" timestamp="1639310846694">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="597" y="222" key="scopes/0.0.2048.1112@0.0.2048.1112" timestamp="1639310846694" />
+  </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
       <pinned-members>
-        <PinnedItemInfo parentTag="sample.characterSystem.Person" memberName="selectItems" />
+        <PinnedItemInfo />
       </pinned-members>
     </pin-to-top-manager>
   </component>

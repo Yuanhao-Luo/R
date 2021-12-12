@@ -12,6 +12,8 @@ import sample.buttons.OpenTentButton;
 import sample.buttons.RunAwayButton;
 import sample.characterSystem.Person;
 import sample.itemSystem.SimpleFactory;
+import sample.specificPlace.HeadroomPane;
+import sample.specificPlace.HotelPane;
 
 
 import java.io.FileInputStream;
@@ -381,25 +383,25 @@ public class MazePane extends Pane {
                     battlePane.startBattle(mf.buildPurin());
                     break;
                 case "盗贼":
-                    battlePane.startBattle(mf.buildPurin());
+                    battlePane.startBattle(mf.buildThief());
                     break;
                 case "红盗贼":
-                    battlePane.startBattle(mf.buildPurin());
+                    battlePane.startBattle(mf.buildRedThief());
                     break;
                 case "芋虫DX":
-                    battlePane.startBattle(mf.buildPurin());
+                    battlePane.startBattle(mf.buildWorm());
                     break;
                 case "狐狸":
-                    battlePane.startBattle(mf.buildPurin());
+                    battlePane.startBattle(mf.buildFox());
                     break;
                 case "米斯恐":
-                    battlePane.startBattle(mf.buildPurin());
+                    battlePane.startBattle(mf.buildHorse());
                     break;
                 case "哈尼":
-                    battlePane.startBattle(mf.buildPurin());
+                    battlePane.startBattle(mf.buildHoney());
                     break;
                 case "噪音蟾蜍":
-                    battlePane.startBattle(mf.buildPurin());
+                    battlePane.startBattle(mf.buildFrog());
                     break;
             }
             battlePane.setVisible(true);
@@ -446,7 +448,10 @@ public class MazePane extends Pane {
                     MazePane.getInstance().setVisible(false);
                     break;
                 case "团长室"://一个具体场景，对应着团长室
-
+                    HeadroomPane headroomPane = MainFramePane.getInstance().headroomPane;
+                    headroomPane.setVisible(true);
+                    MazePane.getInstance().setVisible(false);
+                    headroomPane.dialogBegin(headroomPane.getPlaceName(), new String[]{"我进入了团长室","你是谁啊","纳命来！"},1);
                     break;
                 case "副团长室"://一个具体场景，对应着副团长室
 

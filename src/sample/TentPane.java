@@ -25,7 +25,7 @@ public class TentPane extends Pane {
     Label goldLabel;
     Label chipLabel;
     Label scheduleLabel;
-    String[] scheduleList = {"打听盗贼团","去城外打击盗贼团伙"};
+    String[] scheduleList = {"打听盗贼团","去城外打击盗贼团伙","找到酒馆老板的女儿了，快去向酒馆老板报告","报告完了"};
 
     private static TentPane tentPane = new TentPane();
 

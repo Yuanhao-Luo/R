@@ -82,6 +82,12 @@ public class Constant {
     static final public int PLAIN_SHIELD_DEFENCE = 26;
     static final public int PLAIN_SHIELD_COOL_DOWN = 2;
 
+    static final public String DAUGHTER_URL = ".\\images\\arms\\Daughter.png";
+    static final public int DAUGHTER_PRICE = 9999;
+    static final public int DAUGHTER_DAMAGE = 500;
+    static final public int DAUGHTER_DEFENCE = 100;
+    static final public int DAUGHTER_COOL_DOWN = 5;
+
     static final public String PURUPURU_SHIELD_URL = ".\\images\\arms\\PURUPURUShield.png";
     static final public int PURUPURU_SHIELD_PRICE = 330;
     static final public int PURUPURU_SHIELD_DAMAGE = 0;

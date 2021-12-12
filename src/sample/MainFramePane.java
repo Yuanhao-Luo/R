@@ -55,6 +55,7 @@ public class MainFramePane extends Pane {
     public HotelPane hotelPane = new HotelPane();
     public LevelPane levelPane = new LevelPane();
     public BistroPane bistroPane = new BistroPane();
+    public HeadroomPane headroomPane = new HeadroomPane();
     public MazePane mazePane = MazePane.getInstance();
     ClockStatus[] ClS = new ClockStatus[9];
 
@@ -149,6 +150,9 @@ public class MainFramePane extends Pane {
 
         mazePane.setVisible(false);
         this.getChildren().add(mazePane);
+
+        headroomPane.setVisible(false);
+        this.getChildren().add(headroomPane);
     }
 
     public void initHealthForMain(){
