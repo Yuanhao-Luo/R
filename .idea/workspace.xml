@@ -11,14 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f68af5ce-4c55-4bf9-b375-9e596151da96" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/BistroPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/BistroPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MazePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MazePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/characterSystem/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/characterSystem/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,13 +294,6 @@
       <workItem from="1639288957137" duration="14053000" />
       <workItem from="1639358986450" duration="2346000" />
       <workItem from="1639362215292" duration="7684000" />
-    </task>
-    <task id="LOCAL-00042" summary="图片">
-      <created>1637396010765</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1637396010765</updated>
     </task>
     <task id="LOCAL-00043" summary="图片">
       <created>1637591886007</created>
@@ -643,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639360395572</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="完成版v1.1&#10;加了通关奖状">
+      <created>1639372453013</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1639372453013</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -748,10 +743,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="781" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2048.1112@0.0.2048.1112" timestamp="1639364330250" />
-    <state x="655" y="153" key="CommitChangelistDialog2" timestamp="1639360394937">
+    <state x="655" y="153" key="CommitChangelistDialog2" timestamp="1639372452447">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="655" y="153" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1639360394937" />
+    <state x="655" y="153" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1639372452447" />
     <state x="198" y="103" key="DiffContextDialog" timestamp="1639360391772">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -760,26 +755,26 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="804" y="314" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1639321519037" />
-    <state width="866" height="287" key="GridCell.Tab.0.bottom" timestamp="1639370730227">
+    <state width="866" height="287" key="GridCell.Tab.0.bottom" timestamp="1639373004444">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="866" height="287" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1639370730227" />
-    <state width="866" height="287" key="GridCell.Tab.0.center" timestamp="1639370730227">
+    <state width="866" height="287" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1639373004444" />
+    <state width="866" height="287" key="GridCell.Tab.0.center" timestamp="1639373004443">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="866" height="287" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1639370730227" />
-    <state width="866" height="287" key="GridCell.Tab.0.left" timestamp="1639370730227">
+    <state width="866" height="287" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1639373004443" />
+    <state width="866" height="287" key="GridCell.Tab.0.left" timestamp="1639373004442">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="866" height="287" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1639370730227" />
-    <state width="866" height="287" key="GridCell.Tab.0.right" timestamp="1639370730227">
+    <state width="866" height="287" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1639373004442" />
+    <state width="866" height="287" key="GridCell.Tab.0.right" timestamp="1639373004443">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="866" height="287" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1639370730227" />
-    <state x="735" y="272" key="MultipleFileMergeDialog" timestamp="1639310574973">
+    <state width="866" height="287" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1639373004443" />
+    <state x="735" y="272" key="MultipleFileMergeDialog" timestamp="1639372491498">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="735" y="272" key="MultipleFileMergeDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639310574973" />
+    <state x="735" y="272" key="MultipleFileMergeDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639372491498" />
     <state x="815" y="280" key="RollbackChangesDialog" timestamp="1639360355687">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -788,14 +783,22 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="103" y="200" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1639322207151" />
-    <state x="617" y="292" key="Vcs.Push.Dialog.v2" timestamp="1639362227366">
+    <state x="617" y="292" key="Vcs.Push.Dialog.v2" timestamp="1639372692080">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1639362227366" />
+    <state x="617" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1639372692080" />
     <state x="694" y="319" width="611" height="490" key="find.popup" timestamp="1639310849893">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="694" y="319" width="611" height="490" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1639310849893" />
+    <state x="816" y="358" key="git4idea.merge.GitMergeDialog" timestamp="1639372577399">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="816" y="358" key="git4idea.merge.GitMergeDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639372577399" />
+    <state x="747" y="358" key="git4idea.merge.GitPullDialog" timestamp="1639372632137">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="747" y="358" key="git4idea.merge.GitPullDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639372632137" />
     <state x="859" y="464" key="git4idea.ui.GitStashDialog" timestamp="1639310588177">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

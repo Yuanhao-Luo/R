@@ -16,7 +16,7 @@ public class Person {
     private int health = 160;
     private int maxHealth = 900;
     private int money = 1000;
-    private int attack = 100;
+    private int attack = 10;
     private int critical = 10;
     private int exp = 500;
     private int level = 10;
@@ -36,15 +36,9 @@ public class Person {
         //test
         SimpleFactory s = new SimpleFactory();
         itemList.add(s.buildMagicSword());
-        itemList.add(s.buildMagicSword());
-        itemList.add(s.buildGuerrillaSword());
         itemList.add(s.buildGuerrillaSword());
         itemList.add(s.buildSmallShield());
-        itemList.add(s.buildMagicSword());
         itemList.add(s.buildTH180());
-        itemList.add(s.buildBigStick());
-        itemList.add(s.buildBaseball());
-        itemList.add(s.buildBaseball());
     }
 
     public static Person getInstance(){
