@@ -128,4 +128,21 @@ public class MonsterFactory {
         int money = 20;
         return new Monster(monster_url, bls, maxHp, critical, money, exp);
     }
+
+    public Monster buildHead(){
+        String b1a_url = "";
+        String b1d_url = "";
+        Attack b1a = new Attack(b1a_url, 60);
+        Defence b1d = new Defence(b1d_url, 20);
+        BehaviorLogic b1 = new BehaviorLogic(b1a, b1d);
+
+        BehaviorLogic[] bls = {b1};
+
+        String monster_url = ".\\images\\monster\\head.png";
+        int maxHp = 200;
+        int critical = 0;
+        int exp = 72;
+        int money = 100;
+        return new Monster(monster_url, bls, maxHp, critical, money, exp);
+    }
 }

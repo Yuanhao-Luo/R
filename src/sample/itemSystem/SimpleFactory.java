@@ -104,4 +104,8 @@ public class SimpleFactory {
     public OrdinaryItem buildRiceWine (){
         return new OrdinaryItem(Constant.RICE_WINE_URL, Constant.RICE_WINE_PRICE, Constant.RICE_WINE_HEAL, Constant.RICE_WINE_DAMAGE, Constant.RICE_WINE_DEFENCE);
     }
+
+    public Arms buildDaughter(){
+        return new Arms(Constant.DAUGHTER_URL, Constant.DAUGHTER_PRICE, Constant.DAUGHTER_COOL_DOWN, Constant.DAUGHTER_DAMAGE, Constant.DAUGHTER_DEFENCE);
+    }
 }

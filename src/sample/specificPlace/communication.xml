@@ -467,14 +467,30 @@
     </communication>
 
     <communication>
+    <!--        Schule.START特殊对话-->
+    <id>bistromouth30</id>
+    <first>1</first>
+    <sentence>你有听说过盗贼团的消息吗？</sentence>
+    <sentence>什么！盗贼团！他们把我的女儿抓走了！！！</sentence>
+    <sentence>冷静一下，我会帮你夺回女儿的，把相关信息告诉我</sentence>
+    <sentence>他们都在城外的盗贼基地里</sentence>
+    <sentence>好</sentence>
+    </communication>
+
+    <communication>
         <!--        Schule.START特殊对话-->
-        <id>bistromouth30</id>
-        <first>1</first>
-        <sentence>你有听说过盗贼团的消息吗？</sentence>
-        <sentence>什么！盗贼团！他们把我的女儿抓走了！！！</sentence>
-        <sentence>冷静一下，我会帮你夺回女儿的，把相关信息告诉我</sentence>
-        <sentence>他们都在城外的盗贼基地里</sentence>
-        <sentence>好</sentence>
+        <id>bistromouth32</id>
+        <first>2</first>
+        <sentence>太感谢你了，他们没对我女儿做什么吧？</sentence>
+        <sentence>没有没有</sentence>
+    </communication>
+
+    <communication>
+        <!--        Schule.START特殊对话-->
+        <id>bistromouth33</id>
+        <first>2</first>
+        <sentence>恩人还有事吗</sentence>
+        <sentence>没有没有</sentence>
     </communication>
 
     <communication>
@@ -570,8 +586,126 @@
     <communication>
         <!--        袭击酒杯-->
         <id>bistroattack3</id>
+        <first>1</first>
         <button>袭击酒杯</button>
         <sentence>算了，老板在看着</sentence>
+
+    </communication>
+
+
+
+
+
+
+
+
+<!--    团长-->
+    <communication>
+        <!--        小酒馆-->
+        <id>headroom</id>
+        <first>2</first>
+        <sentence>你是谁</sentence>
+        <sentence>我只是路过来看看的</sentence>
+    </communication>
+
+    <communication>
+        <!--        看下四周-->
+        <id>headroomeye1</id>
+        <button>看下四周</button>
+        <first>1</first>
+        <sentence>我对团长里的装修没啥兴趣</sentence>
+    </communication>
+
+    <communication>
+        <!--        看向酒棚-->
+        <id>headroomeye2</id>
+        <button>看向盗贼团团长</button>
+        <first>1</first>
+        <sentence>看什么看，快滚</sentence>
+    </communication>
+
+    <communication>
+        <!--        不去看老板-->
+        <id>headroomeye3</id>
+        <button>看向酒店老板的女儿</button>
+        <first>2</first>
+        <sentence>（走到我面前）那不是你能看的</sentence>
+        <sentence>那是谁？</sentence>
+        <sentence>那是谁和你没关系</sentence>
+    </communication>
+
+    <communication>
+        <!--        和谁说下话-->
+        <id>headroommouth1</id>
+        <button>和谁说下话</button>
+        <first>1</first>
+        <sentence>并不想和他说话</sentence>
+    </communication>
+
+    <communication>
+        <!--        打听下光的事情-->
+        <id>headroommouth2</id>
+        <button>打听下光的事情</button>
+        <first>2</first>
+        <sentence>不知道</sentence>
+    </communication>
+
+    <communication>
+        <!--        打听盗贼团的事情-->
+        <id>headroommouth3</id>
+        <button>打听盗贼团的事情</button>
+        <first>1</first>
+        <sentence>你知道有关这里的盗贼团的事情吗？</sentence>
+        <sentence>你不都在这里了吗？还打听什么？</sentence>
+    </communication>
+
+    <communication>
+        <!--        触摸些什么-->
+        <id>headroomhand1</id>
+        <button>触摸些什么</button>
+        <first>1</first>
+        <sentence>团长室里很脏，不想摸</sentence>
+    </communication>
+
+    <communication>
+        <!--        触摸酒桶-->
+        <id>headroomhand2</id>
+        <button>触摸团长</button>
+        <first>2</first>
+        <sentence>你干嘛？</sentence>
+        <sentence>放下了手</sentence>
+    </communication>
+
+    <communication>
+        <!--        触碰桌子-->
+        <id>headroomhand3</id>
+        <button>触碰空气</button>
+        <first>1</first>
+        <sentence>团长室里感觉连空气都很脏</sentence>
+    </communication>
+
+    <communication>
+        <!--        袭击老板-->
+        <id>headroomattack1</id>
+        <button>袭击地板</button>
+        <first>1</first>
+        <sentence>啊！！我的脚！！</sentence>
+    </communication>
+
+    <communication>
+        <!--        袭击些什么-->
+        <id>headroomattack2</id>
+        <button>袭击些什么</button>
+        <first>1</first>
+        <sentence>眶！发个飙</sentence>
+    </communication>
+
+    <communication>
+        <!--        袭击酒杯-->
+        <id>headroomattack3</id>
+        <button>袭击团长</button>
+        <first>1</first>
+        <sentence>拿命来吧</sentence>
 
     </communication>
 </configuration>

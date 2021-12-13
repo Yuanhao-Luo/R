@@ -6,8 +6,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import sample.BattlePane;
 import sample.ImageProcess;
 import sample.ItemListPane;
+import sample.battle.Battle;
+import sample.battle.MonsterFactory;
 import sample.buttons.ActionButton;
 import sample.buttons.TextButton;
 import sample.characterSystem.Person;
@@ -44,6 +47,7 @@ public class GeneralPlacePane extends Pane {
 
     ImageView goodBackground;
     ImageView goodBackground1;
+    ImageView congratulations;
     GoodsListPane goodsListPane;
     GoodsListPane weaponGoodsListPane;
     TextButton buyButton;
@@ -119,7 +123,7 @@ public class GeneralPlacePane extends Pane {
         itemListPane1.refreshAll();
 
 
-
+        congratulations = new ImageView();
         goodBackground = new ImageView();
         ImageProcess.initImageView(goodBackground, 0, 0, ".\\images\\shopListBackground.png");
         goodBackground1 = new ImageView();
@@ -338,6 +342,16 @@ public class GeneralPlacePane extends Pane {
                         break;
                     case "levelUp":
                         Person.getInstance().levelUp();
+                        break;
+                    case "attackHead":
+                        this.setVisible(false);
+                        BattlePane battlePane = BattlePane.getInstance();
+                        battlePane.setVisible(true);
+                        battlePane.startBattle(new MonsterFactory().buildHead());
+                        break;
+                    case "congratulations":
+                        congratulations.setVisible(true);
+                        break;
                     default:
                         this.shopPane.setVisible(false);
                         this.weaponShopPane.setVisible(false);
