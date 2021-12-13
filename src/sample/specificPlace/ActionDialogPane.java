@@ -68,7 +68,7 @@ public class ActionDialogPane extends Pane {
                         }else if (Person.getInstance().getSchedule() == Schedule.GET_DAUGHTER){
                             adb3 = new ActionDialogButton("      你女儿回来了","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
                             adb3.setOnMouseClicked(e->{
-                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"2").getSentence(),new Dialogue(placeName+actionName+"3").getFirst());
+                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"2").getSentence(),new Dialogue(placeName+actionName+"3").getFirst(),"congratulations");
                                 Person.getInstance().setSchedule(Schedule.FINISH);
                             });
                         }else if (Person.getInstance().getSchedule() == Schedule.FINISH){

@@ -47,6 +47,7 @@ public class GeneralPlacePane extends Pane {
 
     ImageView goodBackground;
     ImageView goodBackground1;
+    ImageView congratulations;
     GoodsListPane goodsListPane;
     GoodsListPane weaponGoodsListPane;
     TextButton buyButton;
@@ -122,7 +123,7 @@ public class GeneralPlacePane extends Pane {
         itemListPane1.refreshAll();
 
 
-
+        congratulations = new ImageView();
         goodBackground = new ImageView();
         ImageProcess.initImageView(goodBackground, 0, 0, ".\\images\\shopListBackground.png");
         goodBackground1 = new ImageView();
@@ -347,6 +348,9 @@ public class GeneralPlacePane extends Pane {
                         BattlePane battlePane = BattlePane.getInstance();
                         battlePane.setVisible(true);
                         battlePane.startBattle(new MonsterFactory().buildHead());
+                        break;
+                    case "congratulations":
+                        congratulations.setVisible(true);
                         break;
                     default:
                         this.shopPane.setVisible(false);
