@@ -6,9 +6,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import sample.BattlePane;
-import sample.ImageProcess;
-import sample.ItemListPane;
+import sample.*;
 import sample.battle.Battle;
 import sample.battle.MonsterFactory;
 import sample.buttons.ActionButton;
@@ -300,7 +298,6 @@ public class GeneralPlacePane extends Pane {
         dialogPlace.getChildren().add(dialogTextLabel);
     }
 
-
     public void dialogBegin(String placeName, String actionName, int number, String[] dialogContent, int firstSpeaker, String otherAction){
         String meDialogUrl = ".\\images\\meDialog.png";
         String youDialogUrl = ".\\images\\" + placeName + "YouDialog.png";
@@ -342,6 +339,8 @@ public class GeneralPlacePane extends Pane {
                         break;
                     case "levelUp":
                         Person.getInstance().levelUp();
+                        MainFramePane.getInstance().initHealthForMain();
+                        MazePane.getInstance().initHealthForMaze();
                         break;
                     case "attackHead":
                         this.setVisible(false);

@@ -6,6 +6,7 @@ import sample.MazePane;
 import sample.TimeSingleton;
 import sample.Toolkit;
 import sample.buttons.MapButton;
+import sample.characterSystem.Person;
 import sample.specificPlace.*;
 
 public class EnterPlace extends PassOneTime {
@@ -23,16 +24,16 @@ public class EnterPlace extends PassOneTime {
                 HomeofseaPane homeofseaPane = MainFramePane.getInstance().homeofseaPane;
                 if (!homeofseaPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     homeofseaPane.setVisible(true);
+                    homeofseaPane.dialogBegin(homeofseaPane.getPlaceName(), new Dialogue(homeofseaPane.getPlaceName()).getSentence(),new Dialogue(homeofseaPane.getPlaceName()).getFirst());
                 };
 //                homeofseaPane.dialogBegin(homeofseaPane.getPlaceName(), new String[]{"我来到了海之家","欢迎光临"},1);
-                homeofseaPane.dialogBegin(homeofseaPane.getPlaceName(), new Dialogue(homeofseaPane.getPlaceName()).getSentence(),new Dialogue(homeofseaPane.getPlaceName()).getFirst());
                 break;
             case "weapons":
                 WeaponsPane weaponsPane = MainFramePane.getInstance().weaponsPane;
                 if (!weaponsPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     weaponsPane.setVisible(true);
+                    weaponsPane.dialogBegin(weaponsPane.getPlaceName(), new String[]{"我来到了武器店","欢迎光临"},1);
                 };
-                weaponsPane.dialogBegin(weaponsPane.getPlaceName(), new String[]{"我来到了武器店","欢迎光临"},1);
 
                 break;
 
@@ -40,8 +41,11 @@ public class EnterPlace extends PassOneTime {
                 HotelPane hotelPane = MainFramePane.getInstance().hotelPane;
                 if (!hotelPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     hotelPane.setVisible(true);
+                    hotelPane.dialogBegin(hotelPane.getPlaceName(), new String[]{"我来到了旅馆","欢迎光临"},1);
+                    Person.getInstance().setHealth(Person.getInstance().getMaxHealth());
+                    MazePane.getInstance().initHealthForMaze();
+                    MainFramePane.getInstance().initHealthForMain();
                 };
-                hotelPane.dialogBegin(hotelPane.getPlaceName(), new String[]{"我来到了旅馆","欢迎光临"},1);
 
                 break;
 
@@ -49,16 +53,17 @@ public class EnterPlace extends PassOneTime {
                 LevelPane levelPane = MainFramePane.getInstance().levelPane;
                 if (!levelPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     levelPane.setVisible(true);
+                    levelPane.dialogBegin(levelPane.getPlaceName(), new String[]{"我来到了等级店","欢迎光临"},1);
                 };
-                levelPane.dialogBegin(levelPane.getPlaceName(), new String[]{"我来到了等级店","欢迎光临"},1);
 
                 break;
             case "bistro":
                 BistroPane bistroPane = MainFramePane.getInstance().bistroPane;
                 if (!bistroPane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     bistroPane.setVisible(true);
+                    bistroPane.dialogBegin(bistroPane.getPlaceName(), new String[]{"我来到了酒馆","欢迎光临"},1);
+
                 };
-                bistroPane.dialogBegin(bistroPane.getPlaceName(), new String[]{"我来到了酒馆","欢迎光临"},1);
 
                 break;
 
@@ -66,9 +71,7 @@ public class EnterPlace extends PassOneTime {
                 MazePane mazePane = MainFramePane.getInstance().mazePane;
                 if (!mazePane.isVisible() && mapButton.getVisiable(TimeSingleton.getInstance().getCurrentTime())){
                     mazePane.setVisible(true);
-                    System.out.println("q");
                 };
-                System.out.println("qw");
         }
     }
 

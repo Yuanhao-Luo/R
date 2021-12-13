@@ -25,15 +25,9 @@ public class ActionDialogPane extends Pane {
         adb1 = new ActionDialogButton("      "+new Dialogue(placeName+actionName+"1").getButton(),"400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,1),placeName,actionName);
         adb2 = new ActionDialogButton("      "+new Dialogue(placeName+actionName+"2").getButton(),"400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,2),placeName,actionName);
         adb3 = new ActionDialogButton("      "+new Dialogue(placeName+actionName+"3").getButton(),"400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
-        adb1.setOnMouseClicked(e->{
-            gpp.dialogBegin(placeName,actionName,1,new Dialogue(placeName+actionName+"1").getSentence(),new Dialogue(placeName+actionName+"1").getFirst());
-        });
-        adb2.setOnMouseClicked(e->{
-            gpp.dialogBegin(placeName,actionName,2,new Dialogue(placeName+actionName+"2").getSentence(),new Dialogue(placeName+actionName+"2").getFirst());
-        });
-        adb3.setOnMouseClicked(e->{
-            gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3").getSentence(),new Dialogue(placeName+actionName+"3").getFirst());
-        });
+        adb1.setOnMouseClicked(e->{ gpp.dialogBegin(placeName,actionName,1,new Dialogue(placeName+actionName+"1").getSentence(),new Dialogue(placeName+actionName+"1").getFirst()); });
+        adb2.setOnMouseClicked(e->{ gpp.dialogBegin(placeName,actionName,2,new Dialogue(placeName+actionName+"2").getSentence(),new Dialogue(placeName+actionName+"2").getFirst()); });
+        adb3.setOnMouseClicked(e->{ gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3").getSentence(),new Dialogue(placeName+actionName+"3").getFirst()); });
 
         switch (actionName){
 
@@ -62,19 +56,19 @@ public class ActionDialogPane extends Pane {
                     case "bistro":
                         if (Person.getInstance().getSchedule() == Schedule.START){
                             adb3.setOnMouseClicked(e->{
-                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"0").getSentence(),new Dialogue(placeName+actionName+"3").getFirst());
+                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"0").getSentence(),new Dialogue(placeName+actionName+"3"+"0").getFirst());
                                 Person.getInstance().setSchedule(Schedule.BEAT_THIEF);
                             });
                         }else if (Person.getInstance().getSchedule() == Schedule.GET_DAUGHTER){
                             adb3 = new ActionDialogButton("      你女儿回来了","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
                             adb3.setOnMouseClicked(e->{
-                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"2").getSentence(),new Dialogue(placeName+actionName+"3").getFirst(),"congratulations");
+                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"2").getSentence(),new Dialogue(placeName+actionName+"3"+"2").getFirst(),"congratulations");
                                 Person.getInstance().setSchedule(Schedule.FINISH);
                             });
                         }else if (Person.getInstance().getSchedule() == Schedule.FINISH){
                             adb3 = new ActionDialogButton("      和老板说些什么","400", actionDialogButtonX,actionDialogButtonYCalculator(actionName,3),placeName,actionName);
                             adb3.setOnMouseClicked(e->{
-                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"3").getSentence(),new Dialogue(placeName+actionName+"3").getFirst());
+                                gpp.dialogBegin(placeName,actionName,3,new Dialogue(placeName+actionName+"3"+"3").getSentence(),new Dialogue(placeName+actionName+"3"+"3").getFirst());
                                 Person.getInstance().setSchedule(Schedule.FINISH);
                             });
                         }

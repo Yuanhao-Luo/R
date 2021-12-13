@@ -33,7 +33,7 @@ public class MazePane extends Pane {
     Card[][] MazeCanBeSeen;
     CardPane[][] currentMaze = new CardPane[3][5];//这就是当前显示的部分
     int currentRow = 0;//现在应该在迷宫的第几行 0~15
-    int currentCard = 2;//现在是第几列，也就是第几张牌 0~4
+    public int currentCard = 2;//现在是第几列，也就是第几张牌 0~4
     int whichCardSelected = currentCard;
 
     OpenTentButton bOpenTent = new OpenTentButton("    打开帐篷","200",820,720);
@@ -354,6 +354,7 @@ public class MazePane extends Pane {
             double healthLost = person.getMaxHealth() * 0.1;
             int newHealth = (int) (person.getHealth()-healthLost);
             person.setHealth(newHealth);
+            MainFramePane.getInstance().initHealthForMain();
         });
     }
 

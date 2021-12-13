@@ -20,6 +20,8 @@ public class RunAwayButton extends TextButton {
             person.setMoney((int)(money - (money*0.1)));
             BattlePane.getInstance().setVisible(false);
             MazePane.getInstance().setVisible(false);
+            MazePane.getInstance().jumpCard7();
+            //MazePane.getInstance().currentCard = 2;
             MainFramePane.getInstance().setVisible(true);
         });
     }

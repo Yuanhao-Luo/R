@@ -14,6 +14,11 @@
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/BistroPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/BistroPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Event/EnterPlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MazePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MazePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/buttons/RunAwayButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/ActionDialogPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +102,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RecentsManager">
@@ -291,14 +297,8 @@
       <workItem from="1639150402768" duration="306000" />
       <workItem from="1639200568518" duration="13871000" />
       <workItem from="1639288957137" duration="14053000" />
-      <workItem from="1639358986450" duration="1272000" />
-    </task>
-    <task id="LOCAL-00041" summary="1123">
-      <created>1637394499817</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1637394499817</updated>
+      <workItem from="1639358986450" duration="2346000" />
+      <workItem from="1639362215292" duration="7684000" />
     </task>
     <task id="LOCAL-00042" summary="图片">
       <created>1637396010765</created>
@@ -636,11 +636,28 @@
       <option name="project" value="LOCAL" />
       <updated>1639360017506</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="完成版v1.1&#10;加了通关奖状">
+      <created>1639360395572</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1639360395572</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -678,6 +695,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
@@ -718,30 +740,42 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="301" y="399" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639321433153" />
-    <state x="655" y="153" key="CommitChangelistDialog2" timestamp="1639360016712">
+    <state x="723" y="484" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1639362311316">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="655" y="153" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1639360016712" />
+    <state x="723" y="484" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639362311316" />
+    <state x="781" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1639364330250">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="781" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2048.1112@0.0.2048.1112" timestamp="1639364330250" />
+    <state x="655" y="153" key="CommitChangelistDialog2" timestamp="1639360394937">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="655" y="153" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1639360394937" />
+    <state x="198" y="103" key="DiffContextDialog" timestamp="1639360391772">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="198" y="103" key="DiffContextDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639360391772" />
     <state x="804" y="314" key="FileChooserDialogImpl" timestamp="1639321519037">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="804" y="314" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1639321519037" />
-    <state width="1022" height="207" key="GridCell.Tab.0.bottom" timestamp="1639359800231">
+    <state width="866" height="287" key="GridCell.Tab.0.bottom" timestamp="1639370730227">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1022" height="207" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1639359800231" />
-    <state width="1022" height="207" key="GridCell.Tab.0.center" timestamp="1639359800230">
+    <state width="866" height="287" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1639370730227" />
+    <state width="866" height="287" key="GridCell.Tab.0.center" timestamp="1639370730227">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1022" height="207" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1639359800230" />
-    <state width="1022" height="207" key="GridCell.Tab.0.left" timestamp="1639359800230">
+    <state width="866" height="287" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1639370730227" />
+    <state width="866" height="287" key="GridCell.Tab.0.left" timestamp="1639370730227">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1022" height="207" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1639359800230" />
-    <state width="1022" height="207" key="GridCell.Tab.0.right" timestamp="1639359800230">
+    <state width="866" height="287" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1639370730227" />
+    <state width="866" height="287" key="GridCell.Tab.0.right" timestamp="1639370730227">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1022" height="207" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1639359800230" />
+    <state width="866" height="287" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1639370730227" />
     <state x="735" y="272" key="MultipleFileMergeDialog" timestamp="1639310574973">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -754,10 +788,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="103" y="200" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1639322207151" />
-    <state x="617" y="292" key="Vcs.Push.Dialog.v2" timestamp="1639360371596">
+    <state x="617" y="292" key="Vcs.Push.Dialog.v2" timestamp="1639362227366">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1639360371596" />
+    <state x="617" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1639362227366" />
     <state x="694" y="319" width="611" height="490" key="find.popup" timestamp="1639310849893">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
