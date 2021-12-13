@@ -131,18 +131,19 @@ public class Battle {
 
         //计算暴击率，如果暴击伤害变为2倍
         Random random = new Random();
-        int pcritical = random.nextInt(100) > person.getCritical() ? 1 : 2;
-        int moncritical = random.nextInt(100) > monster.getCritical() ? 1 : 2;
-        int pdamage = (person.getAttackNum() + perAtt - monDef) * pcritical;
-        int mondamage = (monAtt - perDef) * moncritical;
+        int personCritical = random.nextInt(100) > person.getCritical() ? 1 : 2;
+        int monsterCritical = random.nextInt(100) > monster.getCritical() ? 1 : 2;
+        //通过攻击和防御计算最终伤害
+        int personDamage = (person.getAttackNum() + perAtt - monDef) * personCritical;
+        int monsterDamage = (monAtt - perDef) * monsterCritical;
 
         //玩家和怪物的Hp减少
-        person.loseHp(mondamage);
-        monster.loseHp(pdamage);
+        person.loseHp(monsterDamage);
+        monster.loseHp(personDamage);
 
         //储存造成的伤害，用于gui中显示伤害
-        this.monsterDamage = mondamage;
-        this.personDamage = pdamage;
+        this.monsterDamage = monsterDamage;
+        this.personDamage = personDamage;
 
         //回合数增加
         turn++;
