@@ -15,6 +15,8 @@ import sample.characterSystem.Person;
 import sample.itemSystem.Item;
 import sample.itemSystem.SimpleFactory;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -60,7 +62,7 @@ public class GeneralPlacePane extends Pane {
     TextButton quitShop1;
 
 
-    public GeneralPlacePane(String placeName){
+    public GeneralPlacePane(String placeName) throws FileNotFoundException {
         this.placeName = placeName;
 
         beyeButton = new ActionButton(this,".\\images\\eyeButton_hover.png",".\\images\\eyeButton_unpressable.png",".\\images\\eyeButton_pressable.png",".\\images\\eyeButton_pressed.png",placeName,"eye");
@@ -97,7 +99,7 @@ public class GeneralPlacePane extends Pane {
         weaponShopPane.setPrefHeight(0);
         weaponShopPane.setVisible(false);
 
-        Image imageTent2 = new Image("file:.\\images\\tent2.png");
+        Image imageTent2 = new Image(new FileInputStream(".\\images\\tent2.png"));
         itemBackground = new ImageView();
         itemBackground.setImage(imageTent2);
         itemBackground.setFitHeight(imageTent2.getHeight());

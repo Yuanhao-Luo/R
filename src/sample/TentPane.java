@@ -10,6 +10,9 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import sample.buttons.CloseTentButton;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 
 public class TentPane extends Pane {
     ItemListPane itemListPane;
@@ -33,8 +36,18 @@ public class TentPane extends Pane {
 
     private TentPane(){
         Person p = Person.getInstance();
-        Image imageTent1 = new Image("file:.\\images\\tent1.png");
-        Image imageTent2 = new Image("file:.\\images\\tent2.png");
+        Image imageTent1 = null;
+        try {
+            imageTent1 = new Image(new FileInputStream(".\\images\\tent1.png"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        Image imageTent2 = null;
+        try {
+            imageTent2 = new Image(new FileInputStream(".\\images\\tent2.png"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         ImageView tent1 = new ImageView();
         tent1.setImage(imageTent1);
@@ -118,7 +131,7 @@ public class TentPane extends Pane {
 
 //        //以下是物品系统加的东西
 //        //bet的位置大小还要调一下
-//        nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_pressed.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
+//        nextPage = new GeneralButton("".\\images\\nextItemPage_hover.png","".\\images\\nextItemPage_pressed.png","".\\images\\nextItemPage_pressable.png","".\\images\\nextItemPage_pressed.png");
 //        //图片还没有放进去
 //        nextPage.setOnMouseReleased(e->{
 //            if (getItemPage() != 3){
@@ -129,7 +142,7 @@ public class TentPane extends Pane {
 //        nextPage.setLayoutX(843);//需要调整位置
 //        nextPage.setLayoutY(578);
 //
-//        prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_pressed.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
+//        prePage = new GeneralButton("".\\images\\preItemPage_hover.png","".\\images\\preItemPage_pressed.png","".\\images\\preItemPage_pressable.png","".\\images\\preItemPage_pressed.png");
 //        //图片还没有放进去
 //        prePage.setOnMouseReleased(e->{
 //            if (getItemPage() != 0){

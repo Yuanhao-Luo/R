@@ -14,6 +14,7 @@ import sample.itemSystem.Item;
 import sample.itemSystem.Medicine;
 import sample.itemSystem.OrdinaryItem;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class GoodsListPane extends Pane {
@@ -37,7 +38,11 @@ public class GoodsListPane extends Pane {
         setHeight(0);
 
         for (int i = 0; i < itemList.length; i++) {
-            itemList[i] = new GoodPane(i);
+            try {
+                itemList[i] = new GoodPane(i);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
             getChildren().add(itemList[i]);
             int ii = i;
             itemList[i].setOnMouseReleased(e -> {

@@ -10,6 +10,7 @@ import sample.characterSystem.Person;
 import sample.itemSystem.Item;
 import sample.itemSystem.SimpleFactory;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class HomeofseaPane extends GeneralPlacePane {
@@ -17,7 +18,7 @@ public class HomeofseaPane extends GeneralPlacePane {
 
     Pane homeofseaYou = new Pane();
 
-    public HomeofseaPane(){
+    public HomeofseaPane() throws FileNotFoundException {
         super("homeofsea");
 
         this.getChildren().add(homeofseaYou);

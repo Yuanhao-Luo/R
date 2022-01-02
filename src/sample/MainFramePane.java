@@ -50,12 +50,66 @@ public class MainFramePane extends Pane {
     Label HPTotalLabel = new Label("" + HPTotal);
 
     public TentPane tentPane = TentPane.getInstance();
-    public HomeofseaPane homeofseaPane = new HomeofseaPane();
-    public WeaponsPane weaponsPane = new WeaponsPane();
-    public HotelPane hotelPane = new HotelPane();
-    public LevelPane levelPane = new LevelPane();
-    public BistroPane bistroPane = new BistroPane();
-    public HeadroomPane headroomPane = new HeadroomPane();
+    public HomeofseaPane homeofseaPane;
+
+    {
+        try {
+            homeofseaPane = new HomeofseaPane();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public WeaponsPane weaponsPane;
+
+    {
+        try {
+            weaponsPane = new WeaponsPane();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public HotelPane hotelPane;
+
+    {
+        try {
+            hotelPane = new HotelPane();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public LevelPane levelPane;
+
+    {
+        try {
+            levelPane = new LevelPane();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public BistroPane bistroPane;
+
+    {
+        try {
+            bistroPane = new BistroPane();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public HeadroomPane headroomPane;
+
+    {
+        try {
+            headroomPane = new HeadroomPane();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     public MazePane mazePane = MazePane.getInstance();
     ClockStatus[] ClS = new ClockStatus[9];
 

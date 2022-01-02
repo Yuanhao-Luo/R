@@ -3,9 +3,11 @@ package sample.specificPlace;
 import javafx.scene.layout.Pane;
 import sample.ImageProcess;
 
+import java.io.FileNotFoundException;
+
 public class BistroPane extends GeneralPlacePane {
     Pane bistroYou = new Pane();
-    public BistroPane(){
+    public BistroPane() throws FileNotFoundException {
         super("bistro");
         this.getChildren().add(bistroYou);
         ImageProcess.initDialogYouImage(bistroYou,".\\images\\bistroYou.png");

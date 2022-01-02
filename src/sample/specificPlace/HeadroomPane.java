@@ -3,9 +3,11 @@ package sample.specificPlace;
 import javafx.scene.layout.Pane;
 import sample.ImageProcess;
 
+import java.io.FileNotFoundException;
+
 public class HeadroomPane extends GeneralPlacePane {
     Pane headroomYou = new Pane();
-    public HeadroomPane(){
+    public HeadroomPane() throws FileNotFoundException {
         super("headroom");
 
         this.getChildren().add(headroomYou);

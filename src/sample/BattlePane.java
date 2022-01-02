@@ -12,6 +12,9 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 
 public class BattlePane extends Pane {
     ItemListPane itemListPane;
@@ -40,29 +43,36 @@ public class BattlePane extends Pane {
     Label gold = new Label("9");
     Label current_gold = new Label("177");
 
-    private static BattlePane battlePane = new BattlePane();
+    private static BattlePane battlePane;
+
+    static {
+        try {
+            battlePane = new BattlePane();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
 
-
-    private BattlePane(){
+    private BattlePane() throws FileNotFoundException {
         //冷却图标
-        Image wait = new Image("file:.\\images\\wait.png");
+        Image wait = new Image(new FileInputStream(".\\images\\wait.png"));
         //总结页面
-        Image settlementInterface = new Image("file:.\\images\\settlementInterface.png");
+        Image settlementInterface = new Image(new FileInputStream(".\\images\\settlementInterface.png"));
         //无法存放道具
-        Image canNotUsePicture = new Image("file:.\\images\\CanNotUse.png");
+        Image canNotUsePicture = new Image(new FileInputStream(".\\images\\CanNotUse.png"));
         //战斗伤害
-        Image damage = new Image("file:.\\images\\damage.png");
+        Image damage = new Image(new FileInputStream(".\\images\\damage.png"));
         //战斗过程页面
 
         Person p = Person.getInstance();
-        Image battleBackground = new Image("file:.\\images\\battleBackground.png");
-        Image battledRance = new Image("file:.\\images\\ranceinbattle.png");
-        Image tentPicture = new Image("file:.\\images\\tent2.png");
-        Image thief1 = new Image("file:.\\images\\thief1.png");
-        Image defenseD = new Image("file:.\\images\\defenseD.png");
-        Image HPBackground = new Image("file:.\\images\\HPBackground.png");
-        Image HPCurrent = new Image("file:.\\images\\HPCurrent.png");
+        Image battleBackground = new Image(new FileInputStream(".\\images\\battleBackground.png"));
+        Image battledRance = new Image(new FileInputStream(".\\images\\ranceinbattle.png"));
+        Image tentPicture = new Image(new FileInputStream(".\\images\\tent2.png"));
+        Image thief1 = new Image(new FileInputStream(".\\images\\thief1.png"));
+        Image defenseD = new Image(new FileInputStream(".\\images\\defenseD.png"));
+        Image HPBackground = new Image(new FileInputStream(".\\images\\HPBackground.png"));
+        Image HPCurrent = new Image(new FileInputStream(".\\images\\HPCurrent.png"));
 
 
         settlementInterface1.setImage(settlementInterface);
@@ -226,7 +236,7 @@ public class BattlePane extends Pane {
 
 
 
-//        nextPage = new GeneralButton(".\\images\\nextItemPage_hover.png",".\\images\\nextItemPage_preparing.png",".\\images\\nextItemPage_pressable.png",".\\images\\nextItemPage_pressed.png");
+//        nextPage = new GeneralButton("".\\images\\nextItemPage_hover.png","".\\images\\nextItemPage_preparing.png","".\\images\\nextItemPage_pressable.png","".\\images\\nextItemPage_pressed.png");
 //        nextPage.setOnMouseReleased(e->{
 //            if (getItemPage() != 2){
 //                setItemPage(getItemPage()+1);
@@ -236,7 +246,7 @@ public class BattlePane extends Pane {
 //        nextPage.setLayoutX(843);
 //        nextPage.setLayoutY(578);
 //
-//        prePage = new GeneralButton(".\\images\\preItemPage_hover.png",".\\images\\preItemPage_preparing.png",".\\images\\preItemPage_pressable.png",".\\images\\preItemPage_pressed.png");
+//        prePage = new GeneralButton("".\\images\\preItemPage_hover.png","".\\images\\preItemPage_preparing.png","".\\images\\preItemPage_pressable.png","".\\images\\preItemPage_pressed.png");
 //        prePage.setOnMouseReleased(e->{
 //            if (getItemPage() != 0){
 //                setItemPage(getItemPage()-1);
@@ -326,7 +336,11 @@ public class BattlePane extends Pane {
         monsterDamage.setVisible(false);
         personDamage.setVisible(false);
         concludeEvent.setVisible(false);
-        thief.setImage(new Image("file:"+monster.getUrl()));
+        try {
+            thief.setImage(new Image(new FileInputStream(monster.getUrl())));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         Battle.getInstance().setMonster(monster);
         refreshAll();
     }

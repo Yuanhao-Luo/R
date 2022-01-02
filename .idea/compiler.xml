@@ -4,5 +4,6 @@
     <excludeFromCompile>
       <file url="file://$PROJECT_DIR$/out/production/R/META-INF/R.kotlin_module" />
     </excludeFromCompile>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

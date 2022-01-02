@@ -3,9 +3,11 @@ package sample.specificPlace;
 import javafx.scene.layout.Pane;
 import sample.ImageProcess;
 
+import java.io.FileNotFoundException;
+
 public class LevelPane extends GeneralPlacePane {
     Pane levelYou = new Pane();
-    public LevelPane(){
+    public LevelPane() throws FileNotFoundException {
         super("level");
 
         this.getChildren().add(levelYou);

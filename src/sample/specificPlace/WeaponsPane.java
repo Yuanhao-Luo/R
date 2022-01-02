@@ -3,9 +3,11 @@ package sample.specificPlace;
 import javafx.scene.layout.Pane;
 import sample.ImageProcess;
 
+import java.io.FileNotFoundException;
+
 public class WeaponsPane extends GeneralPlacePane {
     Pane weaponsYou = new Pane();
-    public WeaponsPane(){
+    public WeaponsPane() throws FileNotFoundException {
         super("weapons");
 
         this.getChildren().add(weaponsYou);

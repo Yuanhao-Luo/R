@@ -4,6 +4,8 @@ import javafx.scene.layout.Pane;
 import sample.buttons.GeneralButton;
 import sample.characterSystem.Person;
 
+import java.io.FileNotFoundException;
+
 public class ItemListPane extends Pane {
     ItemPane[] itemList = new ItemPane[21];
     int itemPage = 0;
@@ -37,7 +39,11 @@ public class ItemListPane extends Pane {
         prePage.setLayoutY(578);
 
         for (int i = 0; i < itemList.length; i++) {
-            itemList[i] = new ItemPane(i);
+            try {
+                itemList[i] = new ItemPane(i);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
             getChildren().add(itemList[i]);
         }
         refreshAll();

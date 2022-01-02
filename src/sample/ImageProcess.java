@@ -28,7 +28,10 @@ public class ImageProcess {
     public static void addImage(Pane p, String url) {
         Image imageBack = null;
         try {
-            imageBack = new Image(new FileInputStream(url));
+//            imageBack = new Image(new FileInputStream(url));
+            url = "/images/backgroundMain.png";
+            String u = ImageProcess.class.getResource(url).getFile();
+            imageBack = new Image(new FileInputStream(u));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

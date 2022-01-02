@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="R:jar" />
+      <artifact name="R:jar2" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,10 +10,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f68af5ce-4c55-4bf9-b375-9e596151da96" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/R_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/BattlePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ClockStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ClockStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Event/EnterPlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Event/EnterPlace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Event/KillTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Event/KillTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Event/PassOneTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Event/PassOneTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ImageProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ImageProcess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemListPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ItemListPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/ItemPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MainFramePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/CardPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/CardPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveFloor1Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveFloor1Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveUndergroundStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeCaveUndergroundStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeOuterCityStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/MazePart/LogicalMazeOuterCityStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/TentPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/TimeSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/TimeSingleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/Toolkit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/Toolkit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Attack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Attack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Behavior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Behavior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/BehaviorLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/BehaviorLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Defence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Defence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Monster.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/MonsterFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/characterSystem/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/characterSystem/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/battle/Weakness.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/battle/Weakness.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionDialogButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/ActionDialogButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/CancelAllButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/CloseTentButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/CloseTentButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/GeneralButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/GeneralButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/LeaveHereButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/LeaveHereButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/LeaveMazeButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/LeaveMazeButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/MapButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/MapButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/OpenTentButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/OpenTentButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/RunAwayButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/RunAwayButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/SelectAllButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/SelectAllButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/StartBattleButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/buttons/TextButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/buttons/TextButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/characterSystem/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/characterSystem/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/communicationStorage/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/communicationStorage/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/communicationStorage/test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/communicationStorage/test2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Arms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Arms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Combat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Combat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/FireFly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/FireFly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/HuXiHuHu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/HuXiHuHu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/ItemList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/ItemList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/ManyTimesItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/ManyTimesItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Medicine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Medicine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/OneTimeItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/OneTimeItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/OrdinaryItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/OrdinaryItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/PassiveEffect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/PassiveEffect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/SimpleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/SimpleFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Useable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/Useable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/itemSystem/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/itemSystem/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/ActionDialogPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/BistroPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/BistroPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/Dialogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/Dialogue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/GeneralPlacePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HomeofseaPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HomeofseaPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HotelPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/HotelPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/LevelPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/LevelPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/R/sample/specificPlace/WeaponsPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/R/sample/specificPlace/WeaponsPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/BattlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BattlePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ImageProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ImageProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ItemListPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemListPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ItemPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ItemPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MainFramePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MainFramePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/TentPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TentPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/BistroPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/BistroPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GeneralPlacePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GoodPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GoodPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/GoodsListPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/GoodsListPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/HeadroomPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/HeadroomPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/HomeofseaPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/HotelPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/HotelPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/LevelPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/LevelPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specificPlace/WeaponsPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/specificPlace/WeaponsPane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +114,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="jpy" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,6 +158,7 @@
   <component name="ProjectId" id="1zGCFG1goG3u1wl8eWHYJlIbzB0" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="更新" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectViewState">
@@ -89,7 +171,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resource" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -98,10 +180,14 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programming\java\Test\R\src\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\programming\java\Test\R\src" />
       <recent name="E:\programming\java\Test\R\src\sample\specificPlace" />
     </key>
   </component>
@@ -109,7 +195,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="R" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\plugin\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path E:\programming\plugin\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -214,7 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -641,9 +727,6 @@
     <option name="localTasksCounter" value="92" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
       <list>
@@ -684,17 +767,10 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
-    </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
@@ -726,96 +802,20 @@
     <MESSAGE value="完成版v1.1&#10;加了通关奖状" />
     <option name="LAST_COMMIT_MESSAGE" value="完成版v1.1&#10;加了通关奖状" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="479" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639311046382">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="479" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639311046382" />
-    <state x="301" y="399" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1639321433153">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="301" y="399" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639321433153" />
-    <state x="723" y="484" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1639362311316">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="723" y="484" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639362311316" />
-    <state x="781" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1639364330250">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="781" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2048.1112@0.0.2048.1112" timestamp="1639364330250" />
-    <state x="655" y="153" key="CommitChangelistDialog2" timestamp="1639372452447">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="655" y="153" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1639372452447" />
-    <state x="198" y="103" key="DiffContextDialog" timestamp="1639360391772">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="198" y="103" key="DiffContextDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639360391772" />
-    <state x="804" y="314" key="FileChooserDialogImpl" timestamp="1639321519037">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="804" y="314" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1639321519037" />
-    <state width="866" height="287" key="GridCell.Tab.0.bottom" timestamp="1639373004444">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="866" height="287" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1639373004444" />
-    <state width="866" height="287" key="GridCell.Tab.0.center" timestamp="1639373004443">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="866" height="287" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1639373004443" />
-    <state width="866" height="287" key="GridCell.Tab.0.left" timestamp="1639373004442">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="866" height="287" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1639373004442" />
-    <state width="866" height="287" key="GridCell.Tab.0.right" timestamp="1639373004443">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="866" height="287" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1639373004443" />
-    <state x="735" y="272" key="MultipleFileMergeDialog" timestamp="1639372491498">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="735" y="272" key="MultipleFileMergeDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639372491498" />
-    <state x="815" y="280" key="RollbackChangesDialog" timestamp="1639360355687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="815" y="280" key="RollbackChangesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639360355687" />
-    <state x="103" y="200" key="SettingsEditor" timestamp="1639322207151">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="103" y="200" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1639322207151" />
-    <state x="617" y="292" key="Vcs.Push.Dialog.v2" timestamp="1639372692080">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="617" y="292" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1639372692080" />
-    <state x="694" y="319" width="611" height="490" key="find.popup" timestamp="1639310849893">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="694" y="319" width="611" height="490" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1639310849893" />
-    <state x="816" y="358" key="git4idea.merge.GitMergeDialog" timestamp="1639372577399">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="816" y="358" key="git4idea.merge.GitMergeDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639372577399" />
-    <state x="747" y="358" key="git4idea.merge.GitPullDialog" timestamp="1639372632137">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="747" y="358" key="git4idea.merge.GitPullDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639372632137" />
-    <state x="859" y="464" key="git4idea.ui.GitStashDialog" timestamp="1639310588177">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="859" y="464" key="git4idea.ui.GitStashDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639310588177" />
-    <state x="836" y="408" key="git4idea.ui.GitTagDialog" timestamp="1639360301084">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="836" y="408" key="git4idea.ui.GitTagDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1639360301084" />
-    <state x="597" y="222" key="scopes" timestamp="1639310846694">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="597" y="222" key="scopes/0.0.2048.1112@0.0.2048.1112" timestamp="1639310846694" />
-  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/ImageProcess.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo />
+        <PinnedItemInfo parentTag="sample.characterSystem.Person" memberName="selectItems" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

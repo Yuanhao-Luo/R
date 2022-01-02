@@ -8,6 +8,9 @@ import sample.characterSystem.Person;
 import sample.itemSystem.Arms;
 import sample.itemSystem.Item;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class GoodPane extends Pane {
     String url;
     boolean select = false;
@@ -21,7 +24,7 @@ public class GoodPane extends Pane {
     int index;
 
 
-    public GoodPane(int num){
+    public GoodPane(int num) throws FileNotFoundException {
         super();
         index = num;
         int[] itemx = {206,295,382,471,558,647,735};
@@ -35,21 +38,21 @@ public class GoodPane extends Pane {
         imageView.setFitHeight(88);
         getChildren().add(imageView);
 
-        hover = new ImageView(new Image("file:.\\images\\Item_hover.png"));
+        hover = new ImageView(new Image(new FileInputStream(".\\images\\Item_hover.png")));
         hover.setVisible(false);
         getChildren().add(hover);
 
-        bet = new ImageView(new Image("file:.\\images\\bet.png"));
+        bet = new ImageView(new Image(new FileInputStream(".\\images\\bet.png")));
         bet.setVisible(false);
         bet.setX(3.6);
         bet.setY(3);
         getChildren().add(bet);
 
-        cooldownClock = new ImageView(new Image("file:.\\images\\cooldown_clock.png"));
+        cooldownClock = new ImageView(new Image(new FileInputStream(".\\images\\cooldown_clock.png")));
         cooldownClock.setVisible(false);
         getChildren().add(cooldownClock);
 
-        cooldown = new ImageView(new Image("file:.\\images\\cooldown.png"));
+        cooldown = new ImageView(new Image(new FileInputStream(".\\images\\cooldown.png")));
         cooldown.setVisible(false);
         getChildren().add(cooldown);
 
@@ -73,7 +76,12 @@ public class GoodPane extends Pane {
 
     public void setImage(String url){
         this.url = url;
-        Image image = new Image("file:"+url);
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream(url));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         imageView.setImage(image);
     }
 
